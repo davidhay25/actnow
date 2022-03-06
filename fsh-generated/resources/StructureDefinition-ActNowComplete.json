@@ -20,6 +20,2145 @@
   "type": "http://clinfhir.com/StructureDefinition/actnowcomplete",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "actnowcomplete",
+        "path": "actnowcomplete",
+        "short": "Complete Model for ACT-NOW spec",
+        "definition": "A complete model for all information in the ACT-NOW spec",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete",
+          "min": 0,
+          "max": "*"
+        },
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.id",
+        "path": "actnowcomplete.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhirpath/System.String",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.extension",
+        "path": "actnowcomplete.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.patient",
+        "path": "actnowcomplete.patient",
+        "short": "Patient demographics",
+        "definition": "Patient demographics",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.patient",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Patient",
+            "comment": "",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.patient.nhi",
+        "path": "actnowcomplete.patient.nhi",
+        "short": "The patients NHI number",
+        "definition": "The NZ NHI",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.patient.nhi",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Patient.identifier",
+            "comment": "system value: https://standards.digital.health.nz/ns/nhi-id",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails",
+        "path": "actnowcomplete.cancerDetails",
+        "short": "Details about the cancer",
+        "definition": "Details about the cancer",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Condition",
+            "comment": "A number of the elements in this section map to a single Condition resource",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.dxDate",
+        "path": "actnowcomplete.cancerDetails.dxDate",
+        "short": "The date the diagnosis was made",
+        "definition": "The date the diagnosis was made",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.dxDate",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Condition.extension",
+            "comment": "<a href='http://hl7.org/fhir/StructureDefinition/condition-assertedDate'>http://hl7.org/fhir/StructureDefinition/condition-assertedDate</a>",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.primarySite",
+        "path": "actnowcomplete.cancerDetails.primarySite",
+        "short": "The primary site of the cancer",
+        "definition": "The primary site of the cancer",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.primarySite",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Condition.bodySite",
+            "comment": "",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.histology",
+        "path": "actnowcomplete.cancerDetails.histology",
+        "short": "The histologic cancer type",
+        "definition": "The histologic cancer type",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.histology",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Condition.code",
+            "comment": "",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.laterality",
+        "path": "actnowcomplete.cancerDetails.laterality",
+        "short": "Laterality of tumour ?is this needed - is it part of site",
+        "definition": "Laterality of tumour ?is this needed - is it part of site",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.laterality",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mapping": [
+          {
+            "map": "Condition.bodySite.extension",
+            "comment": "<a href='http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier'>http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier</a>",
+            "identity": "canshare"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.grade",
+        "path": "actnowcomplete.cancerDetails.grade",
+        "short": "Cancer grading. Includes system and version",
+        "definition": "Cancer grading. Includes system and version",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.grade",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.recurrance",
+        "path": "actnowcomplete.cancerDetails.recurrance",
+        "short": "Recurrance information",
+        "definition": "Recurrance information",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.recurrance",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.recurrance.type",
+        "path": "actnowcomplete.cancerDetails.recurrance.type",
+        "short": "Type of recurrance",
+        "definition": "Type of recurrance",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.recurrance.type",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.cancerDetails.recurrance.date",
+        "path": "actnowcomplete.cancerDetails.recurrance.date",
+        "short": "Date of recurrance",
+        "definition": "Date of recurrance",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.cancerDetails.recurrance.date",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM",
+        "path": "actnowcomplete.clinicalTNM",
+        "short": "Clinical TNM Classification",
+        "definition": "Clinical TNM Classification",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM.T-stage",
+        "path": "actnowcomplete.clinicalTNM.T-stage",
+        "short": "Clinical T (Tumour) stage",
+        "definition": "Clinical T (Tumour) stage",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM.T-stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM.N-stage",
+        "path": "actnowcomplete.clinicalTNM.N-stage",
+        "short": "Clinical N (Nodes) stage",
+        "definition": "Clinical N (Nodes) stage",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM.N-stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM.M-stage",
+        "path": "actnowcomplete.clinicalTNM.M-stage",
+        "short": "Clinical M (Metastasis) stage",
+        "definition": "Clinical M (Metastasis) stage",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM.M-stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM.group",
+        "path": "actnowcomplete.clinicalTNM.group",
+        "short": "Clinical group",
+        "definition": "Clinical group",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM.group",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM.edition",
+        "path": "actnowcomplete.clinicalTNM.edition",
+        "short": "Edition of TNM used",
+        "definition": "Edition of TNM used",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM.edition",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.clinicalTNM.date",
+        "path": "actnowcomplete.clinicalTNM.date",
+        "short": "Date evaluation done",
+        "definition": "Date evaluation done",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.clinicalTNM.date",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM",
+        "path": "actnowcomplete.pathologicalTNM",
+        "short": "Clinical TNM Classification",
+        "definition": "Clinical TNM Classification",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM.T-stage",
+        "path": "actnowcomplete.pathologicalTNM.T-stage",
+        "short": "Pathological T (Tumour) stage",
+        "definition": "Pathological T (Tumour) stage",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM.T-stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM.N-stage",
+        "path": "actnowcomplete.pathologicalTNM.N-stage",
+        "short": "Pathological N (Nodes) stage",
+        "definition": "Pathological N (Nodes) stage",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM.N-stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM.M-stage",
+        "path": "actnowcomplete.pathologicalTNM.M-stage",
+        "short": "Pathological M (Metastasis) stage",
+        "definition": "Pathological M (Metastasis) stage",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM.M-stage",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM.group",
+        "path": "actnowcomplete.pathologicalTNM.group",
+        "short": "Pathological group",
+        "definition": "Pathological group",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM.group",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM.edition",
+        "path": "actnowcomplete.pathologicalTNM.edition",
+        "short": "Edition of TNM used",
+        "definition": "Edition of TNM used",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM.edition",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.pathologicalTNM.date",
+        "path": "actnowcomplete.pathologicalTNM.date",
+        "short": "Date evaluation done",
+        "definition": "Date evaluation done",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.pathologicalTNM.date",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.otherStaging",
+        "path": "actnowcomplete.otherStaging",
+        "short": "Other staging",
+        "definition": "Other staging",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.otherStaging",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.otherStaging.groupStage",
+        "path": "actnowcomplete.otherStaging.groupStage",
+        "short": "The cancer group stage, using a system other than TNM",
+        "definition": "The cancer group stage, using a system other than TNM",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.otherStaging.groupStage",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.otherStaging.basis",
+        "path": "actnowcomplete.otherStaging.basis",
+        "short": "The basis of the Other staging group stage",
+        "definition": "The basis of the Other staging group stage",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.otherStaging.basis",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.otherStaging.system",
+        "path": "actnowcomplete.otherStaging.system",
+        "short": "The other staging system used to stage the cancer",
+        "definition": "The other staging system used to stage the cancer",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.otherStaging.system",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.otherStaging.edition",
+        "path": "actnowcomplete.otherStaging.edition",
+        "short": "The other staging system edition used to stage the cancer",
+        "definition": "The other staging system edition used to stage the cancer",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.otherStaging.edition",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.prognosticScoring",
+        "path": "actnowcomplete.prognosticScoring",
+        "short": "Prognostic scoring",
+        "definition": "Prognostic scoring",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete.prognosticScoring",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.prognosticScoring.score",
+        "path": "actnowcomplete.prognosticScoring.score",
+        "short": "Prognostic score",
+        "definition": "Prognostic score",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.prognosticScoring.score",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.prognosticScoring.system",
+        "path": "actnowcomplete.prognosticScoring.system",
+        "short": "Scoring system",
+        "definition": "Scoring system",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.prognosticScoring.system",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.prognosticScoring.edition",
+        "path": "actnowcomplete.prognosticScoring.edition",
+        "short": "Edition of score",
+        "definition": "Edition of score",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.prognosticScoring.edition",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment",
+        "path": "actnowcomplete.treatment",
+        "short": "Treatment given",
+        "definition": "Treatment given",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen",
+        "path": "actnowcomplete.treatment.regimen",
+        "short": "Regimen details",
+        "definition": "Regimen details",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.ECOG",
+        "path": "actnowcomplete.treatment.regimen.ECOG",
+        "short": "ECOG score at start of regimen",
+        "definition": "ECOG score at start of regimen",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.ECOG",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.url",
+        "path": "actnowcomplete.treatment.regimen.url",
+        "short": "Url of regimen",
+        "definition": "Url of regimen",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.name",
+        "path": "actnowcomplete.treatment.regimen.name",
+        "short": "Name of regimen",
+        "definition": "Name of regimen",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.name",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.intent",
+        "path": "actnowcomplete.treatment.regimen.intent",
+        "short": "Intent of treatment",
+        "definition": "Intent of treatment",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.intent",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.clinicalTrial",
+        "path": "actnowcomplete.treatment.regimen.clinicalTrial",
+        "short": "Is this a clinical trial regimen",
+        "definition": "Is this a clinical trial regimen",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.clinicalTrial",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.completed",
+        "path": "actnowcomplete.treatment.regimen.completed",
+        "short": "True if the regimen was completed",
+        "definition": "True if the regimen was completed",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.completed",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.discontinue",
+        "path": "actnowcomplete.treatment.regimen.discontinue",
+        "short": "If the regimen was discontinued",
+        "definition": "If the regimen was discontinued",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.discontinue",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.discontinue.date",
+        "path": "actnowcomplete.treatment.regimen.discontinue.date",
+        "short": "Date discontinued",
+        "definition": "Date discontinued",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.discontinue.date",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.discontinue.reason",
+        "path": "actnowcomplete.treatment.regimen.discontinue.reason",
+        "short": "Reason discontinued",
+        "definition": "Reason discontinued",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.discontinue.reason",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.discontinue.patientFactors",
+        "path": "actnowcomplete.treatment.regimen.discontinue.patientFactors",
+        "short": "patient reasons for discontinuation",
+        "definition": "patient reasons for discontinuation",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.discontinue.patientFactors",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.discontinue.toxicity",
+        "path": "actnowcomplete.treatment.regimen.discontinue.toxicity",
+        "short": "toxicity reasons",
+        "definition": "toxicity reasons",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.discontinue.toxicity",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycleCount",
+        "path": "actnowcomplete.treatment.regimen.cycleCount",
+        "short": "Number of cycles completed",
+        "definition": "Number of cycles completed",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycleCount",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.outcome",
+        "path": "actnowcomplete.treatment.regimen.outcome",
+        "short": "Outcome of completed regimen",
+        "definition": "Outcome of completed regimen",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.outcome",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.outcome.OTU",
+        "path": "actnowcomplete.treatment.regimen.outcome.OTU",
+        "short": "Overall Treatment Utility",
+        "definition": "Overall Treatment Utility",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.outcome.OTU",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.outcome.OTUbenefit",
+        "path": "actnowcomplete.treatment.regimen.outcome.OTUbenefit",
+        "short": "Clinical benefit or cycle",
+        "definition": "Clinical benefit or cycle",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.outcome.OTUbenefit",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.outcome.OTUacceptable",
+        "path": "actnowcomplete.treatment.regimen.outcome.OTUacceptable",
+        "short": "Acceptability of cysle",
+        "definition": "Acceptability of cysle",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.outcome.OTUacceptable",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles",
+        "path": "actnowcomplete.treatment.regimen.cycles",
+        "short": "Details of cycles delivered for this regimen",
+        "definition": "Details of cycles delivered for this regimen",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.number",
+        "path": "actnowcomplete.treatment.regimen.cycles.number",
+        "short": "The cycle number",
+        "definition": "The cycle number",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.number",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.length",
+        "path": "actnowcomplete.treatment.regimen.cycles.length",
+        "short": "Cycle length in days",
+        "definition": "Cycle length in days",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.length",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.date",
+        "path": "actnowcomplete.treatment.regimen.cycles.date",
+        "short": "Start and end date for the cycle",
+        "definition": "Start and end date for the cycle",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.date",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.lastAdmin",
+        "path": "actnowcomplete.treatment.regimen.cycles.lastAdmin",
+        "short": "Date last administered ?can this just be the last date in the period above",
+        "definition": "Date last administered ?can this just be the last date in the period above",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.lastAdmin",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.ECOG",
+        "path": "actnowcomplete.treatment.regimen.cycles.ECOG",
+        "short": "ECOG score at the start of the cycle",
+        "definition": "ECOG score at the start of the cycle",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.ECOG",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.BSA",
+        "path": "actnowcomplete.treatment.regimen.cycles.BSA",
+        "short": "Body Surface area at start of cycle",
+        "definition": "Body Surface area at start of cycle",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.BSA",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.cycles.weight",
+        "path": "actnowcomplete.treatment.regimen.cycles.weight",
+        "short": "Weight at the start of the cycle",
+        "definition": "Weight at the start of the cycle",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.cycles.weight",
+          "min": 0,
+          "max": "0"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration",
+        "path": "actnowcomplete.treatment.regimen.administration",
+        "short": "Details of medication administration",
+        "definition": "Details of medication administration",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.cycleDay",
+        "path": "actnowcomplete.treatment.regimen.administration.cycleDay",
+        "short": "The day of the cycle that the administration occurred on",
+        "definition": "The day of the cycle that the administration occurred on",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.cycleDay",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.creatinineClearance",
+        "path": "actnowcomplete.treatment.regimen.administration.creatinineClearance",
+        "short": "The creatinine clearance",
+        "definition": "The creatinine clearance",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.creatinineClearance",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.creatinineClearanceDate",
+        "path": "actnowcomplete.treatment.regimen.administration.creatinineClearanceDate",
+        "short": "The creatinine clearance date",
+        "definition": "The creatinine clearance date",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.creatinineClearanceDate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.medication",
+        "path": "actnowcomplete.treatment.regimen.administration.medication",
+        "short": "Single administration",
+        "definition": "Single administration",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.medication",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.medication.code",
+        "path": "actnowcomplete.treatment.regimen.administration.medication.code",
+        "short": "Medication code and name - ULM code",
+        "definition": "Medication code and name - ULM code",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.medication.code",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.medication.prescribedDose",
+        "path": "actnowcomplete.treatment.regimen.administration.medication.prescribedDose",
+        "short": "Dose prescribed",
+        "definition": "Dose prescribed",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.medication.prescribedDose",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Dosage"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.medication.administeredDose",
+        "path": "actnowcomplete.treatment.regimen.administration.medication.administeredDose",
+        "short": "Dose administered",
+        "definition": "Dose administered",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.medication.administeredDose",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Dosage"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.medication.interval",
+        "path": "actnowcomplete.treatment.regimen.administration.medication.interval",
+        "short": "The interval (start and end time) over which the medication was administered",
+        "definition": "The interval (start and end time) over which the medication was administered",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.medication.interval",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "actnowcomplete.treatment.regimen.administration.medication.adjustmentReason",
+        "path": "actnowcomplete.treatment.regimen.administration.medication.adjustmentReason",
+        "short": "The reason for any adjustment",
+        "definition": "The reason for any adjustment",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "actnowcomplete.treatment.regimen.administration.medication.adjustmentReason",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      }
+    ]
+  },
   "differential": {
     "element": [
       {
