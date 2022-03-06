@@ -1,0 +1,75 @@
+{
+  "resourceType": "Condition",
+  "id": "an-cancer",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Small cell carcinoma</div>",
+    "status": "generated"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "7771000",
+            "system": "http://snomed.info/sct",
+            "display": "Left (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+      "valueDate": "2020-01-01"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "254632001",
+        "system": "http://snomed.info/sct",
+        "display": "Small cell carcinoma of lung"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "3341006",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ],
+  "stage": [
+    {
+      "summary": {
+        "coding": [
+          {
+            "code": "786005",
+            "system": "http://snomed.info/sct",
+            "display": "Clinical stage I B"
+          }
+        ]
+      }
+    }
+  ]
+}

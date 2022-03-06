@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "cM",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">M0</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "21907-3",
+        "system": "http://loinc.org",
+        "display": "Distant metastases.clinical [Class] Cancer"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "cM0",
+        "system": "http://cancerstaging.org",
+        "display": "M0"
+      }
+    ]
+  }
+}

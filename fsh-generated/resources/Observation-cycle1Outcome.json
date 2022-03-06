@@ -1,0 +1,26 @@
+{
+  "resourceType": "Observation",
+  "id": "cycle1Outcome",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Regimen Outcome</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/an-practitioner"
+    }
+  ],
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "code": {
+    "text": "Regimen outcome"
+  },
+  "basedOn": [
+    {
+      "reference": "CarePlan/regimenPlan1"
+    }
+  ]
+}

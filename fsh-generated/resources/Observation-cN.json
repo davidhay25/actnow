@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "cN",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">N3</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "21906-3",
+        "system": "http://loinc.org",
+        "display": "Regional lymph nodes.clinical [Class] Cancer"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "cN3",
+        "system": "http://cancerstaging.org",
+        "display": "N3"
+      }
+    ]
+  }
+}

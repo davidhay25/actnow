@@ -1,0 +1,298 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "actnow.clinfhir.com",
+  "url": "http://example.org/ImplementationGuide/actnow.clinfhir.com",
+  "version": "0.1.0",
+  "name": "actnow",
+  "title": "ACT-NOW Implementation Guide",
+  "status": "draft",
+  "publisher": "David Hay",
+  "contact": [
+    {
+      "name": "David Hay",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description": "FHIR support for the New Zealand ACT-NOW standard",
+  "packageId": "actnow.clinfhir.com",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/careplan-cycle"
+        },
+        "name": "Cycle Careplan",
+        "description": "A CarePlan that represents a single cycle of treatment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/careplan-regimen"
+        },
+        "name": "Regimen Careplan",
+        "description": "A CarePlan that represents a PlanDefinition being applied to a Patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/observation-ecog"
+        },
+        "name": "ECOG score",
+        "description": "An observation that represents an ecog score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/observation-regimen-outcome"
+        },
+        "name": "Regimen outcome",
+        "description": "An observation that represents the outcome of a regimen CarePlan that is closed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cycle-count"
+        },
+        "name": "CycleCount",
+        "description": "The number of cycles that administered for a regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/regimen-discontinued"
+        },
+        "name": "RegimenDiscontinued",
+        "description": "Reasons why a regimen may have been discontinued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/regimen-otu"
+        },
+        "name": "RegimenOTU",
+        "description": "Reasons why a regimen may have been discontinued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ActNowComplete"
+        },
+        "name": "Complete Model for ACT-NOW spec",
+        "description": "A complete model for all information in the ACT-NOW spec",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/regimen-discontinued-patient-factors"
+        },
+        "name": "Patient factors when discontinuing a regimen",
+        "description": "Patient factors when discontinuing a regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/regimen-discontinued-reason"
+        },
+        "name": "The reason why a regimen was discontinued",
+        "description": "The reason why a regimen was discontinued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/regimen-discontinued-patient-factors"
+        },
+        "name": "Patient factors when discontinuing a regimen",
+        "description": "Patient factors when discontinuing a regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/regimen-discontinued-reason"
+        },
+        "name": "The reason why a regimen was discontinued",
+        "description": "The reason why a regimen was discontinued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/an-cancer"
+        },
+        "name": "The cancer being treated",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/an-careteam"
+        },
+        "name": "Auckland Oncology",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/an-completeBundle"
+        },
+        "name": "an-completeBundle",
+        "description": "A Bundle containing all the resources for a single cycle of treatment for a regimen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/an-patient"
+        },
+        "name": "Lorrie Lung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/an-practitioner"
+        },
+        "name": "Marcus Welby",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/bsa-cycle1"
+        },
+        "name": "BSA at start of cycle 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/cM"
+        },
+        "name": "cM",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/cN"
+        },
+        "name": "cN",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/cT"
+        },
+        "name": "cT",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/cTNM"
+        },
+        "name": "cTNM",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/cc1"
+        },
+        "name": "Creatinine clearance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/cycle1"
+        },
+        "name": "First cycle of treatment",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/cycle1Outcome"
+        },
+        "name": "Outcome of regimen",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/ecog-cycle1"
+        },
+        "name": "ECOG at start of cycle 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/ecog-regimen"
+        },
+        "name": "ECOG at start of regimen",
+        "exampleCanonical": "http://canshare.com/fhir/StructureDefinition/observation-ecog"
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/medication1"
+        },
+        "name": "A single medication administration",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/regimenOutcome"
+        },
+        "name": "Outcome of regimen",
+        "exampleCanonical": "http://canshare.com/fhir/StructureDefinition/observation-regimen-outcome"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/regimenPlan1"
+        },
+        "name": "Regimen details",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/supporting-info"
+        },
+        "name": "supporting-info",
+        "description": "Searches for supportingInfo references",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "cT",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">T3</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "21905-5",
+        "system": "http://loinc.org",
+        "display": "Primary tumor.clinical [Class] Cancer"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "cT3",
+        "system": "http://cancerstaging.org",
+        "display": "T3"
+      }
+    ]
+  }
+}

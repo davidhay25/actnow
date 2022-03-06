@@ -1,0 +1,61 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "medication1",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Methotrexate</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/an-practitioner"
+      }
+    }
+  ],
+  "status": "completed",
+  "effectivePeriod": {
+    "start": "2020-01-10T10:00:00Z",
+    "end": "2020-01-10T11:00:00Z"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "1234",
+        "system": "http://nzulm.co.nz"
+      }
+    ]
+  },
+  "dosage": {
+    "text": "10 ml over 1 hour"
+  },
+  "extension": [
+    {
+      "url": "http://clinfhir.com/StructureDefinition/cycleday",
+      "valueReference": {
+        "reference": "CarePlan/cycle1"
+      },
+      "valueInteger": 1
+    },
+    {
+      "url": "http://clinfhir.com/StructureDefinition/creatinineclearance",
+      "valueReference": {
+        "reference": "Observation/cc1"
+      }
+    },
+    {
+      "url": "http://clinfhir.com/StructureDefinition/prescribeddose",
+      "valueDosage": {
+        "text": "10 ml over 1 hour"
+      }
+    },
+    {
+      "url": "http://clinfhir.com/StructureDefinition/adjustmentreason",
+      "valueCodeableConcept": {
+        "text": "Nausea on previous administrations"
+      }
+    }
+  ]
+}

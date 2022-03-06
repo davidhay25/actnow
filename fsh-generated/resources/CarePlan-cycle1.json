@@ -1,0 +1,57 @@
+{
+  "resourceType": "CarePlan",
+  "id": "cycle1",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cycle1</div>",
+    "status": "generated"
+  },
+  "title": "Cycle1 Plan for regimen derived from: http://PlanDefinition/lungcancer1",
+  "subject": {
+    "reference": "Patient/an-patient"
+  },
+  "author": {
+    "reference": "Practitioner/an-practitioner"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "cycleCP",
+          "system": "http://canshare.com"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "period": {
+    "start": "2020-01-01",
+    "end": "2020-02-01"
+  },
+  "partOf": [
+    {
+      "reference": "CarePlan/regimenPlan1"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/an-cancer"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/an-careteam"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://actnow/cycle-number",
+      "valueInteger": 1
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/bsa-cycle1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RegimenDiscontinuedPatientFactors",
+  "id": "regimen-discontinued-patient-factors",
+  "title": "Patient factors when discontinuing a regimen",
+  "description": "Patient factors when discontinuing a regimen",
+  "version": "0.1.0",
+  "url": "http://actnow.org/ValueSet/regimen-discontinued-patient-factors-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://actnow.org/CodeSystem/regimen-discontinued-patient-factors-cs"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<br/><strong>Extensions defined in this guide</strong><br/><br/>
+<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
+<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
+<th>Status</th>
+</tr>
+<tr>
+<td><a href='StructureDefinition-cycle-count.html'>cycle-count</a></td>
+<td>http://actnow.org/StructureDefinition/cycle-count</td>
+<td>
+<div>Observation</div>
+</td>
+<td><p>The number of cycles that administered for a regimen</p></td>
+<td></td>
+<td>draft</td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-regimen-discontinued.html'>regimen-discontinued</a></td>
+<td>http://actnow.org/StructureDefinition/regimen-discontinued</td>
+<td>
+<div>Observation</div>
+</td>
+<td><p>Reasons why a regimen may have been discontinued</p></td>
+<td></td>
+<td>draft</td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-regimen-otu.html'>regimen-otu</a></td>
+<td>http://actnow.org/StructureDefinition/regimen-otu</td>
+<td>
+<div>Observation</div>
+</td>
+<td><p>Reasons why a regimen may have been discontinued</p></td>
+<td></td>
+<td>draft</td>
+</tr>
+</table>
+<a name="externalExtensions"> </a>
+<h3>Extensions used but defined elsewhere</h3>
+<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
+<tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
+</table>
+</div>

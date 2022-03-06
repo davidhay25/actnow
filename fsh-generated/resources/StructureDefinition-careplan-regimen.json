@@ -1,0 +1,104 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "careplan-regimen",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A CarePlan that represents a PlanDefinition being applied to a Patient.</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://canshare.com/fhir/StructureDefinition/careplan-regimen",
+  "version": "0.1.0",
+  "name": "CareplanRegimen",
+  "title": "Regimen Careplan",
+  "status": "active",
+  "description": "A CarePlan that represents a PlanDefinition being applied to a Patient.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "category.code"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the category.code pattern"
+        },
+        "min": 1
+      },
+      {
+        "id": "CarePlan.category:regimencode",
+        "path": "CarePlan.category",
+        "sliceName": "regimencode",
+        "short": "Regimen level carePlan",
+        "definition": "Code identifiying this carePlan as being at the regimen level",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.category:regimencode.coding",
+        "path": "CarePlan.category.coding",
+        "patternCoding": {
+          "code": "regimenCP",
+          "system": "http://canshare.com"
+        }
+      },
+      {
+        "id": "CarePlan.title",
+        "path": "CarePlan.title",
+        "min": 1
+      }
+    ]
+  }
+}

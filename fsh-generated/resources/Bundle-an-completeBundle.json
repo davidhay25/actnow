@@ -1,0 +1,663 @@
+{
+  "resourceType": "Bundle",
+  "id": "an-completeBundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "an-patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lorrie Lung</div>"
+        },
+        "birthDate": "1989-02-02",
+        "name": [
+          {
+            "given": [
+              "Lorrie"
+            ],
+            "family": "Lung",
+            "text": "Lorrie Lung"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://standards.digital.health.nz/ns/nhi-id",
+            "value": "WER4568"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "an-practitioner",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Marcus Welby</div>",
+          "status": "generated"
+        },
+        "name": [
+          {
+            "given": [
+              "Marcus"
+            ],
+            "family": "Welby",
+            "text": "Marcus Welby"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://standards.digital.health.nz/ns/hpi-person-id",
+            "value": "hpi1"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "an-cancer",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Small cell carcinoma</div>",
+          "status": "generated"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "7771000",
+                  "system": "http://snomed.info/sct",
+                  "display": "Left (qualifier value)"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDate": "2020-01-01"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "254632001",
+              "system": "http://snomed.info/sct",
+              "display": "Small cell carcinoma of lung"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "3341006",
+                "system": "http://snomed.info/sct"
+              }
+            ]
+          }
+        ],
+        "stage": [
+          {
+            "summary": {
+              "coding": [
+                {
+                  "code": "786005",
+                  "system": "http://snomed.info/sct",
+                  "display": "Clinical stage I B"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cTNM",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clinical TNM</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "21908-9",
+              "system": "http://loinc.org",
+              "display": "Stage group.clinical Cancer"
+            }
+          ]
+        },
+        "effectiveDateTime": "2020-01-01",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "3C",
+              "system": "http://cancerstaging.org",
+              "display": "IIIC"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/cT"
+          },
+          {
+            "reference": "Observation/cN"
+          },
+          {
+            "reference": "Observation/cM"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cT",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">T3</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "21905-5",
+              "system": "http://loinc.org",
+              "display": "Primary tumor.clinical [Class] Cancer"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "cT3",
+              "system": "http://cancerstaging.org",
+              "display": "T3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cN",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">N3</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "21906-3",
+              "system": "http://loinc.org",
+              "display": "Regional lymph nodes.clinical [Class] Cancer"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "cN3",
+              "system": "http://cancerstaging.org",
+              "display": "N3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cM",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">M0</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "21907-3",
+              "system": "http://loinc.org",
+              "display": "Distant metastases.clinical [Class] Cancer"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "cM0",
+              "system": "http://cancerstaging.org",
+              "display": "M0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cycle1",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cycle1</div>",
+          "status": "generated"
+        },
+        "title": "Cycle1 Plan for regimen derived from: http://PlanDefinition/lungcancer1",
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "author": {
+          "reference": "Practitioner/an-practitioner"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "cycleCP",
+                "system": "http://canshare.com"
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "period": {
+          "start": "2020-01-01",
+          "end": "2020-02-01"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/regimenPlan1"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/an-cancer"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/an-careteam"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://actnow/cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/bsa-cycle1"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "regimenPlan1",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Regimen</div>",
+          "status": "generated"
+        },
+        "title": "Plan for regemen derived from: http://PlanDefinition/lungcancer1",
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "author": {
+          "reference": "Practitioner/an-practitioner"
+        },
+        "status": "active",
+        "intent": "plan",
+        "instantiatesCanonical": [
+          "http://PlanDefinition/lungcancer1"
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/cTNM"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/an-cancer"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "regimenCP",
+                "system": "http://canshare.com"
+              }
+            ]
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/an-careteam"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://actnow/intent-of-treatment",
+            "valueCodeableConcept": {
+              "text": "palliative"
+            }
+          },
+          {
+            "url": "http://actnow/clinical-trial",
+            "valueBoolean": false
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "medication1",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Methotrexate</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "Practitioner/an-practitioner"
+            }
+          }
+        ],
+        "status": "completed",
+        "effectivePeriod": {
+          "start": "2020-01-10T10:00:00Z",
+          "end": "2020-01-10T11:00:00Z"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "1234",
+              "system": "http://nzulm.co.nz"
+            }
+          ]
+        },
+        "dosage": {
+          "text": "10 ml over 1 hour"
+        },
+        "extension": [
+          {
+            "url": "http://clinfhir.com/StructureDefinition/cycleday",
+            "valueReference": {
+              "reference": "CarePlan/cycle1"
+            },
+            "valueInteger": 1
+          },
+          {
+            "url": "http://clinfhir.com/StructureDefinition/creatinineclearance",
+            "valueReference": {
+              "reference": "Observation/cc1"
+            }
+          },
+          {
+            "url": "http://clinfhir.com/StructureDefinition/prescribeddose",
+            "valueDosage": {
+              "text": "10 ml over 1 hour"
+            }
+          },
+          {
+            "url": "http://clinfhir.com/StructureDefinition/adjustmentreason",
+            "valueCodeableConcept": {
+              "text": "Nausea on previous administrations"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "regimenOutcome",
+        "meta": {
+          "profile": [
+            "http://canshare.com/fhir/StructureDefinition/observation-regimen-outcome"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "regimenoutcome",
+              "system": "http://actnow.org/"
+            }
+          ],
+          "text": "Regimen outcome"
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Regimen Outcome</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/an-practitioner"
+          }
+        ],
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "basedOn": [
+          {
+            "reference": "CarePlan/regimenPlan1"
+          }
+        ],
+        "valueInteger": 1,
+        "extension": [
+          {
+            "url": "http://actnow/regimen-discontinued",
+            "extension": [
+              {
+                "url": "date",
+                "valueDateTime": "2020-02-02T12:00:00Z"
+              },
+              {
+                "url": "reason",
+                "valueCodeableConcept": {
+                  "text": "Not tolerated by patient"
+                }
+              },
+              {
+                "url": "patientfactors",
+                "valueCodeableConcept": {
+                  "text": "Nausea"
+                }
+              },
+              {
+                "url": "toxicity",
+                "valueCodeableConcept": {
+                  "text": "low WCC"
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://actnow/cycle-count",
+            "valueInteger": 5
+          },
+          {
+            "url": "http://actnow/otu",
+            "extension": [
+              {
+                "url": "benefit",
+                "valueInteger": 1
+              },
+              {
+                "url": "acceptable",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ecog-regimen",
+        "meta": {
+          "profile": [
+            "http://canshare.com/fhir/StructureDefinition/observation-ecog"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "89247-1",
+              "system": "http://loinc.org",
+              "display": "ECOG score"
+            }
+          ]
+        },
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ECOG observation</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/an-practitioner"
+          }
+        ],
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "valueInteger": 3
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ecog-cycle1",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ECOG cycle 1</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/an-practitioner"
+          }
+        ],
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "89247-1",
+              "system": "http://loinc.org",
+              "display": "ECOG score"
+            }
+          ]
+        },
+        "valueInteger": 3
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bsa-cycle1",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">BSA cycle 1</div>",
+          "status": "generated"
+        },
+        "subject": {
+          "reference": "Patient/an-patient"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/an-practitioner"
+          }
+        ],
+        "effectiveDateTime": "2020-01-01",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "8277-6",
+              "system": "http://loinc.org",
+              "display": "BSA"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 1.8,
+          "unit": "m2"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "an-careteam",
+        "text": {
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Auckland Oncology</div>",
+          "status": "generated"
+        },
+        "name": "Auckland Oncology"
+      }
+    }
+  ]
+}
