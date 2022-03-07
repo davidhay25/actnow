@@ -74,6 +74,7 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Overview: overview.html
   Extensions: extensions.html
   Profiles: profiles.html
   Terminology: terminology.html

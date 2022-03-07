@@ -1,6 +1,5 @@
 //the value of the observation is the overall 'success' of the regimen - the OTU score
 
-
 Profile:        ObservationRegimenOutcome
 Parent:         Observation
 Id:             observation-regimen-outcome
@@ -18,12 +17,10 @@ Description:    "An observation that represents the outcome of a regimen CarePla
 * extension contains
     $extCycleCount named cycle-count 0..1 MS and
     $extRegimenDiscontinued named regimen-discontinued 0..1 MS and
-   // $regimen-discontinued-patient-factors-vs named regimen-discontinued-patient-factors 0..1 MS and
     $extRegimenOTU named otu 0..1 MS
 
 * extension[cycle-count] ^short = "The number of treatment cycles administered under this regimen"
 * extension[regimen-discontinued] ^short = "The reason the regimen was discontinued"
-//* extension[regimen-discontinued-patient-factors] ^short = "Patient factors continuing to regimen discontinuation"
 * extension[otu] ^short = "Benefit and Acceptable OTU (overall OTU is value of Observation"
 
 //the date the observation was made
