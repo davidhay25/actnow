@@ -215,6 +215,13 @@
       },
       {
         "reference": {
+          "reference": "CarePlan/cycle2"
+        },
+        "name": "Second cycle of treatment",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Observation/ecog-cycle1"
         },
         "name": "ECOG at start of cycle 1",
@@ -229,7 +236,22 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/ma-basedOn"
+        },
+        "name": "ma-basedOn",
+        "description": "based-on extension for MedicationAdmin -> CarePlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "MedicationAdministration/medication1"
+        },
+        "name": "A single medication administration",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/medication2"
         },
         "name": "A single medication administration",
         "exampleBoolean": true

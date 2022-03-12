@@ -27,8 +27,11 @@ Description: "A Bundle containing all the resources for a single cycle of treatm
 * entry[+].resource = cM
 
 * entry[+].resource = cycle1
+* entry[+].resource = cycle2
+
 * entry[+].resource = regimenPlan1
 * entry[+].resource = medication1
+* entry[+].resource = medication2
 
 * entry[+].resource = regimenOutcome
 
@@ -223,6 +226,42 @@ Usage: #example
 * supportingInfo = Reference(bsa-cycle1)
 
 
+//---- second cycle --------
+//The second cycle of treatment - ie multiple medication administrations and potentially observatopns
+//Modelled as a CarePlan with a 'partOf' reference to the regimen careplan
+//Created before the first cycle commences - must be after the regiman cp has been created
+Instance: cycle2
+InstanceOf: CarePlan
+Title: "Second cycle of treatment"
+Usage: #example
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle1</div>"
+* text.status = #generated
+
+* title = "Cycle2 Plan "
+
+* subject = Reference(an-patient)
+* author = Reference(an-practitioner)
+* category = http://canshare.com#cycleCP
+
+//* effectiveDateTime = "2020-01-01"
+* status = #draft
+* intent = #plan
+// cycle length - period end-start
+* period.start = "2020-02-01"
+* period.end = "2020-02-01"
+* partOf = Reference(regimenPlan1)
+* addresses = Reference(an-cancer)
+* careTeam = Reference(an-careteam)
+
+//the cycle number
+//todo - what is the last admin date? could be derived from the MedicationAdmin resources that have a 'basedOn' reference to this plan
+* extension[+].url = "http://actnow/cycle-number"
+* extension[=].valueInteger = 2
+
+//* supportingInfo = Reference(ecog-cycle1)
+//* supportingInfo = Reference(bsa-cycle1)
+
+
 
 
 Instance: ecog-cycle1
@@ -269,6 +308,7 @@ Usage: #example
 
 
 //------- medication administration
+
 Instance: medication1
 InstanceOf: MedicationAdministration
 Title: "A single medication administration"
@@ -281,12 +321,13 @@ Usage: #example
 * effectivePeriod.start = "2020-01-10T10:00:00Z"
 * effectivePeriod.end = "2020-01-10T11:00:00Z"
 * medicationCodeableConcept = http://nzulm.co.nz#1234
+* medicationCodeableConcept.text = "Methotrexate"
 * dosage.text = "10 ml over 1 hour"
 
 * extension[0].url = "http://clinfhir.com/StructureDefinition/based-on"
 * extension[=].valueReference = Reference(cycle1)
 
-* extension[0].url = "http://clinfhir.com/StructureDefinition/cycleday"
+* extension[+].url = "http://clinfhir.com/StructureDefinition/cycleday"
 * extension[=].valueInteger = 1
 
 * extension[+].url = "http://clinfhir.com/StructureDefinition/creatinineclearance"
@@ -297,6 +338,34 @@ Usage: #example
 
 * extension[+].url = "http://clinfhir.com/StructureDefinition/adjustmentreason"
 * extension[=].valueCodeableConcept.text = "Nausea on previous administrations"
+
+
+Instance: medication2
+InstanceOf: MedicationAdministration
+Title: "A single medication administration"
+Usage: #example
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Tragacanth</div>"
+* text.status = #generated
+* subject = Reference(an-patient)
+* performer.actor = Reference(an-practitioner)
+* status = #completed
+* effectivePeriod.start = "2020-01-12T10:00:00Z"
+* effectivePeriod.end = "2020-01-12T11:00:00Z"
+
+* medicationCodeableConcept = https://nzulm.org.nz/nzmt#10711851000116105 "Tragacanth"
+* medicationCodeableConcept.text = "Tragacanth"
+* dosage.text = "3 mg over 3 hours by IV infusion"
+
+* extension[0].url = "http://clinfhir.com/StructureDefinition/based-on"
+* extension[=].valueReference = Reference(cycle1)
+
+* extension[+].url = "http://clinfhir.com/StructureDefinition/cycleday"
+* extension[=].valueInteger = 3
+
+
+* extension[+].url = "http://clinfhir.com/StructureDefinition/prescribeddose"
+* extension[=].valueDosage.text = "3 mg over 3 hours by IV infusion"
+
 
 //creatanine clearance
 Instance: cc1

@@ -26,17 +26,21 @@
         "code": "1234",
         "system": "http://nzulm.co.nz"
       }
-    ]
+    ],
+    "text": "Methotrexate"
   },
   "dosage": {
     "text": "10 ml over 1 hour"
   },
   "extension": [
     {
-      "url": "http://clinfhir.com/StructureDefinition/cycleday",
+      "url": "http://clinfhir.com/StructureDefinition/based-on",
       "valueReference": {
         "reference": "CarePlan/cycle1"
-      },
+      }
+    },
+    {
+      "url": "http://clinfhir.com/StructureDefinition/cycleday",
       "valueInteger": 1
     },
     {
