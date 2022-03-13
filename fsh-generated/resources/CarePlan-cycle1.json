@@ -5,7 +5,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cycle1</div>",
     "status": "generated"
   },
-  "title": "Cycle1 Plan for regimen derived from: http://PlanDefinition/lungcancer1",
+  "title": "First cycle of treatment",
   "subject": {
     "reference": "Patient/an-patient"
   },
@@ -41,6 +41,31 @@
   "careTeam": [
     {
       "reference": "CareTeam/an-careteam"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "description": "2 administrations of Cabergoline 14 days apart. Each 2 mg over 20 minutes by IV infusion",
+        "status": "not-started",
+        "kind": "MedicationRequest",
+        "scheduledTiming": {
+          "repeat": {
+            "count": 1,
+            "duration": 14,
+            "durationUnit": "d"
+          }
+        },
+        "productCodeableConcept": {
+          "coding": [
+            {
+              "code": "10250021000116102",
+              "system": "https://nzulm.org.nz/nzmt",
+              "display": "Cabergoline"
+            }
+          ]
+        }
+      }
     }
   ],
   "extension": [

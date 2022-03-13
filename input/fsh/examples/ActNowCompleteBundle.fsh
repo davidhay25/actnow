@@ -5,6 +5,7 @@
 //add FSH to IG so easy to reference...
 
 Alias: $clinfhircs = http://clinfhir.com/codesystem     //placeholder codesystem
+Alias: $NZMT = https://nzulm.org.nz/nzmt
 
 //view in BV: http://localhost:8081/bundleVisualizer.html?http://build.fhir.org/ig/davidhay25/canshare/branches/main/Bundle-an-completeBundle.json
 
@@ -201,7 +202,7 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle1</div>"
 * text.status = #generated
 
-* title = "Cycle1 Plan for regimen derived from: http://PlanDefinition/lungcancer1"
+* title = "First cycle of treatment"
 
 * subject = Reference(an-patient)
 * author = Reference(an-practitioner)
@@ -216,6 +217,26 @@ Usage: #example
 * partOf = Reference(regimenPlan1)
 * addresses = Reference(an-cancer)
 * careTeam = Reference(an-careteam)
+
+//activity details
+// activity[0].reference - would be reference to MedicationRequest with details...
+//could create from activityDefinition
+* activity[0].detail.description = "2 administrations of Cabergoline 14 days apart. Each 2 mg over 20 minutes by IV infusion"
+* activity[0].detail.status = #not-started
+* activity[0].detail.kind = #MedicationRequest
+
+// todo - need the ActivityDefinition to be a separate resource * activity[0].detail.instantiatesCanonical
+//* activity[0].detail.scheduledTiming 
+
+* activity[0].detail.scheduledTiming.repeat.count = 1        //only a single repeat
+* activity[0].detail.scheduledTiming.repeat.duration = 14    // of 14 days - 
+* activity[0].detail.scheduledTiming.repeat.durationUnit = #d
+
+* activity[0].detail.productCodeableConcept = $NZMT#10250021000116102 "Cabergoline"
+//* activity[0].detail.description  = "2 mg over 20 minutes by IV infusion"
+
+
+
 
 //the cycle number
 //todo - what is the last admin date? could be derived from the MedicationAdmin resources that have a 'basedOn' reference to this plan
