@@ -7,8 +7,8 @@
 const http = require('http')
 const fs = require('fs');
 
-//let serverUrl = "canshare.clinfhir.com"
-let serverUrl = "localhost"
+let serverUrl = "canshare.clinfhir.com"
+//let serverUrl = "localhost"
 
 let fullFileName = "./fsh-generated/resources/Bundle-an-completeBundle.json";
 

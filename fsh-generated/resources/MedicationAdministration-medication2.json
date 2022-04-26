@@ -31,21 +31,26 @@
     "text": "Tragacanth"
   },
   "dosage": {
-    "text": "3 mg over 3 hours by IV infusion"
+    "text": "3 mg over 3 hours by IV infusion",
+    "dose": {
+      "value": 3,
+      "code": "mg",
+      "system": "http://unitsofmeasure.org"
+    }
   },
   "extension": [
     {
-      "url": "http://clinfhir.com/StructureDefinition/based-on",
+      "url": "http://actnow.org/StructureDefinition/based-on",
       "valueReference": {
         "reference": "CarePlan/cycle1"
       }
     },
     {
-      "url": "http://clinfhir.com/StructureDefinition/cycleday",
+      "url": "http://actnow.org/StructureDefinition/cycle-day",
       "valueInteger": 3
     },
     {
-      "url": "http://clinfhir.com/StructureDefinition/prescribeddose",
+      "url": "http://actnow.org/StructureDefinition/prescribed-dose",
       "valueDosage": {
         "text": "3 mg over 3 hours by IV infusion"
       }

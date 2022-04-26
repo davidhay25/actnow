@@ -14,10 +14,10 @@
     "coding": [
       {
         "code": "2164-2",
-        "system": "http://loinc.org",
-        "display": "creatinine clearance"
+        "system": "http://loinc.org"
       }
-    ]
+    ],
+    "text": "creatinine clearance"
   },
   "valueQuantity": {
     "value": 70,

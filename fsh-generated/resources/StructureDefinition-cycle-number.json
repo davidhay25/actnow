@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cycle-count",
-  "url": "http://actnow.org/StructureDefinition/cycle-count",
+  "id": "cycle-number",
+  "url": "http://actnow.org/StructureDefinition/cycle-number",
   "version": "0.1.0",
-  "name": "CycleCount",
+  "name": "CycleNumber",
   "status": "draft",
-  "description": "The number of cycles that administered for a regimen",
+  "description": "The cycle number of the regimen that this CP represents",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Observation"
+      "expression": "CarePlan"
     }
   ],
   "type": "Extension",
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The number of cycles that administered for a regimen"
+        "definition": "The cycle number of the regimen that this CP represents"
       },
       {
         "id": "Extension.extension",
@@ -50,7 +50,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/cycle-count"
+        "fixedUri": "http://actnow.org/StructureDefinition/cycle-number"
       },
       {
         "id": "Extension.value[x]",

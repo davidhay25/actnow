@@ -12,6 +12,9 @@ Description:    "A CarePlan that represents a PlanDefinition being applied to a 
 
 
 * title 1..1
+* extension contains
+    $iot  named iot 0..1 and
+    $clinicalTrial  named clinicalTrial 0..1
 
 
 //slicing on category

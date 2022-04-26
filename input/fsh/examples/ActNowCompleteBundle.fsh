@@ -103,7 +103,7 @@ InstanceOf: Observation
 //modelled as a careplan with references to observations through a supportingInfo reference
 
 Instance: regimenPlan1
-InstanceOf: CarePlan
+InstanceOf: CareplanRegimen
 Title: "Regimen details"
 Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Regimen</div>"
@@ -121,13 +121,16 @@ Usage: #example
 
 * supportingInfo[0] = Reference(cTNM)
 
-//intent of treatment - not the same as the CaprePlan.intent
-* extension[+].url = "http://actnow/intent-of-treatment"
+//intent of treatment - not the same as the CarePlan.intent
+* extension[+].url = $iot
 * extension[=].valueCodeableConcept.text = "palliative"
 
 //Is this regimen part of a clinical trial
-* extension[+].url = "http://actnow/clinical-trial"
+* extension[+].url = $clinicalTrial
 * extension[=].valueBoolean = false
+
+
+
 
 
 //An ECOG score at the start of the regimen. mCode uses an observation.
@@ -165,7 +168,7 @@ Usage: #example
 * valueInteger = 1      //the OTU - Overall treatment utility
 
 //the regimen was discontinued
-* extension[+].url = "http://actnow/regimen-discontinued"
+* extension[+].url = $extRegimenDiscontinued
 * extension[=].extension[+].url = "date"
 * extension[=].extension[=].valueDateTime = "2020-02-02T12:00:00Z"
 * extension[=].extension[+].url = "reason"
@@ -176,18 +179,17 @@ Usage: #example
 * extension[=].extension[=].valueCodeableConcept.text = "low WCC"
 
 //number of cycles administered of this regimen
-* extension[+].url = "http://actnow/cycle-count"
+* extension[+].url = $extCycleCount
 * extension[=].valueInteger = 5
 
+/* not sure what these are 
 //OTU measures
 * extension[+].url = "http://actnow/otu"
-//* extension[=].extension[+].url = "value"
-//* extension[=].extension[=].valueInteger = 1
 * extension[=].extension[+].url = "benefit"
 * extension[=].extension[=].valueInteger = 1
 * extension[=].extension[+].url = "acceptable"
 * extension[=].extension[=].valueInteger = 1
-
+*/
 
 //-------------------- end of regimen resources
 
@@ -208,7 +210,6 @@ Usage: #example
 * author = Reference(an-practitioner)
 * category = http://canshare.com#cycleCP
 
-//* effectiveDateTime = "2020-01-01"
 * status = #active
 * intent = #plan
 // cycle length - period end-start
@@ -235,12 +236,9 @@ Usage: #example
 * activity[0].detail.productCodeableConcept = $NZMT#10250021000116102 "Cabergoline"
 //* activity[0].detail.description  = "2 mg over 20 minutes by IV infusion"
 
-
-
-
 //the cycle number
 //todo - what is the last admin date? could be derived from the MedicationAdmin resources that have a 'basedOn' reference to this plan
-* extension[+].url = "http://actnow/cycle-number"
+* extension[+].url = $extCycleNumber
 * extension[=].valueInteger = 1
 
 * supportingInfo = Reference(ecog-cycle1)
@@ -276,13 +274,11 @@ Usage: #example
 
 //the cycle number
 //todo - what is the last admin date? could be derived from the MedicationAdmin resources that have a 'basedOn' reference to this plan
-* extension[+].url = "http://actnow/cycle-number"
+* extension[+].url = $extCycleNumber
 * extension[=].valueInteger = 2
 
 //* supportingInfo = Reference(ecog-cycle1)
 //* supportingInfo = Reference(bsa-cycle1)
-
-
 
 
 Instance: ecog-cycle1
@@ -344,20 +340,22 @@ Usage: #example
 * medicationCodeableConcept = http://nzulm.co.nz#1234
 * medicationCodeableConcept.text = "Methotrexate"
 * dosage.text = "10 ml over 1 hour"
+* dosage.dose = 10 'ml'
 
-* extension[0].url = "http://clinfhir.com/StructureDefinition/based-on"
+* extension[0].url = $extBasedOn
 * extension[=].valueReference = Reference(cycle1)
 
-* extension[+].url = "http://clinfhir.com/StructureDefinition/cycleday"
+* extension[+].url = $extCycleDay
 * extension[=].valueInteger = 1
 
-* extension[+].url = "http://clinfhir.com/StructureDefinition/creatinineclearance"
-* extension[=].valueReference = Reference(cc1)
+//todo - is an extension the best option here?
+//* extension[+].url = "http://clinfhir.com/StructureDefinition/creatinineclearance"
+//* extension[=].valueReference = Reference(cc1)
 
-* extension[+].url = "http://clinfhir.com/StructureDefinition/prescribeddose"
+* extension[+].url = $extPrescribedDose
 * extension[=].valueDosage.text = "10 ml over 1 hour"
 
-* extension[+].url = "http://clinfhir.com/StructureDefinition/adjustmentreason"
+* extension[+].url = $extAdjustmentReason
 * extension[=].valueCodeableConcept.text = "Nausea on previous administrations"
 
 
@@ -376,15 +374,15 @@ Usage: #example
 * medicationCodeableConcept = https://nzulm.org.nz/nzmt#10711851000116105 "Tragacanth"
 * medicationCodeableConcept.text = "Tragacanth"
 * dosage.text = "3 mg over 3 hours by IV infusion"
-
-* extension[0].url = "http://clinfhir.com/StructureDefinition/based-on"
+* dosage.dose = 3 'mg'
+* extension[0].url = $extBasedOn
 * extension[=].valueReference = Reference(cycle1)
 
-* extension[+].url = "http://clinfhir.com/StructureDefinition/cycleday"
+* extension[+].url =  $extCycleDay
 * extension[=].valueInteger = 3
 
 
-* extension[+].url = "http://clinfhir.com/StructureDefinition/prescribeddose"
+* extension[+].url = $extPrescribedDose
 * extension[=].valueDosage.text = "3 mg over 3 hours by IV infusion"
 
 
@@ -398,7 +396,8 @@ Usage: #example
 * subject = Reference(an-patient)
 * effectiveDateTime = "2020-01-01"
 * status = #final
-* code = $loinc#2164-2 "creatinine clearance"
+* code = $loinc#2164-2 
+* code.text = "creatinine clearance"
 * valueQuantity.value = 70
 * valueQuantity.unit = "uMol/L"
 
@@ -407,8 +406,6 @@ Instance: an-cancer
 InstanceOf: Condition
 Title: "The cancer being treated"
 Usage: #example
-
-
 
 //todo recurrance
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Small cell carcinoma</div>"

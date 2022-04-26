@@ -1,6 +1,11 @@
 {
   "resourceType": "CarePlan",
   "id": "regimenPlan1",
+  "meta": {
+    "profile": [
+      "http://canshare.com/fhir/StructureDefinition/careplan-regimen"
+    ]
+  },
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Regimen</div>",
     "status": "generated"
@@ -44,13 +49,13 @@
   ],
   "extension": [
     {
-      "url": "http://actnow/intent-of-treatment",
+      "url": "http://actnow.org/StructureDefinition/intent-of-treatment",
       "valueCodeableConcept": {
         "text": "palliative"
       }
     },
     {
-      "url": "http://actnow/clinical-trial",
+      "url": "http://actnow.org/StructureDefinition/clinicalTrial",
       "valueBoolean": false
     }
   ]

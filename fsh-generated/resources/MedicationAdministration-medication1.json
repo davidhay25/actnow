@@ -30,33 +30,32 @@
     "text": "Methotrexate"
   },
   "dosage": {
-    "text": "10 ml over 1 hour"
+    "text": "10 ml over 1 hour",
+    "dose": {
+      "value": 10,
+      "code": "ml",
+      "system": "http://unitsofmeasure.org"
+    }
   },
   "extension": [
     {
-      "url": "http://clinfhir.com/StructureDefinition/based-on",
+      "url": "http://actnow.org/StructureDefinition/based-on",
       "valueReference": {
         "reference": "CarePlan/cycle1"
       }
     },
     {
-      "url": "http://clinfhir.com/StructureDefinition/cycleday",
+      "url": "http://actnow.org/StructureDefinition/cycle-day",
       "valueInteger": 1
     },
     {
-      "url": "http://clinfhir.com/StructureDefinition/creatinineclearance",
-      "valueReference": {
-        "reference": "Observation/cc1"
-      }
-    },
-    {
-      "url": "http://clinfhir.com/StructureDefinition/prescribeddose",
+      "url": "http://actnow.org/StructureDefinition/prescribed-dose",
       "valueDosage": {
         "text": "10 ml over 1 hour"
       }
     },
     {
-      "url": "http://clinfhir.com/StructureDefinition/adjustmentreason",
+      "url": "http://actnow.org/StructureDefinition/adjustment-reason",
       "valueCodeableConcept": {
         "text": "Nausea on previous administrations"
       }

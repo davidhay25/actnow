@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cycle-count",
-  "url": "http://actnow.org/StructureDefinition/cycle-count",
+  "id": "based-on",
+  "url": "http://actnow.org/StructureDefinition/based-on",
   "version": "0.1.0",
-  "name": "CycleCount",
+  "name": "BasedOn",
   "status": "draft",
-  "description": "The number of cycles that administered for a regimen",
+  "description": "Allows a MedicationAdministration to refer to a CarePlan",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Observation"
+      "expression": "MedicationAdministration"
     }
   ],
   "type": "Extension",
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The number of cycles that administered for a regimen"
+        "definition": "Allows a MedicationAdministration to refer to a CarePlan"
       },
       {
         "id": "Extension.extension",
@@ -50,14 +50,17 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/cycle-count"
+        "fixedUri": "http://actnow.org/StructureDefinition/based-on"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "integer"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+            ]
           }
         ]
       }

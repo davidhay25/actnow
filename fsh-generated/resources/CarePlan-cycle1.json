@@ -70,7 +70,7 @@
   ],
   "extension": [
     {
-      "url": "http://actnow/cycle-number",
+      "url": "http://actnow.org/StructureDefinition/cycle-number",
       "valueInteger": 1
     }
   ],

@@ -12,6 +12,11 @@ Description:    "A CarePlan that represents a single cycle of treatment."
 
 * title 1..1
 
+* extension contains
+    $extCycleNumber named cycle-number 1..1
+
+//Must have a reference to the regimen plan
+* partOf 1..1 
 
 //slicing on category
 * category ^slicing.discriminator.type = #pattern

@@ -23,8 +23,24 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "id": "mcode",
+      "packageId": "hl7.fhir.us.mcode",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"
+    }
+  ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-condition"
+        },
+        "name": "ACT-NOW diagnosis",
+        "description": "A diagnosis",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/careplan-cycle"
@@ -59,10 +75,66 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/adjustment-reason"
+        },
+        "name": "AdjustmentReason",
+        "description": "The reason why the dose given was not the same as that in the regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/based-on"
+        },
+        "name": "BasedOn",
+        "description": "Allows a MedicationAdministration to refer to a CarePlan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/clinical-trial"
+        },
+        "name": "ClinicalTrial",
+        "description": "Is on a clinical trial",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cycle-count"
         },
         "name": "CycleCount",
         "description": "The number of cycles that administered for a regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cycle-day"
+        },
+        "name": "CycleDay",
+        "description": "The day of the cycle that this medication was given on",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cycle-number"
+        },
+        "name": "CycleNumber",
+        "description": "The cycle number of the regimen that this CP represents",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/iot"
+        },
+        "name": "IOT",
+        "description": "Intent of treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/prescribed-dose"
+        },
+        "name": "PrescribedDose",
+        "description": "The dose of this medication in the regimen (may not be the same as that given",
         "exampleBoolean": false
       },
       {
@@ -268,7 +340,7 @@
           "reference": "CarePlan/regimenPlan1"
         },
         "name": "Regimen details",
-        "exampleBoolean": true
+        "exampleCanonical": "http://canshare.com/fhir/StructureDefinition/careplan-regimen"
       },
       {
         "reference": {

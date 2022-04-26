@@ -7,6 +7,8 @@
 const http = require('http')
 const fs = require('fs');
 
+let fhirServer = "http://localhost"
+//let fhirServer = "canshare.clinfhir.com"
 
 let fullFileName = "./fsh-generated/resources/Bundle-an-completeBundle.json";
 
@@ -26,7 +28,7 @@ let json = JSON.stringify(bundle)
 //console.log(json)
 
 const options = {
-    hostname: 'canshare.clinfhir.com',
+    hostname: fhirServer, //'canshare.clinfhir.com',
     port: 9099,
     path: '/baseR4/',
     method: 'POST',

@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cycle-count",
-  "url": "http://actnow.org/StructureDefinition/cycle-count",
+  "id": "prescribed-dose",
+  "url": "http://actnow.org/StructureDefinition/prescribed-dose",
   "version": "0.1.0",
-  "name": "CycleCount",
+  "name": "PrescribedDose",
   "status": "draft",
-  "description": "The number of cycles that administered for a regimen",
+  "description": "The dose of this medication in the regimen (may not be the same as that given",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Observation"
+      "expression": "MedicationAdministration"
     }
   ],
   "type": "Extension",
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The number of cycles that administered for a regimen"
+        "definition": "The dose of this medication in the regimen (may not be the same as that given"
       },
       {
         "id": "Extension.extension",
@@ -50,14 +50,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/cycle-count"
+        "fixedUri": "http://actnow.org/StructureDefinition/prescribed-dose"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "integer"
+            "code": "Dosage"
           }
         ]
       }

@@ -37,7 +37,7 @@
   "valueInteger": 1,
   "extension": [
     {
-      "url": "http://actnow/regimen-discontinued",
+      "url": "http://actnow.org/StructureDefinition/regimen-discontinued",
       "extension": [
         {
           "url": "date",
@@ -64,21 +64,8 @@
       ]
     },
     {
-      "url": "http://actnow/cycle-count",
+      "url": "http://actnow.org/StructureDefinition/cycle-count",
       "valueInteger": 5
-    },
-    {
-      "url": "http://actnow/otu",
-      "extension": [
-        {
-          "url": "benefit",
-          "valueInteger": 1
-        },
-        {
-          "url": "acceptable",
-          "valueInteger": 1
-        }
-      ]
     }
   ]
 }

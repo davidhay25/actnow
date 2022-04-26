@@ -4,6 +4,11 @@
 <table class='table table-bordered table-hover table-sm'>
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
+<td><a href='StructureDefinition-an-condition.html'>an-condition</a></td>
+<td>http://actnow.org/StructureDefinition/an-condition</td>
+<td><p>A diagnosis</p></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-careplan-cycle.html'>careplan-cycle</a></td>
 <td>http://canshare.com/fhir/StructureDefinition/careplan-cycle</td>
 <td><p>A CarePlan that represents a single cycle of treatment.</p></td>

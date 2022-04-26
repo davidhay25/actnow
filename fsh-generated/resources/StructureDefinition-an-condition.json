@@ -1,26 +1,22 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "observation-ecog",
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A CarePlan that represents a single cycle of treatment.</div>"
-  },
+  "id": "an-condition",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
+      "valueString": "Clinical.Summary"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.com/fhir/StructureDefinition/observation-ecog",
+  "url": "http://actnow.org/StructureDefinition/an-condition",
   "version": "0.1.0",
-  "name": "ObservationEcog",
-  "title": "ECOG score",
+  "name": "AnCondition",
+  "title": "ACT-NOW diagnosis",
   "status": "active",
-  "description": "An observation that represents an ecog score",
+  "description": "A diagnosis",
   "jurisdiction": [
     {
       "coding": [
@@ -66,54 +62,54 @@
   ],
   "kind": "resource",
   "abstract": false,
-  "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "89247-1",
-              "system": "http://loinc.org"
+              "type": "value",
+              "path": "url"
             }
-          ]
-        },
-        "mustSupport": true
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
+        "id": "Condition.extension:laterality",
+        "path": "Condition.extension",
+        "sliceName": "laterality",
+        "min": 0,
+        "max": "1",
         "type": [
           {
-            "code": "dateTime"
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"
+            ]
           }
         ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "min": 1,
+        "id": "Condition.extension:assertedDate",
+        "path": "Condition.extension",
+        "sliceName": "assertedDate",
+        "min": 0,
+        "max": "1",
         "type": [
           {
-            "code": "integer"
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
+            ]
           }
-        ],
-        "mustSupport": true
+        ]
       }
     ]
   }
