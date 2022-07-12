@@ -344,6 +344,42 @@
       },
       {
         "reference": {
+          "reference": "Bundle/scen1-bundle-1"
+        },
+        "name": "scen1-bundle-1",
+        "description": "First bundle of scenario 1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/scen1-cycle-plan1-v1"
+        },
+        "name": "First cycle of treatment",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/scen1-cycle-plan1-v2"
+        },
+        "name": "First cycle of treatment",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/scen1-patient"
+        },
+        "name": "Lorrie Lung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/scen1-regimen-plan-v1"
+        },
+        "name": "Regimen details",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/supporting-info"
         },
         "name": "supporting-info",

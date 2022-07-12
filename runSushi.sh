@@ -12,10 +12,10 @@ echo "Add fullUrl to example bundles"
 localscripts/addFullUrlToBundle.js
 
 echo "Creating Profiles and extensions summary pages..."
-../scripts/makeProfilesAndExtensions.js actnow
+../scripts/makeProfilesAndExtensions.js cs-actnow
 
 echo "Making terminology summary"   # will copy into IG input folder
-../scripts/makeTerminologySummary.js actnow
+../scripts/makeTerminologySummary.js cs-actnow
 
 echo
 

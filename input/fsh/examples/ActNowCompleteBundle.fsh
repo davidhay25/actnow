@@ -253,7 +253,7 @@ Instance: cycle2
 InstanceOf: CarePlan
 Title: "Second cycle of treatment"
 Usage: #example
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle1</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle2</div>"
 * text.status = #generated
 
 * title = "Cycle2 Plan "

@@ -1,0 +1,45 @@
+{
+  "resourceType": "CarePlan",
+  "id": "scen1-regimen-plan-v1",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Regimen</div>",
+    "status": "generated"
+  },
+  "title": "Plan for regemen derived from: http://PlanDefinition/lungcancer1",
+  "subject": {
+    "reference": "Patient/scen1-patient"
+  },
+  "status": "active",
+  "intent": "plan",
+  "instantiatesCanonical": [
+    "http://PlanDefinition/lungcancer1"
+  ],
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/NamingSystem/cpRegimen",
+      "value": "scen1-regimen1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "regimenCP",
+          "system": "http://canshare.co.nz"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://actnow.org/StructureDefinition/intent-of-treatment",
+      "valueCodeableConcept": {
+        "text": "palliative"
+      }
+    },
+    {
+      "url": "http://actnow.org/StructureDefinition/clinicalTrial",
+      "valueBoolean": false
+    }
+  ]
+}
