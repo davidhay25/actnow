@@ -2,6 +2,8 @@
 
 The systems is designed as a data aggregator - accepting data from a small number of systems (it is highly specialised) and saving it into a FHIR server as patient specific information.
 
+This guide does not include security in detail.
+
 The overall architecture of the proposed solution is as follows:
 
 <img style="width:800px; float:none" src="architecture.png"/>
@@ -43,9 +45,16 @@ A key premise of the architecture is that validation is applied at data acquisit
 #### Client (query)
 Represents an external client querying the data - such as an MDM meeting. Security is applied by the API manager.
 
-#### Bundle creator
-This is a component that create bundles from CSV files and submit them via the REST interface to the system. This is to support a legacy system that is capable of extracting data to csv, but not too FHIR. Currently there is a javascript application developed as part of the Reference Implementation that can do this that can serve as an example for development. This may not be required, depending on business decisions.
+#### CSV bundle creator
+This is a component that create bundles from CSV files and submit them via the REST interface to the system. This is to support a legacy system that is capable of extracting data to csv, but not to FHIR. 
 
+The component is depicted as being part of the Integration Engine (and so inside the system and doesn't necessarily need to go through the API manager), though it could be elsewhere.
+
+There is a javascript component developed as part of the Reference Implementation that can do this action. It could serve as an example for development. 
+
+The bundle creator may not be required, depending on business decisions.
+
+<!--
 
 ---
 
@@ -64,3 +73,4 @@ overall architecture
     aggregator
     store as fhir resources
     validation - details on a separate page - or in the API
+-->

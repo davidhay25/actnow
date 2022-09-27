@@ -8,13 +8,15 @@ Given that the system needs to perform updates of resources (rather than simply 
 
 One way that this can be done is to use the [resource id](http://hl7.org/fhir/element-definitions.html#Element.id) - an element that all resources possess. However, assigning the id can become complex when multiple systems need to interact with the same resource and the risk of inadvertently altering the wrong resources needs to be carefully considered. 
 
-An alternative approach is to use the [identifier](http://hl7.org/fhir/datatypes.html#Identifier) element - which most resources (including the ones needed by this Guide) support.
+An alternative approach is to use the identifier element - which most resources (including the ones needed by this Guide) support. In all cases where a resource type has an identifier element there can be multiple ones.
 
 An identifier is an alternate way of identifying a resource. Unlike the resource id, the value of the identifier does not change if the resource is moved between servers (it is considered a business identifier rather than a structural/logical one which is the id).
 
-The identifier is a complex datatype and has 2 child elements - system and value.
+Note that the identifier element has a datatype of [identifier](http://hl7.org/fhir/datatypes.html#Identifier) as well 
 
-The system element describes the domain within which the value is unique. Existing examples are medical record numbers, passport numbers and driving license.
+The identifier datatype is a complex datatype and has number of child elements, of which 2 are the most useful - system and value.
+
+The *identifier.system* element describes the domain within which the *identifier.value* is unique. Existing examples are medical record numbers, passport numbers and driving license.
 
 Each potential supplier of information will be assigned a system value (which is a url). Alternatively, if the supplier has one which is not being used by any other supplier then that could be used.
 
@@ -29,8 +31,9 @@ The Bundle is a FHIR resource that contains resources within Entry elements. Eac
 To support the need to update based on the resource identifier, [conditional updates](http://hl7.org/fhir/http.html#cond-update) are required for all resources in the bundle. 
 
 In a conditional update (sometimes called an 'upsert'), the entry contains a number of specific elements:
+* the entry.fullUrl must be populated. In this guide it will be the string "urn:uuid:" followed by the resource.id (as all ids are UUIDs). 
 * the entry.resource element contains the actual resource. It may or may not have an id, but must have an identifier.
-* the entry.request element has 2 children:
+* the entry.request element has 2 children that need to be populated:
     * entry.request.method - this is set to 'PUT'
     * entry.request.url - this is set to a query that would identify the resource (if it exists on the target server). Commonly (and in this guide) it is based on the identifier. 
         * If there is no resource matching this query, then one is created on the server. 
@@ -40,13 +43,15 @@ In a conditional update (sometimes called an 'upsert'), the entry contains a num
 Here's an example of a CarePlan with an identifier with a system value of http://example.org and a value of abc1234 being created or updated. :
 
 ```
+  entry: [
     {
-	Resource : {....},
-	Request: {
-		method:PUT,
-		url: CarePlan?identifier=http://example.org|abc1234
-		}
+      resource : {....},
+      request: {
+        method:PUT,
+        url: CarePlan?identifier=http://example.org|abc1234
+      }
     }
+  ]
 
 ```
 
@@ -61,7 +66,7 @@ The [uuid](http://hl7.org/fhir/datatypes.html#uuid)(Universally Unique ID) is us
 
 The server will locate an existing resource based on the identifier or create a new one if none exist as described above. The server will then update the references between resources to use that id internally,
 
-Here's an example of resources and resource references in a sample bundle. Note the presence of the 'fullUrl' element in the bundle which must be present.
+Here's an example of resources and resource references in a sample bundle. Note the presence of the 'fullUrl' element in the bundle which must be present (it matches the id).
 
 ```
 {
@@ -124,13 +129,15 @@ Even if the resource already exists in the server, it should still be present in
 
 
 ### Process to create the bundle
-There are a number of strategies for the client to create the bundle, depending on their internal capabilities. At the least, it must maintain unique identifiers for each resource within its database. These may or may not be in the FHIR format as long as they are unique within the clients system, at least within the resource type. 
+There are a number of strategies for the client to create the bundle, depending on their internal capabilities. At the least, it must maintain unique identifiers for each resource within its database. These may or may not be in the FHIR format as long as they are unique within the clients system, at least within the resource type (so the combination of identifier.system & identifier.value is unique). 
 
 Data can be sent either as new/updates only (incremental) or all data for a patient. The approach taken will depend on whether the client can track internally resources that have been submitted (incremental update) or whether it must send a complete dump of all the data for a patient if there are any changes to that patients data. 
 
 The incremental approach will result in smaller bundles (as only changed resources and resources they reference need to be sent) and will allow allow the server to track changes to resources over time (eg a changing CarePlan status). However, this does add to the complexity of the solution. 
 
-This section will assume that when a patient changes, all data needs to be sent (or re-sent) to the server. It is suggested that there should be a single bundle per patient as this will keep the bundle size as small as possible. It also means that if there is a validation error, then only that patient will need to be re-sent.
+#### Complete patient refresh
+
+If the sender cannot track which resources have been sent to the system, then when any patient data changes, all data needs to be sent (or re-sent) to the server. It is suggested that there should be a single bundle per patient as this will keep the bundle size as small as possible. It also means that if there is a validation error, then only that patient will need to be re-sent.
 
 Here's an example high level flow.
 
@@ -154,21 +161,18 @@ For each patient that has had an update (new or changed data) since the last tim
     * for each medication that has been administered or prescribed to a patient as part of the cycle of treatment:
         * Create a MedicationAdministration or MedicationRequest resource, with a 'supportingInformation' reference to the cycle carePlan
 
+#### Incremental updates
+In this scenario, the client is able to track which resources have (successfully) been sent to the system and can create bundles that only contain updated or new resources.
 
-#### Reminders and notes:
-* all resources have an identifier and UUID as the ID.
-* all references use the UUID
-* all resources are represented as conditional updates in the bundle.
-* all resources will have a reference to the patient
-* as resources are created, they can be added to the bundle in an entry with the conditional update url set
+The flow is pretty much the same as for the complete patient refresh except that only new or updated resources are included in the bundle. (plus any other resources which they reference - like Patient) 
+
+#### Things to remember
+* All resources have an identifier and UUID as the ID.
+* All references use the UUID
+* All resources are represented as conditional updates in the bundle.
+* All resources will have a reference to the patient
+* Any resources that are the target of a reference much be included in the bundle, even if they have already been sent to the system and haven't changed since then
+* As resources are created, they can be added to the bundle in an entry with the conditional update url set
 * Use the 'validate' endpoint supplied by the Reference Implementation during the design phase.
-
-
-
->>> todo - add mosaic updater to architecture 
-
-Assumptions
-* The client 
-
 
 

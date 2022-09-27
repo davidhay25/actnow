@@ -6,7 +6,7 @@ This Guide describes how this data is represented as FHIR resources, and collect
 
 As such it describes an actual system, rather than a definition of how interoperability works in a particular domain.
 
-The intention is that it will inform the choice of architectural components needed for a production grade deployment.
+The intention is that it will inform the choice of architectural components needed for a production grade deployment, as well as the requirements for vendors supplying data to the system.
 
 There are a number of sections to the Guide, represented as tabs at the top of the guide.
 

@@ -1,7 +1,7 @@
 
 To support the development of the Guide, a Reference Implementation (RI) has been created that can store resources in the defined format in a standard FHIR server, and then render them in an 'example' user Interface through the [query API](api-query.html).
 
-Populated with real (but de-personalized) data, it shows the resources - and the references between those resources - in a graphical manner, to assist with indersatnding the details of the guide.
+Populated with real (but de-personalized) data, it shows the resources - and the references between those resources - in a graphical manner, to assist with understanding the details of the guide.
 
 The RI exposes both a User Interface and API (validation and Submission).
 
@@ -15,32 +15,26 @@ As there is only a small number of patients in the application, they are display
 Patient selection by identifier will be added.
 
 #### Resource graph
-
 The graph tab shows the resources from the selected patient displayed as a graph with boxes representing the resource instances and lines between them representing the references. Clicking on any of the resource instances will display the json view of the resource in the right hand pane.
 
 <img style="width:800px; float:none" src="angraph.png"/>
 
 #### Timeline view
+This presents the medications along a timeline of administration date. Selecting an administration (the square box in the timeline) will display the resource to the right.
 
+<img style="width:800px; float:none" src="timeline.png"/>
 
 #### Cycles view
 Displays the cycles of treatment in a tabluar format. Both CarePlan and MedicationAdministration / MedicationRequest can be displayed.
 
+<img style="width:800px; float:none" src="cycles.png"/>
 
- as described
-
-view RI - purpose, links
-
-testing input app
-
-
-Medciations timeline
 
 
 ### Validation endpoint
 To assist with development, the RI exposes a validation endpoint that accepts a bundle, and performs validation without saving the data in the server.
 
 ### Submission endpoint
-An endpoint that receives a bundle and saves the data in the server (assuming that is passes validation). Once successfully saved, the patient can be retrieved in the User Interface, and the resources and references examined.
+An endpoint that receives a bundle and saves the data in the server (assuming that it passes validation). Once successfully saved, the patient can be retrieved in the User Interface, and the resources and references examined.
 
 
