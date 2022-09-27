@@ -1,9 +1,0 @@
-{
-  "resourceType": "CareTeam",
-  "id": "an-careteam",
-  "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Auckland Oncology</div>",
-    "status": "generated"
-  },
-  "name": "Auckland Oncology"
-}

@@ -4,7 +4,7 @@ Id:             observation-ecog
 Title:          "ECOG score"
 Description:    "An observation that represents an ecog score"
 
-* ^url = "http://canshare.com/fhir/StructureDefinition/observation-ecog"
+* ^url = $ecog
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
@@ -17,7 +17,7 @@ Description:    "An observation that represents an ecog score"
 * code 1..1 MS
 
 //fix the code value
-* code = $loinc#89247-1
+* code = $snomed#423740007 "ECOG performance status"
 
 * effective[x] only dateTime
 

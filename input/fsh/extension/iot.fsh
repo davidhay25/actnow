@@ -1,6 +1,7 @@
 Extension: IOT
 Id: iot
 Description: "Intent of treatment"
+
 * ^url = $iot
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 

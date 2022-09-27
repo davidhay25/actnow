@@ -85,7 +85,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://actnow.org/StructureDefinition/intent-of-treatment"
+              "http://canshare.co.nz/fhir/StructureDefinition/intent-of-treatment"
             ]
           }
         ]
@@ -100,7 +100,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://actnow.org/StructureDefinition/clinicalTrial"
+              "http://canshare.co.nz/fhir/StructureDefinition/clinicalTrial"
             ]
           }
         ]

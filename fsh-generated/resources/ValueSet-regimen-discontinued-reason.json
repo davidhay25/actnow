@@ -6,11 +6,11 @@
   "title": "The reason why a regimen was discontinued",
   "description": "The reason why a regimen was discontinued",
   "version": "0.1.0",
-  "url": "http://actnow.org/ValueSet/regimen-discontinued-reason-vs",
+  "url": "http://canshare.co.nz/fhir/ValueSet/regimen-discontinued-reason-vs",
   "compose": {
     "include": [
       {
-        "system": "http://actnow.org/ValueSet/regimen-discontinued-reason-vs"
+        "system": "http://canshare.co.nz/fhir/CodeSystem/regimen-discontinued-reason-vs"
       }
     ]
   }

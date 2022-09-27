@@ -15,7 +15,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.com/fhir/StructureDefinition/observation-ecog",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-ecog",
   "version": "0.1.0",
   "name": "ObservationEcog",
   "title": "ECOG score",
@@ -82,8 +82,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "89247-1",
-              "system": "http://loinc.org"
+              "code": "423740007",
+              "system": "http://snomed.info/sct",
+              "display": "ECOG performance status"
             }
           ]
         },

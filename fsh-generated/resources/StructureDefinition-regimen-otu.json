@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "regimen-otu",
-  "url": "http://actnow.org/StructureDefinition/regimen-otu",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/regimen-otu",
   "version": "0.1.0",
   "name": "RegimenOTU",
   "status": "draft",
@@ -101,7 +101,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/regimen-otu"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/regimen-otu"
       },
       {
         "id": "Extension.value[x]",

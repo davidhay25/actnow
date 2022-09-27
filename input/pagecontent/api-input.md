@@ -4,7 +4,7 @@ This section describes how data is sent from client applications to the system.
 
 ### Resource identifier
 
-Given that the system needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
+Given that the system potentially needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
 
 One way that this can be done is to use the [resource id](http://hl7.org/fhir/element-definitions.html#Element.id) - an element that all resources possess. However, assigning the id can become complex when multiple systems need to interact with the same resource and the risk of inadvertently altering the wrong resources needs to be carefully considered. 
 

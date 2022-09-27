@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.com/fhir/StructureDefinition/observation-regimen-outcome",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-regimen-outcome",
   "version": "0.1.0",
   "name": "ObservationRegimenOutcome",
   "title": "Regimen outcome",
@@ -92,7 +92,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://actnow.org/StructureDefinition/cycle-count"
+              "http://canshare.co.nz/fhir/StructureDefinition/cycle-count"
             ]
           }
         ],
@@ -109,7 +109,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://actnow.org/StructureDefinition/regimen-discontinued"
+              "http://canshare.co.nz/fhir/StructureDefinition/regimen-discontinued"
             ]
           }
         ],
@@ -126,7 +126,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://actnow.org/StructureDefinition/regimen-otu"
+              "http://canshare.co.nz/fhir/StructureDefinition/regimen-otu"
             ]
           }
         ],
@@ -154,7 +154,7 @@
           "coding": [
             {
               "code": "regimenoutcome",
-              "system": "http://actnow.org/"
+              "system": "http://canshare.co.nz/fhir/"
             }
           ]
         }

@@ -7,7 +7,7 @@
   "title": "Patient factors when discontinuing a regimen",
   "description": "Patient factors when discontinuing a regimen",
   "version": "0.1.0",
-  "url": "http://actnow.org/CodeSystem/regimen-discontinued-patient-factors-cs",
+  "url": "http://canshare.co.nz/fhir/CodeSystem/regimen-discontinued-patient-factors-cs",
   "concept": [
     {
       "code": "cost",

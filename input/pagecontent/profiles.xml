@@ -30,12 +30,12 @@
 </tr>
 <tr>
 <td><a href='StructureDefinition-observation-ecog.html'>observation-ecog</a></td>
-<td>http://canshare.com/fhir/StructureDefinition/observation-ecog</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/observation-ecog</td>
 <td><p>An observation that represents an ecog score</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-observation-regimen-outcome.html'>observation-regimen-outcome</a></td>
-<td>http://canshare.com/fhir/StructureDefinition/observation-regimen-outcome</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/observation-regimen-outcome</td>
 <td><p>An observation that represents the outcome of a regimen CarePlan that is closed</p></td>
 </tr>
 </table>

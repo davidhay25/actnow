@@ -8,8 +8,8 @@ then
 #echo "Create the mapping file for ActNowReview"
 #localscripts/makeLMMapping.js ActNowReview
 
-echo "Add fullUrl to example bundles"
-localscripts/addFullUrlToBundle.js
+# echo "Add fullUrl to example bundles"
+# localscripts/addFullUrlToBundle.js
 
 echo "Creating Profiles and extensions summary pages..."
 ../scripts/makeProfilesAndExtensions.js cs-actnow

@@ -13,13 +13,13 @@ There are a number of sections to the Guide, represented as tabs at the top of t
 * The [Overview](overview.html) describes how the clinical information is represented as FHIR resources
 * The [Architecture](architecture.html) section describes the high level architectire of the proposed solution. This is intended to provide the requirements for the implementers of the system. and may be adapted as the project progresses. However, it will remain a high level description - the implementation details will not be repreented in this guide.
 * The API section has 2 sub sections.
-    * The [Input API](api-input) describes how data is sent from the client to the server via the RESTful API
-    * The [Query API](api-query) describes what queries the system needs to support.
+    * The [Input API](api-input.html) describes how data is sent from the client to the server via the RESTful API
+    * The [Query API](api-query.html) describes what queries the system needs to support.
 * [Examples](examples.html) contains a list of example resources
 * [Extensions](extensions.html) is a summary of extensions
 * [Profiles](profiles.html) lists the profiles defined here
-* [Terminology](terminology) contains ValueSets needed by the profiles & extensions 
-* The [Reference Implementation](reference-implementation) describes applications that have been created to assist with development and demonstrate the kinds of interface that could be built with the ACT-NOW data
+* [Terminology](terminology.html) contains ValueSets needed by the profiles & extensions 
+* The [Reference Implementation](reference-implementation.html) describes applications that have been created to assist with development and demonstrate the kinds of interface that could be built with the ACT-NOW data
 * And finally the Support tab allows downloading of this guide and all the artifacts defined as computable resources in a number of formats, as well as a link to the main [FHIR specification](http://hl7.org/fhir/index.html).
 
 

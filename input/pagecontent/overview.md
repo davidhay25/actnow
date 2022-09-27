@@ -23,6 +23,7 @@ The following diagram shows an example of a small set of data for a patient. Not
 <img style="width:800px; float:none" src="graphOverview.png"/>
 
 
+<!--
 ----
 
 Note that this image shows only the key resources - most will have a reference to Patient and Practitioner, at least.
@@ -60,3 +61,5 @@ Overall pattern if being used in real time.
 If the data is not being entered in real time - ie a summary after the event -, then the submitting system creates a bundle of resources following this pattern and saves them on the canshare server.
 
 Could get more complex if there are regular updates over a period of time for long running treatment. Each new ‘batch’ would need to refer to existing resources. Might need to define when a new batch is sent - perhaps when a cycle or regimen is completed. 
+
+-->

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "regimen-discontinued",
-  "url": "http://actnow.org/StructureDefinition/regimen-discontinued",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/regimen-discontinued",
   "version": "0.1.0",
   "name": "RegimenDiscontinued",
   "status": "draft",
@@ -115,7 +115,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://actnow.org/ValueSet/regimen-discontinued-reason-vs"
+          "valueSet": "http://canshare.co.nz/fhir/ValueSet/regimen-discontinued-reason-vs"
         }
       },
       {
@@ -163,7 +163,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://actnow.org/ValueSet/regimen-discontinued-patient-factors-vs"
+          "valueSet": "http://canshare.co.nz/fhir/ValueSet/regimen-discontinued-patient-factors-vs"
         }
       },
       {
@@ -211,13 +211,13 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://actnow.org/ValueSet/regimen-discontinued-toxicity-vs"
+          "valueSet": "http://canshare.co.nz/fhir/ValueSet/regimen-discontinued-toxicity-vs"
         }
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/regimen-discontinued"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/regimen-discontinued"
       },
       {
         "id": "Extension.value[x]",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "based-on",
-  "url": "http://actnow.org/StructureDefinition/based-on",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/based-on",
   "version": "0.1.0",
   "name": "BasedOn",
   "status": "draft",
@@ -50,7 +50,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/based-on"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/based-on"
       },
       {
         "id": "Extension.value[x]",

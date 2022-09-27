@@ -6,12 +6,11 @@ Id:             observation-regimen-outcome
 Title:          "Regimen outcome"
 Description:    "An observation that represents the outcome of a regimen CarePlan that is closed"
 
-* ^url = "http://canshare.com/fhir/StructureDefinition/observation-regimen-outcome"
+* ^url = $regimen-outcome
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 //required and must support
 * subject 1..1 MS
-
 
 //extensions
 * extension contains

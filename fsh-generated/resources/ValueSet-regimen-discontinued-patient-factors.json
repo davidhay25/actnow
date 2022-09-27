@@ -6,11 +6,11 @@
   "title": "Patient factors when discontinuing a regimen",
   "description": "Patient factors when discontinuing a regimen",
   "version": "0.1.0",
-  "url": "http://actnow.org/ValueSet/regimen-discontinued-patient-factors-vs",
+  "url": "http://canshare.co.nz/fhir/ValueSet/regimen-discontinued-patient-factors-vs",
   "compose": {
     "include": [
       {
-        "system": "http://actnow.org/CodeSystem/regimen-discontinued-patient-factors-cs"
+        "system": "http://canshare.co.nz/fhir/CodeSystem/regimen-discontinued-patient-factors-cs"
       }
     ]
   }

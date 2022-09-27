@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "adjustment-reason",
-  "url": "http://actnow.org/StructureDefinition/adjustment-reason",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/adjustment-reason",
   "version": "0.1.0",
   "name": "AdjustmentReason",
   "status": "draft",
@@ -50,7 +50,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/adjustment-reason"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/adjustment-reason"
       },
       {
         "id": "Extension.value[x]",

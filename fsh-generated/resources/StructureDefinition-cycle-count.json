@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cycle-count",
-  "url": "http://actnow.org/StructureDefinition/cycle-count",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/cycle-count",
   "version": "0.1.0",
   "name": "CycleCount",
   "status": "draft",
@@ -50,7 +50,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://actnow.org/StructureDefinition/cycle-count"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/cycle-count"
       },
       {
         "id": "Extension.value[x]",

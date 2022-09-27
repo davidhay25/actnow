@@ -86,7 +86,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://actnow.org/StructureDefinition/cycle-number"
+              "http://canshare.co.nz/fhir/StructureDefinition/cycle-number"
             ]
           }
         ]

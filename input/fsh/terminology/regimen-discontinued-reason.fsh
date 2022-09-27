@@ -4,7 +4,7 @@ Title: "The reason why a regimen was discontinued"
 Description:  "The reason why a regimen was discontinued"
 
 * ^url = $regimen-discontinued-reason-vs
-* codes from system $regimen-discontinued-reason-vs
+* codes from system $regimen-discontinued-reason-cs
 
 
 CodeSystem:  RegimenDiscontinuedReason
