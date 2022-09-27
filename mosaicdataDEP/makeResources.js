@@ -6,7 +6,8 @@
 
 //todo
 // when processing a medication lookup the code from a terminology service (or other). Cache for performance.
-
+// Have an array of observation codes. when processing an observation (with a known key) can look up the code
+// check for observations that are the same (code, date. value) and only create a single one
 
 
 const fs = require('fs');
@@ -35,14 +36,14 @@ loadAllData(false)      //load all the data into hashs, ignoring those with a mi
 
 
 async function insert() {
-    //await insertDataOneRegimen("4121-48770")
+    await insertDataOneRegimen("4121-48770")
     //await insertDataOneRegimen("4121-124154")
     //await insertDataOneRegimen("4121-111315")
 
     let keys = Object.keys(hashRegimen)
 
     //first entry are the headers
-    for (let i=1; i < 10; i++) {
+    for (let i=1; i < 20; i++) {
         console.log(keys[i])
         await insertDataOneRegimen(keys[i])
     }
@@ -162,7 +163,8 @@ function makeRegimenCP(vo,patient) {
     condition.id = ar[0]        //todo currently the same as the Regimen careplan
 
     condition.subject = {reference:"Patient/"+patient.id}
-    condition.code = {text:ar[12]}
+    condition.code = {coding:[{system:"http://hl7.org/fhir/sid/icd-9-cm",code:[ar[11]]}],text:ar[12]}
+
 
     arResources.push(condition)
 
@@ -177,6 +179,47 @@ function makeRegimenCP(vo,patient) {
 
     //now add the Other Observations
 
+    //an array for the observations from a regimen. the number is the position in the csv
+    let hashCPObservations = []
+    hashCPObservations[25] = {key:'ER',code:"ER"}
+    hashCPObservations[26] = {key:'PR',code:"PR"}
+    hashCPObservations[27] = {key:'HER2',code:"HER2"}
+    hashCPObservations[28] = {key:'Gleason_primary',code:"ER"}
+    hashCPObservations[29] = {key:'Gleason_secondary',code:"Gleason_secondary"}
+    hashCPObservations[30] = {key:'Gleason_tertiary',code:"Gleason_tertiary"}
+    hashCPObservations[31] = {key:'BSA',code:"BSA"}
+
+
+    
+
+    for (var i = 25; i<32; i++) {
+        let obsValue = ar[i]              //this is the key that cam through in the extract. todo Will convert to a real code
+       console.log(obsValue)
+        if (obsValue && obsValue !== 'NULL') {
+            let obsKey = hashCPObservations[i]  //{key,code}
+            console.log('adding',obsKey)
+            let ObsId = cp.id + obsKey.key + i
+
+            let obs = {resourceType:"Observation",id:ObsId,status:"final"}
+            obs.subject = {reference:"Patient/"+patient.id}
+            obs.code = {text:obsKey.code,coding:[{system:'http://canshare.co.nz/dummy',code:obsKey.code}]}
+            obs.valueString = obsValue
+            obs.effectiveDateTime = cp.period.start         //todo assume the date is the start of the regimesn
+
+          
+
+            //todo reference from CP -> OBs (which is correct when the observation is made when the regimen comences)
+            cp.supportingInfo = cp.supportingInfo || []
+            cp.supportingInfo.push({reference:"Observation/"+ obs.id})
+
+
+            arResources.push(obs)
+           
+
+           
+
+        } 
+    }
 
     //now, add all the cycles (and related resources like MedicationAdministrations & Observations)...
     vo.cycles.forEach(function(cycleId){
@@ -298,13 +341,12 @@ function makeMedAdmin(ar,patient,cp) {
     return arResources
 }
 
-//create a set of TNM stare observations compliant with mCode (https://hl7.org/fhir/us/mcode/index.html)
+//create a set of TNM stage observations compliant with mCode (https://hl7.org/fhir/us/mcode/index.html)
 //uses the clincial codes
 function makeTNMStaging(patient,regimen,type,t,n,m,stage) {
     //create an id based on regimenId and type of obe (only 1 per regimen ATM)
 
-
-    let stageObs = makeObservation(regimen.id+'tnm-stage', patient,"21908-9",stage)
+    let stageObs = makeObservation(regimen.id+'tnm-stage', patient,"21908-9",stage,"TNM group")
     let tObs = makeObservation(regimen.id+'tnm-t',patient,"21905-5",t)
     let nObs = makeObservation(regimen.id+'tnm-n',patient,"21906-3",n)
     let mObs = makeObservation(regimen.id+'tnm-m',patient,"21907-3",m)
@@ -319,11 +361,16 @@ function makeTNMStaging(patient,regimen,type,t,n,m,stage) {
 
 }
 
-function makeObservation(id,patient,loincCode,value){
+function makeObservation(id,patient,loincCode,value,display){
     let obs = {resourceType:"Observation",id:id,status:"final"}
     obs.subject = {reference:"Patient/"+patient.id}
     obs.code = {coding:[{system:'http://loinc.org',code:loincCode}]}
+    if (display) {
+        obs.code.text = display
+    }
+
     obs.valueCodeableConcept = {coding:[{system:' http://cancerstaging.org',code:value}]}
+
     return obs
    
 

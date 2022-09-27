@@ -1,25 +1,25 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "actnow.clinfhir.com",
-  "url": "http://example.org/ImplementationGuide/actnow.clinfhir.com",
+  "id": "actnow.canshare.co.nz",
+  "url": "http://actnow.canshare.co.nz/ImplementationGuide/actnow.canshare.co.nz",
   "version": "0.1.0",
   "name": "actnow",
   "title": "ACT-NOW Implementation Guide",
   "status": "draft",
-  "publisher": "David Hay",
+  "publisher": "Te aho o te kahu - Cancer Control Agency",
   "contact": [
     {
-      "name": "David Hay",
+      "name": "Te aho o te kahu - Cancer Control Agency",
       "telecom": [
         {
-          "system": "url",
-          "value": "http://example.org/example-publisher"
+          "system": "email",
+          "value": "david.hay25@gmail.com"
         }
       ]
     }
   ],
   "description": "FHIR support for the New Zealand ACT-NOW standard",
-  "packageId": "actnow.clinfhir.com",
+  "packageId": "actnow.canshare.co.nz",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -43,7 +43,23 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/careplan-cycle"
+          "reference": "StructureDefinition/an-medicationadministration"
+        },
+        "name": "ACT-NOW medication administration",
+        "description": "ACT-NOW medication administration",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-patient"
+        },
+        "name": "ACT-NOW patient",
+        "description": "ACT-NOW patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-careplan-cycle"
         },
         "name": "Cycle Careplan",
         "description": "A CarePlan that represents a single cycle of treatment.",
@@ -51,7 +67,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/careplan-regimen"
+          "reference": "StructureDefinition/an-careplan-regimen"
         },
         "name": "Regimen Careplan",
         "description": "A CarePlan that represents a PlanDefinition being applied to a Patient.",
@@ -340,7 +356,7 @@
           "reference": "CarePlan/regimenPlan1"
         },
         "name": "Regimen details",
-        "exampleCanonical": "http://canshare.com/fhir/StructureDefinition/careplan-regimen"
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/actnow-careplan-regimen"
       },
       {
         "reference": {
@@ -398,6 +414,26 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "api-input.html",
+          "title": "Api Input",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "api-query.html",
+          "title": "Api Query",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "architecture.html",
+          "title": "Architecture",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
@@ -411,6 +447,11 @@
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "html"
+        },
+        {
+          "nameUrl": "reference-implementation.html",
+          "title": "Reference Implementation",
+          "generation": "markdown"
         },
         {
           "nameUrl": "terminology.html",

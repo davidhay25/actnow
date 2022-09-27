@@ -111,6 +111,8 @@ Usage: #example
 * title = "Plan for regemen derived from: http://PlanDefinition/lungcancer1"
 * subject = Reference(an-patient)
 * author = Reference(an-practitioner)
+* identifier.system = "http://unknown.com"
+* identifier.value = "test"
 * status = #active
 * intent = #plan
 * instantiatesCanonical = "http://PlanDefinition/lungcancer1"

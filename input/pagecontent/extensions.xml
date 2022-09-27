@@ -1,9 +1,6 @@
 <div xmlns='http://www.w3.org/1999/xhtml'>
-<a name="internalExtensions"> </a>
-<br/><h3>Extensions defined in this guide</h3><br/><br/>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
-<th>Status</th>
+<tr><th>Id</th><th>Canonical url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 </tr>
 <tr>
 <td><a href='StructureDefinition-adjustment-reason.html'>adjustment-reason</a></td>
@@ -13,7 +10,6 @@
 </td>
 <td><p>The reason why the dose given was not the same as that in the regimen</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-based-on.html'>based-on</a></td>
@@ -23,7 +19,6 @@
 </td>
 <td><p>Allows a MedicationAdministration to refer to a CarePlan</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-clinical-trial.html'>clinical-trial</a></td>
@@ -33,7 +28,6 @@
 </td>
 <td><p>Is on a clinical trial</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-cycle-count.html'>cycle-count</a></td>
@@ -43,7 +37,6 @@
 </td>
 <td><p>The number of cycles that administered for a regimen</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-cycle-day.html'>cycle-day</a></td>
@@ -53,7 +46,6 @@
 </td>
 <td><p>The day of the cycle that this medication was given on</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-cycle-number.html'>cycle-number</a></td>
@@ -63,7 +55,6 @@
 </td>
 <td><p>The cycle number of the regimen that this CP represents</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-iot.html'>iot</a></td>
@@ -73,7 +64,6 @@
 </td>
 <td><p>Intent of treatment</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-prescribed-dose.html'>prescribed-dose</a></td>
@@ -83,7 +73,6 @@
 </td>
 <td><p>The dose of this medication in the regimen (may not be the same as that given</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-regimen-discontinued.html'>regimen-discontinued</a></td>
@@ -93,7 +82,6 @@
 </td>
 <td><p>Reasons why a regimen may have been discontinued</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-regimen-otu.html'>regimen-otu</a></td>
@@ -103,22 +91,6 @@
 </td>
 <td><p>Reasons why a regimen may have been discontinued</p></td>
 <td></td>
-<td>draft</td>
-</tr>
-</table>
-<a name="externalExtensions"> </a>
-<h3>Extensions used but defined elsewhere</h3>
-<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
-<tr>
-<td>Condition.extension</td>
-<td>http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Condition.extension</td>
-<td>http://hl7.org/fhir/StructureDefinition/condition-assertedDate</td>
-<td>Defined outside of known IG's</td>
 </tr>
 </table>
 </div>

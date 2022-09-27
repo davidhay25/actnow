@@ -1,10 +1,10 @@
 Profile:        CareplanCycle
 Parent:         CarePlan
-Id:             careplan-cycle
+Id:             an-careplan-cycle
 Title:          "Cycle Careplan"
 Description:    "A CarePlan that represents a single cycle of treatment."
 
-* ^url = "http://canshare.com/fhir/StructureDefinition/careplan-cycle"
+* ^url = $profCarePlan-cycle
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
@@ -18,6 +18,8 @@ Description:    "A CarePlan that represents a single cycle of treatment."
 //Must have a reference to the regimen plan
 * partOf 1..1 
 
+* identifier 1..*
+
 //slicing on category
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "category.code"
@@ -29,5 +31,5 @@ Description:    "A CarePlan that represents a single cycle of treatment."
 
 * category[cyclecode] ^short = "Cycle level carePlan"
 * category[cyclecode] ^definition = "Code identifiying this carePlan as being at the cycle level"
-* category[cyclecode].coding = http://canshare.com#cycleCP
+* category[cyclecode].coding = http://unknown.com#cycleCP
 

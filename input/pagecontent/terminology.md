@@ -11,8 +11,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Canonical url</th></tr>
-<tr><td width='20%'>Patient factors when discontinuing a regimen</td><td><p>Patient factors when discontinuing a regimen</p></td><td><a href='ValueSet-regimen-discontinued-patient-factors.html'>http://actnow.org/ValueSet/regimen-discontinued-patient-factors-vs</a></td></tr>
-<tr><td width='20%'>The reason why a regimen was discontinued</td><td><p>The reason why a regimen was discontinued</p></td><td><a href='ValueSet-regimen-discontinued-reason.html'>http://actnow.org/ValueSet/regimen-discontinued-reason-vs</a></td></tr>
+<tr><td width='20%'><a href='ValueSet-regimen-discontinued-patient-factors.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://actnow.org/ValueSet/regimen-discontinued-patient-factors-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-regimen-discontinued-reason.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://actnow.org/ValueSet/regimen-discontinued-reason-vs</td></tr>
 </table>
 <br/><br/>
 ### CodeSystems
@@ -25,6 +25,6 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>CodeSystem</th><th>Purpose</th><th>Canonical Url</th></tr>
-<tr><td width='20%'>Patient factors when discontinuing a regimen</td><td><p>Patient factors when discontinuing a regimen</p></td><td><a href='CodeSystem-regimen-discontinued-patient-factors.html'>http://actnow.org/CodeSystem/regimen-discontinued-patient-factors-cs</a></td></tr>
-<tr><td width='20%'>The reason why a regimen was discontinued</td><td><p>The reason why a regimen was discontinued</p></td><td><a href='CodeSystem-regimen-discontinued-reason.html'>http://actnow.org/CodeSystem/regimen-discontinued-reason-vs</a></td></tr>
+<tr><td width='20%'><a href='CodeSystem-regimen-discontinued-patient-factors.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://actnow.org/CodeSystem/regimen-discontinued-patient-factors-cs</td></tr>
+<tr><td width='20%'><a href='CodeSystem-regimen-discontinued-reason.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://actnow.org/CodeSystem/regimen-discontinued-reason-vs</td></tr>
 </table>

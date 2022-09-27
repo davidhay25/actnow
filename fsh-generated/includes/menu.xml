@@ -17,6 +17,25 @@
     <a href="overview.html">Overview</a>
   </li>
   <li>
+    <a href="architecture.html">Architecture</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="api-input.html">Input API</a>
+      </li>
+      <li>
+        <a href="api-query.html">Query API</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
     <a href="extensions.html">Extensions</a>
   </li>
   <li>
@@ -27,5 +46,27 @@
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="reference-implementation.html">Reference Implementation</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
+      </li>
+    </ul>
   </li>
 </ul>

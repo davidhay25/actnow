@@ -1,0 +1,606 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4121-73104",
+        "name": [
+          {
+            "text": "John Doe - 4121-73104"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe - 4121-73104</div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/4121-73104",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4121-73104"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-73104",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Regimen plan</div>"
+        },
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"1\",\"Curative\",\"AALL1131 Interim Maintenance 1 with High Dose Methotrexate\",\"AALL1131HDMTX\",\"11/12/17\",\"8/04/18\",\"Y\",\"1\",\"27/12/2017\",\"NULL\",\"C910  \",\"Acute lymphoblastic leukaemia                                                   \",\"NULL\",\"98353\",\"NULL\",\"1\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"\",\"2017\",\"12\"]"
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Curative"
+            }
+          }
+        ],
+        "title": "AALL1131HDMTX",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "regimen"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2017-12-11",
+          "end": "2018-04-08"
+        },
+        "addresses": {
+          "reference": "Condition/4121-73104"
+        },
+        "supportingInfo": [
+          {
+            "reference": "Observation/4121-73104tnm-stage"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-73104",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-73104"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4121-73104",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "code": [
+                "C910  "
+              ]
+            }
+          ],
+          "text": "Acute lymphoblastic leukaemia                                                   "
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/4121-73104",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/4121-73104"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-73104tnm-stage",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21908-9"
+            }
+          ],
+          "text": "TNM group"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/4121-73104tnm-t"
+          },
+          {
+            "reference": "Observation/4121-73104tnm-n"
+          },
+          {
+            "reference": "Observation/4121-73104tnm-m"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-73104tnm-stage",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-73104tnm-stage"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-73104tnm-t",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21905-5"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-73104tnm-t",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-73104tnm-t"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-73104tnm-n",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21906-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-73104tnm-n",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-73104tnm-n"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-73104tnm-m",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21907-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-73104tnm-m",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-73104tnm-m"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-73104-73104",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"4121-73104-73104\",\"1\",\"63\",\"11/12/17\",\"12/02/18\",\"19/12/17\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-73104"
+          }
+        ],
+        "period": {
+          "start": "2017-12-11",
+          "end": "2018-02-12"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-73104-73104",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-73104-73104"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "bb2c0847f653349b9a0bdf4b2d9b120b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"1\",\"4121-73104-73104\",\"1\",\"1\",\"Methotrexate \",\"920.00 mg                            \",\"920.00 mg                            \",\"IV                            \",\"18/12/17 17:00\",\"18/12/17 17:40\",\"40\",\"30\",\"NULL\",\"NULL\",\"NULL\",\"1.84\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "bb2c0847f653349b9a0bdf4b2d9b120b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-73104-73104"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "920.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-18T17:00:00Z",
+          "end": "2017-12-18T17:40:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/bb2c0847f653349b9a0bdf4b2d9b120b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/bb2c0847f653349b9a0bdf4b2d9b120b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bb2c0847f653349b9a0bdf4b2d9b120b-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/bb2c0847f653349b9a0bdf4b2d9b120b"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.84",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-12-18T17:00:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/bb2c0847f653349b9a0bdf4b2d9b120b-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/bb2c0847f653349b9a0bdf4b2d9b120b-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "4534f83b9f6920f8569628c0d325b18c",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"1\",\"4121-73104-73104\",\"1\",\"1\",\"Methotrexate \",\"8280.00 mg                            \",\"8280.00 mg                            \",\"IV                            \",\"18/12/17 18:00\",\"19/12/17 17:30\",\"1410\",\"1410\",\"NULL\",\"NULL\",\"NULL\",\"1.84\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "4534f83b9f6920f8569628c0d325b18c"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-73104-73104"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "8280.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-18T18:00:00Z",
+          "end": "2017-12-19T17:30:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/4534f83b9f6920f8569628c0d325b18c",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/4534f83b9f6920f8569628c0d325b18c"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4534f83b9f6920f8569628c0d325b18c-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/4534f83b9f6920f8569628c0d325b18c"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.84",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-12-18T18:00:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4534f83b9f6920f8569628c0d325b18c-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4534f83b9f6920f8569628c0d325b18c-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "af80893f25472c915676d4f98638611c",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"1\",\"4121-73104-73104\",\"1\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"11/12/17 12:35\",\"11/12/17 12:40\",\"5\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "af80893f25472c915676d4f98638611c"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-73104-73104"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-11T12:35:00Z",
+          "end": "2017-12-11T12:40:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/af80893f25472c915676d4f98638611c",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/af80893f25472c915676d4f98638611c"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "26cc2b0faccf1797b1bbb9eb0a240dde",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"1\",\"4121-73104-73104\",\"1\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"18/12/17 15:45\",\"18/12/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "26cc2b0faccf1797b1bbb9eb0a240dde"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-73104-73104"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-18T15:45:00Z",
+          "end": "2017-12-18T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/26cc2b0faccf1797b1bbb9eb0a240dde",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/26cc2b0faccf1797b1bbb9eb0a240dde"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "e4984068d73f18c9e5420a9271a05680",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-73104\",\"1\",\"4121-73104-73104\",\"1\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"18/12/17 16:15\",\"18/12/17 16:25\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.84\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "e4984068d73f18c9e5420a9271a05680"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-73104-73104"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-18T16:15:00Z",
+          "end": "2017-12-18T16:25:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/e4984068d73f18c9e5420a9271a05680",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/e4984068d73f18c9e5420a9271a05680"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e4984068d73f18c9e5420a9271a05680-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-73104"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/e4984068d73f18c9e5420a9271a05680"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.84",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-12-18T16:15:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/e4984068d73f18c9e5420a9271a05680-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/e4984068d73f18c9e5420a9271a05680-BSA"
+      }
+    }
+  ]
+}

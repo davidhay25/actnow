@@ -1,0 +1,4470 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4121-82629",
+        "name": [
+          {
+            "text": "John Doe - 4121-82629"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe - 4121-82629</div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/4121-82629",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4121-82629"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Regimen plan</div>"
+        },
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"Curative\",\"AALL1131 VHR B-ALL Maintenance (All Arms) \",\"AALL1131 Maint\",\"24/07/18\",\"10/11/20\",\"Y\",\"10\",\"18/12/2020\",\"Completed Therapy   \",\"C910  \",\"Acute lymphoblastic leukaemia                                                   \",\"NULL\",\"98353\",\"NULL\",\"1\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"\",\"2018\",\"7\"]"
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Curative"
+            }
+          }
+        ],
+        "title": "AALL1131 Maint",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "regimen"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2018-07-24",
+          "end": "2020-11-10"
+        },
+        "addresses": {
+          "reference": "Condition/4121-82629"
+        },
+        "supportingInfo": [
+          {
+            "reference": "Observation/4121-82629tnm-stage"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4121-82629",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "code": [
+                "C910  "
+              ]
+            }
+          ],
+          "text": "Acute lymphoblastic leukaemia                                                   "
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/4121-82629",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/4121-82629"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-82629tnm-stage",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21908-9"
+            }
+          ],
+          "text": "TNM group"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/4121-82629tnm-t"
+          },
+          {
+            "reference": "Observation/4121-82629tnm-n"
+          },
+          {
+            "reference": "Observation/4121-82629tnm-m"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-82629tnm-stage",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-82629tnm-stage"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-82629tnm-t",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21905-5"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-82629tnm-t",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-82629tnm-t"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-82629tnm-n",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21906-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-82629tnm-n",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-82629tnm-n"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-82629tnm-m",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21907-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-82629tnm-m",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-82629tnm-m"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82629",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82629\",\"1\",\"84\",\"24/07/18\",\"16/10/18\",\"21/09/18\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2018-07-24",
+          "end": "2018-10-16"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82629",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82629"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "de2080fc851eea21a8ecefa83a9e7463",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"24/07/18 17:10\",\"24/07/18 17:14\",\"4\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "de2080fc851eea21a8ecefa83a9e7463"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-07-24T17:10:00Z",
+          "end": "2018-07-24T17:14:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/de2080fc851eea21a8ecefa83a9e7463",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/de2080fc851eea21a8ecefa83a9e7463"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "d1afb11ddfaf54457957a88283a3a0ec",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"24/07/18 17:00\",\"24/07/18 19:15\",\"135\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "d1afb11ddfaf54457957a88283a3a0ec"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-07-24T17:00:00Z",
+          "end": "2018-07-24T19:15:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/d1afb11ddfaf54457957a88283a3a0ec",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/d1afb11ddfaf54457957a88283a3a0ec"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "7990e360f27f42f5b34b943b75b3811b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"24/07/18 17:50\",\"24/07/18 18:15\",\"25\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "7990e360f27f42f5b34b943b75b3811b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-07-24T17:50:00Z",
+          "end": "2018-07-24T18:15:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/7990e360f27f42f5b34b943b75b3811b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/7990e360f27f42f5b34b943b75b3811b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7990e360f27f42f5b34b943b75b3811b-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/7990e360f27f42f5b34b943b75b3811b"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2018-07-24T17:50:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/7990e360f27f42f5b34b943b75b3811b-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/7990e360f27f42f5b34b943b75b3811b-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "fee7ae64e08f977f81ef18f73df82e68",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"23/08/18 10:00\",\"23/08/18 12:15\",\"135\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "fee7ae64e08f977f81ef18f73df82e68"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-08-23T10:00:00Z",
+          "end": "2018-08-23T12:15:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/fee7ae64e08f977f81ef18f73df82e68",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/fee7ae64e08f977f81ef18f73df82e68"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "4eddb31d74df04926ca0637f9b92cfc6",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"23/08/18 10:05\",\"23/08/18 10:17\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "4eddb31d74df04926ca0637f9b92cfc6"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-08-23T10:05:00Z",
+          "end": "2018-08-23T10:17:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/4eddb31d74df04926ca0637f9b92cfc6",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/4eddb31d74df04926ca0637f9b92cfc6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4eddb31d74df04926ca0637f9b92cfc6-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/4eddb31d74df04926ca0637f9b92cfc6"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2018-08-23T10:05:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4eddb31d74df04926ca0637f9b92cfc6-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4eddb31d74df04926ca0637f9b92cfc6-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5d4dcb63964936484df5c73fc8563d2b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"21/09/18 13:30\",\"21/09/18 16:40\",\"190\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5d4dcb63964936484df5c73fc8563d2b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-09-21T13:30:00Z",
+          "end": "2018-09-21T16:40:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5d4dcb63964936484df5c73fc8563d2b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5d4dcb63964936484df5c73fc8563d2b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "755d0f0a25feeb3768c760dedb260913",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82629\",\"1\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"21/09/18 16:13\",\"21/09/18 16:24\",\"11\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "755d0f0a25feeb3768c760dedb260913"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82629"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-09-21T16:13:00Z",
+          "end": "2018-09-21T16:24:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/755d0f0a25feeb3768c760dedb260913",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/755d0f0a25feeb3768c760dedb260913"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "755d0f0a25feeb3768c760dedb260913-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/755d0f0a25feeb3768c760dedb260913"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2018-09-21T16:13:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/755d0f0a25feeb3768c760dedb260913-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/755d0f0a25feeb3768c760dedb260913-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82630",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82630\",\"2\",\"84\",\"16/10/18\",\"8/01/19\",\"13/12/18\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 2
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2018-10-16",
+          "end": "2019-01-08"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82630",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82630"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "2bf740c608f6055639940fddb585a2ec",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"16/10/18 15:15\",\"16/10/18 15:20\",\"5\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "2bf740c608f6055639940fddb585a2ec"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-10-16T15:15:00Z",
+          "end": "2018-10-16T15:20:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/2bf740c608f6055639940fddb585a2ec",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/2bf740c608f6055639940fddb585a2ec"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "bec6f59ba2e997d92a27ceeb00f94320",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"16/10/18 10:30\",\"16/10/18 12:00\",\"90\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "bec6f59ba2e997d92a27ceeb00f94320"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-10-16T10:30:00Z",
+          "end": "2018-10-16T12:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/bec6f59ba2e997d92a27ceeb00f94320",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/bec6f59ba2e997d92a27ceeb00f94320"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "46cbd85ba6b580ebc47285e1c30354dd",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"16/10/18 12:19\",\"16/10/18 12:29\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.88\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "46cbd85ba6b580ebc47285e1c30354dd"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-10-16T12:19:00Z",
+          "end": "2018-10-16T12:29:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/46cbd85ba6b580ebc47285e1c30354dd",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/46cbd85ba6b580ebc47285e1c30354dd"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "46cbd85ba6b580ebc47285e1c30354dd-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/46cbd85ba6b580ebc47285e1c30354dd"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.88",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2018-10-16T12:19:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/46cbd85ba6b580ebc47285e1c30354dd-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/46cbd85ba6b580ebc47285e1c30354dd-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "87939ec425e5a5ed7cc9693a41769912",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"15/11/18 11:55\",\"15/11/18 13:45\",\"110\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "87939ec425e5a5ed7cc9693a41769912"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-11-15T11:55:00Z",
+          "end": "2018-11-15T13:45:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/87939ec425e5a5ed7cc9693a41769912",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/87939ec425e5a5ed7cc9693a41769912"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "2779b1538d5c616186eabfc09195d44b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"15/11/18 12:06\",\"15/11/18 12:18\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.88\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "2779b1538d5c616186eabfc09195d44b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-11-15T12:06:00Z",
+          "end": "2018-11-15T12:18:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/2779b1538d5c616186eabfc09195d44b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/2779b1538d5c616186eabfc09195d44b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2779b1538d5c616186eabfc09195d44b-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/2779b1538d5c616186eabfc09195d44b"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.88",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2018-11-15T12:06:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/2779b1538d5c616186eabfc09195d44b-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/2779b1538d5c616186eabfc09195d44b-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "de904afd87f994281bda7261376d8969",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"13/12/18 10:55\",\"13/12/18 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "de904afd87f994281bda7261376d8969"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-12-13T10:55:00Z",
+          "end": "2018-12-13T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/de904afd87f994281bda7261376d8969",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/de904afd87f994281bda7261376d8969"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "0a78e06019268a70329b5a1d9165eeb8",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82630\",\"2\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"13/12/18 11:00\",\"13/12/18 11:13\",\"13\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.88\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "0a78e06019268a70329b5a1d9165eeb8"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82630"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2018-12-13T11:00:00Z",
+          "end": "2018-12-13T11:13:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/0a78e06019268a70329b5a1d9165eeb8",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/0a78e06019268a70329b5a1d9165eeb8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0a78e06019268a70329b5a1d9165eeb8-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/0a78e06019268a70329b5a1d9165eeb8"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.88",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2018-12-13T11:00:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/0a78e06019268a70329b5a1d9165eeb8-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0a78e06019268a70329b5a1d9165eeb8-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82631",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82631\",\"3\",\"84\",\"8/01/19\",\"2/04/19\",\"7/03/19\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 3
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2019-01-08",
+          "end": "2019-04-02"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82631",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82631"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "ab8e8aef6653f8650482c3b477a3608b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82631\",\"3\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"8/01/19 16:09\",\"8/01/19 16:10\",\"1\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "ab8e8aef6653f8650482c3b477a3608b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82631"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-01-08T16:09:00Z",
+          "end": "2019-01-08T16:10:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/ab8e8aef6653f8650482c3b477a3608b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/ab8e8aef6653f8650482c3b477a3608b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "6310f3465861947050c90523fcaf3c65",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82631\",\"3\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"8/01/19 18:00\",\"8/01/19 19:15\",\"75\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "6310f3465861947050c90523fcaf3c65"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82631"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-01-08T18:00:00Z",
+          "end": "2019-01-08T19:15:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/6310f3465861947050c90523fcaf3c65",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/6310f3465861947050c90523fcaf3c65"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "8877015dc9fdad431a46b8dad762157a",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82631\",\"3\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"8/01/19 18:12\",\"8/01/19 18:24\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "8877015dc9fdad431a46b8dad762157a"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82631"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-01-08T18:12:00Z",
+          "end": "2019-01-08T18:24:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/8877015dc9fdad431a46b8dad762157a",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/8877015dc9fdad431a46b8dad762157a"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8877015dc9fdad431a46b8dad762157a-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/8877015dc9fdad431a46b8dad762157a"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-01-08T18:12:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/8877015dc9fdad431a46b8dad762157a-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/8877015dc9fdad431a46b8dad762157a-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "bb89d6a1470cca7b1d09f7690d040662",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82631\",\"3\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"7/02/19 10:45\",\"7/02/19 10:55\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "bb89d6a1470cca7b1d09f7690d040662"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82631"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-02-07T10:45:00Z",
+          "end": "2019-02-07T10:55:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/bb89d6a1470cca7b1d09f7690d040662",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/bb89d6a1470cca7b1d09f7690d040662"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bb89d6a1470cca7b1d09f7690d040662-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/bb89d6a1470cca7b1d09f7690d040662"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-02-07T10:45:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/bb89d6a1470cca7b1d09f7690d040662-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/bb89d6a1470cca7b1d09f7690d040662-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "a511deb873afce15a14ed5ce971161d7",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82631\",\"3\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"7/03/19 14:12\",\"7/03/19 14:25\",\"13\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "a511deb873afce15a14ed5ce971161d7"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82631"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-03-07T14:12:00Z",
+          "end": "2019-03-07T14:25:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/a511deb873afce15a14ed5ce971161d7",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/a511deb873afce15a14ed5ce971161d7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a511deb873afce15a14ed5ce971161d7-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/a511deb873afce15a14ed5ce971161d7"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-03-07T14:12:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/a511deb873afce15a14ed5ce971161d7-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/a511deb873afce15a14ed5ce971161d7-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82632",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82632\",\"4\",\"84\",\"2/04/19\",\"25/06/19\",\"30/05/19\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 4
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2019-04-02",
+          "end": "2019-06-25"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82632",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82632"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "a0542a42b039323f5eb074d28e284113",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82632\",\"4\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"2/04/19 15:07\",\"2/04/19 15:08\",\"1\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "a0542a42b039323f5eb074d28e284113"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82632"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-04-02T15:07:00Z",
+          "end": "2019-04-02T15:08:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/a0542a42b039323f5eb074d28e284113",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/a0542a42b039323f5eb074d28e284113"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5440b96141e87d1e35272c9a356267b9",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82632\",\"4\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"2/04/19 15:53\",\"2/04/19 16:03\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.84\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5440b96141e87d1e35272c9a356267b9"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82632"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-04-02T15:53:00Z",
+          "end": "2019-04-02T16:03:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5440b96141e87d1e35272c9a356267b9",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5440b96141e87d1e35272c9a356267b9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5440b96141e87d1e35272c9a356267b9-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/5440b96141e87d1e35272c9a356267b9"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.84",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-04-02T15:53:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/5440b96141e87d1e35272c9a356267b9-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/5440b96141e87d1e35272c9a356267b9-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "786ff2a9bb0fd3250b296ef1ebb7b240",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82632\",\"4\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"1/05/19 13:06\",\"1/05/19 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "786ff2a9bb0fd3250b296ef1ebb7b240"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82632"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-05-01T13:06:00Z",
+          "end": "2019-05-01T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/786ff2a9bb0fd3250b296ef1ebb7b240",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/786ff2a9bb0fd3250b296ef1ebb7b240"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "90345c09beb62cb69efc4c6b868acea3",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82632\",\"4\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"1/05/19 13:13\",\"1/05/19 13:23\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.84\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "90345c09beb62cb69efc4c6b868acea3"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82632"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-05-01T13:13:00Z",
+          "end": "2019-05-01T13:23:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/90345c09beb62cb69efc4c6b868acea3",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/90345c09beb62cb69efc4c6b868acea3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "90345c09beb62cb69efc4c6b868acea3-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/90345c09beb62cb69efc4c6b868acea3"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.84",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-05-01T13:13:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/90345c09beb62cb69efc4c6b868acea3-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/90345c09beb62cb69efc4c6b868acea3-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c98d3de8902ad41b885cffcddbc1cdc0",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82632\",\"4\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"30/05/19 12:30\",\"30/05/19 16:00\",\"210\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c98d3de8902ad41b885cffcddbc1cdc0"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82632"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-05-30T12:30:00Z",
+          "end": "2019-05-30T16:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c98d3de8902ad41b885cffcddbc1cdc0",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c98d3de8902ad41b885cffcddbc1cdc0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "45bd1659ec472bb6a86e5e69de7001db",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82632\",\"4\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"30/05/19 12:35\",\"30/05/19 12:46\",\"11\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.84\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "45bd1659ec472bb6a86e5e69de7001db"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82632"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-05-30T12:35:00Z",
+          "end": "2019-05-30T12:46:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/45bd1659ec472bb6a86e5e69de7001db",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/45bd1659ec472bb6a86e5e69de7001db"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "45bd1659ec472bb6a86e5e69de7001db-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/45bd1659ec472bb6a86e5e69de7001db"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.84",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-05-30T12:35:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/45bd1659ec472bb6a86e5e69de7001db-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/45bd1659ec472bb6a86e5e69de7001db-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82633",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82633\",\"5\",\"84\",\"25/06/19\",\"17/09/19\",\"22/08/19\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 5
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2019-06-25",
+          "end": "2019-09-17"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82633",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82633"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c7fb52c2a469c5812ea149133caa24b3",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82633\",\"5\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"25/06/19 14:36\",\"25/06/19 14:37\",\"1\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c7fb52c2a469c5812ea149133caa24b3"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82633"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-06-25T14:36:00Z",
+          "end": "2019-06-25T14:37:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c7fb52c2a469c5812ea149133caa24b3",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c7fb52c2a469c5812ea149133caa24b3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c0d60f003187687d4d39ea0885eabca7",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82633\",\"5\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"25/06/19 15:45\",\"25/06/19 15:55\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.82\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c0d60f003187687d4d39ea0885eabca7"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82633"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-06-25T15:45:00Z",
+          "end": "2019-06-25T15:55:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c0d60f003187687d4d39ea0885eabca7",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c0d60f003187687d4d39ea0885eabca7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c0d60f003187687d4d39ea0885eabca7-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/c0d60f003187687d4d39ea0885eabca7"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.82",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-06-25T15:45:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/c0d60f003187687d4d39ea0885eabca7-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c0d60f003187687d4d39ea0885eabca7-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "8455afaf3c583dc75f0ea6d4ed5ed1c5",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82633\",\"5\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"25/07/19 10:45\",\"25/07/19 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "8455afaf3c583dc75f0ea6d4ed5ed1c5"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82633"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-07-25T10:45:00Z",
+          "end": "2019-07-25T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/8455afaf3c583dc75f0ea6d4ed5ed1c5",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/8455afaf3c583dc75f0ea6d4ed5ed1c5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "818b6888f9cad5735119f51a76dd101d",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82633\",\"5\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"25/07/19 13:38\",\"25/07/19 13:50\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.82\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "818b6888f9cad5735119f51a76dd101d"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82633"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-07-25T13:38:00Z",
+          "end": "2019-07-25T13:50:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/818b6888f9cad5735119f51a76dd101d",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/818b6888f9cad5735119f51a76dd101d"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "818b6888f9cad5735119f51a76dd101d-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/818b6888f9cad5735119f51a76dd101d"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.82",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-07-25T13:38:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/818b6888f9cad5735119f51a76dd101d-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/818b6888f9cad5735119f51a76dd101d-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c6a18c0051fc2a67a052cb9a9d09c256",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82633\",\"5\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"22/08/19 11:00\",\"22/08/19 14:30\",\"210\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c6a18c0051fc2a67a052cb9a9d09c256"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82633"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-08-22T11:00:00Z",
+          "end": "2019-08-22T14:30:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c6a18c0051fc2a67a052cb9a9d09c256",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c6a18c0051fc2a67a052cb9a9d09c256"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "46f73109caf202e596ab48aedba90bd9",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82633\",\"5\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"22/08/19 11:09\",\"22/08/19 11:20\",\"11\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.82\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "46f73109caf202e596ab48aedba90bd9"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82633"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-08-22T11:09:00Z",
+          "end": "2019-08-22T11:20:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/46f73109caf202e596ab48aedba90bd9",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/46f73109caf202e596ab48aedba90bd9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "46f73109caf202e596ab48aedba90bd9-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/46f73109caf202e596ab48aedba90bd9"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.82",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-08-22T11:09:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/46f73109caf202e596ab48aedba90bd9-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/46f73109caf202e596ab48aedba90bd9-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82634",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82634\",\"6\",\"84\",\"17/09/19\",\"10/12/19\",\"14/11/19\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 6
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2019-09-17",
+          "end": "2019-12-10"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82634",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82634"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c8b22b5b582d5cb0bbe2ac84a773fee7",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82634\",\"6\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"17/09/19 14:03\",\"17/09/19 14:04\",\"1\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c8b22b5b582d5cb0bbe2ac84a773fee7"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82634"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-09-17T14:03:00Z",
+          "end": "2019-09-17T14:04:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c8b22b5b582d5cb0bbe2ac84a773fee7",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c8b22b5b582d5cb0bbe2ac84a773fee7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "fc68e5ad2c95f689c92fe8555ca9c3aa",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82634\",\"6\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"17/09/19 15:50\",\"17/09/19 16:00\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.89\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "fc68e5ad2c95f689c92fe8555ca9c3aa"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82634"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-09-17T15:50:00Z",
+          "end": "2019-09-17T16:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/fc68e5ad2c95f689c92fe8555ca9c3aa",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/fc68e5ad2c95f689c92fe8555ca9c3aa"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fc68e5ad2c95f689c92fe8555ca9c3aa-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/fc68e5ad2c95f689c92fe8555ca9c3aa"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.89",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-09-17T15:50:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/fc68e5ad2c95f689c92fe8555ca9c3aa-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/fc68e5ad2c95f689c92fe8555ca9c3aa-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "add155aadbb27d0f21fbf5a814d8ea8b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82634\",\"6\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"17/10/19 11:00\",\"17/10/19 14:45\",\"225\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "add155aadbb27d0f21fbf5a814d8ea8b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82634"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-10-17T11:00:00Z",
+          "end": "2019-10-17T14:45:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/add155aadbb27d0f21fbf5a814d8ea8b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/add155aadbb27d0f21fbf5a814d8ea8b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "ed785e588ec0ce822e1718b423ca654d",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82634\",\"6\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"17/10/19 11:12\",\"17/10/19 11:25\",\"13\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.89\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "ed785e588ec0ce822e1718b423ca654d"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82634"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-10-17T11:12:00Z",
+          "end": "2019-10-17T11:25:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/ed785e588ec0ce822e1718b423ca654d",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/ed785e588ec0ce822e1718b423ca654d"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ed785e588ec0ce822e1718b423ca654d-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/ed785e588ec0ce822e1718b423ca654d"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.89",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-10-17T11:12:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/ed785e588ec0ce822e1718b423ca654d-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ed785e588ec0ce822e1718b423ca654d-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "1066c91b7af686dade9e2b04f505fde2",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82634\",\"6\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"14/11/19 10:48\",\"14/11/19 14:23\",\"215\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "1066c91b7af686dade9e2b04f505fde2"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82634"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-11-14T10:48:00Z",
+          "end": "2019-11-14T14:23:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/1066c91b7af686dade9e2b04f505fde2",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/1066c91b7af686dade9e2b04f505fde2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5e7ae1fa839682dba08e50b5df8bf26f",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82634\",\"6\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"14/11/19 10:55\",\"14/11/19 11:08\",\"13\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.89\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5e7ae1fa839682dba08e50b5df8bf26f"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82634"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-11-14T10:55:00Z",
+          "end": "2019-11-14T11:08:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5e7ae1fa839682dba08e50b5df8bf26f",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5e7ae1fa839682dba08e50b5df8bf26f"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5e7ae1fa839682dba08e50b5df8bf26f-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/5e7ae1fa839682dba08e50b5df8bf26f"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.89",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-11-14T10:55:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/5e7ae1fa839682dba08e50b5df8bf26f-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/5e7ae1fa839682dba08e50b5df8bf26f-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82635",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82635\",\"7\",\"84\",\"10/12/19\",\"3/03/20\",\"13/02/20\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 7
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2019-12-10",
+          "end": "2020-03-03"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82635",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82635"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "783bacba7fbd288aadcc1fab5aafed79",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"10/12/19 14:37\",\"10/12/19 14:42\",\"5\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "783bacba7fbd288aadcc1fab5aafed79"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-12-10T14:37:00Z",
+          "end": "2019-12-10T14:42:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/783bacba7fbd288aadcc1fab5aafed79",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/783bacba7fbd288aadcc1fab5aafed79"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5fc253000ac27fecb0f9df28c47ce98b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"10/12/19 14:50\",\"10/12/19 17:58\",\"188\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5fc253000ac27fecb0f9df28c47ce98b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-12-10T14:50:00Z",
+          "end": "2019-12-10T17:58:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5fc253000ac27fecb0f9df28c47ce98b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5fc253000ac27fecb0f9df28c47ce98b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "ec0586c094d8c8acf77bdac3a113586d",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"10/12/19 15:00\",\"10/12/19 15:10\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "ec0586c094d8c8acf77bdac3a113586d"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2019-12-10T15:00:00Z",
+          "end": "2019-12-10T15:10:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/ec0586c094d8c8acf77bdac3a113586d",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/ec0586c094d8c8acf77bdac3a113586d"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ec0586c094d8c8acf77bdac3a113586d-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/ec0586c094d8c8acf77bdac3a113586d"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2019-12-10T15:00:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/ec0586c094d8c8acf77bdac3a113586d-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ec0586c094d8c8acf77bdac3a113586d-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "88ae1298dfc0dfa1c54a6e68df64c48f",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"9/01/20 9:39\",\"9/01/20 14:00\",\"261\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "88ae1298dfc0dfa1c54a6e68df64c48f"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-01-09T09:39:00Z",
+          "end": "2020-01-09T14:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/88ae1298dfc0dfa1c54a6e68df64c48f",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/88ae1298dfc0dfa1c54a6e68df64c48f"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "70e4a72a9f9ad14b97587488c7c9aaaf",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"9/01/20 9:48\",\"9/01/20 10:00\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "70e4a72a9f9ad14b97587488c7c9aaaf"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-01-09T09:48:00Z",
+          "end": "2020-01-09T10:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/70e4a72a9f9ad14b97587488c7c9aaaf",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/70e4a72a9f9ad14b97587488c7c9aaaf"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "70e4a72a9f9ad14b97587488c7c9aaaf-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/70e4a72a9f9ad14b97587488c7c9aaaf"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-01-09T09:48:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/70e4a72a9f9ad14b97587488c7c9aaaf-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/70e4a72a9f9ad14b97587488c7c9aaaf-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "3af1d8c201756226097c27f3e5c6c1d9",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"13/02/20 9:35\",\"13/02/20 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "3af1d8c201756226097c27f3e5c6c1d9"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-13T09:35:00Z",
+          "end": "2020-02-13T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/3af1d8c201756226097c27f3e5c6c1d9",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/3af1d8c201756226097c27f3e5c6c1d9"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "51b8e97bc5ea4ab79ba700e5b65f13bd",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82635\",\"7\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"13/02/20 16:29\",\"13/02/20 16:39\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "51b8e97bc5ea4ab79ba700e5b65f13bd"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82635"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-13T16:29:00Z",
+          "end": "2020-02-13T16:39:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/51b8e97bc5ea4ab79ba700e5b65f13bd",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/51b8e97bc5ea4ab79ba700e5b65f13bd"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "51b8e97bc5ea4ab79ba700e5b65f13bd-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/51b8e97bc5ea4ab79ba700e5b65f13bd"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-02-13T16:29:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/51b8e97bc5ea4ab79ba700e5b65f13bd-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/51b8e97bc5ea4ab79ba700e5b65f13bd-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82636",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82636\",\"8\",\"84\",\"3/03/20\",\"26/05/20\",\"30/04/20\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 8
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2020-03-03",
+          "end": "2020-05-26"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82636",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82636"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "0e4a0e746d38db28c1eccd0f25fa4f43",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82636\",\"8\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"4/03/20 14:45\",\"4/03/20 15:00\",\"15\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "0e4a0e746d38db28c1eccd0f25fa4f43"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82636"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-04T14:45:00Z",
+          "end": "2020-03-04T15:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/0e4a0e746d38db28c1eccd0f25fa4f43",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/0e4a0e746d38db28c1eccd0f25fa4f43"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "ecc7b92e7288467b7cbf1bc04c77fb97",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82636\",\"8\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"3/03/20 12:32\",\"3/03/20 12:42\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.77\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "ecc7b92e7288467b7cbf1bc04c77fb97"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82636"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-03T12:32:00Z",
+          "end": "2020-03-03T12:42:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/ecc7b92e7288467b7cbf1bc04c77fb97",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/ecc7b92e7288467b7cbf1bc04c77fb97"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ecc7b92e7288467b7cbf1bc04c77fb97-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/ecc7b92e7288467b7cbf1bc04c77fb97"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.77",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-03T12:32:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/ecc7b92e7288467b7cbf1bc04c77fb97-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ecc7b92e7288467b7cbf1bc04c77fb97-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "79860e84bb0612e73643211e70a3713a",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82636\",\"8\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"2/04/20 11:55\",\"2/04/20 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "79860e84bb0612e73643211e70a3713a"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82636"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-02T11:55:00Z",
+          "end": "2020-04-02T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/79860e84bb0612e73643211e70a3713a",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/79860e84bb0612e73643211e70a3713a"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "cadcfe941ba7ae1e69994f83bd176393",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82636\",\"8\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"2/04/20 12:04\",\"2/04/20 12:16\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.77\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "cadcfe941ba7ae1e69994f83bd176393"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82636"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-02T12:04:00Z",
+          "end": "2020-04-02T12:16:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/cadcfe941ba7ae1e69994f83bd176393",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/cadcfe941ba7ae1e69994f83bd176393"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cadcfe941ba7ae1e69994f83bd176393-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/cadcfe941ba7ae1e69994f83bd176393"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.77",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-04-02T12:04:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/cadcfe941ba7ae1e69994f83bd176393-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cadcfe941ba7ae1e69994f83bd176393-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "56c3eeca49ffaac413b84b4706857098",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82636\",\"8\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"30/04/20 13:20\",\"30/04/20 14:00\",\"40\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "56c3eeca49ffaac413b84b4706857098"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82636"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-30T13:20:00Z",
+          "end": "2020-04-30T14:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/56c3eeca49ffaac413b84b4706857098",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/56c3eeca49ffaac413b84b4706857098"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "ba07862830acc64d4267312227028b3c",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82636\",\"8\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"30/04/20 13:28\",\"30/04/20 13:40\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.77\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "ba07862830acc64d4267312227028b3c"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82636"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-30T13:28:00Z",
+          "end": "2020-04-30T13:40:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/ba07862830acc64d4267312227028b3c",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/ba07862830acc64d4267312227028b3c"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ba07862830acc64d4267312227028b3c-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/ba07862830acc64d4267312227028b3c"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.77",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-04-30T13:28:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/ba07862830acc64d4267312227028b3c-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ba07862830acc64d4267312227028b3c-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82637",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82637\",\"9\",\"84\",\"26/05/20\",\"18/08/20\",\"23/07/20\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 9
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2020-05-26",
+          "end": "2020-08-18"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82637",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82637"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "949ccf7cd35aca1daba75a765900fd60",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"26/05/20 14:00\",\"26/05/20 14:30\",\"30\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "949ccf7cd35aca1daba75a765900fd60"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-05-26T14:00:00Z",
+          "end": "2020-05-26T14:30:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/949ccf7cd35aca1daba75a765900fd60",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/949ccf7cd35aca1daba75a765900fd60"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "0031aa20f28848639a9f53ea8bb20fb3",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"26/05/20 12:45\",\"26/05/20 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "0031aa20f28848639a9f53ea8bb20fb3"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-05-26T12:45:00Z",
+          "end": "2020-05-26T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/0031aa20f28848639a9f53ea8bb20fb3",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/0031aa20f28848639a9f53ea8bb20fb3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "152ed8d07a9290c7a405e364f17395a2",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"26/05/20 12:50\",\"26/05/20 13:05\",\"15\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.88\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "152ed8d07a9290c7a405e364f17395a2"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-05-26T12:50:00Z",
+          "end": "2020-05-26T13:05:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/152ed8d07a9290c7a405e364f17395a2",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/152ed8d07a9290c7a405e364f17395a2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "152ed8d07a9290c7a405e364f17395a2-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/152ed8d07a9290c7a405e364f17395a2"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.88",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-05-26T12:50:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/152ed8d07a9290c7a405e364f17395a2-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/152ed8d07a9290c7a405e364f17395a2-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "fb8f5592888b1258741f0dca3916cca5",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"25/06/20 10:55\",\"25/06/20 11:40\",\"45\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "fb8f5592888b1258741f0dca3916cca5"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-06-25T10:55:00Z",
+          "end": "2020-06-25T11:40:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/fb8f5592888b1258741f0dca3916cca5",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/fb8f5592888b1258741f0dca3916cca5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "b4f99548dc9f1a9e2364266a2e35b154",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"25/06/20 11:00\",\"25/06/20 11:17\",\"17\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.88\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "b4f99548dc9f1a9e2364266a2e35b154"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-06-25T11:00:00Z",
+          "end": "2020-06-25T11:17:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/b4f99548dc9f1a9e2364266a2e35b154",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/b4f99548dc9f1a9e2364266a2e35b154"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b4f99548dc9f1a9e2364266a2e35b154-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/b4f99548dc9f1a9e2364266a2e35b154"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.88",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-06-25T11:00:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/b4f99548dc9f1a9e2364266a2e35b154-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/b4f99548dc9f1a9e2364266a2e35b154-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "6b3771318b1680e9bd2523d4f6b1dfb8",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"23/07/20 10:45\",\"23/07/20 11:45\",\"60\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "6b3771318b1680e9bd2523d4f6b1dfb8"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-07-23T10:45:00Z",
+          "end": "2020-07-23T11:45:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/6b3771318b1680e9bd2523d4f6b1dfb8",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/6b3771318b1680e9bd2523d4f6b1dfb8"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "4998d66fe0b7e45080ee85d7c5267ad5",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82637\",\"9\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"23/07/20 11:07\",\"23/07/20 11:23\",\"16\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.88\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "4998d66fe0b7e45080ee85d7c5267ad5"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82637"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-07-23T11:07:00Z",
+          "end": "2020-07-23T11:23:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/4998d66fe0b7e45080ee85d7c5267ad5",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/4998d66fe0b7e45080ee85d7c5267ad5"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4998d66fe0b7e45080ee85d7c5267ad5-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/4998d66fe0b7e45080ee85d7c5267ad5"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.88",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-07-23T11:07:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4998d66fe0b7e45080ee85d7c5267ad5-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4998d66fe0b7e45080ee85d7c5267ad5-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-82629-82638",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"4121-82629-82638\",\"10\",\"84\",\"18/08/20\",\"10/11/20\",\"15/10/20\",\"Discontinued\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 10
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-82629"
+          }
+        ],
+        "period": {
+          "start": "2020-08-18",
+          "end": "2020-11-10"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-82629-82638",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-82629-82638"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "9e6d684dbf30d594cbcdc7a8c8de01b1",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"1\",\"Methotrexate \",\"15.00 mg                            \",\"15.00 mg                            \",\"INTRATHECAL\",\"18/08/20 15:15\",\"18/08/20 15:20\",\"5\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "9e6d684dbf30d594cbcdc7a8c8de01b1"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Methotrexate "
+        },
+        "dosage": {
+          "text": "15.00 mg                            ",
+          "route": {
+            "text": "INTRATHECAL"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-08-18T15:15:00Z",
+          "end": "2020-08-18T15:20:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/9e6d684dbf30d594cbcdc7a8c8de01b1",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/9e6d684dbf30d594cbcdc7a8c8de01b1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "a7b94276e27747d5f15af17297c19aa3",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"0.00 mL                            \",\"IV                            \",\"18/08/20 13:00\",\"18/08/20 14:00\",\"60\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "a7b94276e27747d5f15af17297c19aa3"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "0.00 mL                             (Rx:500.00 mL                            )",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-08-18T13:00:00Z",
+          "end": "2020-08-18T14:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/a7b94276e27747d5f15af17297c19aa3",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/a7b94276e27747d5f15af17297c19aa3"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "244823cf5de86c771dc28566329722b2",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"1\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"18/08/20 13:28\",\"18/08/20 13:43\",\"15\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "244823cf5de86c771dc28566329722b2"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-08-18T13:28:00Z",
+          "end": "2020-08-18T13:43:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/244823cf5de86c771dc28566329722b2",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/244823cf5de86c771dc28566329722b2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "244823cf5de86c771dc28566329722b2-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/244823cf5de86c771dc28566329722b2"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-08-18T13:28:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/244823cf5de86c771dc28566329722b2-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/244823cf5de86c771dc28566329722b2-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "dcc68a599b6fd98222d9a91b0ae48007",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"29\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"17/09/20 9:00\",\"17/09/20 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "dcc68a599b6fd98222d9a91b0ae48007"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-09-17T09:00:00Z",
+          "end": "2020-09-17T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/dcc68a599b6fd98222d9a91b0ae48007",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/dcc68a599b6fd98222d9a91b0ae48007"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "51751d9eeb506c9d9ef689c909873024",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"29\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"17/09/20 9:05\",\"17/09/20 9:18\",\"13\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "51751d9eeb506c9d9ef689c909873024"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-09-17T09:05:00Z",
+          "end": "2020-09-17T09:18:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/51751d9eeb506c9d9ef689c909873024",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/51751d9eeb506c9d9ef689c909873024"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "51751d9eeb506c9d9ef689c909873024-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/51751d9eeb506c9d9ef689c909873024"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-09-17T09:05:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/51751d9eeb506c9d9ef689c909873024-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/51751d9eeb506c9d9ef689c909873024-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "f262033640d502042394a0900ba27f64",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"57\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"15/10/20 11:15\",\"15/10/20 12:08\",\"53\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "f262033640d502042394a0900ba27f64"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-10-15T11:15:00Z",
+          "end": "2020-10-15T12:08:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/f262033640d502042394a0900ba27f64",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/f262033640d502042394a0900ba27f64"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "095ed6388f42c76b00b02b68bc170777",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-82629\",\"1\",\"4121-82629-82638\",\"10\",\"57\",\"Vincristine \",\"2.00 mg                            \",\"2.00 mg                            \",\"IV                            \",\"15/10/20 11:20\",\"15/10/20 11:35\",\"15\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"1.86\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "095ed6388f42c76b00b02b68bc170777"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-82629-82638"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vincristine "
+        },
+        "dosage": {
+          "text": "2.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-10-15T11:20:00Z",
+          "end": "2020-10-15T11:35:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/095ed6388f42c76b00b02b68bc170777",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/095ed6388f42c76b00b02b68bc170777"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "095ed6388f42c76b00b02b68bc170777-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-82629"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/095ed6388f42c76b00b02b68bc170777"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "1.86",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-10-15T11:20:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/095ed6388f42c76b00b02b68bc170777-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/095ed6388f42c76b00b02b68bc170777-BSA"
+      }
+    }
+  ]
+}

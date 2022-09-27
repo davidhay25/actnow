@@ -1,0 +1,1103 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4121-72038",
+        "name": [
+          {
+            "text": "John Doe - 4121-72038"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe - 4121-72038</div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/4121-72038",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4121-72038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-72038",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Regimen plan</div>"
+        },
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"Palliative\",\" Weekly Rituximab\",\"Weekly Ritux\",\"17/11/17\",\"14/12/17\",\"Y\",\"1\",\"NULL\",\"NULL\",\"C859  \",\"Non-Hodgkin's lymphoma - unspecified type                                       \",\"NULL\",\"NULL\",\"NULL\",\"1\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"\",\"2017\",\"11\"]"
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Palliative"
+            }
+          }
+        ],
+        "title": "Weekly Ritux",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "regimen"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2017-11-17",
+          "end": "2017-12-14"
+        },
+        "addresses": {
+          "reference": "Condition/4121-72038"
+        },
+        "supportingInfo": [
+          {
+            "reference": "Observation/4121-72038tnm-stage"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-72038",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-72038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4121-72038",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "code": [
+                "C859  "
+              ]
+            }
+          ],
+          "text": "Non-Hodgkin's lymphoma - unspecified type                                       "
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/4121-72038",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/4121-72038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-72038tnm-stage",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21908-9"
+            }
+          ],
+          "text": "TNM group"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/4121-72038tnm-t"
+          },
+          {
+            "reference": "Observation/4121-72038tnm-n"
+          },
+          {
+            "reference": "Observation/4121-72038tnm-m"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-72038tnm-stage",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-72038tnm-stage"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-72038tnm-t",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21905-5"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-72038tnm-t",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-72038tnm-t"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-72038tnm-n",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21906-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-72038tnm-n",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-72038tnm-n"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-72038tnm-m",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21907-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-72038tnm-m",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-72038tnm-m"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-72038-72038",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"4121-72038-72038\",\"1\",\"28\",\"17/11/17\",\"15/12/17\",\"8/12/17\",\"Approve\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-72038"
+          }
+        ],
+        "period": {
+          "start": "2017-11-17",
+          "end": "2017-12-15"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-72038-72038",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-72038-72038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "3050e9ecc913f8dc017bf1343179e865",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"1\",\"Paracetamol\",\"1000.00 mg                            \",\"1000.00 mg                            \",\"PO                            \",\"17/11/17 7:30\",\"17/11/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "3050e9ecc913f8dc017bf1343179e865"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Paracetamol"
+        },
+        "dosage": {
+          "text": "1000.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-17T07:30:00Z",
+          "end": "2017-11-17T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/3050e9ecc913f8dc017bf1343179e865",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/3050e9ecc913f8dc017bf1343179e865"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "dcc7adbf16d65e02ff872b1a7a995127",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"1\",\"Promethazine \",\"25.00 mg                            \",\"25.00 mg                            \",\"PO                            \",\"17/11/17 9:45\",\"17/11/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "dcc7adbf16d65e02ff872b1a7a995127"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Promethazine "
+        },
+        "dosage": {
+          "text": "25.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-17T09:45:00Z",
+          "end": "2017-11-17T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/dcc7adbf16d65e02ff872b1a7a995127",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/dcc7adbf16d65e02ff872b1a7a995127"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "3c97444e983a5ad1f5f60f2ad957f758",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"1\",\"Rituximab\",\"810.00 mg                            \",\"810.00 mg                            \",\"IV                            \",\"17/11/17 10:35\",\"17/11/17 15:10\",\"275\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"2.16\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "3c97444e983a5ad1f5f60f2ad957f758"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Rituximab"
+        },
+        "dosage": {
+          "text": "810.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-17T10:35:00Z",
+          "end": "2017-11-17T15:10:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/3c97444e983a5ad1f5f60f2ad957f758",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/3c97444e983a5ad1f5f60f2ad957f758"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3c97444e983a5ad1f5f60f2ad957f758-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/3c97444e983a5ad1f5f60f2ad957f758"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.16",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-11-17T10:35:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/3c97444e983a5ad1f5f60f2ad957f758-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/3c97444e983a5ad1f5f60f2ad957f758-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "2779fa8ce7851967222f2a488519d282",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"17/11/17 10:30\",\"17/11/17 15:30\",\"300\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "2779fa8ce7851967222f2a488519d282"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-17T10:30:00Z",
+          "end": "2017-11-17T15:30:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/2779fa8ce7851967222f2a488519d282",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/2779fa8ce7851967222f2a488519d282"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "951fe7ac9651b2c2b0c88442f85f3a73",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"8\",\"Paracetamol\",\"1000.00 mg                            \",\"1000.00 mg                            \",\"PO                            \",\"24/11/17 9:08\",\"24/11/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "951fe7ac9651b2c2b0c88442f85f3a73"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Paracetamol"
+        },
+        "dosage": {
+          "text": "1000.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-24T09:08:00Z",
+          "end": "2017-11-24T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/951fe7ac9651b2c2b0c88442f85f3a73",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/951fe7ac9651b2c2b0c88442f85f3a73"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5bef8cf602a04aa99d5dfc3ddb49a261",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"8\",\"Promethazine \",\"25.00 mg                            \",\"25.00 mg                            \",\"PO                            \",\"24/11/17 9:08\",\"24/11/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5bef8cf602a04aa99d5dfc3ddb49a261"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Promethazine "
+        },
+        "dosage": {
+          "text": "25.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-24T09:08:00Z",
+          "end": "2017-11-24T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5bef8cf602a04aa99d5dfc3ddb49a261",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5bef8cf602a04aa99d5dfc3ddb49a261"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "92caae72e48b16cbd9b57bea4395bdf4",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"8\",\"Rituximab\",\"810.00 mg                            \",\"810.00 mg                            \",\"IV                            \",\"24/11/17 10:10\",\"24/11/17 13:15\",\"185\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"2.16\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "92caae72e48b16cbd9b57bea4395bdf4"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Rituximab"
+        },
+        "dosage": {
+          "text": "810.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-24T10:10:00Z",
+          "end": "2017-11-24T13:15:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/92caae72e48b16cbd9b57bea4395bdf4",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/92caae72e48b16cbd9b57bea4395bdf4"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "92caae72e48b16cbd9b57bea4395bdf4-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/92caae72e48b16cbd9b57bea4395bdf4"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.16",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-11-24T10:10:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/92caae72e48b16cbd9b57bea4395bdf4-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/92caae72e48b16cbd9b57bea4395bdf4-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "30c89de4e362efef10c5d81b9dfdbd61",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"8\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"24/11/17 9:30\",\"24/11/17 13:34\",\"244\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "30c89de4e362efef10c5d81b9dfdbd61"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-11-24T09:30:00Z",
+          "end": "2017-11-24T13:34:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/30c89de4e362efef10c5d81b9dfdbd61",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/30c89de4e362efef10c5d81b9dfdbd61"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c0785fef53095bdf71362b3913ad11b1",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"15\",\"Paracetamol\",\"1000.00 mg                            \",\"1000.00 mg                            \",\"PO                            \",\"1/12/17 9:39\",\"1/12/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c0785fef53095bdf71362b3913ad11b1"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Paracetamol"
+        },
+        "dosage": {
+          "text": "1000.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-01T09:39:00Z",
+          "end": "2017-12-01T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c0785fef53095bdf71362b3913ad11b1",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c0785fef53095bdf71362b3913ad11b1"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c05bff18a476029fa1ce92b47b6c940b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"15\",\"Promethazine \",\"25.00 mg                            \",\"25.00 mg                            \",\"PO                            \",\"1/12/17 9:39\",\"1/12/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c05bff18a476029fa1ce92b47b6c940b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Promethazine "
+        },
+        "dosage": {
+          "text": "25.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-01T09:39:00Z",
+          "end": "2017-12-01T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c05bff18a476029fa1ce92b47b6c940b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c05bff18a476029fa1ce92b47b6c940b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "4d4848a2348d35f4d2fdc26fc1d0d29f",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"15\",\"Rituximab\",\"810.00 mg                            \",\"810.00 mg                            \",\"IV                            \",\"1/12/17 10:40\",\"1/12/17 14:00\",\"200\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"2.16\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "4d4848a2348d35f4d2fdc26fc1d0d29f"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Rituximab"
+        },
+        "dosage": {
+          "text": "810.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-01T10:40:00Z",
+          "end": "2017-12-01T14:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/4d4848a2348d35f4d2fdc26fc1d0d29f",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/4d4848a2348d35f4d2fdc26fc1d0d29f"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4d4848a2348d35f4d2fdc26fc1d0d29f-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/4d4848a2348d35f4d2fdc26fc1d0d29f"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.16",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-12-01T10:40:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4d4848a2348d35f4d2fdc26fc1d0d29f-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4d4848a2348d35f4d2fdc26fc1d0d29f-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "dd960d5bd00422523578641100d74490",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"15\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"1/12/17 10:20\",\"1/12/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "dd960d5bd00422523578641100d74490"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-01T10:20:00Z",
+          "end": "2017-12-01T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/dd960d5bd00422523578641100d74490",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/dd960d5bd00422523578641100d74490"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "3e4ed377d487e23d6a2c0e0813c7156a",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"22\",\"Paracetamol\",\"1000.00 mg                            \",\"1000.00 mg                            \",\"PO                            \",\"8/12/17 9:20\",\"8/12/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "3e4ed377d487e23d6a2c0e0813c7156a"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Paracetamol"
+        },
+        "dosage": {
+          "text": "1000.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-08T09:20:00Z",
+          "end": "2017-12-08T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/3e4ed377d487e23d6a2c0e0813c7156a",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/3e4ed377d487e23d6a2c0e0813c7156a"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "a2f2ce5ea9cbc2941a3ab81a97aa4d79",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"22\",\"Promethazine \",\"25.00 mg                            \",\"25.00 mg                            \",\"PO                            \",\"8/12/17 9:20\",\"8/12/17 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "a2f2ce5ea9cbc2941a3ab81a97aa4d79"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Promethazine "
+        },
+        "dosage": {
+          "text": "25.00 mg                            ",
+          "route": {
+            "text": "PO                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-08T09:20:00Z",
+          "end": "2017-12-08T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/a2f2ce5ea9cbc2941a3ab81a97aa4d79",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/a2f2ce5ea9cbc2941a3ab81a97aa4d79"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "eb823b19ad71592a4c2f251fd1f10c06",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"22\",\"Rituximab\",\"810.00 mg                            \",\"810.00 mg                            \",\"IV                            \",\"8/12/17 10:30\",\"8/12/17 13:45\",\"195\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"2.16\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "eb823b19ad71592a4c2f251fd1f10c06"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Rituximab"
+        },
+        "dosage": {
+          "text": "810.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-08T10:30:00Z",
+          "end": "2017-12-08T13:45:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/eb823b19ad71592a4c2f251fd1f10c06",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/eb823b19ad71592a4c2f251fd1f10c06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "eb823b19ad71592a4c2f251fd1f10c06-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/eb823b19ad71592a4c2f251fd1f10c06"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.16",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2017-12-08T10:30:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/eb823b19ad71592a4c2f251fd1f10c06-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/eb823b19ad71592a4c2f251fd1f10c06-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "02582b7abd047c9d31a2678ff667f602",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-72038\",\"1\",\"4121-72038-72038\",\"1\",\"22\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"8/12/17 10:20\",\"8/12/17 14:45\",\"265\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "02582b7abd047c9d31a2678ff667f602"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-72038-72038"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-72038"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2017-12-08T10:20:00Z",
+          "end": "2017-12-08T14:45:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/02582b7abd047c9d31a2678ff667f602",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/02582b7abd047c9d31a2678ff667f602"
+      }
+    }
+  ]
+}

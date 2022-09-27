@@ -1,0 +1,1747 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4121-111315",
+        "name": [
+          {
+            "text": "John Doe - 4121-111315"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe - 4121-111315</div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/4121-111315",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4121-111315"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-111315",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Regimen plan</div>"
+        },
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"Curative\",\"ABVD\",\"ABVD                \",\"27/02/20\",\"22/04/20\",\"Y\",\"2\",\"NULL\",\"NULL\",\"C819  \",\"Hodgkin's disease - unspecified                                                 \",\"NULL\",\"NULL\",\"NULL\",\"1\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"\",\"\",\"\",\"NA\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"\",\"2020\",\"2\"]"
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Curative"
+            }
+          }
+        ],
+        "title": "ABVD                ",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "regimen"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2020-02-27",
+          "end": "2020-04-22"
+        },
+        "addresses": {
+          "reference": "Condition/4121-111315"
+        },
+        "supportingInfo": [
+          {
+            "reference": "Observation/4121-111315tnm-stage"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-111315",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-111315"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4121-111315",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "code": {
+          "text": "Hodgkin's disease - unspecified                                                 "
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/4121-111315",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/4121-111315"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-111315tnm-stage",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21908-9"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NA"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/4121-111315tnm-t"
+          },
+          {
+            "reference": "Observation/4121-111315tnm-n"
+          },
+          {
+            "reference": "Observation/4121-111315tnm-m"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-111315tnm-stage",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-111315tnm-stage"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-111315tnm-t",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21905-5"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": ""
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-111315tnm-t",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-111315tnm-t"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-111315tnm-n",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21906-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": ""
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-111315tnm-n",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-111315tnm-n"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-111315tnm-m",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21907-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": ""
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-111315tnm-m",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-111315tnm-m"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-111315-111315",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"4121-111315-111315\",\"1\",\"28\",\"27/02/20\",\"26/03/20\",\"12/03/20\",\"Approve\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-111315"
+          }
+        ],
+        "period": {
+          "start": "2020-02-27",
+          "end": "2020-03-26"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-111315-111315",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-111315-111315"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "07b8ef871bf13d660d126d06cb6dad41",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"1\",\"Bleomycin Sulfate for Injection <DBL>\",\"20000.00 iu                            \",\"20000.00 iu                            \",\"IV                            \",\"27/02/20 13:21\",\"27/02/20 13:31\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "07b8ef871bf13d660d126d06cb6dad41"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Bleomycin Sulfate for Injection <DBL>"
+        },
+        "dosage": {
+          "text": "20000.00 iu                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-27T13:21:00Z",
+          "end": "2020-02-27T13:31:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/07b8ef871bf13d660d126d06cb6dad41",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/07b8ef871bf13d660d126d06cb6dad41"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "07b8ef871bf13d660d126d06cb6dad41-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/07b8ef871bf13d660d126d06cb6dad41"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-02-27T13:21:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/07b8ef871bf13d660d126d06cb6dad41-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/07b8ef871bf13d660d126d06cb6dad41-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5e28743000960d7f6fb48ec0f8b5003b",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"1\",\"Dacarbazine \",\"760.00 mg                            \",\"760.00 mg                            \",\"IV                            \",\"27/02/20 12:00\",\"27/02/20 13:09\",\"69\",\"60\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5e28743000960d7f6fb48ec0f8b5003b"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Dacarbazine "
+        },
+        "dosage": {
+          "text": "760.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-27T12:00:00Z",
+          "end": "2020-02-27T13:09:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5e28743000960d7f6fb48ec0f8b5003b",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5e28743000960d7f6fb48ec0f8b5003b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5e28743000960d7f6fb48ec0f8b5003b-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/5e28743000960d7f6fb48ec0f8b5003b"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-02-27T12:00:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/5e28743000960d7f6fb48ec0f8b5003b-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/5e28743000960d7f6fb48ec0f8b5003b-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "bf4096432c17e7077516d09578b694c6",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"1\",\"Doxorubicin \",\"50.00 mg                            \",\"50.00 mg                            \",\"IVPush                        \",\"27/02/20 10:53\",\"27/02/20 11:04\",\"11\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "bf4096432c17e7077516d09578b694c6"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Doxorubicin "
+        },
+        "dosage": {
+          "text": "50.00 mg                            ",
+          "route": {
+            "text": "IVPush                        "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-27T10:53:00Z",
+          "end": "2020-02-27T11:04:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/bf4096432c17e7077516d09578b694c6",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/bf4096432c17e7077516d09578b694c6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bf4096432c17e7077516d09578b694c6-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/bf4096432c17e7077516d09578b694c6"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-02-27T10:53:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/bf4096432c17e7077516d09578b694c6-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/bf4096432c17e7077516d09578b694c6-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "d8c2416db80ce79515b7cb8f65a90844",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"27/02/20 10:50\",\"27/02/20 13:45\",\"175\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "d8c2416db80ce79515b7cb8f65a90844"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-27T10:50:00Z",
+          "end": "2020-02-27T13:45:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/d8c2416db80ce79515b7cb8f65a90844",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/d8c2416db80ce79515b7cb8f65a90844"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "df729a6384730aae3a3f62863074f803",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"1\",\"Vinblastine \",\"10.00 mg                            \",\"10.00 mg                            \",\"IV                            \",\"27/02/20 11:37\",\"27/02/20 11:49\",\"12\",\"10\",\"**Rounding**\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-dose-adjustment-reason",
+            "valueString": "**Rounding**"
+          }
+        ],
+        "identifier": [
+          "df729a6384730aae3a3f62863074f803"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vinblastine "
+        },
+        "dosage": {
+          "text": "10.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-02-27T11:37:00Z",
+          "end": "2020-02-27T11:49:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/df729a6384730aae3a3f62863074f803",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/df729a6384730aae3a3f62863074f803"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "df729a6384730aae3a3f62863074f803-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/df729a6384730aae3a3f62863074f803"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-02-27T11:37:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/df729a6384730aae3a3f62863074f803-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/df729a6384730aae3a3f62863074f803-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "6e2c0447dbd8fd1359eba98ea51d3b22",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"15\",\"Bleomycin Sulfate for Injection <DBL>\",\"20000.00 iu                            \",\"20000.00 iu                            \",\"IV                            \",\"12/03/20 14:33\",\"12/03/20 14:43\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "6e2c0447dbd8fd1359eba98ea51d3b22"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Bleomycin Sulfate for Injection <DBL>"
+        },
+        "dosage": {
+          "text": "20000.00 iu                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-12T14:33:00Z",
+          "end": "2020-03-12T14:43:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/6e2c0447dbd8fd1359eba98ea51d3b22",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/6e2c0447dbd8fd1359eba98ea51d3b22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6e2c0447dbd8fd1359eba98ea51d3b22-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/6e2c0447dbd8fd1359eba98ea51d3b22"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-12T14:33:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/6e2c0447dbd8fd1359eba98ea51d3b22-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/6e2c0447dbd8fd1359eba98ea51d3b22-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "966306aa98a1396b8ad53a8de019a08c",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"15\",\"Dacarbazine \",\"760.00 mg                            \",\"760.00 mg                            \",\"IV                            \",\"12/03/20 12:53\",\"12/03/20 14:11\",\"78\",\"60\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "966306aa98a1396b8ad53a8de019a08c"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Dacarbazine "
+        },
+        "dosage": {
+          "text": "760.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-12T12:53:00Z",
+          "end": "2020-03-12T14:11:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/966306aa98a1396b8ad53a8de019a08c",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/966306aa98a1396b8ad53a8de019a08c"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "966306aa98a1396b8ad53a8de019a08c-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/966306aa98a1396b8ad53a8de019a08c"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-12T12:53:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/966306aa98a1396b8ad53a8de019a08c-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/966306aa98a1396b8ad53a8de019a08c-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "c18fe25538087652442b3d4c7f4c9146",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"15\",\"Doxorubicin \",\"50.00 mg                            \",\"50.00 mg                            \",\"IVPush                        \",\"12/03/20 12:06\",\"12/03/20 12:16\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "c18fe25538087652442b3d4c7f4c9146"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Doxorubicin "
+        },
+        "dosage": {
+          "text": "50.00 mg                            ",
+          "route": {
+            "text": "IVPush                        "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-12T12:06:00Z",
+          "end": "2020-03-12T12:16:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/c18fe25538087652442b3d4c7f4c9146",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/c18fe25538087652442b3d4c7f4c9146"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c18fe25538087652442b3d4c7f4c9146-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/c18fe25538087652442b3d4c7f4c9146"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-12T12:06:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/c18fe25538087652442b3d4c7f4c9146-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c18fe25538087652442b3d4c7f4c9146-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "2a7a728c43ed484a138be0f1937c07c0",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"15\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"12/03/20 10:30\",\"12/03/20 14:51\",\"261\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "2a7a728c43ed484a138be0f1937c07c0"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-12T10:30:00Z",
+          "end": "2020-03-12T14:51:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/2a7a728c43ed484a138be0f1937c07c0",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/2a7a728c43ed484a138be0f1937c07c0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "0ed4b85304e0f413d2843e673ef3055c",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111315\",\"1\",\"15\",\"Vinblastine \",\"10.00 mg                            \",\"10.00 mg                            \",\"IV                            \",\"12/03/20 12:30\",\"12/03/20 12:42\",\"12\",\"10\",\"**Rounding**\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-dose-adjustment-reason",
+            "valueString": "**Rounding**"
+          }
+        ],
+        "identifier": [
+          "0ed4b85304e0f413d2843e673ef3055c"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111315"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vinblastine "
+        },
+        "dosage": {
+          "text": "10.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-12T12:30:00Z",
+          "end": "2020-03-12T12:42:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/0ed4b85304e0f413d2843e673ef3055c",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/0ed4b85304e0f413d2843e673ef3055c"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0ed4b85304e0f413d2843e673ef3055c-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/0ed4b85304e0f413d2843e673ef3055c"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-12T12:30:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/0ed4b85304e0f413d2843e673ef3055c-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0ed4b85304e0f413d2843e673ef3055c-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-111315-111316",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"4121-111315-111316\",\"2\",\"28\",\"26/03/20\",\"23/04/20\",\"9/04/20\",\"Approve\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 2
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-111315"
+          }
+        ],
+        "period": {
+          "start": "2020-03-26",
+          "end": "2020-04-23"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-111315-111316",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-111315-111316"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "e249ba14897e8b21edc4ebb8d401cff6",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"1\",\"Bleomycin Sulfate for Injection <DBL>\",\"20000.00 iu                            \",\"20000.00 iu                            \",\"IV                            \",\"26/03/20 12:42\",\"26/03/20 12:52\",\"10\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "e249ba14897e8b21edc4ebb8d401cff6"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Bleomycin Sulfate for Injection <DBL>"
+        },
+        "dosage": {
+          "text": "20000.00 iu                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-26T12:42:00Z",
+          "end": "2020-03-26T12:52:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/e249ba14897e8b21edc4ebb8d401cff6",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/e249ba14897e8b21edc4ebb8d401cff6"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e249ba14897e8b21edc4ebb8d401cff6-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/e249ba14897e8b21edc4ebb8d401cff6"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-26T12:42:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/e249ba14897e8b21edc4ebb8d401cff6-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/e249ba14897e8b21edc4ebb8d401cff6-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "354c8d04095e18357c23be8fc38b3ec7",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"1\",\"Dacarbazine \",\"760.00 mg                            \",\"760.00 mg                            \",\"IV                            \",\"26/03/20 11:12\",\"26/03/20 12:22\",\"70\",\"60\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "354c8d04095e18357c23be8fc38b3ec7"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Dacarbazine "
+        },
+        "dosage": {
+          "text": "760.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-26T11:12:00Z",
+          "end": "2020-03-26T12:22:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/354c8d04095e18357c23be8fc38b3ec7",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/354c8d04095e18357c23be8fc38b3ec7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "354c8d04095e18357c23be8fc38b3ec7-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/354c8d04095e18357c23be8fc38b3ec7"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-26T11:12:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/354c8d04095e18357c23be8fc38b3ec7-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/354c8d04095e18357c23be8fc38b3ec7-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "a896c2efd431f2ba171b32b203b6c48a",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"1\",\"Doxorubicin \",\"50.00 mg                            \",\"50.00 mg                            \",\"IVPush                        \",\"26/03/20 9:52\",\"26/03/20 10:05\",\"13\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "a896c2efd431f2ba171b32b203b6c48a"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Doxorubicin "
+        },
+        "dosage": {
+          "text": "50.00 mg                            ",
+          "route": {
+            "text": "IVPush                        "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-26T09:52:00Z",
+          "end": "2020-03-26T10:05:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/a896c2efd431f2ba171b32b203b6c48a",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/a896c2efd431f2ba171b32b203b6c48a"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a896c2efd431f2ba171b32b203b6c48a-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/a896c2efd431f2ba171b32b203b6c48a"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-26T09:52:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/a896c2efd431f2ba171b32b203b6c48a-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/a896c2efd431f2ba171b32b203b6c48a-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "a8c67da3bbfc243389df2522b3b2639e",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"1\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"26/03/20 9:50\",\"26/03/20 13:07\",\"197\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "a8c67da3bbfc243389df2522b3b2639e"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-26T09:50:00Z",
+          "end": "2020-03-26T13:07:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/a8c67da3bbfc243389df2522b3b2639e",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/a8c67da3bbfc243389df2522b3b2639e"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "22faf191064446465e9f3feff2cea7f7",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"1\",\"Vinblastine \",\"10.00 mg                            \",\"10.00 mg                            \",\"IV                            \",\"26/03/20 10:20\",\"26/03/20 10:30\",\"10\",\"10\",\"**Rounding**\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-dose-adjustment-reason",
+            "valueString": "**Rounding**"
+          }
+        ],
+        "identifier": [
+          "22faf191064446465e9f3feff2cea7f7"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vinblastine "
+        },
+        "dosage": {
+          "text": "10.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-03-26T10:20:00Z",
+          "end": "2020-03-26T10:30:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/22faf191064446465e9f3feff2cea7f7",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/22faf191064446465e9f3feff2cea7f7"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "22faf191064446465e9f3feff2cea7f7-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/22faf191064446465e9f3feff2cea7f7"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-03-26T10:20:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/22faf191064446465e9f3feff2cea7f7-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/22faf191064446465e9f3feff2cea7f7-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "0f2de4548a8e12359fe242e0e5e459b0",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"15\",\"Bleomycin Sulfate for Injection <DBL>\",\"20000.00 iu                            \",\"20000.00 iu                            \",\"IV                            \",\"9/04/20 12:39\",\"9/04/20 12:51\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "0f2de4548a8e12359fe242e0e5e459b0"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Bleomycin Sulfate for Injection <DBL>"
+        },
+        "dosage": {
+          "text": "20000.00 iu                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-09T12:39:00Z",
+          "end": "2020-04-09T12:51:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/0f2de4548a8e12359fe242e0e5e459b0",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/0f2de4548a8e12359fe242e0e5e459b0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0f2de4548a8e12359fe242e0e5e459b0-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/0f2de4548a8e12359fe242e0e5e459b0"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-04-09T12:39:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/0f2de4548a8e12359fe242e0e5e459b0-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0f2de4548a8e12359fe242e0e5e459b0-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "47c65dc087b7f55cf395b54f729425f2",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"15\",\"Dacarbazine \",\"760.00 mg                            \",\"760.00 mg                            \",\"IV                            \",\"9/04/20 10:59\",\"9/04/20 12:04\",\"65\",\"60\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "47c65dc087b7f55cf395b54f729425f2"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Dacarbazine "
+        },
+        "dosage": {
+          "text": "760.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-09T10:59:00Z",
+          "end": "2020-04-09T12:04:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/47c65dc087b7f55cf395b54f729425f2",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/47c65dc087b7f55cf395b54f729425f2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "47c65dc087b7f55cf395b54f729425f2-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/47c65dc087b7f55cf395b54f729425f2"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-04-09T10:59:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/47c65dc087b7f55cf395b54f729425f2-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/47c65dc087b7f55cf395b54f729425f2-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "ed2c3b8ea6c202772de31692d854cfba",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"15\",\"Doxorubicin \",\"50.00 mg                            \",\"50.00 mg                            \",\"IVPush                        \",\"9/04/20 9:52\",\"9/04/20 10:04\",\"12\",\"10\",\"NULL\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "ed2c3b8ea6c202772de31692d854cfba"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Doxorubicin "
+        },
+        "dosage": {
+          "text": "50.00 mg                            ",
+          "route": {
+            "text": "IVPush                        "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-09T09:52:00Z",
+          "end": "2020-04-09T10:04:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/ed2c3b8ea6c202772de31692d854cfba",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/ed2c3b8ea6c202772de31692d854cfba"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ed2c3b8ea6c202772de31692d854cfba-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/ed2c3b8ea6c202772de31692d854cfba"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-04-09T09:52:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/ed2c3b8ea6c202772de31692d854cfba-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ed2c3b8ea6c202772de31692d854cfba-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "eb3bba98739ad03eb70d0eaf3077a441",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"15\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"9/04/20 9:40\",\"9/04/20 13:02\",\"202\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "eb3bba98739ad03eb70d0eaf3077a441"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-09T09:40:00Z",
+          "end": "2020-04-09T13:02:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/eb3bba98739ad03eb70d0eaf3077a441",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/eb3bba98739ad03eb70d0eaf3077a441"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "8862d2aeb726d3af124167150a014664",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-111315\",\"1\",\"4121-111315-111316\",\"2\",\"15\",\"Vinblastine \",\"10.00 mg                            \",\"10.00 mg                            \",\"IV                            \",\"9/04/20 10:18\",\"9/04/20 10:29\",\"11\",\"10\",\"**Rounding**\",\"NULL\",\"NULL\",\"2.01\",\"NULL\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-dose-adjustment-reason",
+            "valueString": "**Rounding**"
+          }
+        ],
+        "identifier": [
+          "8862d2aeb726d3af124167150a014664"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-111315-111316"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "medicationCodeableConcept": {
+          "text": "Vinblastine "
+        },
+        "dosage": {
+          "text": "10.00 mg                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-04-09T10:18:00Z",
+          "end": "2020-04-09T10:29:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/8862d2aeb726d3af124167150a014664",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/8862d2aeb726d3af124167150a014664"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8862d2aeb726d3af124167150a014664-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-111315"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/8862d2aeb726d3af124167150a014664"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": "2.01",
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2020-04-09T10:18:00Z"
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/8862d2aeb726d3af124167150a014664-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/8862d2aeb726d3af124167150a014664-BSA"
+      }
+    }
+  ]
+}

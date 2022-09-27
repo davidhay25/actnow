@@ -1,20 +1,22 @@
 Profile:        CareplanRegimen
 Parent:         CarePlan
-Id:             careplan-regimen
+Id:             an-careplan-regimen
 Title:          "Regimen Careplan"
 Description:    "A CarePlan that represents a PlanDefinition being applied to a Patient."
 
-* ^url = "http://canshare.com/fhir/StructureDefinition/careplan-regimen"
+* ^url = $profCarePlan-regimen
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A CarePlan that represents a PlanDefinition being applied to a Patient.</div>"
 
 
-* title 1..1
+//* title 1..1
+* identifier 1..*
+
 * extension contains
     $iot  named iot 0..1 and
-    $clinicalTrial  named clinicalTrial 0..1
+    $clinicalTrial named clinicalTrial 0..1
 
 
 //slicing on category
@@ -28,5 +30,5 @@ Description:    "A CarePlan that represents a PlanDefinition being applied to a 
 
 * category[regimencode] ^short = "Regimen level carePlan"
 * category[regimencode] ^definition = "Code identifiying this carePlan as being at the regimen level"
-* category[regimencode].coding = http://canshare.com#regimenCP
+* category[regimencode].coding = http://unknown.com#regimenCP
 

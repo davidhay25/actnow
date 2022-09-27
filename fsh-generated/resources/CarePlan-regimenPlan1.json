@@ -3,7 +3,7 @@
   "id": "regimenPlan1",
   "meta": {
     "profile": [
-      "http://canshare.com/fhir/StructureDefinition/careplan-regimen"
+      "http://canshare.co.nz/fhir/StructureDefinition/actnow-careplan-regimen"
     ]
   },
   "text": {
@@ -17,6 +17,12 @@
   "author": {
     "reference": "Practitioner/an-practitioner"
   },
+  "identifier": [
+    {
+      "system": "http://unknown.com",
+      "value": "test"
+    }
+  ],
   "status": "active",
   "intent": "plan",
   "instantiatesCanonical": [

@@ -4,7 +4,14 @@ Alias: $loinc = http://loinc.org
 Alias: $actnow = http://actnow.org/
 
 //Aliases for profiles
-Alias: $profCondition = http://actnow.org/StructureDefinition/an-condition
+Alias: $profCondition = http://canshare.co.nz/fhir/StructureDefinition/actnow-condition
+Alias: $profPatient = http://canshare.co.nz/fhir/StructureDefinition/actnow-condition
+Alias: $profMedicationAdministration = http://canshare.co.nz/fhir/StructureDefinition/actnow-medication-administration
+
+Alias: $profCarePlan-patient = http://canshare.co.nz/fhir/StructureDefinition/actnow-careplan-patient
+Alias: $profCarePlan-regimen = http://canshare.co.nz/fhir/StructureDefinition/actnow-careplan-regimen
+Alias: $profCarePlan-cycle = http://canshare.co.nz/fhir/StructureDefinition/actnow-careplan-cycle
+
 
 //Aliases for extensions
 Alias: $iot = http://actnow.org/StructureDefinition/intent-of-treatment

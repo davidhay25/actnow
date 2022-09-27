@@ -1,0 +1,333 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4121-116341",
+        "name": [
+          {
+            "text": "John Doe - 4121-116341"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe - 4121-116341</div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/4121-116341",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4121-116341"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-116341",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Regimen plan</div>"
+        },
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-116341\",\"1\",\"Curative\",\"AALL1231 Interim Maintenance with CMTX - all patients\",\"AALL1231IntMaint\",\"25/05/20\",\"19/07/20\",\"Y\",\"1\",\"NULL\",\"NULL\",\"C839  \",\"Diffuse non-Hodgkin's lymphoma - unspecified                                    \",\"NULL\",\"NULL\",\"NULL\",\"1\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"\",\"2020\",\"5\"]"
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Curative"
+            }
+          }
+        ],
+        "title": "AALL1231IntMaint",
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "regimen"
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2020-05-25",
+          "end": "2020-07-19"
+        },
+        "addresses": {
+          "reference": "Condition/4121-116341"
+        },
+        "supportingInfo": [
+          {
+            "reference": "Observation/4121-116341tnm-stage"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-116341",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-116341"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4121-116341",
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "code": [
+                "C839  "
+              ]
+            }
+          ],
+          "text": "Diffuse non-Hodgkin's lymphoma - unspecified                                    "
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/4121-116341",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/4121-116341"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-116341tnm-stage",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21908-9"
+            }
+          ],
+          "text": "TNM group"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/4121-116341tnm-t"
+          },
+          {
+            "reference": "Observation/4121-116341tnm-n"
+          },
+          {
+            "reference": "Observation/4121-116341tnm-m"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-116341tnm-stage",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-116341tnm-stage"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-116341tnm-t",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21905-5"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-116341tnm-t",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-116341tnm-t"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-116341tnm-n",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21906-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-116341tnm-n",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-116341tnm-n"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4121-116341tnm-m",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21907-3"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": " http://cancerstaging.org",
+              "code": "NULL"
+            }
+          ]
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/4121-116341tnm-m",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/4121-116341tnm-m"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "4121-116341-116341",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-116341\",\"4121-116341-116341\",\"1\",\"56\",\"19/06/20\",\"14/08/20\",\"19/06/20\",\"Approve\"]"
+          },
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/4121-116341"
+          }
+        ],
+        "period": {
+          "start": "2020-06-19",
+          "end": "2020-08-14"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cycle plan</div>"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:canshare.com",
+                "code": "cycle"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/4121-116341-116341",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/4121-116341-116341"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "5c902b96e6577218ce0c75c13b5bb960",
+        "status": "completed",
+        "extension": [
+          {
+            "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+            "valueString": "[\"4121-116341\",\"1\",\"4121-116341-116341\",\"1\",\"31\",\"Sodium Chloride 0.9% \",\"500.00 mL                            \",\"500.00 mL                            \",\"IV                            \",\"19/06/20 11:00\",\"19/06/20 0:00\",\"0\",\"0\",\"NULL\",\"NULL\",\"NULL\",\"NULL\",\"NULL\"]"
+          }
+        ],
+        "identifier": [
+          "5c902b96e6577218ce0c75c13b5bb960"
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/4121-116341-116341"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/4121-116341"
+        },
+        "medicationCodeableConcept": {
+          "text": "Sodium Chloride 0.9% "
+        },
+        "dosage": {
+          "text": "500.00 mL                            ",
+          "route": {
+            "text": "IV                            "
+          }
+        },
+        "effectivePeriod": {
+          "start": "2020-06-19T11:00:00Z",
+          "end": "2020-06-19T00:00:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/5c902b96e6577218ce0c75c13b5bb960",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/5c902b96e6577218ce0c75c13b5bb960"
+      }
+    }
+  ]
+}
