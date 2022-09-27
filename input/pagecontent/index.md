@@ -1,19 +1,22 @@
 
+### Description
 
-The [ACT-NOW specification](https://consult.health.govt.nz/hiso/act-now-data-standard/supporting_documents/HISO10095ACTNOWDataStandarddraftforpubliccomment.pdf) describes the data collection for oncology treatment in New Zealand.
+The [ACT-NOW specification](https://consult.health.govt.nz/hiso/act-now-data-standard/supporting_documents/HISO10095ACTNOWDataStandarddraftforpubliccomment.pdf) describes the data collection for oncology treatment in New Zealand, particularly medication administration.
 
-This Guide describes how this data is represented as FHIR resources, and collected into a FHIR server for subsequent use such as Analytics and Care delivery.
+This Guide describes how this data could be represented as FHIR resources, and collected from care delivery systems into a FHIR server for subsequent use such as Analytics and Care delivery.
 
-As such it describes an actual system, rather than a definition of how interoperability works in a particular domain.
+As such it describes an actual system based around a generic FHIR server, rather than a definition of how interoperability works between systems in a particular domain. It is accompanied by a Reference Implementation - an example solution intended to validate the design and make the design more approachable to system implementers.
 
-The intention is that it will inform the choice of architectural components needed for a production grade deployment, as well as the requirements for vendors supplying data to the system.
+It is intended that the guide will help inform the choice of architectural components needed for a production grade deployment, as well as the requirements for vendors supplying data to the system.
+
+### Tabs in the guide
 
 There are a number of sections to the Guide, represented as tabs at the top of the guide.
 
-* The [Overview](overview.html) describes how the clinical information is represented as FHIR resources
-* The [Architecture](architecture.html) section describes the high level architectire of the proposed solution. This is intended to provide the requirements for the implementers of the system. and may be adapted as the project progresses. However, it will remain a high level description - the implementation details will not be repreented in this guide.
+* The [Resource graph](resource-graph.html) section describes how the clinical information is represented as a graph of FHIR resources
+* The [Architecture](architecture.html) section describes the high level architecture of the proposed solution. This is intended to provide the requirements for the implementers of the system. and may be adapted as the project progresses. However, it will remain a high level description - the implementation details will not be represented in this guide.
 * The API section has 2 sub sections.
-    * The [Input API](api-input.html) describes how data is sent from the client to the server via the RESTful API
+    * The [Input API](api-input.html) describes how data is sent from the client to the server via the RESTful API using FHIR transactions.
     * The [Query API](api-query.html) describes what queries the system needs to support.
 * [Examples](examples.html) contains a list of example resources
 * [Extensions](extensions.html) is a summary of extensions

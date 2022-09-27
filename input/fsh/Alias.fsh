@@ -13,6 +13,7 @@ Alias: $profCarePlan-regimen = http://canshare.co.nz/fhir/StructureDefinition/ac
 Alias: $profCarePlan-cycle = http://canshare.co.nz/fhir/StructureDefinition/actnow-careplan-cycle
 
 Alias: $ecog = http://canshare.co.nz/fhir/StructureDefinition/observation-ecog
+Alias: $bsa = http://canshare.co.nz/fhir/StructureDefinition/observation-bsa
 Alias: $regimen-outcome = http://canshare.co.nz/fhir/StructureDefinition/observation-regimen-outcome
 
 //Aliases for extensions

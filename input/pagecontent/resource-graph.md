@@ -1,7 +1,8 @@
 
+### Overview
 This page describes the resource graph developed to represent the ACT-NOW data standard as FHIR resources. 
 
-The general flow by which a patient receives cancer treatment is as follows.
+The general flow by which a patient receives cancer treatment, and the corresponding FHIR representation, is as follows.
 
 A patient has a diagnosis of cancer, as determined on histological and clinical grounds. This diagnosis is represented as a Condition resource, with Observation resources representing the histological and other findings that led to that diagnosis. In particular there are a number of 'ancillary' tests that are performed for particular diagnoses - such as Estrogen receptor status of Breast cancer. These tests are represented as Observations, and are important in determining the treatment protocol.
 
@@ -22,6 +23,70 @@ The following diagram shows an example of a small set of data for a patient. Not
 
 <img style="width:800px; float:none" src="graphOverview.png"/>
 
+Note that other references are certainly possible if appropriate, but the ones defined in this page are the minimum needed. 
+
+### Specific data requirements
+
+#### Regimen used
+All treatment follows a pre-determined regimen (pattern) of treatment (though can be adapted to the patient depending on their response to treatment). The regimens are defined in a separate IG (using a combination of PlanDefinition & ActivityDefinition resources ).
+
+When a regimen is applied to a patient, it is represented as an instance of a [CarePlan](StructureDefinition-an-careplan-regimen.html). It is possible for there to be a reference to the PlanDefinition using the [*instantiatesCanonical*](http://hl7.org/fhir/careplan-definitions.html#CarePlan.instantiatesCanonical) element, but this is not currently defined in this guide, as the instrastructure is not yet generally available.
+
+There are a number of extensions defined which can be applied to the CarePlan - such as the [intent of treatment](StructureDefinition-iot.html) or whether this treatment is part of a [clinical trial](StructureDefinition-clinical-trial.html).
+
+#### Diagnosis
+The diagnosis is recorded as a Condition resource. If there is histology supporting the diagnosis, then that is represented as an Observation, and the Condition has an *.evidence* reference to the Observation.
+
+The CarePlan that represents the regimen being followed should have an *.addressses* reference to the Condition
+
+### Staging information
+This records how advanced a tumour is, and is generally recorded using the 'TNM' mechanism which measures the Tumour size, Involvement of Local nodes and metastases.
+
+Following the pattern of [mcode]() these are recorded as 4 distinct Observations - One for each of the TNM measures, and a single 'summary' observation. The summary Observation has *hasMember* references to the individual Observations, and the regimen CarePlan has a *supportingInfo* reference to the summary Observation.
+
+It is also possible for there to be a reference from the Condition to the summary Observation using the *stage.assessment* reference.
+
+Heres a diagram of the resources involved in Diagnosis and Staging (from the Reference Implementation)
+
+<img style="width:800px; float:none" src="tnm.png"/>
+
+
+#### Measures made before treatment starts
+Commonly there are measurements made before treatment commences - for example Creatinine Clearance test to determine drug dosages or the [ECOG score](StructureDefinition-observation-ecog.html) so that the effectiveness of treatment can be determined.
+
+Generally these are recorded as Observations, and the regimen CarePlan will have a *supportingInfo* reference to them.
+
+#### Measures made after treatment ends
+There are also measures that are made after the treatment ends - perhaps to record the effectiveness of treatment, or any damage caused by the medications. These are recorded as Observations, with a *basedOn* reference back to the regimen CarePlan
+
+
+#### Representing a cycle of treatment
+Each cycle of treatment is represented by a separate [CarePlan](StructureDefinition-an-careplan-cycle.html) resource - ie each cycle has its own CarePlan. The status of the CarePlan will be *active* when treatment defined by the cycle is being given and *completed* once the cycle has been completed. 
+
+If the cycle needs to be stopped early for any reason - such as patient intolerance - then the status will be *revoked* and there will often be an [Observation]() that records the reason why. The Observation will have a *basedOn* reference back to the cycle carePlan. 
+
+Like the regimen CarePlan it is also possible to have measures made before and after the cycle commences and starts. These are recorded using Observations in the same way as for the regimen.
+
+#### Recording cancellation of treatment
+Sometimes a regimen needs to be cancelled before it is completed. For example the side effects of treatment are so severe as to warrant a new regimen being considered. 
+
+The regimen CarePlan status will be *revoked* and there will often be an [Observation]() that records the reason why. The Observation will have a *basedOn* reference back to the regimen carePlan. 
+
+If this happens during a cycle of treatment, then the cycle CarePlan will also be updated as described above.
+
+
+#### Recording medication administrations
+All medication administrations (actual delivery of the medication orally or parenterally) are recorded as MedicationAdministration resources.
+
+The MedicationAdministration needs a reference back to the cycle CarePlan. This is done using a *supportingInformation* reference.
+
+(As an aside, in FHIR release 5 there is a specific *basedOn* reference that can be used). 
+
+### Recording prescriptions given
+If the patient was given a prescription for a medication - rather than having it administered by someone, then the apprppriate resource type is MedicationRequest. It also references the cycle CarePlan by a *supportingInformation* reference.
+
+### Measures taken during medication administration
+Sometimes measures are taken before or after medication administration. These are represented as Observations, and should have a reference to the cycle CarePlan via the  *focus* reference. They might also have a *partOf* reference to the MedicationAdministration.
 
 <!--
 ----

@@ -29,6 +29,11 @@
 <td><p>ACT-NOW patient</p></td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-observation-bsa.html'>observation-bsa</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/observation-bsa</td>
+<td><p>An observation that represents a Body Surface Area measurement</p></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-observation-ecog.html'>observation-ecog</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/observation-ecog</td>
 <td><p>An observation that represents an ecog score</p></td>

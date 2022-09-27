@@ -1,0 +1,33 @@
+{
+  "resourceType": "Observation",
+  "id": "bsa",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "443403011",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "1223",
+        "system": "http://example.org"
+      }
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">BSA</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/anPatient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "valueQuantity": {
+    "value": 1.4
+  }
+}

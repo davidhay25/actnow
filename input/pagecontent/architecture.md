@@ -1,8 +1,8 @@
 
 
-The systems is designed as a data aggregator - accepting data from a small number of systems (it is highly specialised) and saving it into a FHIR server as patient specific information.
+The systems is designed as a data aggregator - accepting data from a small number of systems (it is a highly specialised domain) and saving it into a FHIR server as patient specific information. Data is then available for use by other systems, including analytics and potentially care dleivery.
 
-This guide does not include security in detail.
+This guide does not include security in any detail.
 
 The overall architecture of the proposed solution is as follows:
 
@@ -12,7 +12,7 @@ The overall architecture of the proposed solution is as follows:
 
 
 #### Client (Data source)
-This is the source of ACT-NOW data into the repository. It is submitted as FHIR resources in a transaction bundle (link to details) at regular intervals, likely daily in the first instance. The bundle will be validated before being accepted. If it fails validation, then it will need to be corrected in the source system and re-submitted.
+This is the source of ACT-NOW data into the repository. It is submitted as FHIR resources in a [transaction bundle](api-input.html) at regular intervals, likely daily in the first instance. The bundle will be validated before being accepted. If it fails validation, then it will need to be corrected in the source system and re-submitted.
 
 #### API Manager
 The interface between external systems and the internal CanShare systems. It applies security and authentication / authorisation policies for both submitters of data and clients performing queries.
@@ -30,7 +30,7 @@ If the bundle fails validation, then it will be rejected and will need to be cor
 
 This requirement does bring support requirements that are being developed. Specifically, the order that bundles are submitted is important, as some resources (particularly the Care Plans) are updated as part of the data acquisition.
 
-This step will also add a Provenance resource to the bundle (it could be supplied by the originating system, though there is value in it being applied by the system.)
+This step could also add a Provenance resource to the bundle (it could be supplied by the originating system, though there is value in it being applied by the system.)
 
 In this architecture, the validator function is performed by an Integration Engine - though other architectures are certainly feasible. However, it is assumed that the FHIR server is a 'generic' server and so will not be capable of the business level validation required.
 
@@ -52,7 +52,18 @@ The component is depicted as being part of the Integration Engine (and so inside
 
 There is a javascript component developed as part of the Reference Implementation that can do this action. It could serve as an example for development. 
 
-The bundle creator may not be required, depending on business decisions.
+The CSV bundle creator may not be required, depending on business decisions.
+
+### Requirements of the FHIR server
+This section summarizes the minimum requirements of the FHIR server - details of interactions are in the [API](api-input.html) [Guides](api-query.html)
+
+Ideally the server will support the complete [RESTful API](http://hl7.org/fhir/http.html) defined by FHIR - as does the [HAPI](https://hapifhir.io/) server for example. (The [HAPi CLI](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html) is used by the [reference implementation](reference-implementation.html) - though it is in no way suitable for a production deployment.)
+
+The key features needed are:
+* Support of the transaction operation
+* Support of conditional updates
+* Search parameters for the used resources 
+* _include and _revinclude for the resource types used, and their references 
 
 <!--
 

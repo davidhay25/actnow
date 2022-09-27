@@ -43,12 +43,13 @@ In a conditional update (sometimes called an 'upsert'), the entry contains a num
 Here's an example of a CarePlan with an identifier with a system value of http://example.org and a value of abc1234 being created or updated. :
 
 ```
-  entry: [
+  "entry": [
     {
-      resource : {....},
-      request: {
-        method:PUT,
-        url: CarePlan?identifier=http://example.org|abc1234
+      "fullUrl": "urn:uuid:ad9ae703-e6a3-41f7-90e8-b6f6ff9e3742",
+      "resource" : {....},
+      "request" : {
+        "method":"PUT",
+        "url": "CarePlan?identifier=http://example.org|abc1234"
       }
     }
   ]
@@ -172,7 +173,7 @@ The flow is pretty much the same as for the complete patient refresh except that
 * All resources are represented as conditional updates in the bundle.
 * All resources will have a reference to the patient
 * Any resources that are the target of a reference much be included in the bundle, even if they have already been sent to the system and haven't changed since then
-* As resources are created, they can be added to the bundle in an entry with the conditional update url set
+* The 'fullUrl' element is required on all entries. It uses the uuid format: 
 * Use the 'validate' endpoint supplied by the Reference Implementation during the design phase.
 
 

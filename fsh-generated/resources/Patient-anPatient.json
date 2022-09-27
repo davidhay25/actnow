@@ -1,0 +1,24 @@
+{
+  "resourceType": "Patient",
+  "id": "anPatient",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lorrie Lung</div>"
+  },
+  "birthDate": "1969-02-02",
+  "name": [
+    {
+      "given": [
+        "Lorrie"
+      ],
+      "family": "Lung",
+      "text": "Lorrie Lung"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://standards.digital.health.nz/ns/nhi-id",
+      "value": "WER4568"
+    }
+  ]
+}

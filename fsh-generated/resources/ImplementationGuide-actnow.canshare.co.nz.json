@@ -23,14 +23,6 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "dependsOn": [
-    {
-      "id": "mcode",
-      "packageId": "hl7.fhir.us.mcode",
-      "version": "2.0.0",
-      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"
-    }
-  ],
   "definition": {
     "resource": [
       {
@@ -71,6 +63,14 @@
         },
         "name": "Regimen Careplan",
         "description": "A CarePlan that represents a PlanDefinition being applied to a Patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/observation-bsa"
+        },
+        "name": "Body Surface Area",
+        "description": "An observation that represents a Body Surface Area measurement",
         "exampleBoolean": false
       },
       {
@@ -211,6 +211,20 @@
       },
       {
         "reference": {
+          "reference": "Patient/anPatient"
+        },
+        "name": "Lorrie Lung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/bsa"
+        },
+        "name": "bsa",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa"
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/ma-basedOn"
         },
         "name": "ma-basedOn",
@@ -262,11 +276,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "overview.html",
-          "title": "Overview",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "html"
@@ -274,6 +283,11 @@
         {
           "nameUrl": "reference-implementation.html",
           "title": "Reference Implementation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "resource-graph.html",
+          "title": "Resource Graph",
           "generation": "markdown"
         },
         {
