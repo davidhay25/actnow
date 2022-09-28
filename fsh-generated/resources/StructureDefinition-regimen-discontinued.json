@@ -43,34 +43,6 @@
         "definition": "Reasons why a regimen may have been discontinued"
       },
       {
-        "id": "Extension.extension:date",
-        "path": "Extension.extension",
-        "sliceName": "date",
-        "short": "The date that the regimen was discontinued",
-        "definition": "The date that the regimen was discontinued (? should this be the CP end date)",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:date.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:date.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "date"
-      },
-      {
-        "id": "Extension.extension:date.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
         "id": "Extension.extension:reason",
         "path": "Extension.extension",
         "sliceName": "reason",

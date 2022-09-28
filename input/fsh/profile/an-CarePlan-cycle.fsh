@@ -13,14 +13,15 @@ Description:    "A CarePlan that represents a single cycle of treatment."
 * title 1..1
 
 * extension contains
-    $extCycleNumber named cycle-number 1..1
+    $extCycleNumber named cycle-number 0..1  and //the sequention number of the cycle
+    $extLastAdminDate named last-admin-date 0..1  //the last date of any administration under this cycle
 
-//Must have a reference to the regimen plan
-* partOf 1..1 
 
-* identifier 1..*
+* partOf 1..1       //Must have a reference to the regimen plan
+* category 1..*     //must have at least the cycle category (sliced below)
+* identifier 1..*   //identifier required for updates
 
-//slicing on category
+//slicing on category. At least the defined code must be present
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "category.code"
 * category ^slicing.rules = #open

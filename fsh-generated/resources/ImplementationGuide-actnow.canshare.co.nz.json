@@ -67,7 +67,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/observation-bsa"
+          "reference": "StructureDefinition/an-observation-bsa"
         },
         "name": "Body Surface Area",
         "description": "An observation that represents a Body Surface Area measurement",
@@ -75,7 +75,15 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/observation-ecog"
+          "reference": "StructureDefinition/an-observation-creat-clear"
+        },
+        "name": "Creatinine Clearance",
+        "description": "An observation that represents a Creatinine Clearance measurement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-observation-ecog"
         },
         "name": "ECOG score",
         "description": "An observation that represents an ecog score",
@@ -83,7 +91,15 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/observation-regimen-outcome"
+          "reference": "StructureDefinition/an-observation-height"
+        },
+        "name": "Height",
+        "description": "An observation that represents a height measurement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-observation-regimen-outcome"
         },
         "name": "Regimen outcome",
         "description": "An observation that represents the outcome of a regimen CarePlan that is closed",
@@ -91,10 +107,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/adjustment-reason"
+          "reference": "StructureDefinition/an-observation-weight"
         },
-        "name": "AdjustmentReason",
-        "description": "The reason why the dose given was not the same as that in the regimen",
+        "name": "Height",
+        "description": "An observation that represents a weight measurement",
         "exampleBoolean": false
       },
       {
@@ -126,7 +142,7 @@
           "reference": "StructureDefinition/cycle-day"
         },
         "name": "CycleDay",
-        "description": "The day of the cycle that this medication was given on",
+        "description": "The day of the cycle that this medication was given on. Includes planned and administered",
         "exampleBoolean": false
       },
       {
@@ -139,10 +155,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/dose-adjustment-reason"
+        },
+        "name": "DoseAdjustmentReason",
+        "description": "The reason why the dose given was not the same as that in the regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/iot"
         },
         "name": "IOT",
         "description": "Intent of treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/last-admin-date"
+        },
+        "name": "LastAdminDate",
+        "description": "The last date that a medication administration was made for this cycle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/planned-dose"
+        },
+        "name": "PlannedDose",
+        "description": "The dose that was planned to be administered",
         "exampleBoolean": false
       },
       {
@@ -166,7 +206,7 @@
           "reference": "StructureDefinition/regimen-otu"
         },
         "name": "RegimenOTU",
-        "description": "Reasons why a regimen may have been discontinued",
+        "description": "Outcome measure for a regimen",
         "exampleBoolean": false
       },
       {

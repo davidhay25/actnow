@@ -1,6 +1,6 @@
 Profile:        ObservationEcog
 Parent:         Observation
-Id:             observation-ecog
+Id:             an-observation-ecog
 Title:          "ECOG score"
 Description:    "An observation that represents an ecog score"
 

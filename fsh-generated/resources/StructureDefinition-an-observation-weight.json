@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "observation-ecog",
+  "id": "an-observation-weight",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A CarePlan that represents a single cycle of treatment.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a weight measurement.</div>"
   },
   "extension": [
     {
@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-ecog",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa",
   "version": "0.1.0",
-  "name": "ObservationEcog",
-  "title": "ECOG score",
+  "name": "ObservationWeight",
+  "title": "Height",
   "status": "active",
-  "description": "An observation that represents an ecog score",
+  "description": "An observation that represents a weight measurement",
   "jurisdiction": [
     {
       "coding": [
@@ -79,16 +79,39 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "423740007",
-              "system": "http://snomed.info/sct",
-              "display": "ECOG performance status"
-            }
-          ]
-        },
         "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:snomedCode",
+        "path": "Observation.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:snomedCode.system",
+        "path": "Observation.code.coding.system",
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:snomedCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "patternCode": "45352010"
       },
       {
         "id": "Observation.subject",
@@ -111,7 +134,7 @@
         "min": 1,
         "type": [
           {
-            "code": "integer"
+            "code": "Quantity"
           }
         ],
         "mustSupport": true

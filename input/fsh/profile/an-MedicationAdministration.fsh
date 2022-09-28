@@ -7,7 +7,12 @@ Description:    "ACT-NOW medication administration"
 * ^url = $profMedicationAdministration
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* identifier 1..*
 
-* effective[x] only Period
+* extension contains
+    $extCycleDay  named cycle-day  0..1 and        //planned and administered date
+    $extPlannedDose named planned-dose 0..1 and     //planned dose
+    $extDoseAdjustmentReason named dose-adjustment-reason 0..1  //the reason the dose was adjusted from what was planned
+
+* identifier 1..*
+* effective[x] only Period   //As ther should always be a start and end time
 

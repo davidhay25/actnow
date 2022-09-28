@@ -3,15 +3,6 @@
 <tr><th>Id</th><th>Canonical url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 </tr>
 <tr>
-<td><a href='StructureDefinition-adjustment-reason.html'>adjustment-reason</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/adjustment-reason</td>
-<td>
-<div>MedicationAdministration</div>
-</td>
-<td><p>The reason why the dose given was not the same as that in the regimen</p></td>
-<td></td>
-</tr>
-<tr>
 <td><a href='StructureDefinition-based-on.html'>based-on</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/based-on</td>
 <td>
@@ -44,7 +35,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td><p>The day of the cycle that this medication was given on</p></td>
+<td><p>The day of the cycle that this medication was given on. Includes planned and administered</p></td>
 <td></td>
 </tr>
 <tr>
@@ -57,12 +48,39 @@
 <td></td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-dose-adjustment-reason.html'>dose-adjustment-reason</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/dose-adjustment-reason</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td><p>The reason why the dose given was not the same as that in the regimen</p></td>
+<td></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-iot.html'>iot</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/intent-of-treatment</td>
 <td>
 <div>CarePlan</div>
 </td>
 <td><p>Intent of treatment</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-last-admin-date.html'>last-admin-date</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/last-admin-date</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>The last date that a medication administration was made for this cycle</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-planned-dose.html'>planned-dose</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/planned-dose</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td><p>The dose that was planned to be administered</p></td>
 <td></td>
 </tr>
 <tr>
@@ -89,7 +107,7 @@
 <td>
 <div>Observation</div>
 </td>
-<td><p>Reasons why a regimen may have been discontinued</p></td>
+<td><p>Outcome measure for a regimen</p></td>
 <td></td>
 </tr>
 </table>

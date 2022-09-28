@@ -1,6 +1,6 @@
 Profile:        ObservationBSA
 Parent:         Observation
-Id:             observation-bsa
+Id:             an-observation-bsa
 Title:          "Body Surface Area"
 Description:    "An observation that represents a Body Surface Area measurement"
 
@@ -16,21 +16,18 @@ Description:    "An observation that represents a Body Surface Area measurement"
 * status 1..1 MS
 * code 1..1 MS
 
-//fix the code value
+//Slice on the code. This states that at least the snomed code must be present - others are allowed though
 
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 
 * code.coding contains
-    fixedCode 1..1
+    snomedCode 1..1
 
-* code.coding[fixedCode].code = #443403011
-* code.coding[fixedCode].system = $snomed
-
-//* code = $snomed#443403011 // don't include the description here, otherise it is required ..."Body surface area (observable entity)"
+* code.coding[snomedCode].code = #443403011
+* code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime
-
 * value[x] only Quantity
 

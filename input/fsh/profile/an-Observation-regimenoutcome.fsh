@@ -2,7 +2,7 @@
 
 Profile:        ObservationRegimenOutcome
 Parent:         Observation
-Id:             observation-regimen-outcome
+Id:             an-observation-regimen-outcome
 Title:          "Regimen outcome"
 Description:    "An observation that represents the outcome of a regimen CarePlan that is closed"
 

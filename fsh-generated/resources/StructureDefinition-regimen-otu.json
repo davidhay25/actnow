@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "RegimenOTU",
   "status": "draft",
-  "description": "Reasons why a regimen may have been discontinued",
+  "description": "Outcome measure for a regimen",
   "jurisdiction": [
     {
       "coding": [
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "Reasons why a regimen may have been discontinued"
+        "definition": "Outcome measure for a regimen"
       },
       {
         "id": "Extension.extension:benefit",

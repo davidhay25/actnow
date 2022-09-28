@@ -1,6 +1,6 @@
 Extension: RegimenOTU
 Id: regimen-otu
-Description: "Reasons why a regimen may have been discontinued"
+Description: "Outcome measure for a regimen"
 
 * ^url = $extRegimenOTU
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

@@ -106,6 +106,36 @@
         ]
       },
       {
+        "id": "CarePlan.extension:reasonDiscontinued",
+        "path": "CarePlan.extension",
+        "sliceName": "reasonDiscontinued",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/regimen-discontinued"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.extension:CycleCount",
+        "path": "CarePlan.extension",
+        "sliceName": "CycleCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/cycle-count"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CarePlan.identifier",
         "path": "CarePlan.identifier",
         "min": 1

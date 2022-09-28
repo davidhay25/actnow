@@ -1,7 +1,8 @@
-Extension: AdjustmentReason
-Id: adjustment-reason
+Extension: DoseAdjustmentReason
+Id: dose-adjustment-reason
 Description: "The reason why the dose given was not the same as that in the regimen"
-* ^url = $extAdjustmentReason
+
+* ^url = $extDoseAdjustmentReason
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context[+].type = #element

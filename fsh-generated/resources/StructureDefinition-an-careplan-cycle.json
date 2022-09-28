@@ -73,20 +73,34 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
         "id": "CarePlan.extension:cycle-number",
         "path": "CarePlan.extension",
         "sliceName": "cycle-number",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
               "http://canshare.co.nz/fhir/StructureDefinition/cycle-number"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.extension:last-admin-date",
+        "path": "CarePlan.extension",
+        "sliceName": "last-admin-date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/last-admin-date"
             ]
           }
         ]

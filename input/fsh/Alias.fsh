@@ -21,13 +21,18 @@ Alias: $iot = http://canshare.co.nz/fhir/StructureDefinition/intent-of-treatment
 Alias: $clinicalTrial = http://canshare.co.nz/fhir/StructureDefinition/clinicalTrial
 Alias: $extCycleCount = http://canshare.co.nz/fhir/StructureDefinition/cycle-count
 
+Alias: $extLastAdminDate = http://canshare.co.nz/fhir/StructureDefinition/last-admin-date
+
+
+Alias: $extPlannedDose = http://canshare.co.nz/fhir/StructureDefinition/planned-dose
+
 Alias: $extRegimenDiscontinued = http://canshare.co.nz/fhir/StructureDefinition/regimen-discontinued
 Alias: $extRegimenOTU = http://canshare.co.nz/fhir/StructureDefinition/regimen-otu
 Alias: $extCycleNumber = http://canshare.co.nz/fhir/StructureDefinition/cycle-number
 Alias: $extBasedOn = http://canshare.co.nz/fhir/StructureDefinition/based-on
 Alias: $extCycleDay = http://canshare.co.nz/fhir/StructureDefinition/cycle-day
 Alias: $extPrescribedDose = http://canshare.co.nz/fhir/StructureDefinition/prescribed-dose
-Alias: $extAdjustmentReason = http://canshare.co.nz/fhir/StructureDefinition/adjustment-reason
+Alias: $extDoseAdjustmentReason = http://canshare.co.nz/fhir/StructureDefinition/dose-adjustment-reason
 
 
 //ValueSet & Codesystem urls

@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "observation-bsa",
+  "id": "an-observation-height",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a Body Surface Area measurement.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a height measurement.</div>"
   },
   "extension": [
     {
@@ -17,10 +17,10 @@
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa",
   "version": "0.1.0",
-  "name": "ObservationBSA",
-  "title": "Body Surface Area",
+  "name": "ObservationHeight",
+  "title": "Height",
   "status": "active",
-  "description": "An observation that represents a Body Surface Area measurement",
+  "description": "An observation that represents a height measurement",
   "jurisdiction": [
     {
       "coding": [
@@ -96,22 +96,22 @@
         "min": 1
       },
       {
-        "id": "Observation.code.coding:fixedCode",
+        "id": "Observation.code.coding:snomedCode",
         "path": "Observation.code.coding",
-        "sliceName": "fixedCode",
+        "sliceName": "snomedCode",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Observation.code.coding:fixedCode.system",
+        "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
         "patternUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.code.coding:fixedCode.code",
+        "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "443403011"
+        "patternCode": "4565433019"
       },
       {
         "id": "Observation.subject",
