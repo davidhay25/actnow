@@ -75,6 +75,38 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/an-observation-cM"
+        },
+        "name": "clinical M-score",
+        "description": "An observation that represents the clinical 'N' score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-observation-cN"
+        },
+        "name": "clinical N-score",
+        "description": "An observation that represents the clinical 'N' score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-observation-cT"
+        },
+        "name": "clinical T-score",
+        "description": "An observation that represents the clinical 'T' score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-observation-cGroup"
+        },
+        "name": "clinical TNM group score",
+        "description": "An observation that represents the clinical TNM group score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-observation-creat-clear"
         },
         "name": "Creatinine Clearance",
@@ -95,6 +127,14 @@
         },
         "name": "Height",
         "description": "An observation that represents a height measurement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-observation-histology"
+        },
+        "name": "Histology",
+        "description": "An observation that represents a Histology finding",
         "exampleBoolean": false
       },
       {

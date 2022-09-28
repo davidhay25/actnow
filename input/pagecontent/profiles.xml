@@ -29,6 +29,26 @@
 <td><p>An observation that represents a Body Surface Area measurement</p></td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-an-observation-cGroup.html'>an-observation-cGroup</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/cM</td>
+<td><p>An observation that represents the clinical TNM group score</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-observation-cM.html'>an-observation-cM</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/cM</td>
+<td><p>An observation that represents the clinical &#39;N&#39; score</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-observation-cN.html'>an-observation-cN</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/cN</td>
+<td><p>An observation that represents the clinical &#39;N&#39; score</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-observation-cT.html'>an-observation-cT</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/cT</td>
+<td><p>An observation that represents the clinical &#39;T&#39; score</p></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-an-observation-creat-clear.html'>an-observation-creat-clear</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/observation-bsa</td>
 <td><p>An observation that represents a Creatinine Clearance measurement</p></td>
@@ -42,6 +62,11 @@
 <td><a href='StructureDefinition-an-observation-height.html'>an-observation-height</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/observation-bsa</td>
 <td><p>An observation that represents a height measurement</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-observation-histology.html'>an-observation-histology</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/observation-bsa</td>
+<td><p>An observation that represents a Histology finding</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-observation-regimen-outcome.html'>an-observation-regimen-outcome</a></td>

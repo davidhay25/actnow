@@ -1,8 +1,16 @@
 
 This section describes how data is sent from client applications to the system.
 
+### Summary
+The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-update) (somethmes knows as an [upsert](https://en.wiktionary.org/wiki/upsert)) in a [FHIR transaction](http://hl7.org/fhir/http.html#transaction) to receive data from suppliers. The resource [identifier](http://hl7.org/fhir/datatypes.html#Identifier) is the element used to discriminate during the update or create operation. The bundle contains all resources refrences by any other resource within the bundle, and uses UUID's as resource ids.
 
-### Resource identifier
+In some cases, [conditonal create](http://hl7.org/fhir/http.html#ccreate) is also used where the resource must be present in the bundle to allow the server to resolve the resource ids for referencing, but the resource is not intended to be updated if already present. The Patient resource is an example where this might be appropriate.
+
+
+### Details
+
+
+#### Resource identifier
 
 Given that the system potentially needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
 
@@ -22,7 +30,7 @@ Each potential supplier of information will be assigned a system value (which is
 
 The same system could be used for any resource type, providing that the value remains unique within that system. Alternatively a separate system per resource type could be used.
 
-### API
+#### API
 
 When creating or updating resources through the RESTful API, one approach is for the client to directly update the resources as required. However, this leads to quite a 'chatty' interaction requiring multiple REST calls to create. This guide uses an alternative approach, where the resources to be created or updated are placed in a [FHIR Bundle](http://hl7.org/fhir/bundle.html) and submitted as a unit to the server for processing. There are a number of ways that this could be performed, but the [transaction](http://hl7.org/fhir/http.html#transaction) is the one chosen here.
 
@@ -57,11 +65,11 @@ Here's an example of a CarePlan with an identifier with a system value of http:/
 ```
 
 
-### Bundle layout
+#### Bundle layout
 
 A bundle containing resources to be saved in the server can have any number of resources. The following constraints apply.
 
-#### Resource ids and references should be a uuid. 
+##### Resource ids and references should be a uuid. 
 
 The [uuid](http://hl7.org/fhir/datatypes.html#uuid)(Universally Unique ID) is used as a unique id within the bundle, including references between resource (ie to reference another resource you use the uuid)
 
@@ -121,22 +129,22 @@ Here's an example of resources and resource references in a sample bundle. Note 
 ```
 
 
-#### All resources should have an identifier
+##### All resources should have an identifier
 As described earlier, the identifier is used to locate resources if needed.
 
-#### All resources referenced by any of the resources in the bundle must be present in the bundle
+##### All resources referenced by any of the resources in the bundle must be present in the bundle
 Even if the resource already exists in the server, it should still be present in the bundle. eg the Patient resource will always be present. This approach makes the overall design much simpler - especially for references as otherwise the client would need to first query the server to locate the patient id, then create the bundle
 
 
 
-### Process to create the bundle
+#### Process to create the bundle
 There are a number of strategies for the client to create the bundle, depending on their internal capabilities. At the least, it must maintain unique identifiers for each resource within its database. These may or may not be in the FHIR format as long as they are unique within the clients system, at least within the resource type (so the combination of identifier.system & identifier.value is unique). 
 
 Data can be sent either as new/updates only (incremental) or all data for a patient. The approach taken will depend on whether the client can track internally resources that have been submitted (incremental update) or whether it must send a complete dump of all the data for a patient if there are any changes to that patients data. 
 
 The incremental approach will result in smaller bundles (as only changed resources and resources they reference need to be sent) and will allow allow the server to track changes to resources over time (eg a changing CarePlan status). However, this does add to the complexity of the solution. 
 
-#### Complete patient refresh
+##### Complete patient refresh
 
 If the sender cannot track which resources have been sent to the system, then when any patient data changes, all data needs to be sent (or re-sent) to the server. It is suggested that there should be a single bundle per patient as this will keep the bundle size as small as possible. It also means that if there is a validation error, then only that patient will need to be re-sent.
 
@@ -162,12 +170,12 @@ For each patient that has had an update (new or changed data) since the last tim
     * for each medication that has been administered or prescribed to a patient as part of the cycle of treatment:
         * Create a MedicationAdministration or MedicationRequest resource, with a 'supportingInformation' reference to the cycle carePlan
 
-#### Incremental updates
+##### Incremental updates
 In this scenario, the client is able to track which resources have (successfully) been sent to the system and can create bundles that only contain updated or new resources.
 
 The flow is pretty much the same as for the complete patient refresh except that only new or updated resources are included in the bundle. (plus any other resources which they reference - like Patient) 
 
-#### Things to remember
+##### Things to remember
 * All resources have an identifier and UUID as the ID.
 * All references use the UUID
 * All resources are represented as conditional updates in the bundle.

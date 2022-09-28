@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "an-observation-creat-clear",
+  "id": "an-observation-cT",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a Creatinine Clearance measurement.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the clinical 'T' score.</div>"
   },
   "extension": [
     {
@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/cT",
   "version": "0.1.0",
-  "name": "ObservationCreatClear",
-  "title": "Creatinine Clearance",
+  "name": "ObservationCT",
+  "title": "clinical T-score",
   "status": "active",
-  "description": "An observation that represents a Creatinine Clearance measurement",
+  "description": "An observation that represents the clinical 'T' score",
   "jurisdiction": [
     {
       "coding": [
@@ -1164,7 +1164,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "www.example.org",
+        "patternUri": "http://snomed.info/sct",
         "constraint": [
           {
             "key": "ele-1",
@@ -1255,7 +1255,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "cc",
+        "patternCode": "1778907013",
         "constraint": [
           {
             "key": "ele-1",
@@ -1778,7 +1778,7 @@
         },
         "type": [
           {
-            "code": "Quantity"
+            "code": "integer"
           }
         ],
         "condition": [
@@ -3274,13 +3274,13 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "www.example.org"
+        "patternUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "cc"
+        "patternCode": "1778907013"
       },
       {
         "id": "Observation.subject",
@@ -3303,7 +3303,7 @@
         "min": 1,
         "type": [
           {
-            "code": "Quantity"
+            "code": "integer"
           }
         ],
         "mustSupport": true

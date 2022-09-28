@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "an-observation-creat-clear",
+  "id": "an-observation-cGroup",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a Creatinine Clearance measurement.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the clinical TNM group score.</div>"
   },
   "extension": [
     {
@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/cM",
   "version": "0.1.0",
-  "name": "ObservationCreatClear",
-  "title": "Creatinine Clearance",
+  "name": "ObservationClinTNMGroup",
+  "title": "clinical TNM group score",
   "status": "active",
-  "description": "An observation that represents a Creatinine Clearance measurement",
+  "description": "An observation that represents the clinical TNM group score",
   "jurisdiction": [
     {
       "coding": [
@@ -956,7 +956,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -1152,7 +1152,7 @@
         "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
         "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.",
         "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Coding.system",
@@ -1164,7 +1164,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "www.example.org",
+        "patternUri": "http://snomed.info/sct",
         "constraint": [
           {
             "key": "ele-1",
@@ -1243,7 +1243,7 @@
         "short": "Symbol in syntax defined by the system",
         "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
         "requirements": "Need to refer to a particular code in the system.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Coding.code",
@@ -1255,7 +1255,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "cc",
+        "patternCode": "1786868015",
         "constraint": [
           {
             "key": "ele-1",
@@ -1778,7 +1778,7 @@
         },
         "type": [
           {
-            "code": "Quantity"
+            "code": "integer"
           }
         ],
         "condition": [
@@ -2681,9 +2681,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+              "http://canshare.co.nz/fhir/StructureDefinition/cT",
+              "http://canshare.co.nz/fhir/StructureDefinition/cN",
+              "http://canshare.co.nz/fhir/StructureDefinition/cM"
             ]
           }
         ],
@@ -3257,7 +3257,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "system"
             }
           ],
           "rules": "open"
@@ -3274,13 +3274,13 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "www.example.org"
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
-        "patternCode": "cc"
+        "patternCode": "1786868015"
       },
       {
         "id": "Observation.subject",
@@ -3303,10 +3303,24 @@
         "min": 1,
         "type": [
           {
-            "code": "Quantity"
+            "code": "integer"
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/cT",
+              "http://canshare.co.nz/fhir/StructureDefinition/cN",
+              "http://canshare.co.nz/fhir/StructureDefinition/cM"
+            ]
+          }
+        ]
       }
     ]
   }

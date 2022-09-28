@@ -16,6 +16,18 @@ Alias: $ecog = http://canshare.co.nz/fhir/StructureDefinition/observation-ecog
 Alias: $bsa = http://canshare.co.nz/fhir/StructureDefinition/observation-bsa
 Alias: $regimen-outcome = http://canshare.co.nz/fhir/StructureDefinition/observation-regimen-outcome
 
+//Aliases for TNM
+Alias: $cT = http://canshare.co.nz/fhir/StructureDefinition/cT
+Alias: $cN = http://canshare.co.nz/fhir/StructureDefinition/cN
+Alias: $cM = http://canshare.co.nz/fhir/StructureDefinition/cM
+Alias: $cGroup = http://canshare.co.nz/fhir/StructureDefinition/cGroup
+
+Alias: $pT = http://canshare.co.nz/fhir/StructureDefinition/pT
+Alias: $pN = http://canshare.co.nz/fhir/StructureDefinition/pN
+Alias: $pM = http://canshare.co.nz/fhir/StructureDefinition/pM
+Alias: $pGroup = http://canshare.co.nz/fhir/StructureDefinition/pGroup
+
+
 //Aliases for extensions
 Alias: $iot = http://canshare.co.nz/fhir/StructureDefinition/intent-of-treatment
 Alias: $clinicalTrial = http://canshare.co.nz/fhir/StructureDefinition/clinicalTrial
