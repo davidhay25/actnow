@@ -1,6 +1,6 @@
 Profile:        ObservationBSA
 Parent:         Observation
-Id:             an-observation-bsa
+Id:             an-bsa
 Title:          "Body Surface Area"
 Description:    "An observation that represents a Body Surface Area measurement"
 

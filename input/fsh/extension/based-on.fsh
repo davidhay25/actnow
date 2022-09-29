@@ -1,5 +1,5 @@
 Extension: BasedOn
-Id: based-on
+Id: an-based-on
 Description: "Allows a MedicationAdministration to refer to a CarePlan"
 * ^url = $extBasedOn
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

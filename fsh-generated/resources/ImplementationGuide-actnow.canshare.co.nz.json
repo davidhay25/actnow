@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "actnow.canshare.co.nz",
-  "url": "http://actnow.canshare.co.nz/ImplementationGuide/actnow.canshare.co.nz",
+  "url": "http://canshare.co.nz/fhir/ImplementationGuide/actnow.canshare.co.nz",
   "version": "0.1.0",
   "name": "actnow",
   "title": "ACT-NOW Implementation Guide",
@@ -19,6 +19,17 @@
     }
   ],
   "description": "FHIR support for the New Zealand ACT-NOW standard",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166",
+          "display": "New Zealand"
+        }
+      ]
+    }
+  ],
   "packageId": "actnow.canshare.co.nz",
   "fhirVersion": [
     "4.0.1"
@@ -30,12 +41,12 @@
           "reference": "StructureDefinition/an-condition"
         },
         "name": "ACT-NOW diagnosis",
-        "description": "A diagnosis",
+        "description": "The primary diagnosis for this cancer. Can have an evidence.detail reference to an Observation\nthat has the histology and a stage.assessment reference to the TNM Observation staging (clinical and pathological)",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-medicationadministration"
+          "reference": "StructureDefinition/an-medication-administration"
         },
         "name": "ACT-NOW medication administration",
         "description": "ACT-NOW medication administration",
@@ -54,7 +65,7 @@
           "reference": "StructureDefinition/an-careplan-cycle"
         },
         "name": "Cycle Careplan",
-        "description": "A CarePlan that represents a single cycle of treatment.",
+        "description": "A CarePlan that represents a single cycle of treatment. It will have a 'partOf' reference to the regiment carePlan.",
         "exampleBoolean": false
       },
       {
@@ -62,12 +73,12 @@
           "reference": "StructureDefinition/an-careplan-regimen"
         },
         "name": "Regimen Careplan",
-        "description": "A CarePlan that represents a PlanDefinition being applied to a Patient.",
+        "description": "A CarePlan that represents a PlanDefinition being applied to a Patient. Referred to as a regimen. The regimen\nhas multiple cycles also represented as CarePlans which have a 'partOf' reference back to the regimen plan.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-bsa"
+          "reference": "StructureDefinition/an-bsa"
         },
         "name": "Body Surface Area",
         "description": "An observation that represents a Body Surface Area measurement",
@@ -75,7 +86,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-cM"
+          "reference": "StructureDefinition/an-cM"
         },
         "name": "clinical M-score",
         "description": "An observation that represents the clinical 'N' score",
@@ -83,23 +94,23 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-cN"
+          "reference": "StructureDefinition/an-cN"
         },
         "name": "clinical N-score",
-        "description": "An observation that represents the clinical 'N' score",
+        "description": "An observation that represents the clinical 'N' score which measures local lymph node involvement.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-cT"
+          "reference": "StructureDefinition/an-cT"
         },
         "name": "clinical T-score",
-        "description": "An observation that represents the clinical 'T' score",
+        "description": "An observation that represents the clinical 'T' score which measures the tumour size.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-cGroup"
+          "reference": "StructureDefinition/an-cGroup"
         },
         "name": "clinical TNM group score",
         "description": "An observation that represents the clinical TNM group score",
@@ -107,7 +118,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-creat-clear"
+          "reference": "StructureDefinition/an-creat-clear"
         },
         "name": "Creatinine Clearance",
         "description": "An observation that represents a Creatinine Clearance measurement",
@@ -115,7 +126,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-ecog"
+          "reference": "StructureDefinition/an-ecog"
         },
         "name": "ECOG score",
         "description": "An observation that represents an ecog score",
@@ -123,7 +134,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-height"
+          "reference": "StructureDefinition/an-height"
         },
         "name": "Height",
         "description": "An observation that represents a height measurement",
@@ -131,7 +142,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-histology"
+          "reference": "StructureDefinition/an-histology"
         },
         "name": "Histology",
         "description": "An observation that represents a Histology finding",
@@ -139,7 +150,39 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-regimen-outcome"
+          "reference": "StructureDefinition/an-pM"
+        },
+        "name": "clinical M-score",
+        "description": "An observation that represents the pathological 'M' score which measures distant metastases.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-pN"
+        },
+        "name": "clinical N-score",
+        "description": "An observation that represents the pathological 'N' score which measures local lymph node involvement.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-pT"
+        },
+        "name": "clinical T-score",
+        "description": "An observation that represents the pathological 'T' score which measures tumour size.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-pGroup"
+        },
+        "name": "Pathological TNM group score",
+        "description": "An observation that represents the pathological TNM group score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-regimen-outcome"
         },
         "name": "Regimen outcome",
         "description": "An observation that represents the outcome of a regimen CarePlan that is closed",
@@ -147,7 +190,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-observation-weight"
+          "reference": "StructureDefinition/an-weight"
         },
         "name": "Height",
         "description": "An observation that represents a weight measurement",
@@ -155,7 +198,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/based-on"
+          "reference": "StructureDefinition/an-based-on"
         },
         "name": "BasedOn",
         "description": "Allows a MedicationAdministration to refer to a CarePlan",
@@ -163,7 +206,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/clinical-trial"
+          "reference": "StructureDefinition/an-clinical-trial"
         },
         "name": "ClinicalTrial",
         "description": "Is on a clinical trial",
@@ -171,7 +214,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cycle-count"
+          "reference": "StructureDefinition/an-cycle-count"
         },
         "name": "CycleCount",
         "description": "The number of cycles that administered for a regimen",
@@ -179,7 +222,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cycle-day"
+          "reference": "StructureDefinition/an-cycle-day"
         },
         "name": "CycleDay",
         "description": "The day of the cycle that this medication was given on. Includes planned and administered",
@@ -187,7 +230,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cycle-number"
+          "reference": "StructureDefinition/an-cycle-number"
         },
         "name": "CycleNumber",
         "description": "The cycle number of the regimen that this CP represents",
@@ -195,7 +238,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/dose-adjustment-reason"
+          "reference": "StructureDefinition/an-dose-adjustment-reason"
         },
         "name": "DoseAdjustmentReason",
         "description": "The reason why the dose given was not the same as that in the regimen",
@@ -203,7 +246,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/iot"
+          "reference": "StructureDefinition/an-iot"
         },
         "name": "IOT",
         "description": "Intent of treatment",
@@ -211,7 +254,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/last-admin-date"
+          "reference": "StructureDefinition/an-last-admin-date"
         },
         "name": "LastAdminDate",
         "description": "The last date that a medication administration was made for this cycle",
@@ -219,7 +262,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/planned-dose"
+          "reference": "StructureDefinition/an-planned-dose"
         },
         "name": "PlannedDose",
         "description": "The dose that was planned to be administered",
@@ -227,7 +270,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/prescribed-dose"
+          "reference": "StructureDefinition/an-prescribed-dose"
         },
         "name": "PrescribedDose",
         "description": "The dose of this medication in the regimen (may not be the same as that given",
@@ -235,7 +278,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/regimen-discontinued"
+          "reference": "StructureDefinition/an-regimen-discontinued"
         },
         "name": "RegimenDiscontinued",
         "description": "Reasons why a regimen may have been discontinued",
@@ -243,7 +286,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/regimen-otu"
+          "reference": "StructureDefinition/an-regimen-otu"
         },
         "name": "RegimenOTU",
         "description": "Outcome measure for a regimen",
@@ -251,7 +294,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ActNowComplete"
+          "reference": "StructureDefinition/an-logical-model"
         },
         "name": "Complete Model for ACT-NOW spec",
         "description": "A complete model for all information in the ACT-NOW spec",
@@ -259,7 +302,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/regimen-discontinued-patient-factors"
+          "reference": "ValueSet/an-regimen-discontinued-patient-factors-vs"
         },
         "name": "Patient factors when discontinuing a regimen",
         "description": "Patient factors when discontinuing a regimen",
@@ -267,7 +310,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/regimen-discontinued-reason"
+          "reference": "ValueSet/an-regimen-discontinued-reason-vs"
         },
         "name": "The reason why a regimen was discontinued",
         "description": "The reason why a regimen was discontinued",
@@ -275,7 +318,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/regimen-discontinued-patient-factors"
+          "reference": "CodeSystem/an-regimen-discontinued-patient-factors-cs"
         },
         "name": "Patient factors when discontinuing a regimen",
         "description": "Patient factors when discontinuing a regimen",
@@ -283,25 +326,67 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/regimen-discontinued-reason"
+          "reference": "CodeSystem/an-regimen-discontinued-reason-cs"
         },
         "name": "The reason why a regimen was discontinued",
         "description": "The reason why a regimen was discontinued",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Patient/anPatient"
-        },
-        "name": "Lorrie Lung",
-        "exampleBoolean": true
       },
       {
         "reference": {
           "reference": "Observation/bsa"
         },
         "name": "bsa",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa"
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
+      },
+      {
+        "reference": {
+          "reference": "Patient/exPatient"
+        },
+        "name": "Lorrie Lung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/exSmallCellCancer"
+        },
+        "name": "Small cell lung cancer diagnosis",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-condition"
+      },
+      {
+        "reference": {
+          "reference": "Observation/exSmallCellCancerHistology"
+        },
+        "name": "Histology: Small cell lung cancer",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-histology"
+      },
+      {
+        "reference": {
+          "reference": "Observation/excM1"
+        },
+        "name": "Clincial M value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cM"
+      },
+      {
+        "reference": {
+          "reference": "Observation/excN1"
+        },
+        "name": "Clincial N value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cN"
+      },
+      {
+        "reference": {
+          "reference": "Observation/excT1"
+        },
+        "name": "Clincial T value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cT"
+      },
+      {
+        "reference": {
+          "reference": "Observation/excTNM1"
+        },
+        "name": "Clincial TNM group",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
       },
       {
         "reference": {

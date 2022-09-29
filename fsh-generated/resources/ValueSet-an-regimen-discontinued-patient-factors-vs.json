@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RegimenDiscontinuedPatientFactors",
+  "id": "an-regimen-discontinued-patient-factors-vs",
+  "title": "Patient factors when discontinuing a regimen",
+  "description": "Patient factors when discontinuing a regimen",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs"
+      }
+    ]
+  }
+}

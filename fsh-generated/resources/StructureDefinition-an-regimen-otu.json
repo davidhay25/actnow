@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "an-regimen-otu",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu",
+  "version": "0.1.0",
+  "name": "RegimenOTU",
+  "status": "draft",
+  "description": "Outcome measure for a regimen",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Outcome measure for a regimen"
+      },
+      {
+        "id": "Extension.extension:benefit",
+        "path": "Extension.extension",
+        "sliceName": "benefit",
+        "short": "Benefit",
+        "definition": "Benefit",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:benefit.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:benefit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "benefit"
+      },
+      {
+        "id": "Extension.extension:benefit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:acceptable",
+        "path": "Extension.extension",
+        "sliceName": "acceptable",
+        "short": "acceptable",
+        "definition": "Acceptable",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:acceptable.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:acceptable.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "acceptable"
+      },
+      {
+        "id": "Extension.extension:acceptable.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

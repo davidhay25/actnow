@@ -2,7 +2,7 @@
 
 Profile:        ObservationRegimenOutcome
 Parent:         Observation
-Id:             an-observation-regimen-outcome
+Id:             an-regimen-outcome
 Title:          "Regimen outcome"
 Description:    "An observation that represents the outcome of a regimen CarePlan that is closed"
 
@@ -31,7 +31,7 @@ Description:    "An observation that represents the outcome of a regimen CarePla
 * basedOn only Reference(CareplanRegimen)  
 
 //fix the code value
-* code = $actnow#regimenoutcome
+* code = http://unknown.com#regimenoutcome
 
 //fix the value type
-* value[x] only integer     //the otu score - todo set the permissable range of values
+//* value[x] only integer     

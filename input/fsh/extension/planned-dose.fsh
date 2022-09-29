@@ -1,5 +1,5 @@
 Extension: PlannedDose
-Id: planned-dose
+Id: an-planned-dose
 Description: "The dose that was planned to be administered"
 
 * ^url = $extPlannedDose

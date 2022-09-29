@@ -1,5 +1,5 @@
 ValueSet : RegimenDiscontinuedReason
-Id: regimen-discontinued-reason
+Id: an-regimen-discontinued-reason-vs
 Title: "The reason why a regimen was discontinued"
 Description:  "The reason why a regimen was discontinued"
 
@@ -8,7 +8,7 @@ Description:  "The reason why a regimen was discontinued"
 
 
 CodeSystem:  RegimenDiscontinuedReason
-Id: regimen-discontinued-reason
+Id: an-regimen-discontinued-reason-cs
 Title: "The reason why a regimen was discontinued"
 Description:  "The reason why a regimen was discontinued"
 

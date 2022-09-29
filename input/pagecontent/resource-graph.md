@@ -32,7 +32,7 @@ All treatment follows a pre-determined regimen (pattern) of treatment (though ca
 
 When a regimen is applied to a patient, it is represented as an instance of a [CarePlan](StructureDefinition-an-careplan-regimen.html). It is possible for there to be a reference to the PlanDefinition using the [*instantiatesCanonical*](http://hl7.org/fhir/careplan-definitions.html#CarePlan.instantiatesCanonical) element, but this is not currently defined in this guide, as the instrastructure is not yet generally available.
 
-There are a number of extensions defined which can be applied to the CarePlan - such as the [intent of treatment](StructureDefinition-iot.html) or whether this treatment is part of a [clinical trial](StructureDefinition-clinical-trial.html).
+There are a number of extensions defined which can be applied to the CarePlan - such as the [intent of treatment](StructureDefinition-an-iot.html) or whether this treatment is part of a [clinical trial](StructureDefinition-an-clinical-trial.html).
 
 #### Diagnosis
 The diagnosis is recorded as a Condition resource. If there is histology supporting the diagnosis, then that is represented as an Observation, and the Condition has an *.evidence* reference to the Observation.
@@ -52,7 +52,7 @@ Heres a diagram of the resources involved in Diagnosis and Staging (from the Ref
 
 
 #### Measures made before treatment starts
-Commonly there are measurements made before treatment commences - for example Creatinine Clearance test to determine drug dosages or the [ECOG score](StructureDefinition-observation-ecog.html) so that the effectiveness of treatment can be determined.
+Commonly there are measurements made before treatment commences - for example Creatinine Clearance test to determine drug dosages or the [ECOG score](StructureDefinition-an-ecog.html) so that the effectiveness of treatment can be determined.
 
 Generally these are recorded as Observations, and the regimen CarePlan will have a *supportingInfo* reference to them.
 

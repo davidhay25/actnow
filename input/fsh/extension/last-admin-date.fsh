@@ -1,5 +1,5 @@
 Extension: LastAdminDate
-Id: last-admin-date
+Id: an-last-admin-date
 Description: "The last date that a medication administration was made for this cycle"
 
 * ^url = $extLastAdminDate //"http://hl7.org.nz/fhir/StructureDefinition/established"

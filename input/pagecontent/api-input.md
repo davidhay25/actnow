@@ -2,7 +2,7 @@
 This section describes how data is sent from client applications to the system.
 
 ### Summary
-The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-update) (somethmes knows as an [upsert](https://en.wiktionary.org/wiki/upsert)) in a [FHIR transaction](http://hl7.org/fhir/http.html#transaction) to receive data from suppliers. The resource [identifier](http://hl7.org/fhir/datatypes.html#Identifier) is the element used to discriminate during the update or create operation. The bundle contains all resources refrences by any other resource within the bundle, and uses UUID's as resource ids.
+The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-update) (somethmes knows as an [upsert](https://en.wiktionary.org/wiki/upsert)) in a [FHIR transaction](http://hl7.org/fhir/http.html#transaction) to receive data from suppliers. The resource [identifier](http://hl7.org/fhir/datatypes.html#Identifier) is the element used to discriminate during the update or create operation. The bundle contains all resources refrenced by any other resource within the bundle, and uses UUID's as resource ids.
 
 In some cases, [conditonal create](http://hl7.org/fhir/http.html#ccreate) is also used where the resource must be present in the bundle to allow the server to resolve the resource ids for referencing, but the resource is not intended to be updated if already present. The Patient resource is an example where this might be appropriate.
 
@@ -10,7 +10,7 @@ In some cases, [conditonal create](http://hl7.org/fhir/http.html#ccreate) is als
 ### Details
 
 
-#### Resource identifier
+#### Resource identifier as the discriminator
 
 Given that the system potentially needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
 
@@ -48,7 +48,7 @@ In a conditional update (sometimes called an 'upsert'), the entry contains a num
         * If there is one matching resource, then it is updated by the resource in the bundle. 
         * If there is more than one resource that matches, this is an error condition and the transaction fails.
 
-Here's an example of a CarePlan with an identifier with a system value of http://example.org and a value of abc1234 being created or updated. :
+Here's an example of a CarePlan with an identifier with a system value of http://example.org and a value of abc1234 being created or updated. 
 
 ```
   "entry": [

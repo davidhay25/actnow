@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "excTNM1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1786868015"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "status": "final",
+  "valueString": "group value"
+}

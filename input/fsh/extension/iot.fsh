@@ -1,5 +1,5 @@
 Extension: IOT
-Id: iot
+Id: an-iot
 Description: "Intent of treatment"
 
 * ^url = $iot

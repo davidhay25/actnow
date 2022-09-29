@@ -1,10 +1,11 @@
 //ask for examples
 Logical:        ActNowComplete
+Id:             an-logical-model
 Title:          "Complete Model for ACT-NOW spec"
 Description:    "A complete model for all information in the ACT-NOW spec"
 Parent:         Element
 
-* ^url = "http://clinfhir.com/StructureDefinition/actnowcomplete"
+* ^url = "http://canshare.co.nz/fhir/StructureDefinition/an-logical-model"
 
 * patient 1..1 BackboneElement "Patient demographics"
   * ^mapping.map = "Patient"

@@ -1,10 +1,10 @@
 Profile:        ObservationClinTNMGroup
 Parent:         Observation
-Id:             an-observation-cGroup
+Id:             an-cGroup
 Title:          "clinical TNM group score"
 Description:    "An observation that represents the clinical TNM group score"
 
-* ^url = $cM
+* ^url = $cGroup
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
@@ -23,12 +23,16 @@ Description:    "An observation that represents the clinical TNM group score"
 * code.coding ^slicing.rules = #open
 
 * code.coding contains
-    snomedCode 1..1
+    snomedCode 1..1 and 
+    mCode 0..1
 
 * code.coding[snomedCode].code = #1786868015 
 * code.coding[snomedCode].system = $snomed
 
+* code.coding[mCode].code = #21908-9 
+* code.coding[mCode].system = $loinc
+
 * effective[x] only dateTime
-* value[x] only integer
+* value[x] only string
 
 * hasMember only Reference(ObservationCT or ObservationCN or ObservationCM)

@@ -1,6 +1,6 @@
 Profile:        AnMedicationAdministration
 Parent:         MedicationAdministration
-Id:             an-medicationadministration
+Id:             an-medication-administration
 Title:          "ACT-NOW medication administration"
 Description:    "ACT-NOW medication administration"
 

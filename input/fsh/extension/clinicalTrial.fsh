@@ -1,5 +1,5 @@
 Extension: ClinicalTrial
-Id: clinical-trial
+Id: an-clinical-trial
 Description: "Is on a clinical trial"
 * ^url = $clinicalTrial
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

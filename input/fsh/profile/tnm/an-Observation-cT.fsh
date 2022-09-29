@@ -1,8 +1,8 @@
 Profile:        ObservationCT
 Parent:         Observation
-Id:             an-observation-cT
+Id:             an-cT
 Title:          "clinical T-score"
-Description:    "An observation that represents the clinical 'T' score"
+Description:    "An observation that represents the clinical 'T' score which measures the tumour size."
 
 * ^url = $cT
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
@@ -23,11 +23,15 @@ Description:    "An observation that represents the clinical 'T' score"
 * code.coding ^slicing.rules = #open
 
 * code.coding contains
-    snomedCode 1..1
+    snomedCode 1..1 and 
+    mCode 0..1
 
 * code.coding[snomedCode].code = #1778907013
 * code.coding[snomedCode].system = $snomed
 
+* code.coding[mCode].code = #21905-5
+* code.coding[mCode].system = $loinc
+
 * effective[x] only dateTime
-* value[x] only integer
+* value[x] only string
 

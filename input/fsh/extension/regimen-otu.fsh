@@ -1,5 +1,5 @@
 Extension: RegimenOTU
-Id: regimen-otu
+Id: an-regimen-otu
 Description: "Outcome measure for a regimen"
 
 * ^url = $extRegimenOTU

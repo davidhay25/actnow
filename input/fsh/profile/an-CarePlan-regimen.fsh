@@ -2,7 +2,12 @@ Profile:        CareplanRegimen
 Parent:         CarePlan
 Id:             an-careplan-regimen
 Title:          "Regimen Careplan"
-Description:    "A CarePlan that represents a PlanDefinition being applied to a Patient."
+Description:    """
+A CarePlan that represents a PlanDefinition being applied to a Patient. Referred to as a regimen. The regimen
+has multiple cycles also represented as CarePlans which have a 'partOf' reference back to the regimen plan."""
+
+
+
 
 * ^url = $profCarePlan-regimen
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

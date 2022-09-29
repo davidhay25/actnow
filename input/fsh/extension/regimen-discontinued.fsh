@@ -1,5 +1,5 @@
 Extension: RegimenDiscontinued
-Id: regimen-discontinued
+Id: an-regimen-discontinued
 Description: "Reasons why a regimen may have been discontinued"
 
 * ^url = $extRegimenDiscontinued // "http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation"

@@ -1,5 +1,5 @@
 Extension: DoseAdjustmentReason
-Id: dose-adjustment-reason
+Id: an-dose-adjustment-reason
 Description: "The reason why the dose given was not the same as that in the regimen"
 
 * ^url = $extDoseAdjustmentReason

@@ -1,5 +1,5 @@
 Extension: PrescribedDose
-Id: prescribed-dose
+Id: an-prescribed-dose
 Description: "The dose of this medication in the regimen (may not be the same as that given"
 * ^url = $extPrescribedDose
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

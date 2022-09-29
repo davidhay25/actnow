@@ -1,10 +1,10 @@
 Profile:        ObservationHistology
 Parent:         Observation
-Id:             an-observation-histology
+Id:             an-histology
 Title:          "Histology"
 Description:    "An observation that represents a Histology finding"
 
-* ^url = $bsa
+* ^url = $histology
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
@@ -29,5 +29,5 @@ Description:    "An observation that represents a Histology finding"
 * code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime
-* value[x] only CodeableConcept
+
 

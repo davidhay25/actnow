@@ -1,5 +1,5 @@
 Extension: CycleDay
-Id: cycle-day
+Id: an-cycle-day
 Description: "The day of the cycle that this medication was given on. Includes planned and administered"
 * ^url = $extCycleDay
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "exSmallCellCancerHistology",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-histology"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "82231000004111",
+        "system": "http://snomed.info/sct",
+        "display": "Histologic type of primary malignant neoplasm (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "status": "final",
+  "identifier": [
+    {
+      "system": "http://vendor.org/observation",
+      "value": "001"
+    }
+  ],
+  "valueString": "Here are the histology findings"
+}

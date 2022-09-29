@@ -3,8 +3,8 @@
 <tr><th>Id</th><th>Canonical url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 </tr>
 <tr>
-<td><a href='StructureDefinition-based-on.html'>based-on</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/based-on</td>
+<td><a href='StructureDefinition-an-based-on.html'>an-based-on</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-based-on</td>
 <td>
 <div>MedicationAdministration</div>
 </td>
@@ -12,8 +12,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-clinical-trial.html'>clinical-trial</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/clinicalTrial</td>
+<td><a href='StructureDefinition-an-clinical-trial.html'>an-clinical-trial</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial</td>
 <td>
 <div>CarePlan</div>
 </td>
@@ -21,8 +21,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-cycle-count.html'>cycle-count</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/cycle-count</td>
+<td><a href='StructureDefinition-an-cycle-count.html'>an-cycle-count</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count</td>
 <td>
 <div>Observation</div>
 </td>
@@ -30,8 +30,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-cycle-day.html'>cycle-day</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/cycle-day</td>
+<td><a href='StructureDefinition-an-cycle-day.html'>an-cycle-day</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day</td>
 <td>
 <div>MedicationAdministration</div>
 </td>
@@ -39,8 +39,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-cycle-number.html'>cycle-number</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/cycle-number</td>
+<td><a href='StructureDefinition-an-cycle-number.html'>an-cycle-number</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number</td>
 <td>
 <div>CarePlan</div>
 </td>
@@ -48,8 +48,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-dose-adjustment-reason.html'>dose-adjustment-reason</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/dose-adjustment-reason</td>
+<td><a href='StructureDefinition-an-dose-adjustment-reason.html'>an-dose-adjustment-reason</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-dose-adjustment-reason</td>
 <td>
 <div>MedicationAdministration</div>
 </td>
@@ -57,8 +57,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-iot.html'>iot</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/intent-of-treatment</td>
+<td><a href='StructureDefinition-an-iot.html'>an-iot</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-iot</td>
 <td>
 <div>CarePlan</div>
 </td>
@@ -66,8 +66,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-last-admin-date.html'>last-admin-date</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/last-admin-date</td>
+<td><a href='StructureDefinition-an-last-admin-date.html'>an-last-admin-date</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date</td>
 <td>
 <div>CarePlan</div>
 </td>
@@ -75,8 +75,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-planned-dose.html'>planned-dose</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/planned-dose</td>
+<td><a href='StructureDefinition-an-planned-dose.html'>an-planned-dose</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose</td>
 <td>
 <div>MedicationAdministration</div>
 </td>
@@ -84,8 +84,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-prescribed-dose.html'>prescribed-dose</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/prescribed-dose</td>
+<td><a href='StructureDefinition-an-prescribed-dose.html'>an-prescribed-dose</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose</td>
 <td>
 <div>MedicationAdministration</div>
 </td>
@@ -93,8 +93,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-regimen-discontinued.html'>regimen-discontinued</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/regimen-discontinued</td>
+<td><a href='StructureDefinition-an-regimen-discontinued.html'>an-regimen-discontinued</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued</td>
 <td>
 <div>Observation</div>
 </td>
@@ -102,8 +102,8 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-regimen-otu.html'>regimen-otu</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/regimen-otu</td>
+<td><a href='StructureDefinition-an-regimen-otu.html'>an-regimen-otu</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu</td>
 <td>
 <div>Observation</div>
 </td>

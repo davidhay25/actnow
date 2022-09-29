@@ -1,10 +1,10 @@
 Profile:        ObservationWeight
 Parent:         Observation
-Id:             an-observation-weight
+Id:             an-weight
 Title:          "Height"
 Description:    "An observation that represents a weight measurement"
 
-* ^url = $bsa
+* ^url = $weight
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional

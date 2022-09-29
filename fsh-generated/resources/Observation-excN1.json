@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "excN1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-cN"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "1778921010",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "status": "final",
+  "valueString": "N2"
+}

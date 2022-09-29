@@ -2,7 +2,7 @@ Profile:        CareplanCycle
 Parent:         CarePlan
 Id:             an-careplan-cycle
 Title:          "Cycle Careplan"
-Description:    "A CarePlan that represents a single cycle of treatment."
+Description:    "A CarePlan that represents a single cycle of treatment. It will have a 'partOf' reference to the regiment carePlan."
 
 * ^url = $profCarePlan-cycle
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

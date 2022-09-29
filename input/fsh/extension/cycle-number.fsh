@@ -1,5 +1,5 @@
 Extension: CycleNumber
-Id: cycle-number
+Id: an-cycle-number
 Description: "The cycle number of the regimen that this CP represents"
 
 * ^url = $extCycleNumber 

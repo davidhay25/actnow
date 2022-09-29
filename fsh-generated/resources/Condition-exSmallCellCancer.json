@@ -1,0 +1,36 @@
+{
+  "resourceType": "Condition",
+  "id": "exSmallCellCancer",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-condition"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "identifier": [
+    {
+      "system": "http://vendor.org/condition",
+      "value": "001"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "3254632001",
+        "system": "http://snomed.info/sct",
+        "display": "Small cell carcinoma of lung (disorder)"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "detail": [
+        {
+          "reference": "Observation/exSmallCellCancerHistology"
+        }
+      ]
+    }
+  ]
+}

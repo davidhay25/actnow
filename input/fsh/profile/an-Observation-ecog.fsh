@@ -1,6 +1,6 @@
 Profile:        ObservationEcog
 Parent:         Observation
-Id:             an-observation-ecog
+Id:             an-ecog
 Title:          "ECOG score"
 Description:    "An observation that represents an ecog score"
 
@@ -16,8 +16,23 @@ Description:    "An observation that represents an ecog score"
 * status 1..1 MS
 * code 1..1 MS
 
-//fix the code value
-* code = $snomed#423740007 "ECOG performance status"
+//Slice on the code
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #closed
+
+* code.coding contains
+    snomedCode 1..1 and 
+    mCode 0..1
+
+* code.coding[snomedCode].code = #423740007
+* code.coding[snomedCode].system = $snomed
+
+* code.coding[mCode].code = #89247-1 
+* code.coding[mCode].system = $loinc
+
+
+// * code = $snomed#423740007 "ECOG performance status"
 
 * effective[x] only dateTime
 

@@ -1,10 +1,10 @@
 Profile:        ObservationCreatClear
 Parent:         Observation
-Id:             an-observation-creat-clear
+Id:             an-creat-clear
 Title:          "Creatinine Clearance"
 Description:    "An observation that represents a Creatinine Clearance measurement"
 
-* ^url = $bsa
+* ^url = $creat-clear
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional

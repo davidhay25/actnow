@@ -1,5 +1,5 @@
 ValueSet : RegimenDiscontinuedPatientFactors
-Id: regimen-discontinued-patient-factors
+Id: an-regimen-discontinued-patient-factors-vs
 Title: "Patient factors when discontinuing a regimen"
 Description:  "Patient factors when discontinuing a regimen"
 
@@ -8,7 +8,7 @@ Description:  "Patient factors when discontinuing a regimen"
 
 
 CodeSystem:  RegimenDiscontinuedPatientFactors
-Id: regimen-discontinued-patient-factors
+Id: an-regimen-discontinued-patient-factors-cs
 Title: "Patient factors when discontinuing a regimen"
 Description:  "Patient factors when discontinuing a regimen"
 

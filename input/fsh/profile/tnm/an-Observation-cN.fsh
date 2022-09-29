@@ -1,8 +1,8 @@
 Profile:        ObservationCN
 Parent:         Observation
-Id:             an-observation-cN
+Id:             an-cN
 Title:          "clinical N-score"
-Description:    "An observation that represents the clinical 'N' score"
+Description:    "An observation that represents the clinical 'N' score which measures local lymph node involvement."
 
 * ^url = $cN
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
@@ -29,5 +29,5 @@ Description:    "An observation that represents the clinical 'N' score"
 * code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime
-* value[x] only integer
+* value[x] only string
 

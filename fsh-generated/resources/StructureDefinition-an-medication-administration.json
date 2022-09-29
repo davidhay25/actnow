@@ -1,0 +1,140 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "an-medication-administration",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration",
+  "version": "0.1.0",
+  "name": "AnMedicationAdministration",
+  "title": "ACT-NOW medication administration",
+  "status": "active",
+  "description": "ACT-NOW medication administration",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.extension",
+        "path": "MedicationAdministration.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.extension:cycle-day",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "cycle-day",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.extension:planned-dose",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "planned-dose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.extension:dose-adjustment-reason",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "dose-adjustment-reason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/an-dose-adjustment-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.identifier",
+        "path": "MedicationAdministration.identifier",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "path": "MedicationAdministration.effective[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      }
+    ]
+  }
+}

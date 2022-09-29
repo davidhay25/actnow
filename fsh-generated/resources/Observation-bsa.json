@@ -3,7 +3,7 @@
   "id": "bsa",
   "meta": {
     "profile": [
-      "http://canshare.co.nz/fhir/StructureDefinition/observation-bsa"
+      "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
     ]
   },
   "code": {
@@ -23,7 +23,7 @@
     "status": "generated"
   },
   "subject": {
-    "reference": "Patient/anPatient"
+    "reference": "Patient/exPatient"
   },
   "effectiveDateTime": "2020-01-01",
   "status": "final",

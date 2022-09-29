@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "an-prescribed-dose",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
+  "version": "0.1.0",
+  "name": "PrescribedDose",
+  "status": "draft",
+  "description": "The dose of this medication in the regimen (may not be the same as that given",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationAdministration"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "The dose of this medication in the regimen (may not be the same as that given"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Dosage"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "an-cycle-day",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
+  "version": "0.1.0",
+  "name": "CycleDay",
+  "status": "draft",
+  "description": "The day of the cycle that this medication was given on. Includes planned and administered",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationAdministration"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "The day of the cycle that this medication was given on. Includes planned and administered"
+      },
+      {
+        "id": "Extension.extension:planned",
+        "path": "Extension.extension",
+        "sliceName": "planned",
+        "short": "Planned date",
+        "definition": "The day that this administration should have been given on",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:planned.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:planned.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "planned"
+      },
+      {
+        "id": "Extension.extension:planned.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:administered",
+        "path": "Extension.extension",
+        "sliceName": "administered",
+        "short": "Planned date",
+        "definition": "The day that this administration should have been given on",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:administered.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:administered.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "administered"
+      },
+      {
+        "id": "Extension.extension:administered.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
