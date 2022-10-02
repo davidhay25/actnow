@@ -146,7 +146,7 @@
         "path": "CarePlan.category.coding",
         "patternCoding": {
           "code": "cycleCP",
-          "system": "http://unknown.com"
+          "system": "http://example.org"
         }
       },
       {

@@ -334,6 +334,21 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/AnCapabilityStatement"
+        },
+        "name": "AnCapabilityStatement",
+        "description": "Server capability statement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/G08462-F-24844"
+        },
+        "name": "G08462-F-24844",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+      },
+      {
+        "reference": {
           "reference": "Observation/bsa"
         },
         "name": "bsa",
@@ -390,18 +405,17 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/ma-basedOn"
-        },
-        "name": "ma-basedOn",
-        "description": "based-on extension for MedicationAdmin -> CarePlan",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "SearchParameter/supporting-info"
         },
         "name": "supporting-info",
         "description": "Searches for supportingInfo references",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/G08462-F-17843"
+        },
+        "name": "G08462-F-17843",
         "exampleBoolean": true
       }
     ],

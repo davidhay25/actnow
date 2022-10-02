@@ -1,0 +1,135 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "AnCapabilityStatement",
+  "url": "http://canshare.co.nz/fhir/CapabilityStatement/AnCapabilityStatement",
+  "name": "CanShareCapabilityStatement",
+  "title": "CapabilityStatement representing the server requirements for a FHIR server",
+  "status": "draft",
+  "date": "2022-10-03",
+  "publisher": "David Hay",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "interaction": [
+        {
+          "code": "transaction"
+        }
+      ],
+      "resource": [
+        {
+          "type": "Patient",
+          "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-patient"
+          ],
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "conditionalCreate": true,
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "gender",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-practitioner"
+          ],
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "conditionalCreate": true,
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "gender",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "CarePlan",
+          "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+          ],
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "conditionalCreate": true,
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "Observation",
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "conditionalCreate": true,
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "MedicationAdministration",
+          "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ],
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "conditionalCreate": true,
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,34 @@
 
-This section describes how data is sent from client applications to the system.
 
 ### Summary
+
+
+There are at least a couple of options for the input API
+
+#### Direct REST updates
+
+The direct REST API involves the the client making individual API calls for each interaction. For example, to record that a medication was given, then client retrieves the appropriate patient Id and cycle CarePlan id, creates the MedicationAdministratoion resource with the appropriate references, and POSTs the MedicationAdministration to the server. This results in an extremely 'chatty' API interaction, with a increased risk of client errors leading to data corruption if the wrong resource is created or updated or incorrect reference resources are chosen. 
+
+This can be mitigated to some degree if each client had its own server and/or has control over the resource ids (updating using the PUT interaction), at the expense of increased system complexity.
+
+#### Transactions using conditional update
+
+In this scenario, all interactions are by using Transaction bundles, where updates and references to other resources can be determined by their identifier using [conditional updates](http://hl7.org/fhir/http.html#cond-update). This has the advantage of off loading much of the work to the server and allows multiple resources to be created / updated in a single interaction. 
+
+While it does require the client to maintain the unique identifiers (the resource element - not the resource id), this is much simpler and safer to manage than having to use the resource id especially when different clients are updating the server.
+
+This is the preferred approach in this guide.
+
+### Details
+
+This section describes how data is sent from client applications to the system, assuming that conditional updates can be used.
+
 The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-update) (somethmes knows as an [upsert](https://en.wiktionary.org/wiki/upsert)) in a [FHIR transaction](http://hl7.org/fhir/http.html#transaction) to receive data from suppliers. The resource [identifier](http://hl7.org/fhir/datatypes.html#Identifier) is the element used to discriminate during the update or create operation. The bundle contains all resources refrenced by any other resource within the bundle, and uses UUID's as resource ids.
 
 In some cases, [conditonal create](http://hl7.org/fhir/http.html#ccreate) is also used where the resource must be present in the bundle to allow the server to resolve the resource ids for referencing, but the resource is not intended to be updated if already present. The Patient resource is an example where this might be appropriate.
 
 
-### Details
+
 
 
 #### Resource identifier as the discriminator
@@ -131,6 +152,9 @@ Here's an example of resources and resource references in a sample bundle. Note 
 
 ##### All resources should have an identifier
 As described earlier, the identifier is used to locate resources if needed.
+
+##### All resources should have a profile declaration
+This is needed to support validation on the received data, as the data is being used for analytics and data quality is paramount.
 
 ##### All resources referenced by any of the resources in the bundle must be present in the bundle
 Even if the resource already exists in the server, it should still be present in the bundle. eg the Patient resource will always be present. This approach makes the overall design much simpler - especially for references as otherwise the client would need to first query the server to locate the patient id, then create the bundle

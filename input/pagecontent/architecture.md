@@ -1,6 +1,8 @@
 
 
-The systems is designed as a data aggregator - accepting data from a small number of systems (it is a highly specialised domain) and saving it into a FHIR server as patient specific information. Data is then available for use by other systems, including analytics and potentially care dleivery.
+The systems is designed as a data aggregator - accepting data from a small number of systems (it is a highly specialised domain) and saving it into a FHIR server as patient specific information. Data is then available for use by other systems, including analytics and potentially care delivery.
+
+It is assumed that the CanShare server will only hold resources used by the system - ie it ios not a shared server.
 
 This guide does not include security in any detail.
 
@@ -55,15 +57,25 @@ There is a javascript component developed as part of the Reference Implementatio
 The CSV bundle creator may not be required, depending on business decisions.
 
 ### Requirements of the FHIR server
-This section summarizes the minimum requirements of the FHIR server - details of interactions are in the [API](api-input.html) [Guides](api-query.html)
+This section summarizes the minimum requirements of the FHIR server - details of interactions are in the [API](api-input.html) [Guides](api-query.html). This section assumes that the transaction with conditional update approach is used.
+
+Refer to the [CapabilityStatement](CapabilityStatement-AnCapabilityStatement.html) for details.
 
 Ideally the server will support the complete [RESTful API](http://hl7.org/fhir/http.html) defined by FHIR - as does the [HAPI](https://hapifhir.io/) server for example. (The [HAPi CLI](https://hapifhir.io/hapi-fhir/docs/tools/hapi_fhir_cli.html) is used by the [reference implementation](reference-implementation.html) - though it is in no way suitable for a production deployment.)
 
 The key features needed are:
-* Support of the transaction operation
-* Support of conditional updates
-* Search parameters for the used resources 
+
+* a separate server / database for CanShare data. Having to share the datastore of the server with some other application would significantly increase implementation and support requirements
+* Support of the transaction operation with conditional updates
+* Supporting the [last updated](http://hl7.org/fhir/resource-definitions.html#Meta.lastUpdated) meta entry to support incremental query.
+* Search parameters for the supported resources (defined in the Capability Statement)
+* Bulk downloading of resource types, with support for [_since] and pagination. This is needed to support the query of resources in bulk for analytics.
 * _include and _revinclude for the resource types used, and their references 
+
+Features that might be supported either by the server or some application 'in front' of it - like an Integration Engine
+
+* ability to invoke the validator on all received bundles. Ideally, the server would support resource validation via the $validate operation, but alternatively the java validator supplied by the FHIR project could be used.
+* ability to perform other quality validation as required by the analytics service. An examples could be valid ranges for measures like weight and blood tests.
 
 <!--
 

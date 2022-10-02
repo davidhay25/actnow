@@ -37,5 +37,5 @@ has multiple cycles also represented as CarePlans which have a 'partOf' referenc
 
 * category[regimencode] ^short = "Regimen level carePlan"
 * category[regimencode] ^definition = "Code identifiying this carePlan as being at the regimen level"
-* category[regimencode].coding = http://unknown.com#regimenCP
+* category[regimencode].coding = http:example.org#regimenCP
 

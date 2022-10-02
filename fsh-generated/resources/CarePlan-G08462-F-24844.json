@@ -1,0 +1,64 @@
+{
+  "resourceType": "CarePlan",
+  "id": "G08462-F-24844",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-08-28T18:07:59.239+00:00",
+    "source": "#3sHtV7KvS7g3vpoI",
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-original-data",
+      "valueString": "[\"G08462-F-24844\",\"1\",\"5\",\"Palliative\",\"CAPEOX\",\"CAPEOX\",\"8/04/2014\",\"1/10/2014\",\"Y\",\"8\",\"\",\"\",\"C189\",\"Colon - unspecified                                                             \",\"\",\"81406\",\"\",\"1\",\"T0\",\"N0\",\"M1b\",\"IVB\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/canshare-cycle-count",
+      "valueInteger": 8
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+      "valueCodeableConcept": {
+        "text": "Palliative"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://example.org",
+      "value": "xxx"
+    }
+  ],
+  "status": "completed",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "regimen",
+          "system": "http:example.org"
+        }
+      ]
+    }
+  ],
+  "title": "CAPEOX",
+  "subject": {
+    "reference": "Patient/G08462-F-24844"
+  },
+  "period": {
+    "start": "2014-04-08",
+    "end": "2014-10-01"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/G08462-F-24844"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/G08462-F-24844tnm-clin-stage"
+    }
+  ]
+}

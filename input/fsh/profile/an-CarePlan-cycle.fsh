@@ -32,5 +32,5 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 
 * category[cyclecode] ^short = "Cycle level carePlan"
 * category[cyclecode] ^definition = "Code identifiying this carePlan as being at the cycle level"
-* category[cyclecode].coding = http://unknown.com#cycleCP
+* category[cyclecode].coding = http://example.org#cycleCP
 

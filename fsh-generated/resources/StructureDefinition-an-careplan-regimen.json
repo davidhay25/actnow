@@ -170,7 +170,7 @@
         "path": "CarePlan.category.coding",
         "patternCoding": {
           "code": "regimenCP",
-          "system": "http://unknown.com"
+          "system": "http:example.org"
         }
       }
     ]

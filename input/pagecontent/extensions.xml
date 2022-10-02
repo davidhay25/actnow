@@ -8,7 +8,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td><p>Allows a MedicationAdministration to refer to a CarePlan</p></td>
+<td>Allows a MedicationAdministration to refer to a CarePlan</td>
 <td></td>
 </tr>
 <tr>
@@ -17,16 +17,16 @@
 <td>
 <div>CarePlan</div>
 </td>
-<td><p>Is on a clinical trial</p></td>
+<td>Is on a clinical trial</td>
 <td></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-cycle-count.html'>an-cycle-count</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count</td>
 <td>
-<div>Observation</div>
+<div>CarePlan</div>
 </td>
-<td><p>The number of cycles that administered for a regimen</p></td>
+<td>The number of cycles that administered for a regimen</td>
 <td></td>
 </tr>
 <tr>
@@ -35,7 +35,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td><p>The day of the cycle that this medication was given on. Includes planned and administered</p></td>
+<td>The day of the cycle that this medication was given on. Includes planned and administered</td>
 <td></td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@
 <td>
 <div>CarePlan</div>
 </td>
-<td><p>The cycle number of the regimen that this CP represents</p></td>
+<td>The cycle number of the regimen that this CP represents</td>
 <td></td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td><p>The reason why the dose given was not the same as that in the regimen</p></td>
+<td>The reason why the dose given was not the same as that in the regimen</td>
 <td></td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@
 <td>
 <div>CarePlan</div>
 </td>
-<td><p>Intent of treatment</p></td>
+<td>Intent of treatment</td>
 <td></td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@
 <td>
 <div>CarePlan</div>
 </td>
-<td><p>The last date that a medication administration was made for this cycle</p></td>
+<td>The last date that a medication administration was made for this cycle</td>
 <td></td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td><p>The dose that was planned to be administered</p></td>
+<td>The dose that was planned to be administered</td>
 <td></td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td><p>The dose of this medication in the regimen (may not be the same as that given</p></td>
+<td>The dose of this medication in the regimen (may not be the same as that given</td>
 <td></td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@
 <td>
 <div>Observation</div>
 </td>
-<td><p>Reasons why a regimen may have been discontinued</p></td>
+<td>Reasons why a regimen may have been discontinued</td>
 <td></td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@
 <td>
 <div>Observation</div>
 </td>
-<td><p>Outcome measure for a regimen</p></td>
+<td>Outcome measure for a regimen</td>
 <td></td>
 </tr>
 </table>

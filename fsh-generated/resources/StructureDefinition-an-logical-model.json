@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "an-logical-model",
-  "url": "http://canshare.co.nz/fhir/an-logical-model",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-logical-model",
   "version": "0.1.0",
   "name": "ActNowComplete",
   "title": "Complete Model for ACT-NOW spec",
@@ -17,7 +17,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "http://canshare.co.nz/fhir/an-logical-model",
+  "type": "http://canshare.co.nz/fhir/StructureDefinition/an-logical-model",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
   "differential": {

@@ -12,7 +12,7 @@ then
 # localscripts/addFullUrlToBundle.js
 
 echo "Creating Profiles and extensions summary pages..."
-../scripts/makeProfilesAndExtensions.js cs-actnow
+./localScripts/makeProfilesAndExtensions.js cs-actnow
 
 echo "Making terminology summary"   # will copy into IG input folder
 ../scripts/makeTerminologySummary.js cs-actnow

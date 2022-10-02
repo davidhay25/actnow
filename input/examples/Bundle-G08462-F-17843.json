@@ -1,0 +1,409 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "G08462-F-17843",
+        "name": [
+          {
+            "text": "John Doe - G08462-F-17843"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://mosaic.com/patients"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Identifier: undefined</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/G08462-F-17843",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/G08462-F-17843"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "G08462-F-17843",
+        "status": "revoked",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Regimen plan</div></div>"
+        },
+        "meta": {
+          "profile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+          ]
+        },
+        "title": "RCHOP",
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:example.org",
+                "code": "regimenCP"
+              }
+            ]
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "CarePlan/pat-G08462-F-17843"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Curative"
+            }
+          }
+        ],
+        "period": {
+          "start": "2013-07-12",
+          "end": "2013-12-26"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/G08462-F-17843"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/G08462-F-17843",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/G08462-F-17843"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "pat-G08462-F-17843",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Patient plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:example.org",
+                "code": "patientCP"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/pat-G08462-F-17843",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/pat-G08462-F-17843"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "G08462-F-17843-histology",
+        "status": "final",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Histology</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org",
+              "code": "histology"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "text": "dxclass"
+            },
+            "valueString": "7"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/G08462-F-17843-histology",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/G08462-F-17843-histology"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "G08462-F-17843",
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "code": "C833"
+            }
+          ],
+          "text": "Large cell"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Large cell</div></div>"
+        },
+        "evidence": [
+          {
+            "detail": [
+              {
+                "reference": "Observation/G08462-F-17843-histology"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/G08462-F-17843",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/G08462-F-17843"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "G08462-F-17843-17843",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Cycle plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/G08462-F-17843"
+          }
+        ],
+        "period": {
+          "start": "2013-07-12",
+          "end": "2013-08-02"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:example.org",
+                "code": "cycleCP"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/G08462-F-17843-17843",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/G08462-F-17843-17843"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "f8025994893cc91dc044477e162582dd",
+        "status": "completed",
+        "identifier": [
+          {
+            "value": "f8025994893cc91dc044477e162582dd"
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/G08462-F-17843-17843"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
+            "extension": [
+              {
+                "url": "administered",
+                "valueInteger": 1
+              }
+            ]
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "medicationCodeableConcept": {
+          "text": "Rituximab"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Rituximab</div></div>"
+        },
+        "dosage": {
+          "text": "710.00 mg",
+          "route": {
+            "text": "IV"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2013-07-12T10:10:00Z",
+          "end": "2013-07-12T10:20:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/f8025994893cc91dc044477e162582dd",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/f8025994893cc91dc044477e162582dd"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f8025994893cc91dc044477e162582dd-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/f8025994893cc91dc044477e162582dd"
+          }
+        ],
+        "focus": [
+          {
+            "reference": "CarePlan/G08462-F-17843-17843"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": 1.89,
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2013-07-12T10:10:00Z",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>BSA 1.89</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/f8025994893cc91dc044477e162582dd-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f8025994893cc91dc044477e162582dd-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "13e8012cd95635d76170f6c81ab886df",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "text": "Prednisone"
+        },
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "authoredOn": "2013-07-12",
+        "identifier": [
+          {
+            "value": "13e8012cd95635d76170f6c81ab886df"
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/G08462-F-17843-17843"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Prednisone</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationRequest/13e8012cd95635d76170f6c81ab886df",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/13e8012cd95635d76170f6c81ab886df"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "4cd3db3ad491f6a5c0a6eb1909d0b3c8",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "text": "Allopurinol "
+        },
+        "subject": {
+          "reference": "Patient/G08462-F-17843"
+        },
+        "authoredOn": "2013-07-05",
+        "identifier": [
+          {
+            "value": "4cd3db3ad491f6a5c0a6eb1909d0b3c8"
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/G08462-F-17843-17843"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Allopurinol</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationRequest/4cd3db3ad491f6a5c0a6eb1909d0b3c8",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/4cd3db3ad491f6a5c0a6eb1909d0b3c8"
+      }
+    }
+  ],
+  "id": "G08462-F-17843"
+}

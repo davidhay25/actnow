@@ -6,7 +6,7 @@ Description: "The number of cycles that administered for a regimen"
 
 //should only appear on a regimen-outcome type of observation
 * ^context[+].type = #element
-* ^context[=].expression = "Observation"
+* ^context[=].expression = "CarePlan"
 
 * ^status = #draft
 
