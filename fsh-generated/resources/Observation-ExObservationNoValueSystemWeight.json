@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "ExObservationNoValueSystemWeight",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "45352010",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "29463-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "kg",
+    "value": 100
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Weight 80 kg</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final"
+}

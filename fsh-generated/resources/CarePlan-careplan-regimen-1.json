@@ -1,0 +1,47 @@
+{
+  "resourceType": "CarePlan",
+  "id": "careplan-regimen-1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "regimenCP",
+          "system": "http://unknown.org"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/fhir/NamingSystem/1",
+      "value": "abc"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "status": "completed",
+  "intent": "plan",
+  "extension": [
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-iot",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "palliative",
+            "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial",
+      "valueBoolean": true
+    }
+  ]
+}

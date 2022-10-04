@@ -1,14 +1,14 @@
-Profile:        ObservationCN
+Profile:        ObservationPN
 Parent:         Observation
-Id:             an-cN
+Id:             an-pN
 Title:          "clinical N-score"
-Description:    "An observation that represents the clinical 'N' score which measures local lymph node involvement."
+Description:    "An observation that represents the pathological 'N' score which measures local lymph node involvement."
 
-* ^url = $cN
+* ^url = $pN
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the clinical 'N' score.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological 'N' score.</div>"
 
 //required and must support elements
 * subject 1..1 MS
@@ -23,10 +23,15 @@ Description:    "An observation that represents the clinical 'N' score which mea
 * code.coding ^slicing.rules = #open
 
 * code.coding contains
-    snomedCode 1..1
+    snomedCode 1..1 and 
+    mCode 0..1
 
-* code.coding[snomedCode].code = #1778921010 
+* code.coding[snomedCode].code = #1478165014 
 * code.coding[snomedCode].system = $snomed
+
+* code.coding[mCode].code = #21900-6
+* code.coding[mCode].system = $loinc
+
 
 * effective[x] only dateTime
 * value[x] only string

@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "RegimenDiscontinuedToxicity",
+  "id": "an-regimen-discontinued-toxicity-cs",
+  "title": "Toxicity reasons why a regimen was discontinued",
+  "description": "Toxicity reasons why a regimen was discontinued",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs",
+  "concept": [
+    {
+      "code": "nausea",
+      "display": "Nausea",
+      "definition": "Nausea could not be managed"
+    },
+    {
+      "code": "anaphylactic",
+      "display": "Anaphylactic",
+      "definition": "There was an Anaphylactic reaction to medication"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 2
+}

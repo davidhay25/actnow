@@ -1,0 +1,92 @@
+{
+  "resourceType": "Observation",
+  "id": "ex-regimen-outcome-1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-outcome"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "regimen-outcome",
+        "system": "http://unknown.org"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "basedOn": [
+    {
+      "reference": "CarePlan/careplan-regimen-1"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count",
+      "valueInteger": 10
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued",
+      "extension": [
+        {
+          "url": "patientfactors",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "cost",
+                "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reason",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "pf",
+                "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs"
+              }
+            ]
+          }
+        },
+        {
+          "url": "toxicity",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "nausea",
+                "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu",
+      "extension": [
+        {
+          "url": "benefit",
+          "valueInteger": 1
+        },
+        {
+          "url": "acceptable",
+          "valueInteger": 1
+        }
+      ]
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "better",
+        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs"
+      }
+    ]
+  }
+}

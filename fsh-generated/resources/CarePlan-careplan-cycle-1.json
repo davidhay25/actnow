@@ -1,0 +1,46 @@
+{
+  "resourceType": "CarePlan",
+  "id": "careplan-cycle-1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+    ]
+  },
+  "intent": "plan",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "cycleCP",
+          "system": "http://unknown.org"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/fhir/NamingSystem/1",
+      "value": "abc"
+    }
+  ],
+  "title": "Cycle 1",
+  "extension": [
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date",
+      "valueDateTime": "2022-01-02"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "partOf": [
+    {
+      "reference": "CarePlan/careplan-regimen-1"
+    }
+  ],
+  "status": "completed"
+}

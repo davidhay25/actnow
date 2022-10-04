@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Description: "Searches for supportingInfo references"
 
 * url = "http://canshare.com/supportinginfo"
-* name = "Supporting Info"
+* name = "SupportingInfo"
 * status = #active
 * description = "Supporting Info"
 * code = #supporting-info

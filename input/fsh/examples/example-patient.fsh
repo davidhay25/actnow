@@ -1,5 +1,5 @@
 Instance: exPatient
-InstanceOf: Patient
+InstanceOf: AnPatient
 Title: "Lorrie Lung"
 Usage: #example
 * text.status = #generated

@@ -1,15 +1,18 @@
 // systems
 Alias: $snomed = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
-//Alias: $actnow = http://canshare.co.nz/fhir/
+Alias: $unknownSystem = http://unknown.org
 
 //identifier systems
-//Alias: $clinfhir = http://canshare.co.nz/fhir/NamingSystem/clinfhir
+Alias: $identifierSystem = http://canshare.co.nz/fhir/NamingSystem/1
+
 
 //Aliases for profiles
 Alias: $profCondition = http://canshare.co.nz/fhir/StructureDefinition/an-condition
 Alias: $profPatient = http://canshare.co.nz/fhir/StructureDefinition/an-patient
 Alias: $profMedicationAdministration = http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration
+Alias: $profMedicationRequest = http://canshare.co.nz/fhir/StructureDefinition/an-medication-request
+
 
 Alias: $profCarePlan-patient = http://canshare.co.nz/fhir/StructureDefinition/an-careplan-patient
 Alias: $profCarePlan-regimen = http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen
@@ -65,3 +68,12 @@ Alias: $regimen-discontinued-patient-factors-cs = http://canshare.co.nz/fhir/Cod
 
 Alias: $regimen-discontinued-toxicity-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs
 Alias: $regimen-discontinued-toxicity-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs
+
+Alias: $regimen-outcome-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs
+Alias: $regimen-outcome-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs
+
+Alias: $regimen-iot-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs
+Alias: $regimen-iot-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs
+
+Alias: $dose-adjustment-reason-vs = http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs
+Alias: $dose-adjustment-reason-cs = http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs

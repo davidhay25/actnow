@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RegimenOutcome",
+  "id": "an-regimen-outcome-vs",
+  "title": "Outcome of a regimen",
+  "description": "How did applying the regimen affect the patient",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs"
+      }
+    ]
+  }
+}

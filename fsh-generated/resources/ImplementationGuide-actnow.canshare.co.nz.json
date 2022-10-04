@@ -54,6 +54,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/an-medication-request"
+        },
+        "name": "ACT-NOW medication request",
+        "description": "ACT-NOW medication request",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-patient"
         },
         "name": "ACT-NOW patient",
@@ -198,14 +206,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-based-on"
-        },
-        "name": "BasedOn",
-        "description": "Allows a MedicationAdministration to refer to a CarePlan",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/an-clinical-trial"
         },
         "name": "ClinicalTrial",
@@ -289,7 +289,7 @@
           "reference": "StructureDefinition/an-regimen-otu"
         },
         "name": "RegimenOTU",
-        "description": "Outcome measure for a regimen",
+        "description": "Overall Treatment Utility measure for a regimen",
         "exampleBoolean": false
       },
       {
@@ -298,6 +298,14 @@
         },
         "name": "Complete Model for ACT-NOW spec",
         "description": "A complete model for all information in the ACT-NOW spec",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-dose-adjustment-reason-vs"
+        },
+        "name": "Intent of treatment",
+        "description": "What was the purpose of this treatment",
         "exampleBoolean": false
       },
       {
@@ -318,6 +326,38 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-regimen-discontinued-toxicity-vs"
+        },
+        "name": "Toxicity reasons why a regimen was discontinued",
+        "description": "Toxicity reasons why a regimen was discontinued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-regimen-iot-vs"
+        },
+        "name": "Intent of treatment",
+        "description": "What was the purpose of this treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-regimen-outcome-vs"
+        },
+        "name": "Outcome of a regimen",
+        "description": "How did applying the regimen affect the patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/an-dose-adjustment-reason-cs"
+        },
+        "name": "Intent of treatment",
+        "description": "What was the purpose of this treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/an-regimen-discontinued-patient-factors-cs"
         },
         "name": "Patient factors when discontinuing a regimen",
@@ -334,6 +374,30 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/an-regimen-discontinued-toxicity-cs"
+        },
+        "name": "Toxicity reasons why a regimen was discontinued",
+        "description": "Toxicity reasons why a regimen was discontinued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/an-regimen-iot-cs"
+        },
+        "name": "Intent of treatment",
+        "description": "What was the purpose of this treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/an-regimen-outcome-cs"
+        },
+        "name": "Outcome of a regimen",
+        "description": "How did applying the regimen affect the patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/AnCapabilityStatement"
         },
         "name": "AnCapabilityStatement",
@@ -342,10 +406,31 @@
       },
       {
         "reference": {
-          "reference": "CarePlan/G08462-F-24844"
+          "reference": "Observation/ExObservationECOG"
         },
-        "name": "G08462-F-24844",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+        "name": "ExObservationECOG",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-ecog"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExObservationHeight"
+        },
+        "name": "ExObservationHeight",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-height"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExObservationNoValueSystemWeight"
+        },
+        "name": "ExObservationNoValueSystemWeight",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExObservationWeight"
+        },
+        "name": "ExObservationWeight",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
       },
       {
         "reference": {
@@ -356,10 +441,34 @@
       },
       {
         "reference": {
+          "reference": "CarePlan/careplan-cycle-1"
+        },
+        "name": "careplan-cycle-1",
+        "description": "Example of a cycle care plan",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/careplan-regimen-1"
+        },
+        "name": "careplan-regimen-1",
+        "description": "Example of a regimen care plan",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ex-regimen-outcome-1"
+        },
+        "name": "ex-regimen-outcome-1",
+        "description": "First bundle of scenario 1",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-outcome"
+      },
+      {
+        "reference": {
           "reference": "Patient/exPatient"
         },
         "name": "Lorrie Lung",
-        "exampleBoolean": true
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-patient"
       },
       {
         "reference": {
@@ -405,17 +514,18 @@
       },
       {
         "reference": {
+          "reference": "MedicationAdministration/medicationadministration-1"
+        },
+        "name": "medicationadministration-1",
+        "description": "An example medication administration",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/supporting-info"
         },
         "name": "supporting-info",
         "description": "Searches for supportingInfo references",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/G08462-F-17843"
-        },
-        "name": "G08462-F-17843",
         "exampleBoolean": true
       }
     ],

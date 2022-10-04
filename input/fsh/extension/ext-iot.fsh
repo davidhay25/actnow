@@ -11,3 +11,4 @@ Description: "Intent of treatment"
 * ^status = #draft
 
 * value[x] only CodeableConcept
+* valueCodeableConcept from $regimen-iot-vs (required)

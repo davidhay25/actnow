@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "supporting-info",
   "url": "http://canshare.com/supportinginfo",
-  "name": "Supporting Info",
+  "name": "SupportingInfo",
   "status": "active",
   "description": "Supporting Info",
   "code": "supporting-info",

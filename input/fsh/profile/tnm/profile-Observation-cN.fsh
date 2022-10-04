@@ -1,14 +1,14 @@
-Profile:        ObservationHeight
+Profile:        ObservationCN
 Parent:         Observation
-Id:             an-height
-Title:          "Height"
-Description:    "An observation that represents a height measurement"
+Id:             an-cN
+Title:          "clinical N-score"
+Description:    "An observation that represents the clinical 'N' score which measures local lymph node involvement."
 
-* ^url = $height
+* ^url = $cN
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents a height measurement.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the clinical 'N' score.</div>"
 
 //required and must support elements
 * subject 1..1 MS
@@ -23,11 +23,16 @@ Description:    "An observation that represents a height measurement"
 * code.coding ^slicing.rules = #open
 
 * code.coding contains
-    snomedCode 1..1
+    snomedCode 1..1 and 
+    mCode 0..1
 
-* code.coding[snomedCode].code = #4565433019
+* code.coding[snomedCode].code = #1778921010 
 * code.coding[snomedCode].system = $snomed
 
+* code.coding[mCode].code = #21906-3
+* code.coding[mCode].system = $loinc
+
+
 * effective[x] only dateTime
-* value[x] only Quantity
+* value[x] only string
 

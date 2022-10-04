@@ -11,8 +11,12 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Canonical url</th></tr>
+<tr><td width='20%'><a href='ValueSet-an-dose-adjustment-reason-vs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-patient-factors-vs.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-reason-vs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-reason-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-toxicity-vs.html'>Toxicity reasons why a regimen was discontinued</a></td><td><p>Toxicity reasons why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-iot-vs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-outcome-vs.html'>Outcome of a regimen</a></td><td><p>How did applying the regimen affect the patient</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs</td></tr>
 </table>
 <br/><br/>
 ### CodeSystems
@@ -25,6 +29,10 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>CodeSystem</th><th>Purpose</th><th>Canonical Url</th></tr>
+<tr><td width='20%'><a href='CodeSystem-an-dose-adjustment-reason-cs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs</td></tr>
 <tr><td width='20%'><a href='CodeSystem-an-regimen-discontinued-patient-factors-cs.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs</td></tr>
 <tr><td width='20%'><a href='CodeSystem-an-regimen-discontinued-reason-cs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs</td></tr>
+<tr><td width='20%'><a href='CodeSystem-an-regimen-discontinued-toxicity-cs.html'>Toxicity reasons why a regimen was discontinued</a></td><td><p>Toxicity reasons why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs</td></tr>
+<tr><td width='20%'><a href='CodeSystem-an-regimen-iot-cs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs</td></tr>
+<tr><td width='20%'><a href='CodeSystem-an-regimen-outcome-cs.html'>Outcome of a regimen</a></td><td><p>How did applying the regimen affect the patient</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs</td></tr>
 </table>

@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RegimenIOT",
+  "id": "an-regimen-iot-vs",
+  "title": "Intent of treatment",
+  "description": "What was the purpose of this treatment",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs"
+      }
+    ]
+  }
+}

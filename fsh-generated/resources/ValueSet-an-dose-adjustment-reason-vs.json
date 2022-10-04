@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AnDoseAdjustmentReason",
+  "id": "an-dose-adjustment-reason-vs",
+  "title": "Intent of treatment",
+  "description": "What was the purpose of this treatment",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs"
+      }
+    ]
+  }
+}

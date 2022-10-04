@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "AnDoseAdjustmentReason",
+  "id": "an-dose-adjustment-reason-cs",
+  "title": "Intent of treatment",
+  "description": "What was the purpose of this treatment",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs",
+  "concept": [
+    {
+      "code": "intol",
+      "display": "Intolerance",
+      "definition": "Patient intolerance of the recommended dose"
+    },
+    {
+      "code": "se",
+      "display": "Side Effects",
+      "definition": "Side effects from the recommended dose"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": true,
+  "count": 2
+}

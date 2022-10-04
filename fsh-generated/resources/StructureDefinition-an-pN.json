@@ -114,6 +114,24 @@
         "patternCode": "1478165014"
       },
       {
+        "id": "Observation.code.coding:mCode",
+        "path": "Observation.code.coding",
+        "sliceName": "mCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:mCode.system",
+        "path": "Observation.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:mCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "patternCode": "21900-6"
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "min": 1,

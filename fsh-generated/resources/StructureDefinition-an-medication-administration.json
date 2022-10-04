@@ -127,13 +127,34 @@
         "min": 1
       },
       {
+        "id": "MedicationAdministration.supportingInformation",
+        "path": "MedicationAdministration.supportingInformation",
+        "min": 1
+      },
+      {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Period"
           }
         ]
+      },
+      {
+        "id": "MedicationAdministration.effectivePeriod",
+        "path": "MedicationAdministration.effectivePeriod",
+        "min": 1,
+        "max": "1"
       }
     ]
   }

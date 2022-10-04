@@ -1,6 +1,11 @@
 {
   "resourceType": "Patient",
   "id": "exPatient",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-patient"
+    ]
+  },
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lorrie Lung</div>"

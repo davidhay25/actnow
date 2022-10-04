@@ -7,6 +7,7 @@
   "description": "Patient factors when discontinuing a regimen",
   "version": "0.1.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs",
+  "experimental": false,
   "compose": {
     "include": [
       {

@@ -114,6 +114,24 @@
         "patternCode": "4565433019"
       },
       {
+        "id": "Observation.code.coding:loincCode",
+        "path": "Observation.code.coding",
+        "sliceName": "loincCode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:loincCode.system",
+        "path": "Observation.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:loincCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "patternCode": "8302-2"
+      },
+      {
         "id": "Observation.subject",
         "path": "Observation.subject",
         "min": 1,
@@ -131,6 +149,16 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
@@ -138,6 +166,28 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
+        "min": 1,
+        "max": "1",
+        "minValueQuantity": {
+          "value": 10
+        },
+        "maxValueQuantity": {
+          "value": 200
+        }
+      },
+      {
+        "id": "Observation.valueQuantity.system",
+        "path": "Observation.valueQuantity.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.valueQuantity.code",
+        "path": "Observation.valueQuantity.code",
+        "patternCode": "m"
       }
     ]
   }

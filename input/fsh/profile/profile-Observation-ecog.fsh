@@ -1,3 +1,13 @@
+/**
+
+measures the impact that the cancer has on the patient
+0 -> 5 - fully active -> dead
+https://ecog-acrin.org/resources/ecog-performance-status/
+
+*/
+
+
+
 Profile:        ObservationEcog
 Parent:         Observation
 Id:             an-ecog
@@ -8,7 +18,7 @@ Description:    "An observation that represents an ecog score"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A CarePlan that represents a single cycle of treatment.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents an ecog score.</div>"
 
 //required and must support elements
 * subject 1..1 MS
@@ -36,5 +46,8 @@ Description:    "An observation that represents an ecog score"
 
 * effective[x] only dateTime
 
-* value[x] only integer
+* value[x] only integer         //range from 0 to 5
+* valueInteger ^minValueInteger = 0
+* valueInteger ^maxValueInteger = 5
+
 

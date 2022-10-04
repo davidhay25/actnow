@@ -4,6 +4,7 @@
   "url": "http://canshare.co.nz/fhir/CapabilityStatement/AnCapabilityStatement",
   "name": "CanShareCapabilityStatement",
   "title": "CapabilityStatement representing the server requirements for a FHIR server",
+  "description": "Describes the server requirements for ACT-NOW",
   "status": "draft",
   "date": "2022-10-03",
   "publisher": "David Hay",
@@ -114,6 +115,25 @@
           "type": "MedicationAdministration",
           "supportedProfile": [
             "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ],
+          "interaction": [
+            {
+              "code": "search-type"
+            }
+          ],
+          "conditionalUpdate": true,
+          "conditionalCreate": true,
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ]
+        },
+        {
+          "type": "MedicationRequest",
+          "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
           ],
           "interaction": [
             {

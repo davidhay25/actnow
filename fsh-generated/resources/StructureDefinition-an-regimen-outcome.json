@@ -102,7 +102,7 @@
         "id": "Observation.extension:regimen-discontinued",
         "path": "Observation.extension",
         "sliceName": "regimen-discontinued",
-        "short": "The reason the regimen was discontinued",
+        "short": "The reason/s why the regimen was discontinued",
         "min": 0,
         "max": "1",
         "type": [
@@ -148,16 +148,36 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "regimenoutcome",
-              "system": "http://unknown.com"
+              "type": "pattern",
+              "path": "code"
             }
-          ]
-        }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:adhocSystem",
+        "path": "Observation.code.coding",
+        "sliceName": "adhocSystem",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:adhocSystem.system",
+        "path": "Observation.code.coding.system",
+        "patternUri": "http://unknown.org"
+      },
+      {
+        "id": "Observation.code.coding:adhocSystem.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "patternCode": "regimen-outcome"
       },
       {
         "id": "Observation.subject",
@@ -175,6 +195,35 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs"
+        }
       }
     ]
   }

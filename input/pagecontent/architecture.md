@@ -71,6 +71,7 @@ The key features needed are:
 * Search parameters for the supported resources (defined in the Capability Statement)
 * Bulk downloading of resource types, with support for [_since] and pagination. This is needed to support the query of resources in bulk for analytics.
 * _include and _revinclude for the resource types used, and their references 
+* Patient/$everything to retrieve all resources in the [patient compartment](http://hl7.org/fhir/compartmentdefinition-patient.html) for the patient
 
 Features that might be supported either by the server or some application 'in front' of it - like an Integration Engine
 

@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "ExObservationHeight",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-height"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "4565433019",
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "code": "8302-2",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Height 180 cm</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "valueQuantity": {
+    "value": 1.8,
+    "code": "m",
+    "system": "http://unitsofmeasure.org"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "medicationadministration-1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Oxaliplatin260.00 mg IV</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/fhir/NamingSystem/1",
+      "value": "ma-1"
+    }
+  ],
+  "supportingInformation": [
+    {
+      "reference": "CarePlan/careplan-cycle-1"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "text": "Oxaliplatin"
+  },
+  "effectivePeriod": {
+    "start": "2014-04-08T09:35:00Z",
+    "end": "2014-04-08T12:00:00Z"
+  },
+  "dosage": {
+    "text": "260.00 mg",
+    "route": {
+      "text": "IV"
+    },
+    "dose": {
+      "value": 260,
+      "unit": "mg"
+    }
+  },
+  "extension": [
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
+      "extension": [
+        {
+          "url": "planned",
+          "valueInteger": 3
+        },
+        {
+          "url": "administered",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose",
+      "valueDosage": {
+        "text": "300 mg"
+      }
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-dose-adjustment-reason",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "intol",
+            "system": "http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs"
+          }
+        ]
+      }
+    }
+  ]
+}

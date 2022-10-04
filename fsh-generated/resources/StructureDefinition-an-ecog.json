@@ -3,7 +3,7 @@
   "id": "an-ecog",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A CarePlan that represents a single cycle of treatment.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents an ecog score.</div>"
   },
   "extension": [
     {
@@ -149,6 +149,16 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
@@ -156,6 +166,14 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.valueInteger",
+        "path": "Observation.valueInteger",
+        "min": 1,
+        "max": "1",
+        "minValueInteger": 0,
+        "maxValueInteger": 5
       }
     ]
   }

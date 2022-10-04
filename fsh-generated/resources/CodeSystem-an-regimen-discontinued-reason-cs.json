@@ -25,5 +25,7 @@
       "definition": "Toxicity"
     }
   ],
+  "experimental": true,
+  "caseSensitive": true,
   "count": 3
 }

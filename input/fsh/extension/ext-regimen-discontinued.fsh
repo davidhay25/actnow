@@ -1,3 +1,8 @@
+/*
+    An extension to be added to the Regimen outcome Observation to record
+    reasons why the the regimen was cancelled before completing (ie all planned cycles administered)
+*/
+
 Extension: RegimenDiscontinued
 Id: an-regimen-discontinued
 Description: "Reasons why a regimen may have been discontinued"
@@ -17,12 +22,7 @@ Description: "Reasons why a regimen may have been discontinued"
     toxicity 0..* 
 
 // definitions of sub-extensions
-/*
-* extension[date].url = "date" (exactly)
-* extension[date] ^definition = "The date that the regimen was discontinued. It will also be the in "
-* extension[date] ^short = "The date that the regimen was discontinued"
-* extension[date].value[x] only dateTime
-*/
+
 * extension[reason].url = "reason" (exactly)
 * extension[reason] ^definition = "The overall reason why the regimen was discontinued"
 * extension[reason] ^short = "The overall reason why the regimen was discontinued"

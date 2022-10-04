@@ -3,15 +3,6 @@
 <tr><th>Id</th><th>Canonical url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-based-on.html'>an-based-on</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-based-on</td>
-<td>
-<div>MedicationAdministration</div>
-</td>
-<td>Allows a MedicationAdministration to refer to a CarePlan</td>
-<td></td>
-</tr>
-<tr>
 <td><a href='StructureDefinition-an-clinical-trial.html'>an-clinical-trial</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial</td>
 <td>
@@ -24,7 +15,7 @@
 <td><a href='StructureDefinition-an-cycle-count.html'>an-cycle-count</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count</td>
 <td>
-<div>CarePlan</div>
+<div>Observation</div>
 </td>
 <td>The number of cycles that administered for a regimen</td>
 <td></td>
@@ -107,7 +98,7 @@
 <td>
 <div>Observation</div>
 </td>
-<td>Outcome measure for a regimen</td>
+<td>Overall Treatment Utility measure for a regimen</td>
 <td></td>
 </tr>
 </table>

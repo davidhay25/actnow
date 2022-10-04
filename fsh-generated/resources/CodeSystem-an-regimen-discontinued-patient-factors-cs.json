@@ -20,5 +20,7 @@
       "definition": "Unable to travel to treatment facility"
     }
   ],
+  "experimental": true,
+  "caseSensitive": true,
   "count": 2
 }

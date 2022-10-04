@@ -5,6 +5,8 @@
 
 There are at least a couple of options for the input API
 
+
+
 #### Direct REST updates
 
 The direct REST API involves the the client making individual API calls for each interaction. For example, to record that a medication was given, then client retrieves the appropriate patient Id and cycle CarePlan id, creates the MedicationAdministratoion resource with the appropriate references, and POSTs the MedicationAdministration to the server. This results in an extremely 'chatty' API interaction, with a increased risk of client errors leading to data corruption if the wrong resource is created or updated or incorrect reference resources are chosen. 
@@ -20,6 +22,14 @@ While it does require the client to maintain the unique identifiers (the resourc
 This is the preferred approach in this guide.
 
 ### Details
+
+> Considering that when there is an update the entire patient record is transmitted in the bundle
+> and that each bundle is a single patient (though not really required)
+> reason is that a number of the resource extensions mean that the resource needs to be updated
+> for example the regimen cycle count extension will start at 1 and increment each time a new
+> cycle is established
+
+> Need to consider the impact on the extract for analytics
 
 This section describes how data is sent from client applications to the system, assuming that conditional updates can be used.
 

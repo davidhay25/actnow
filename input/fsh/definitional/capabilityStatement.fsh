@@ -5,6 +5,7 @@ Usage: #definition
 
 * name = "CanShareCapabilityStatement"
 * title = "CapabilityStatement representing the server requirements for a FHIR server"
+* description = "Describes the server requirements for ACT-NOW"
 * status = #draft
 * date = "2022-10-03"
 * publisher = "David Hay"
@@ -75,6 +76,17 @@ Usage: #definition
 
 * rest.resource[+].type = #MedicationAdministration
 * rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+* rest.resource[=].interaction[+].code = #read
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[=].code = #search-type
+* rest.resource[=].conditionalUpdate = true
+* rest.resource[=].conditionalCreate = true
+* rest.resource[=].searchParam[+].name = "identifier"
+* rest.resource[=].searchParam[=].type = #token
+
+* rest.resource[+].type = #MedicationRequest
+* rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].interaction[=].code = #create

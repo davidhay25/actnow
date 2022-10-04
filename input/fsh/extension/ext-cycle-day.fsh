@@ -1,3 +1,8 @@
+/*
+    The day of the cycle that this administration was made on
+*/
+
+
 Extension: CycleDay
 Id: an-cycle-day
 Description: "The day of the cycle that this medication was given on. Includes planned and administered"
