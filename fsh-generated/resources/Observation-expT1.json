@@ -1,0 +1,22 @@
+{
+  "resourceType": "Observation",
+  "id": "expT1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-pT"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "1786872016",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "status": "final",
+  "valueString": "T2"
+}

@@ -16,7 +16,7 @@
   "name": "AnMedicationAdministration",
   "title": "ACT-NOW medication administration",
   "status": "active",
-  "description": "ACT-NOW medication administration",
+  "description": "ACT-NOW medication administration. These are medications that were actually administered.",
   "jurisdiction": [
     {
       "coding": [
@@ -92,16 +92,16 @@
         ]
       },
       {
-        "id": "MedicationAdministration.extension:planned-dose",
+        "id": "MedicationAdministration.extension:prescribed-dose",
         "path": "MedicationAdministration.extension",
-        "sliceName": "planned-dose",
+        "sliceName": "prescribed-dose",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose"
+              "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose"
             ]
           }
         ]

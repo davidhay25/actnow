@@ -16,7 +16,7 @@
   "name": "AnMedicationRequest",
   "title": "ACT-NOW medication request",
   "status": "active",
-  "description": "ACT-NOW medication request",
+  "description": "ACT-NOW medication request. These are prescriptions given to the patient.",
   "jurisdiction": [
     {
       "coding": [

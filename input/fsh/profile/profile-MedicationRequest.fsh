@@ -7,7 +7,7 @@ Profile:        AnMedicationRequest
 Parent:         MedicationRequest
 Id:             an-medication-request
 Title:          "ACT-NOW medication request"
-Description:    "ACT-NOW medication request"
+Description:    "ACT-NOW medication request. These are prescriptions given to the patient."
 
 * ^url = $profMedicationRequest
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

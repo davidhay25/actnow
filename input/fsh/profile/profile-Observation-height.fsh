@@ -38,5 +38,10 @@ Description:    "An observation that represents a height measurement"
 * valueQuantity.code = #m        //must be in metres
 * valueQuantity.system = "http://unitsofmeasure.org"
 
-* valueQuantity ^minValueQuantity.value = 10          //assume that no person will be less than 10- kg
-* valueQuantity ^maxValueQuantity.value = 200          //assume that no person will be greater  than 200- kg
+* valueQuantity ^minValueQuantity.value = 1          //assume that no person will be less than 1 metre
+* valueQuantity ^minValueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity ^minValueQuantity.code = #m  
+
+* valueQuantity ^maxValueQuantity.value = 2.5          //assume that no person will be greater  2.5 m
+* valueQuantity ^maxValueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity ^maxValueQuantity.code = #m

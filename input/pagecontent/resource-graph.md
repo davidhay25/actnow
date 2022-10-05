@@ -19,11 +19,31 @@ Similarly, when a cycle starts and ends there are Observations which may be reco
 An individual medication administration is related to the Cycle plan under which it was given. If the medication was actually given to the patient it is represented as a MedicationAdministration resource. If it is a prescription given to a patient it will be represented as a MedicationRequest resource.
 
 
-The following diagram shows an example of a small set of data for a patient. Note that all the resources will have a reference to the Patient, and some to a Practitioner - these are shown for clarity.
+The following diagram shows an example of a small set of data for a patient, with only a single cycle. Note that all the resources will have a reference to the Patient, and some to a Practitioner - these are not shown for clarity.
 
-<img style="width:800px; float:none" src="graphOverview.png"/>
+<img style="width:800px; float:none" src="graph2.png"/>
 
-Note that other references are certainly possible if appropriate, but the ones defined in this page are the minimum needed. 
+
+The image is shown with a central column of the Diagnosis (with wupporting histology and assessment), then the regimen and cycle care plans. Usually there will be multiple cycle plans.
+
+To the left are Observations made before the start of a regimen / cycle - blood tests and other ancillary studies. These have a reference from the CarePlan to the resource using a 'supportingInfo' reference as (in theory) the observations would exist prior to the CarePlan being created.
+
+To the right are Observations made when the regimen / cycle ends, both blood tests and other outcome measures. The reference is from the Observation to the CarePlan (using a 'basedOn' reference) as they are created after the CarePlan.
+
+At the bottom are the medication administrations (ie medications actually given to the patient like an IV infusion) and prescriptions (represented as a MedicationRequest).
+
+Note that other resources and references between resources are certainly possible if appropriate, but the ones defined in this page are the base ones defined. 
+
+Most of the resources are created and not subsequently updated (other than any error correction). However, the CarePlans (regimen and Cycle) may be updated over time as their status. If the information were being submitted in real-time:
+
+* The regimen plan is created with the status of 'active'
+* A Cycle plan is added with an active status (it may have references to other resources)
+* Medications are recorded with a reference to the cycle plan (which itself is not updated)
+* When the last medication is given, the cycle plan is updated setting the status to 'completed'. 'Outcome' resources (Observations) are created which have a reference back to the cycle plan.
+* When the last cycle has completed, the regimen plan is closed.
+
+This all means that the CarePlans may have multiple versions, though only the most recent one is generally retrieved when querying the server (The [history](http://hl7.org/fhir/http.html#history) operations can be used to retrieve previous versions, though these are not considered in this guide).
+
 
 ### Specific data requirements
 
@@ -42,14 +62,16 @@ The CarePlan that represents the regimen being followed should have an *.address
 ### Staging information
 This records how advanced a tumour is, and is generally recorded using the 'TNM' mechanism which measures the Tumour size, Involvement of Local nodes and metastases.
 
-Following the pattern of [mcode]() these are recorded as 4 distinct Observations - One for each of the TNM measures, and a single 'summary' observation. The summary Observation has *hasMember* references to the individual Observations, and the regimen CarePlan has a *supportingInfo* reference to the summary Observation.
+Following the pattern of [mcode](https://hl7.org/fhir/us/mcode/index.html) these are recorded as 4 distinct Observations - One for each of the TNM measures, and a single 'summary' observation. The summary Observation has *hasMember* references to the individual Observations, and the regimen CarePlan has a *supportingInfo* reference to the summary Observation.
 
 It is also possible for there to be a reference from the Condition to the summary Observation using the *stage.assessment* reference.
 
-Heres a diagram of the resources involved in Diagnosis and Staging (from the Reference Implementation)
+<!--
+Here's a diagram of the resources involved in Diagnosis and Staging (from the Reference Implementation)
 
 <img style="width:800px; float:none" src="tnm.png"/>
 
+-->
 
 #### Measures made before treatment starts
 Commonly there are measurements made before treatment commences - for example Creatinine Clearance test to determine drug dosages or the [ECOG score](StructureDefinition-an-ecog.html) so that the effectiveness of treatment can be determined.

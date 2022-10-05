@@ -47,14 +47,19 @@ Alias: $extCycleCount = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-
 Alias: $extLastAdminDate = http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date
 
 
-Alias: $extPlannedDose = http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose
+
 
 Alias: $extRegimenDiscontinued = http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued
 Alias: $extRegimenOTU = http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu
 Alias: $extCycleNumber = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number
 Alias: $extBasedOn = http://canshare.co.nz/fhir/StructureDefinition/an-based-on
 Alias: $extCycleDay = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day
+
+
 Alias: $extPrescribedDose = http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose
+//Alias: $extPlannedDose = http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose
+
+
 Alias: $extDoseAdjustmentReason = http://canshare.co.nz/fhir/StructureDefinition/an-dose-adjustment-reason
 
 

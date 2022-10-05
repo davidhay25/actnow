@@ -66,15 +66,6 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-planned-dose.html'>an-planned-dose</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose</td>
-<td>
-<div>MedicationAdministration</div>
-</td>
-<td>The dose that was planned to be administered</td>
-<td></td>
-</tr>
-<tr>
 <td><a href='StructureDefinition-an-prescribed-dose.html'>an-prescribed-dose</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose</td>
 <td>

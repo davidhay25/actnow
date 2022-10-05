@@ -46,7 +46,7 @@
         "id": "Extension.extension:benefit",
         "path": "Extension.extension",
         "sliceName": "benefit",
-        "short": "Clinical benefit. Value can be 1 (not worse) or 0 (worse) ",
+        "short": "Clinical benefit. Value can be 1 (not worse) or 0 (worse)",
         "definition": "Clinical benefit",
         "min": 0,
         "max": "1"

@@ -19,7 +19,7 @@ Description: "Overall Treatment Utility measure for a regimen"
 // definitions of sub-extensions
 * extension[benefit].url = "benefit" (exactly)
 * extension[benefit] ^definition = "Clinical benefit"
-* extension[benefit] ^short = "Clinical benefit. Value can be 1 (not worse) or 0 (worse) "
+* extension[benefit] ^short = "Clinical benefit. Value can be 1 (not worse) or 0 (worse)"
 * extension[benefit].value[x] only integer
 * extension[benefit].valueInteger ^minValueInteger = 0
 * extension[benefit].valueInteger ^maxValueInteger = 1
@@ -31,14 +31,3 @@ Description: "Overall Treatment Utility measure for a regimen"
 * extension[acceptable].valueInteger ^minValueInteger = 0
 * extension[acceptable].valueInteger ^maxValueInteger = 1
 
-//todo add constraint for the numeric range of the OTU - see nzbase Practitoner - not needed!
-
-/*
-* obeys an-otu-min
-
-Invariant: an-otu-min
-Expression: "Patient.identifier.where(system='https://standards.digital.health.nz/ns/nhi-id' and use='official').count() < 2"
-Severity: #error
-Description: "Minimum value is 0"
-
-*/

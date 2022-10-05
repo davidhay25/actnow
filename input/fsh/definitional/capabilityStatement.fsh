@@ -59,6 +59,7 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #search-type
 * rest.resource[=].conditionalUpdate = true
 * rest.resource[=].conditionalCreate = true
+//* rest.resource[=].conditionalDelete = true
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].type = #token
 
@@ -71,6 +72,7 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #search-type
 * rest.resource[=].conditionalUpdate = true
 * rest.resource[=].conditionalCreate = true
+//* rest.resource[=].conditionalDelete = true
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].type = #token
 
@@ -82,6 +84,7 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #search-type
 * rest.resource[=].conditionalUpdate = true
 * rest.resource[=].conditionalCreate = true
+//* rest.resource[=].conditionalDelete = true
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].type = #token
 
@@ -93,5 +96,6 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #search-type
 * rest.resource[=].conditionalUpdate = true
 * rest.resource[=].conditionalCreate = true
+//* rest.resource[=].conditionalDelete = true
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].type = #token

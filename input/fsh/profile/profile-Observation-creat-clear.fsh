@@ -26,8 +26,10 @@ Description:    "An observation that represents a Creatinine Clearance measureme
     snomedCode 1..1
 
 * code.coding[snomedCode].code = #cc
-* code.coding[snomedCode].system = "www.example.org"
+* code.coding[snomedCode].system = $unknownSystem
 
 * effective[x] only dateTime
 * value[x] only Quantity
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mL/s
 

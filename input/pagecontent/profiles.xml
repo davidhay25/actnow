@@ -76,7 +76,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-creat-clear.html'>Creatinine Clearance</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear<br/>
-<br/>OE: <strong>www.example.org : cc </strong>
+<br/>OE: <strong>http://unknown.org : cc </strong>
 </td>
 <td>An observation that represents a Creatinine Clearance measurement</td>
 </tr>
@@ -111,14 +111,14 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>MedicationAdministration</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration<br/>
 </td>
-<td>ACT-NOW medication administration</td>
+<td>ACT-NOW medication administration. These are medications that were actually administered.</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-medication-request.html'>ACT-NOW medication request</a></td>
 <td>MedicationRequest</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-medication-request<br/>
 </td>
-<td>ACT-NOW medication request</td>
+<td>ACT-NOW medication request. These are prescriptions given to the patient.</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-pGroup.html'>Pathological TNM group score</a></td>

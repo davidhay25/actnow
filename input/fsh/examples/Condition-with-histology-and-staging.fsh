@@ -31,7 +31,7 @@ Usage: #example
 //* code = $snomed#74364000 "Small cell carcinoma (morphologic abnormality)"
 
 
-// ===========  staging information ===========
+// ===========  clinical staging information ===========
 
 Instance: excT1
 InstanceOf: ObservationCT
@@ -77,5 +77,55 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
 * code = $snomed#1786868015
+
+* valueString = "group value"
+
+
+// ===========  Pathological staging information ===========
+
+Instance: expT1
+InstanceOf: ObservationPT
+Title: "Pathological T value"
+Usage: #example
+
+* subject = Reference(exPatient)
+* status = #final
+                
+* code = $snomed#1786872016
+* valueString = "T2"
+
+//---------
+Instance: expN1
+InstanceOf: ObservationPN
+Title: "Pathological N value"
+Usage: #example
+
+* subject = Reference(exPatient)
+* status = #final
+
+* code = $snomed#1478165014
+* valueString = "N2"
+
+// ---------
+Instance: expM1
+InstanceOf: ObservationPM
+Title: "Pathological M value"
+Usage: #example
+
+* subject = Reference(exPatient)
+* status = #final
+
+* code = $snomed#1478167018
+* valueString = "M0"
+
+// ---------
+Instance: expTNM1
+InstanceOf: ObservationPathTNMGroup
+Title: "Pathological TNM group"
+Usage: #example
+
+* subject = Reference(exPatient)
+* status = #final
+* code = $snomed#1786868015 
 
 * valueString = "group value"

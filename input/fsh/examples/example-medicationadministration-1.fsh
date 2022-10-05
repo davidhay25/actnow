@@ -33,9 +33,7 @@ Description: "An example medication administration"
 * extension[=].extension[+].url = "administered"
 * extension[=].extension[=].valueInteger = 4            //actually given on the 4th day
 
-
-
-* extension[+].url = $extPlannedDose
+* extension[+].url = $extPrescribedDose
 * extension[=].valueDosage.text = "300 mg"
 
 * extension[+].url = $extDoseAdjustmentReason
@@ -43,7 +41,3 @@ Description: "An example medication administration"
 
 
 
-/* $extCycleDay  named cycle-day  0..1 and        //planned and administered date
-    $extPlannedDose named planned-dose 0..1 and     //planned dose
-    $extDoseAdjustmentReason named dose-adjustment-reason 0..1  //the reason the dose was adjusted from what was planned
-**/

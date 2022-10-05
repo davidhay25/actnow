@@ -1,0 +1,33 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "medicationrequest-1",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allopurinol</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/fhir/NamingSystem/1",
+      "value": "ma-1"
+    }
+  ],
+  "intent": "plan",
+  "supportingInformation": [
+    {
+      "reference": "CarePlan/careplan-cycle-1"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "text": "Allopurinol"
+  },
+  "authoredOn": "2014-04-09"
+}

@@ -1,4 +1,5 @@
 
+conditional delete
 
 ### Summary
 
@@ -21,7 +22,7 @@ While it does require the client to maintain the unique identifiers (the resourc
 
 This is the preferred approach in this guide.
 
-### Details
+### Details of Conditional operations
 
 > Considering that when there is an update the entire patient record is transmitted in the bundle
 > and that each bundle is a single patient (though not really required)
@@ -37,9 +38,7 @@ The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-up
 
 In some cases, [conditonal create](http://hl7.org/fhir/http.html#ccreate) is also used where the resource must be present in the bundle to allow the server to resolve the resource ids for referencing, but the resource is not intended to be updated if already present. The Patient resource is an example where this might be appropriate.
 
-
-
-
+[Conditional delete](http://hl7.org/fhir/http.html#3.1.0.7.1) operations are not defined, as errors can be managed with appropriate resource status updates and a Conditional update.
 
 #### Resource identifier as the discriminator
 

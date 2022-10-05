@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "CreatinineClearance",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "cc",
+        "system": "http://unknown.org"
+      }
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Creatinine Clearance</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
+  "valueQuantity": {
+    "value": 1.9,
+    "code": "mL/s",
+    "system": "http://unitsofmeasure.org"
+  }
+}

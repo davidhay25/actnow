@@ -57,7 +57,7 @@
       ]
     },
     {
-      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose",
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
       "valueDosage": {
         "text": "300 mg"
       }

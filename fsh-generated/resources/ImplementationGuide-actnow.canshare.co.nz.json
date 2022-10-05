@@ -49,7 +49,7 @@
           "reference": "StructureDefinition/an-medication-administration"
         },
         "name": "ACT-NOW medication administration",
-        "description": "ACT-NOW medication administration",
+        "description": "ACT-NOW medication administration. These are medications that were actually administered.",
         "exampleBoolean": false
       },
       {
@@ -57,7 +57,7 @@
           "reference": "StructureDefinition/an-medication-request"
         },
         "name": "ACT-NOW medication request",
-        "description": "ACT-NOW medication request",
+        "description": "ACT-NOW medication request. These are prescriptions given to the patient.",
         "exampleBoolean": false
       },
       {
@@ -262,14 +262,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-planned-dose"
-        },
-        "name": "PlannedDose",
-        "description": "The dose that was planned to be administered",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/an-prescribed-dose"
         },
         "name": "PrescribedDose",
@@ -406,6 +398,13 @@
       },
       {
         "reference": {
+          "reference": "Observation/CreatinineClearance"
+        },
+        "name": "CreatinineClearance",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear"
+      },
+      {
+        "reference": {
           "reference": "Observation/ExObservationECOG"
         },
         "name": "ExObservationECOG",
@@ -514,11 +513,47 @@
       },
       {
         "reference": {
+          "reference": "Observation/expM1"
+        },
+        "name": "Pathological M value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pM"
+      },
+      {
+        "reference": {
+          "reference": "Observation/expN1"
+        },
+        "name": "Pathological N value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pN"
+      },
+      {
+        "reference": {
+          "reference": "Observation/expT1"
+        },
+        "name": "Pathological T value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pT"
+      },
+      {
+        "reference": {
+          "reference": "Observation/expTNM1"
+        },
+        "name": "Pathological TNM group",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup"
+      },
+      {
+        "reference": {
           "reference": "MedicationAdministration/medicationadministration-1"
         },
         "name": "medicationadministration-1",
         "description": "An example medication administration",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/medicationrequest-1"
+        },
+        "name": "medicationrequest-1",
+        "description": "An example medication administration",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
       },
       {
         "reference": {
