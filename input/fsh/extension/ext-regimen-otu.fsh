@@ -2,7 +2,7 @@
 
 Extension: RegimenOTU
 Id: an-regimen-otu
-Description: "Overall Treatment Utility measure for a regimen"
+Description: "Overall Treatment Utility measure for a regimen after it has completed."
 
 * ^url = $extRegimenOTU
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
@@ -10,7 +10,7 @@ Description: "Overall Treatment Utility measure for a regimen"
 * ^status = #draft
 
 * ^context.type = #element
-* ^context.expression = "Observation"
+* ^context.expression = "CarePlan"
 
 * extension contains
     benefit 0..1 and

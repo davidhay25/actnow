@@ -21,14 +21,16 @@ An individual medication administration is related to the Cycle plan under which
 
 The following diagram shows an example of a small set of data for a patient, with only a single cycle. Note that all the resources will have a reference to the Patient, and some to a Practitioner - these are not shown for clarity.
 
-<img style="width:800px; float:none" src="graph2.png"/>
+<img style="width:800px; float:none" src="graph3.png"/>
 
 
 The image is shown with a central column of the Diagnosis (with wupporting histology and assessment), then the regimen and cycle care plans. Usually there will be multiple cycle plans.
 
 To the left are Observations made before the start of a regimen / cycle - blood tests and other ancillary studies. These have a reference from the CarePlan to the resource using a 'supportingInfo' reference as (in theory) the observations would exist prior to the CarePlan being created.
 
-To the right are Observations made when the regimen / cycle ends, both blood tests and other outcome measures. The reference is from the Observation to the CarePlan (using a 'basedOn' reference) as they are created after the CarePlan.
+To the right are Observations made when the regimen / cycle ends, mostly blood tests. The reference is from the Observation to the CarePlan (using a 'basedOn' reference) as they are created after the CarePlan.
+
+ Outcome measures are recorded as extensions on the CarePlan itself.
 
 At the bottom are the medication administrations (ie medications actually given to the patient like an IV infusion) and prescriptions (represented as a MedicationRequest).
 

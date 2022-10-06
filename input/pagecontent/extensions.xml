@@ -15,7 +15,7 @@
 <td><a href='StructureDefinition-an-cycle-count.html'>an-cycle-count</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count</td>
 <td>
-<div>Observation</div>
+<div>CarePlan</div>
 </td>
 <td>The number of cycles that administered for a regimen</td>
 <td></td>
@@ -78,7 +78,7 @@
 <td><a href='StructureDefinition-an-regimen-discontinued.html'>an-regimen-discontinued</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued</td>
 <td>
-<div>Observation</div>
+<div>CarePlan</div>
 </td>
 <td>Reasons why a regimen may have been discontinued</td>
 <td></td>
@@ -87,9 +87,9 @@
 <td><a href='StructureDefinition-an-regimen-otu.html'>an-regimen-otu</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu</td>
 <td>
-<div>Observation</div>
+<div>CarePlan</div>
 </td>
-<td>Overall Treatment Utility measure for a regimen</td>
+<td>Overall Treatment Utility measure for a regimen after it has completed.</td>
 <td></td>
 </tr>
 </table>

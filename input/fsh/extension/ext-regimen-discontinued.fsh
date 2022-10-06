@@ -12,8 +12,9 @@ Description: "Reasons why a regimen may have been discontinued"
 
 * ^status = #draft
 
+//use the extension on the carePlan rather than a separate Observation.
 * ^context.type = #element
-* ^context.expression = "Observation"
+* ^context.expression = "CarePlan"
 
 * extension contains
    // date 0..1 and

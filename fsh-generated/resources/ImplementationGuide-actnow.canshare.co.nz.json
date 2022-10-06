@@ -190,14 +190,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-regimen-outcome"
-        },
-        "name": "Regimen outcome",
-        "description": "An observation that represents the outcome of a regimen CarePlan that is closed",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/an-weight"
         },
         "name": "Height",
@@ -281,7 +273,7 @@
           "reference": "StructureDefinition/an-regimen-otu"
         },
         "name": "RegimenOTU",
-        "description": "Overall Treatment Utility measure for a regimen",
+        "description": "Overall Treatment Utility measure for a regimen after it has completed.",
         "exampleBoolean": false
       },
       {
@@ -456,11 +448,11 @@
       },
       {
         "reference": {
-          "reference": "Observation/ex-regimen-outcome-1"
+          "reference": "CarePlan/careplan-regimen-2"
         },
-        "name": "ex-regimen-outcome-1",
-        "description": "First bundle of scenario 1",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-outcome"
+        "name": "careplan-regimen-2",
+        "description": "A regimen care plan that was discontinued after it started",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
       },
       {
         "reference": {

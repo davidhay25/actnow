@@ -164,14 +164,6 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>ACT-NOW patient</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-regimen-outcome.html'>Regimen outcome</a></td>
-<td>Observation</td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-outcome<br/>
-<br/>OE: <strong>http://unknown.org : regimen-outcome </strong>
-</td>
-<td>An observation that represents the outcome of a regimen CarePlan that is closed</td>
-</tr>
-<tr>
 <td><a href='StructureDefinition-an-weight.html'>Height</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-weight<br/>

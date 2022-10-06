@@ -62,6 +62,19 @@
   "differential": {
     "element": [
       {
+        "id": "CarePlan",
+        "path": "CarePlan",
+        "constraint": [
+          {
+            "key": "an-cp-1",
+            "severity": "error",
+            "human": "If the CarePlan was cancelled, then there must be the cancellation reason extension present",
+            "expression": "CarePlan.status = 'revoked' implies extension('http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued').exists()",
+            "source": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+          }
+        ]
+      },
+      {
         "id": "CarePlan.extension",
         "path": "CarePlan.extension",
         "slicing": {

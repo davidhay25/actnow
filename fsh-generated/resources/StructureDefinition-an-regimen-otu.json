@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "RegimenOTU",
   "status": "draft",
-  "description": "Overall Treatment Utility measure for a regimen",
+  "description": "Overall Treatment Utility measure for a regimen after it has completed.",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Observation"
+      "expression": "CarePlan"
     }
   ],
   "type": "Extension",
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "Overall Treatment Utility measure for a regimen"
+        "definition": "Overall Treatment Utility measure for a regimen after it has completed."
       },
       {
         "id": "Extension.extension:benefit",
