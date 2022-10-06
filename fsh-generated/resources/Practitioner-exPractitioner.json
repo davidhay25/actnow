@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "exPractitioner",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Marcus Welby</div>"
+  },
+  "birthDate": "1970-01-01",
+  "name": [
+    {
+      "given": [
+        "Marcus"
+      ],
+      "family": "Welby",
+      "text": "Marcus Welby"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://standards.digital.health.nz/ns/hpi-person-id",
+      "value": "1234"
+    }
+  ]
+}

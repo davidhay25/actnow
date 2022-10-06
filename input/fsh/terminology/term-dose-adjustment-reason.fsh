@@ -1,9 +1,9 @@
-//Intent of Treatment
+
 
 ValueSet : AnDoseAdjustmentReason
 Id: an-dose-adjustment-reason-vs
-Title: "Intent of treatment"
-Description:  "What was the purpose of this treatment"
+Title: "Dose Adjustment reason"
+Description:  "The reason why the dose was adjusted"
 
 
 * ^url = $dose-adjustment-reason-vs
@@ -13,8 +13,8 @@ Description:  "What was the purpose of this treatment"
 
 CodeSystem:  AnDoseAdjustmentReason
 Id: an-dose-adjustment-reason-cs
-Title: "Intent of treatment"
-Description:  "What was the purpose of this treatment"
+Title: "Dose Adjustment reason"
+Description:  "The reason why the dose was adjusted"
 
 
 * ^url = $dose-adjustment-reason-cs

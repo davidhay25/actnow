@@ -21,6 +21,11 @@
   "subject": {
     "reference": "Patient/exPatient"
   },
+  "performer": [
+    {
+      "reference": "Practitioner/exPractitioner"
+    }
+  ],
   "effectiveDateTime": "2020-01-01",
   "status": "final",
   "valueQuantity": {

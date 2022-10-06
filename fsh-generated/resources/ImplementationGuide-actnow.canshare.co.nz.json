@@ -288,8 +288,8 @@
         "reference": {
           "reference": "ValueSet/an-dose-adjustment-reason-vs"
         },
-        "name": "Intent of treatment",
-        "description": "What was the purpose of this treatment",
+        "name": "Dose Adjustment reason",
+        "description": "The reason why the dose was adjusted",
         "exampleBoolean": false
       },
       {
@@ -336,8 +336,8 @@
         "reference": {
           "reference": "CodeSystem/an-dose-adjustment-reason-cs"
         },
-        "name": "Intent of treatment",
-        "description": "What was the purpose of this treatment",
+        "name": "Dose Adjustment reason",
+        "description": "The reason why the dose was adjusted",
         "exampleBoolean": false
       },
       {
@@ -460,6 +460,13 @@
         },
         "name": "Lorrie Lung",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-patient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/exPractitioner"
+        },
+        "name": "Example practitioner",
+        "exampleBoolean": true
       },
       {
         "reference": {

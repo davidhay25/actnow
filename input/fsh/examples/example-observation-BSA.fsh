@@ -5,6 +5,8 @@ InstanceOf: ObservationBSA
 * text.status = #generated
 
 * subject = Reference(exPatient)
+* performer = Reference(exPractitioner) //avoid the warning from the validator
+
 * effectiveDateTime = "2020-01-01"
 * status = #final
 

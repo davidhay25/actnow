@@ -4,33 +4,36 @@ This page describes the resource graph developed to represent the ACT-NOW data s
 
 The general flow by which a patient receives cancer treatment, and the corresponding FHIR representation, is as follows.
 
-A patient has a diagnosis of cancer, as determined on histological and clinical grounds. This diagnosis is represented as a Condition resource, with Observation resources representing the histological and other findings that led to that diagnosis. In particular there are a number of 'ancillary' tests that are performed for particular diagnoses - such as Estrogen receptor status of Breast cancer. These tests are represented as Observations, and are important in determining the treatment protocol.
+* A patient has a diagnosis of cancer, as determined on histological and clinical grounds. This diagnosis is represented as a Condition resource, with Observation resources representing the histological and other findings that led to that diagnosis. In particular there are a number of 'ancillary' tests that are performed for particular diagnoses - such as Estrogen receptor status of Breast cancer. These tests are represented as Observations, and are important in determining the treatment protocol.
 
-Once diagnosed, a treatment plan is determined. Each cancer type has a number of possible treatment regimens that can be applied, each of which consists of a number of cycles of treatment - specifically administration of medications. The treatment regimens are represented as PlanDefinition and ActivityDefinitions, and there is a [separate IG](http://build.fhir.org/ig/HL7NZ/cca/branches/master/index.html) that defines how this is done.
+* Once diagnosed, a treatment plan is determined. Each cancer type has a number of possible treatment regimens that can be applied, each of which consists of a number of cycles of treatment - specifically administration of medications. The treatment regimens are represented as PlanDefinition and ActivityDefinitions, and there is a [separate IG](http://build.fhir.org/ig/HL7NZ/cca/branches/master/index.html) that defines how this is done.
 
-The Clinician/s planning the treatment will select the regimen to apply, and this is represented for the individual patient in a CarePlan resource. Currently, the mechanics of this is outside of the scope of this guide, but the CarePlan resource is used to support any future expansion of the scope.
+* The Clinician/s planning the treatment will select the regimen to apply, and this is represented for the individual patient in a CarePlan resource. Currently, the mechanics of this is outside of the scope of this guide, but the CarePlan resource is used to support any future expansion of the scope.
 
-As mentioned above, a regimen of treatment consists of a number of separate cycles of medication administration which may be repeated a number of times. Both regimen and cycle are represented as CarePlan resources, with the Cycle plan being related to the Regimen plan using the 'partOf' reference. The CarePlan.category value indicates whether the plan is a regimen or a cycle (or, indeed, something else).
+* A regimen of treatment consists of a number of separate cycles of medication administration which may be repeated a number of times. Both regimen and cycle are represented as CarePlan resources, with the Cycle plan being related to the Regimen plan using the 'partOf' reference. The CarePlan.category value indicates whether the plan is a regimen or a cycle (or, indeed, something else).
 
-When a regimen is started, there are a number of initial measurements taken (such as Body Surface are). These are represented as Observation resources referenced from the plan using 'supportingInfo' references. When the regimen completes (or is cancelled) there are other Observations made that record the outcome of treatment, and possible the reason for cancellation. These Observations have a reference back to the plan using the Observation.basedOn reference.
+* When a regimen is started, there are a number of initial measurements taken (such as Body Surface are). These are represented as Observation resources referenced from the plan using 'supportingInfo' references. When the regimen completes (or is cancelled) there are other Observations made that record the outcome of treatment, and possible the reason for cancellation. These Observations have a reference back to the plan using the Observation.basedOn reference.
 
-Similarly, when a cycle starts and ends there are Observations which may be recorded.
+* Similarly, when a cycle starts and ends there are Observations which may be recorded.
 
-An individual medication administration is related to the Cycle plan under which it was given. If the medication was actually given to the patient it is represented as a MedicationAdministration resource. If it is a prescription given to a patient it will be represented as a MedicationRequest resource.
+* An individual medication administration is related to the Cycle plan under which it was given. If the medication was actually given to the patient it is represented as a MedicationAdministration resource. If it is a prescription given to a patient it will be represented as a MedicationRequest resource.
 
 
 The following diagram shows an example of a small set of data for a patient, with only a single cycle. Note that all the resources will have a reference to the Patient, and some to a Practitioner - these are not shown for clarity.
 
 <img style="width:800px; float:none" src="graph3.png"/>
 
-
 The image is shown with a central column of the Diagnosis (with wupporting histology and assessment), then the regimen and cycle care plans. Usually there will be multiple cycle plans.
 
 To the left are Observations made before the start of a regimen / cycle - blood tests and other ancillary studies. These have a reference from the CarePlan to the resource using a 'supportingInfo' reference as (in theory) the observations would exist prior to the CarePlan being created.
 
-To the right are Observations made when the regimen / cycle ends, mostly blood tests. The reference is from the Observation to the CarePlan (using a 'basedOn' reference) as they are created after the CarePlan.
+To the right are Observations made when the regimen / cycle ends, mostly blood tests. The reference is from the Observation to the CarePlan (using a 'basedOn' reference) as they are created after the CarePlan. The profiles that define these measurements include:
+* [Creatinine Clearance](StructureDefinition-an-creat-clear.html)
+* [ECOG score](StructureDefinition-an-ecog.html)
 
- Outcome measures are recorded as extensions on the CarePlan itself.
+(These might also be taken prior to the regimen starting, in which case the reference is 'addintionalInfo' from CarePlan to Observation)
+
+Outcome measures are recorded as extensions on the CarePlan itself, as the CarePlan has to be updated anyway to update the status, and it makes it easier to read that information. These can be seen on the [Regimen CarePlan profile](StructureDefinition-an-careplan-regimen.html) and the [Cycle CarePlan profile](StructureDefinition-an-careplan-cycle.html) 
 
 At the bottom are the medication administrations (ie medications actually given to the patient like an IV infusion) and prescriptions (represented as a MedicationRequest).
 
@@ -42,7 +45,9 @@ Most of the resources are created and not subsequently updated (other than any e
 * A Cycle plan is added with an active status (it may have references to other resources)
 * Medications are recorded with a reference to the cycle plan (which itself is not updated)
 * When the last medication is given, the cycle plan is updated setting the status to 'completed'. 'Outcome' resources (Observations) are created which have a reference back to the cycle plan.
-* When the last cycle has completed, the regimen plan is closed.
+* When the last cycle has completed, the regimen plan is updated and closed. This might include adding extensions like [reason cancelled](StructureDefinition-an-regimen-discontinued.html)
+
+
 
 This all means that the CarePlans may have multiple versions, though only the most recent one is generally retrieved when querying the server (The [history](http://hl7.org/fhir/http.html#history) operations can be used to retrieve previous versions, though these are not considered in this guide).
 

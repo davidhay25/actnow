@@ -119,9 +119,25 @@
         ]
       },
       {
-        "id": "CarePlan.extension:reasonDiscontinued",
+        "id": "CarePlan.extension:cycle-count",
         "path": "CarePlan.extension",
-        "sliceName": "reasonDiscontinued",
+        "sliceName": "cycle-count",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.extension:regimen-discontinued",
+        "path": "CarePlan.extension",
+        "sliceName": "regimen-discontinued",
         "min": 0,
         "max": "1",
         "type": [
@@ -131,7 +147,24 @@
               "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.extension:otu",
+        "path": "CarePlan.extension",
+        "sliceName": "otu",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu"
+            ]
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "CarePlan.identifier",
