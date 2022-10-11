@@ -34,6 +34,20 @@
   "fhirVersion": [
     "4.0.1"
   ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.org.nz.fhir.ig.cca",
+      "version": "current",
+      "uri": "http://hl7.org.nz/fhir/ig/cca/ImplementationGuide/hl7.org.nz.fhir.ig.cca",
+      "id": "hl7_org_nz_fhir_ig_cca"
+    },
+    {
+      "id": "mcode",
+      "packageId": "hl7.fhir.us.mcode",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"
+    }
+  ],
   "definition": {
     "resource": [
       {
@@ -217,7 +231,7 @@
           "reference": "StructureDefinition/an-cycle-day"
         },
         "name": "CycleDay",
-        "description": "The day of the cycle that this medication was given on. Includes planned and administered",
+        "description": "The day of the cycle that this medication was given on. Includes planned day and administered day. Not the same as intended cycle length.",
         "exampleBoolean": false
       },
       {
@@ -226,6 +240,14 @@
         },
         "name": "CycleNumber",
         "description": "The cycle number of the regimen that this CP represents",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-cycle-planned-length"
+        },
+        "name": "CyclePlannedLength",
+        "description": "The number of cycles that administered for a regimen",
         "exampleBoolean": false
       },
       {

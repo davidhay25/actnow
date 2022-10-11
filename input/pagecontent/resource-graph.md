@@ -23,7 +23,8 @@ The following diagram shows an example of a small set of data for a patient, wit
 
 <img style="width:800px; float:none" src="graph3.png"/>
 
-The image is shown with a central column of the Diagnosis (with wupporting histology and assessment), then the regimen and cycle care plans. Usually there will be multiple cycle plans.
+The image is shown with a central column of the [Diagnosis](StructureDefinition-an-condition.html) (with supporting [histology](StructureDefinition-an-histology.html) and assessment), then the [regimen](StructureDefinition-an-careplan-regimen.html) and [cycle](StructureDefinition-an-careplan-cycle.html) care plans. Usually there will be multiple cycle plans for any given regimen.
+
 
 To the left are Observations made before the start of a regimen / cycle - blood tests and other ancillary studies. These have a reference from the CarePlan to the resource using a 'supportingInfo' reference as (in theory) the observations would exist prior to the CarePlan being created.
 
@@ -62,9 +63,9 @@ When a regimen is applied to a patient, it is represented as an instance of a [C
 There are a number of extensions defined which can be applied to the CarePlan - such as the [intent of treatment](StructureDefinition-an-iot.html) or whether this treatment is part of a [clinical trial](StructureDefinition-an-clinical-trial.html).
 
 #### Diagnosis
-The diagnosis is recorded as a Condition resource. If there is histology supporting the diagnosis, then that is represented as an Observation, and the Condition has an *.evidence* reference to the Observation.
+The diagnosis is recorded as a Condition resource. If there is histology supporting the diagnosis, then that is represented as an Observation, and the Condition has an *evidence* reference to the Observation.
 
-The CarePlan that represents the regimen being followed should have an *.addressses* reference to the Condition
+The CarePlan that represents the regimen being followed should have an *addressses* reference to the Condition
 
 ### Staging information
 This records how advanced a tumour is, and is generally recorded using the 'TNM' mechanism which measures the Tumour size, Involvement of Local nodes and metastases.
@@ -103,19 +104,22 @@ The regimen CarePlan status will be *revoked* and there will often be an [Observ
 
 If this happens during a cycle of treatment, then the cycle CarePlan will also be updated as described above.
 
-
 #### Recording medication administrations
 All medication administrations (actual delivery of the medication orally or parenterally) are recorded as MedicationAdministration resources.
 
 The MedicationAdministration needs a reference back to the cycle CarePlan. This is done using a *supportingInformation* reference.
 
-(As an aside, in FHIR release 5 there is a specific *basedOn* reference that can be used). 
+(As an aside, in FHIR release 5 there is a specific *basedOn* reference that might be used). 
+
+#### Measures taken during medication administration
+Sometimes measures are taken before or after medication administration. These are represented as Observations, and should have a reference to the cycle CarePlan via the *basedOn* reference.
+
+The MedicationAdministration resource might also reference them using the *spportingInformation* reference.
 
 ### Recording prescriptions given
 If the patient was given a prescription for a medication - rather than having it administered by someone, then the apprppriate resource type is MedicationRequest. It also references the cycle CarePlan by a *supportingInformation* reference.
 
-### Measures taken during medication administration
-Sometimes measures are taken before or after medication administration. These are represented as Observations, and should have a reference to the cycle CarePlan via the  *focus* reference. They might also have a *partOf* reference to the MedicationAdministration.
+
 
 <!--
 ----

@@ -66,9 +66,9 @@
         "path": "CarePlan",
         "constraint": [
           {
-            "key": "an-cp-1",
+            "key": "an-regimenCP-1",
             "severity": "error",
-            "human": "If the CarePlan was cancelled, then there must be the cancellation reason extension present",
+            "human": "If the CarePlan was cancelled, then the cancellation reason extension must be present",
             "expression": "CarePlan.status = 'revoked' implies extension('http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued').exists()",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
           }
@@ -86,13 +86,14 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 2
       },
       {
         "id": "CarePlan.extension:iot",
         "path": "CarePlan.extension",
         "sliceName": "iot",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -122,7 +123,7 @@
         "id": "CarePlan.extension:cycle-count",
         "path": "CarePlan.extension",
         "sliceName": "cycle-count",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -167,6 +168,21 @@
         "mustSupport": true
       },
       {
+        "id": "CarePlan.extension:regimen-type",
+        "path": "CarePlan.extension",
+        "sliceName": "regimen-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CarePlan.identifier",
         "path": "CarePlan.identifier",
         "min": 1
@@ -205,6 +221,19 @@
         "path": "CarePlan.category.coding.code",
         "min": 1,
         "patternCode": "regimenCP"
+      },
+      {
+        "id": "CarePlan.period",
+        "path": "CarePlan.period",
+        "constraint": [
+          {
+            "key": "an-period-1",
+            "severity": "error",
+            "human": "The end date of a period must be greater than or equal to the start date",
+            "expression": "Period.start >= Period.end",
+            "source": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+          }
+        ]
       }
     ]
   }

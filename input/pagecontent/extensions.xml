@@ -26,7 +26,7 @@
 <td>
 <div>MedicationAdministration</div>
 </td>
-<td>The day of the cycle that this medication was given on. Includes planned and administered</td>
+<td>The day of the cycle that this medication was given on. Includes planned day and administered day. Not the same as intended cycle length.</td>
 <td></td>
 </tr>
 <tr>
@@ -36,6 +36,15 @@
 <div>CarePlan</div>
 </td>
 <td>The cycle number of the regimen that this CP represents</td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-cycle-planned-length.html'>an-cycle-planned-length</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td>The number of cycles that administered for a regimen</td>
 <td></td>
 </tr>
 <tr>

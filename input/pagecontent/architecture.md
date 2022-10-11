@@ -28,7 +28,7 @@ The validator is used to ensure that the data in the bundle is for for purpose. 
     * The system values in the resources match that assigned to the data source
     * All updates are conditional updates
 
-If the bundle fails validation, then it will be rejected and will need to be correct and re-submitted by the sender. This is primarily to ensure that the analytics is being performed against valid data - it i such harder to correct once it has been imported into the FHIR server.
+If the bundle fails validation, then it will be rejected and will need to be correct and re-submitted by the sender. This is primarily to ensure that the analytics is being performed against valid data - it is such harder to correct once it has been imported into the FHIR server.
 
 This requirement does bring support requirements that are being developed. Specifically, the order that bundles are submitted is important, as some resources (particularly the Care Plans) are updated as part of the data acquisition.
 
@@ -55,6 +55,18 @@ The component is depicted as being part of the Integration Engine (and so inside
 There is a javascript component developed as part of the Reference Implementation that can do this action. It could serve as an example for development. 
 
 The CSV bundle creator may not be required, depending on business decisions.
+
+### Validation
+
+There are 2 places where validation occurs - when the bundle is received for processing and when data is extracted for analytics
+
+#### Validation on transaction processing
+
+It is intended that all bundles are validated before being accepted using the standard FHIR validation process against the conformance artifacts in this guide.
+
+#### Validation on analytics processing
+
+> to do - why is this needed here - examples as well...
 
 ### Requirements of the FHIR server
 This section summarizes the minimum requirements of the FHIR server - details of interactions are in the [API](api-input.html) [Guides](api-query.html). This section assumes that the transaction with conditional update approach is used.

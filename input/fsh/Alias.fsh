@@ -1,3 +1,8 @@
+//external aliases 
+
+Alias: $regimen-type = http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type
+
+
 // systems
 Alias: $snomed = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
@@ -54,7 +59,7 @@ Alias: $extRegimenOTU = http://canshare.co.nz/fhir/StructureDefinition/an-regime
 Alias: $extCycleNumber = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number
 Alias: $extBasedOn = http://canshare.co.nz/fhir/StructureDefinition/an-based-on
 Alias: $extCycleDay = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day
-
+Alias: $extCyclePlannedLength = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length
 
 Alias: $extPrescribedDose = http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose
 //Alias: $extPlannedDose = http://canshare.co.nz/fhir/StructureDefinition/an-planned-dose

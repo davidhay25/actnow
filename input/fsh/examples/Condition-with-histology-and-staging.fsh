@@ -9,8 +9,9 @@ Usage: #example
 * identifier.value = "001"
 
 * code = $snomed#3254632001 "Small cell carcinoma of lung (disorder)"
-* evidence.detail = Reference(exSmallCellCancerHistology)
+* bodySite[+].text = "Left lung"
 
+* evidence.detail = Reference(exSmallCellCancerHistology)
 
 //--------------------------------
 Instance: exSmallCellCancerHistology

@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "CycleDay",
   "status": "draft",
-  "description": "The day of the cycle that this medication was given on. Includes planned and administered",
+  "description": "The day of the cycle that this medication was given on. Includes planned day and administered day. Not the same as intended cycle length.",
   "jurisdiction": [
     {
       "coding": [
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The day of the cycle that this medication was given on. Includes planned and administered"
+        "definition": "The day of the cycle that this medication was given on. Includes planned day and administered day. Not the same as intended cycle length."
       },
       {
         "id": "Extension.extension:planned",

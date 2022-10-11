@@ -5,7 +5,7 @@ The [ACT-NOW specification](https://consult.health.govt.nz/hiso/act-now-data-sta
 
 This Guide describes how this data could be represented as FHIR resources, and collected from care delivery systems into a FHIR server for subsequent use such as Analytics and Care delivery.
 
-As such it describes an actual implementation based around a generic FHIR server, rather than a definition of how interoperability works between systems in a particular domain. It is accompanied by a Reference Implementation - an example solution intended to validate the design and make the design more approachable to system implementers.
+As such it describes an actual implementation based around a generic FHIR server, rather than a definition of how interoperability works between systems in a particular domain. It is accompanied by a [Reference Implementation](reference-implementation.html) - an example solution intended to validate the design and make the design more approachable to system implementers.
 
 It is intended that the guide will help inform the choice of architectural components needed for a production grade deployment, as well as the requirements for vendors supplying data to the system.
 

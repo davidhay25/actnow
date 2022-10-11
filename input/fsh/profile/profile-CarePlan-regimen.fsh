@@ -16,16 +16,15 @@ has multiple cycles also represented as CarePlans which have a 'partOf' referenc
 * identifier 1..*
 
 * extension contains
-    $iot  named iot 0..1 and                //intent of treatment
+    $iot  named iot 1..1 and                //intent of treatment
     $clinicalTrial named clinicalTrial 0..1  and //is part of a clinical trial
-    $extCycleCount named cycle-count 0..1 MS and
+    $extCycleCount named cycle-count 1..1 MS and  //the number of cycles administered thus far
     $extRegimenDiscontinued named regimen-discontinued 0..1 MS and
-    $extRegimenOTU named otu 0..1 MS
+    $extRegimenOTU named otu 0..1 MS and
+    $regimen-type named regimen-type 1..1  //type of regimen - eg folfox
 
-    
-    // and //If the regimen was discontinued
- //   $extCycleCount named CycleCount 0..1 //The number of cycles administered under this regimen
 
+* period obeys an-period-1      //end >= start
 
 //slicing on category
 * category.coding ^slicing.discriminator.type = #pattern
@@ -42,11 +41,11 @@ has multiple cycles also represented as CarePlans which have a 'partOf' referenc
 * category.coding[regimencode].system = $unknownSystem
 
 
-* obeys an-cp-1
+* obeys an-regimenCP-1
 
 //Invariants
 
-Invariant: an-cp-1
+Invariant: an-regimenCP-1
 Expression: "CarePlan.status = 'revoked' implies extension('http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued').exists()"
 Severity: #error
-Description: "If the CarePlan was cancelled, then there must be the cancellation reason extension present"
+Description: "If the CarePlan was cancelled, then the cancellation reason extension must be present"

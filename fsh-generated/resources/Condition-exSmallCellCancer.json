@@ -24,6 +24,11 @@
       }
     ]
   },
+  "bodySite": [
+    {
+      "text": "Left lung"
+    }
+  ],
   "evidence": [
     {
       "detail": [

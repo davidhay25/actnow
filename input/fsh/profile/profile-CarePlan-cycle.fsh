@@ -17,7 +17,8 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 // is given - is this reasonable? Should we ditch the extension and have the client just check the Administrations?
 // alternatively, we leave it there (it is optional) and the supplier updates it if they can...
 * extension contains
-    $extCycleNumber named cycle-number 0..1  and //the sequention number of the cycle
+    $extCyclePlannedLength named cycle-planned-length 1..1 and // the planned length of the sysle
+    $extCycleNumber named cycle-number 1..1  and //the sequention number of the cycle
     $extLastAdminDate named last-admin-date 0..1  //the last date of any administration under this cycle
 
 
@@ -25,6 +26,8 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 * partOf only Reference(CareplanRegimen)  //Must be a reference to a regimen care plan
 * category 1..*     //must have at least the cycle category (sliced below)
 * identifier 1..*   //identifier required for updates
+
+* period.start 1..1     //must have the date the cycle starts
 
 //slicing on category coding
 * category.coding ^slicing.discriminator.type = #pattern
@@ -40,3 +43,11 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 * category.coding[cyclecode].code = #cycleCP
 * category.coding[cyclecode].system = $unknownSystem
 
+//Invariants
+/*
+Invariant: an-regimenCP-1
+Expression: "CarePlan.status = 'completed' implies extension('http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date').exists()"
+Severity: #error
+Description: "If the CarePlan was cancelled, then there must be the cancellation reason extension present"
+
+*/

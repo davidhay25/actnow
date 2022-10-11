@@ -86,13 +86,13 @@ if (fs.existsSync(fullFolderPath)) {
         if (name.indexOf("StructureDefinition-") > -1 ) {
             let fullFileName = fullFolderPath + name;
 
-            console.log(fullFileName)
+            //console.log(fullFileName)
             let contents = fs.readFileSync(fullFileName).toString();
            //console.log(contents)
                 let profile;
                 try {
                     profile = JSON.parse(contents)
-                    console.log('parsed')
+                   // console.log('parsed')
                     if (profile.type !== 'Extension' && profile.kind !== 'logical') {
                         ar.push("<tr>")
         
@@ -306,12 +306,12 @@ function getSlices(resource) {
 
         resource.differential.element.forEach(function(element){
             if (element.sliceName && element.path.indexOf('xtension') == -1) {
-                console.log('sn: ' + element.sliceName)
+              //  console.log('sn: ' + element.sliceName)
                 let pathToSystem = element.path + ":" + element.sliceName + '.system'
                 let pathToCode = element.path + ":" + element.sliceName + '.code'
                 let system = hash[pathToSystem].patternUri
                 let code = hash[pathToCode].patternCode
-                console.log(system,code)
+              //  console.log(system,code)
                 arSlices.push({system:system,code:code})
 
             }
