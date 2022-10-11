@@ -42,6 +42,12 @@
     {
       "url": "http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial",
       "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",
+      "valueCodeableConcept": {
+        "text": "FOLFOX"
+      }
     }
   ]
 }

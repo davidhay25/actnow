@@ -23,6 +23,9 @@ Description: "Example of a regimen care plan"
 * extension[+].url = $clinicalTrial
 * extension[=].valueBoolean = true
 
+//regimen is a folfox
+* extension[+].url = $regimen-type
+* extension[=].valueCodeableConcept.text = "FOLFOX"
 //-----------------------------------------------
 //a careplan that was cancelled (status = revoked). It needs the cancellation reasons.
 Instance: careplan-regimen-2

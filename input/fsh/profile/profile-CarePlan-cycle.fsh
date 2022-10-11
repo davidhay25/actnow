@@ -44,10 +44,11 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 * category.coding[cyclecode].system = $unknownSystem
 
 //Invariants
-/*
-Invariant: an-regimenCP-1
+
+* obeys an-cycleCP-1
+
+Invariant: an-cycleCP-1
 Expression: "CarePlan.status = 'completed' implies extension('http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date').exists()"
 Severity: #error
 Description: "If the CarePlan was cancelled, then there must be the cancellation reason extension present"
 
-*/
