@@ -10,9 +10,11 @@ const axios = require ('axios')
 
 let fullFolderPath = "../fsh-generated/resources/";
 let conformanceServer = "http://actnow.canshare.co.nz:9092/baseR4/"
+//let conformanceServer = "https://r4.ontoserver.csiro.au/fhir/"
 
 
 let bundle = {resourceType:"Bundle",type:'transaction',entry:[]}
+
 let arFiles = fs.readdirSync(fullFolderPath);
 arFiles.forEach(function(name){
   
@@ -30,13 +32,14 @@ arFiles.forEach(function(name){
        // upploadResource(resource)
     
 })
-
+fs.writeFileSync("./bundleUpload.json",JSON.stringify(bundle))
 console.log("Uploading generated resources, please wait...")
 let url = conformanceServer
 axios.post(url,bundle).then(function(response){
     console.log(response.status)
+    console.log(JSON.stringify(response.data))
 }).catch(function(err){
-    console.log(err)
+    console.log(err.response.data)
 })
 
 

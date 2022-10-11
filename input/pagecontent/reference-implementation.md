@@ -1,5 +1,5 @@
 
-To support the development of the CanShare system, a Reference Implementation (RI) has been created that can store resources in the defined format in a standard FHIR server, and then render them in an 'example' user Interface 
+To support the development of the CanShare system, a Reference Implementation (RI) has been created that can store resources in the defined format in a standard FHIR server, and then render them in an 'example' user Interface as well as allowing API access.
 
 The [query API](api-query.html) is also supported at the base url **http://actnow.canshare.co.nz:9092/baseR4/** .
 
@@ -49,8 +49,7 @@ Clicking the hyperlinked drug name in the last column will disply the Medication
 ### Validation endpoint
 To assist with development, the RI exposes a validation endpoint that accepts a bundle, and performs validation without saving the data in the server.
 
-Under development.
-
+Under development. For the meantime, use the [FHIR validation](#fhir-validation) endpoints described below.
 
 ### Submission endpoint
 An endpoint that receives a bundle and saves the data in the server (assuming that it passes validation). Once successfully saved, the patient can be retrieved in the User Interface, and the resources and references examined.
@@ -61,7 +60,7 @@ Under development.
 
 There is a [validation operation](http://hl7.org/fhir/resource-operation-validate.html) defined in the FHIR spec that uses the conformance resources (profiles, extension defintions and terminology) to validate resources against the specification. This works against both single resources and bundles of resources (though the bundles shouldn't be too big).
 
-The base url of the FHIR server exposed by the reference implementation is **http://actnow.canshare.co.nz:9092/baseR4/**
+The base url of the FHIR server exposed by the reference implementation is **https://r4.ontoserver.csiro.au/fhir/** (This is a temporary endpoint and the location may change)
 
 #### Individual resource validation
 
@@ -101,4 +100,4 @@ Bundle validation works in a similar way. Each resource must have the profile se
 
 The bundle is posted to **http://actnow.canshare.co.nz:9092/baseR4/Bundle/$validate**
 
-The response is also an OperationOutcome - any errors / issues / warnings will refer to the index of the resource within the bundle. This can be tricky to manage, which is why single resource validation is often more useful to start with.
+The response is also an OperationOutcome - any errors / issues / warnings will refer to the index of the resource within the bundle. This can be tricky to understand, which is why single resource validation is often more useful to start with.

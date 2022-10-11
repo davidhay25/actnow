@@ -17,6 +17,7 @@ let contents = fs.readFileSync(fullFileName, {encoding: 'utf8'});
 //convert into a transaction bundle
 let bundle = JSON.parse(contents)
 bundle.type = "transaction"
+bundle.type = "batch"
 bundle.entry.forEach(function(entry){
   let resource = entry.resource
   entry.request = {method:"PUT",url:resource.resourceType + "/" + resource.id}

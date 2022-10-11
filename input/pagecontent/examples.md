@@ -1,9 +1,22 @@
 Examples are found in a number of places in the guide.
 
-There is a list of them in the [list of artifacts](artifacts.html#example-example-instances)
+* There is a list of them in the [list of artifacts](artifacts.html#example-example-instances)
 
-Each profile and extension has related examples in a ap at the top of the page as well as links from the introduction.
+* Each profile and extension page has related examples in a tab at the top of the page as well as links from the introduction.
 
+### Example transaction bundles
+
+The example bundles below show 2 transactions:
+* the first shows a new regimen and cycle plan with an Observation
+* the second shows a MedicationAdministration being added.
+
+Things to note:
+* Each bundle contains all resources referenced by any resource within that bundle. This allows the server to resolve all references internally without the client needing to know what the resource id's are.
+* If a resource (based on its identifier) does not exist then it will be created, otherwise it will be updated. This means that the resources on the server are always the most recent - they match what is on the client.
+* Using identifiers means that each client has it's own separate 'set' of resources. Provided that it supplies the correct system element, resources from one client will not overwrite resources from another. This can mean duplication of resources (like the Patient resource), but the identifiers can be used to resolve this - for example, a Patient will have at least 2 identifiers - one being the unique one from the client and the other the NHI. 
+  * An alternative would be for these 'common' resource types to only use the national identifiers - not client specific ones.
+
+**At the time of writing, the examples are currently not necessarily compliant as the validation is still being determined.**
 
 <div class='row'>
     <div class='col-6'>

@@ -79,6 +79,7 @@
         {
           "type": "CarePlan",
           "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen",
             "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
           ],
           "interaction": [
@@ -97,6 +98,22 @@
         },
         {
           "type": "Observation",
+          "supportedProfile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-cT",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-cN",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-cM",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-pT",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-pN",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-pM",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-bsa",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-height",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-weight",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-histology",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-ecog"
+          ],
           "interaction": [
             {
               "code": "search-type"

@@ -51,8 +51,8 @@ Usage: #definition
 
 
 * rest.resource[+].type = #CarePlan
-* rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
-* rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+* rest.resource[=].supportedProfile[+] = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+* rest.resource[=].supportedProfile[+] = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].interaction[=].code = #create
@@ -65,7 +65,26 @@ Usage: #definition
 
 * rest.resource[+].type = #Observation
 // ? add all profiles * rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
-//* rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+
+* rest.resource[=].supportedProfile[+] = $cT
+* rest.resource[=].supportedProfile[+] = $cN
+* rest.resource[=].supportedProfile[+] = $cM
+* rest.resource[=].supportedProfile[+] = $cGroup
+
+* rest.resource[=].supportedProfile[+] = $pT
+* rest.resource[=].supportedProfile[+] = $pN
+* rest.resource[=].supportedProfile[+] = $pM
+* rest.resource[=].supportedProfile[+] = $pGroup
+
+* rest.resource[=].supportedProfile[+] = $bsa
+* rest.resource[=].supportedProfile[+] = $creat-clear
+* rest.resource[=].supportedProfile[+] = $height
+* rest.resource[=].supportedProfile[+] = $weight
+* rest.resource[=].supportedProfile[+] = $histology
+* rest.resource[=].supportedProfile[+] = $ecog
+//* rest.resource[=].supportedProfile[+] = ""
+
+
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].interaction[=].code = #create
@@ -77,7 +96,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 
 * rest.resource[+].type = #MedicationAdministration
-* rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+* rest.resource[=].supportedProfile[+] = "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].interaction[=].code = #create
@@ -89,7 +108,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].type = #token
 
 * rest.resource[+].type = #MedicationRequest
-* rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+* rest.resource[=].supportedProfile[+] = "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[=].code = #update
 * rest.resource[=].interaction[=].code = #create
