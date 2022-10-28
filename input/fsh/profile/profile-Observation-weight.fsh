@@ -1,7 +1,7 @@
 Profile:        ObservationWeight
 Parent:         Observation
 Id:             an-weight
-Title:          "Height"
+Title:          "Weight"
 Description:    "An observation that represents a weight measurement"
 
 * ^url = $weight
@@ -43,6 +43,9 @@ Description:    "An observation that represents a weight measurement"
 * valueQuantity.code = #kg               //must be kilograms
 * valueQuantity.system = "http://unitsofmeasure.org"        //only accept UCUM codes
 
+* obeys an-weight-1
+
+/*
 * valueQuantity ^minValueQuantity.value = 10          //assume that no person will be less than 10- kg
 * valueQuantity ^minValueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity ^minValueQuantity.code = #kg        //the system is needed so the value min/max can work
@@ -50,3 +53,10 @@ Description:    "An observation that represents a weight measurement"
 * valueQuantity ^maxValueQuantity.value = 200          //assume that no person will be greater  than 200- kg
 * valueQuantity ^maxValueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity ^maxValueQuantity.code = #kg            //the system is needed so the value min/max can work
+
+*/
+
+Invariant: an-weight-1
+Expression: "Observation.valueQuantity.value > 10 and Observation.valueQuantity.value < 200"
+Severity: #warning
+Description: "The weight must be between 10 and 200"

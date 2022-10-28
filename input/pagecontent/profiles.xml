@@ -27,7 +27,7 @@
 <br/>OE: <strong>http://snomed.info/sct : 1778835013 </strong>
 <br/>OE: <strong>http://loinc.org : 21907-1 </strong>
 </td>
-<td>An observation that represents the clinical 'N' score</td>
+<td>An observation that represents the clinical 'M' score</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-cN.html'>clinical N-score</a></td>
@@ -88,6 +88,17 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <br/>OE: <strong>http://loinc.org : 89247-1 </strong>
 </td>
 <td>An observation that represents an ecog score</td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-gleason.html'>Gleason score</a></td>
+<td>Observation</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-gleason<br/>
+<br/>OE: <strong>http://snomed.info/sct : 372278000 </strong>
+<br/>OE: <strong> : undefined </strong>
+<br/>OE: <strong> : undefined </strong>
+<br/>OE: <strong> : undefined </strong>
+</td>
+<td>An observation that represents the Gleason score</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-height.html'>Height</a></td>
@@ -164,7 +175,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>ACT-NOW patient</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-weight.html'>Height</a></td>
+<td><a href='StructureDefinition-an-weight.html'>Weight</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-weight<br/>
 <br/>OE: <strong>http://snomed.info/sct : 45352010 </strong>

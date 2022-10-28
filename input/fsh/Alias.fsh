@@ -44,6 +44,8 @@ Alias: $pM = http://canshare.co.nz/fhir/StructureDefinition/an-pM
 Alias: $pGroup = http://canshare.co.nz/fhir/StructureDefinition/an-pGroup
 
 
+Alias: $gleason = http://canshare.co.nz/fhir/StructureDefinition/an-gleason
+
 //Aliases for extensions
 Alias: $iot = http://canshare.co.nz/fhir/StructureDefinition/an-iot
 Alias: $clinicalTrial = http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial

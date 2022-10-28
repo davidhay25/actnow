@@ -309,8 +309,18 @@ function getSlices(resource) {
               //  console.log('sn: ' + element.sliceName)
                 let pathToSystem = element.path + ":" + element.sliceName + '.system'
                 let pathToCode = element.path + ":" + element.sliceName + '.code'
-                let system = hash[pathToSystem].patternUri
-                let code = hash[pathToCode].patternCode
+                let system = ""
+                let code = ""
+                if (hash[pathToSystem]) {
+                    system = hash[pathToSystem].patternUri
+                }
+                
+                if (hash[pathToCode]) {
+                     code = hash[pathToCode].patternCode
+                }
+
+                
+
               //  console.log(system,code)
                 arSlices.push({system:system,code:code})
 

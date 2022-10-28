@@ -10,5 +10,6 @@ Usage: #example
 * name.family = "Lung"
 * name.text = "Lorrie Lung"
 
+//taking out the identifier
 * identifier.system = "https://standards.digital.health.nz/ns/nhi-id"
 * identifier.value = "WER4568"

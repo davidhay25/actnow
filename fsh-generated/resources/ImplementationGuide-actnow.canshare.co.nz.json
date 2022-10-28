@@ -111,7 +111,7 @@
           "reference": "StructureDefinition/an-cM"
         },
         "name": "clinical M-score",
-        "description": "An observation that represents the clinical 'N' score",
+        "description": "An observation that represents the clinical 'M' score",
         "exampleBoolean": false
       },
       {
@@ -152,6 +152,14 @@
         },
         "name": "ECOG score",
         "description": "An observation that represents an ecog score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-gleason"
+        },
+        "name": "Gleason score",
+        "description": "An observation that represents the Gleason score",
         "exampleBoolean": false
       },
       {
@@ -206,7 +214,7 @@
         "reference": {
           "reference": "StructureDefinition/an-weight"
         },
-        "name": "Height",
+        "name": "Weight",
         "description": "An observation that represents a weight measurement",
         "exampleBoolean": false
       },
@@ -426,6 +434,13 @@
       },
       {
         "reference": {
+          "reference": "Observation/ExObservationGleason"
+        },
+        "name": "ExObservationGleason",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-gleason"
+      },
+      {
+        "reference": {
           "reference": "Observation/ExObservationHeight"
         },
         "name": "ExObservationHeight",
@@ -582,6 +597,13 @@
         },
         "name": "supporting-info",
         "description": "Searches for supportingInfo references",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/G08462-F-17843"
+        },
+        "name": "G08462-F-17843",
         "exampleBoolean": true
       }
     ],

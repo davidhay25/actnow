@@ -38,6 +38,7 @@ Description:    "An observation that represents a height measurement"
 * valueQuantity.code = #m        //must be in metres
 * valueQuantity.system = "http://unitsofmeasure.org"
 
+/*
 * valueQuantity ^minValueQuantity.value = 1          //assume that no person will be less than 1 metre
 * valueQuantity ^minValueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity ^minValueQuantity.code = #m  
@@ -45,3 +46,12 @@ Description:    "An observation that represents a height measurement"
 * valueQuantity ^maxValueQuantity.value = 2.5          //assume that no person will be greater  2.5 m
 * valueQuantity ^maxValueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity ^maxValueQuantity.code = #m
+*/
+* obeys an-height-1
+
+
+
+Invariant: an-height-1
+Expression: "Observation.valueQuantity.value >= 1 and Observation.valueQuantity.value < 2.5"
+Severity: #warning
+Description: "The weight must be between 1 and 2.5 metres"

@@ -1,0 +1,40 @@
+{
+  "resourceType": "Observation",
+  "id": "ExObservationGleason",
+  "meta": {
+    "profile": [
+      "http://canshare.co.nz/fhir/StructureDefinition/an-gleason"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "372278000",
+        "system": "http://snomed.info/sct",
+        "display": "Gleason score (observable entity)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "384994009",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueInteger": 1
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gleason score</div>",
+    "status": "generated"
+  },
+  "subject": {
+    "reference": "Patient/exPatient"
+  },
+  "effectiveDateTime": "2020-01-01",
+  "status": "final"
+}

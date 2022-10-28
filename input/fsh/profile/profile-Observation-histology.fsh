@@ -12,7 +12,7 @@ Description:    "An observation that represents a Histology finding"
 
 //required and must support elements
 * subject 1..1 MS
-* value[x] 1..1 MS
+* value[x] 1..1         //the actual histology coded value
 * status 1..1 MS
 * code 1..1 MS
 
@@ -29,5 +29,11 @@ Description:    "An observation that represents a Histology finding"
 * code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime
+
+//there are 2 components in the histology - grade, class
+
+
+
+
 
 
