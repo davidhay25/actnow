@@ -11,6 +11,9 @@ Description: "An example medication administration"
 * identifier.system = $identifierSystem
 * identifier.value = "ma-1"
 
+* performer.function = $performer-function#performer
+* performer.actor.reference = "hpiOfFacility" 
+
 //the reference to the cycle careplan
 * supportingInformation[+] = Reference(careplan-cycle-1)
 

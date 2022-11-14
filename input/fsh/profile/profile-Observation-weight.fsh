@@ -34,6 +34,7 @@ Description:    "An observation that represents a weight measurement"
 
 * effective[x] only dateTime
 * value[x] only Quantity
+* identifier 1..*   //identifier required for updates
 
 //todo - might want to use unit rather than code (but using code is better for analysis)...
 * valueQuantity.code 1..1                 //make the quantity code required (but not the unit)

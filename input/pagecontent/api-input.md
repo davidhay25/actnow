@@ -4,8 +4,7 @@
 ### Summary
 
 
-There are at least a couple of options for the input API.
-
+There are at least a couple of options for the input API using the RESTful API.
 
 
 #### Direct REST updates
@@ -14,13 +13,16 @@ The direct REST API involves the the client making individual API calls for each
 
 This can be mitigated to some degree if each client had its own server and/or has control over the resource ids (updating using the PUT interaction), at the expense of increased system complexity.
 
-#### Transactions using conditional update
+#### Transactions using conditional operations
 
-In this scenario, all interactions are by using Transaction bundles, where updates and references to other resources can be determined by their identifier using [conditional updates](http://hl7.org/fhir/http.html#cond-update). This has the advantage of off loading much of the work to the server and allows multiple resources to be created / updated in a single interaction. 
+In this scenario, all interactions are by using Transaction bundles, where updates and references to other resources can be determined by their identifier using
+[conditional creates](http://hl7.org/fhir/http.html#ccreate) or 
 
-While it does require the client to maintain the unique identifiers (the resource element - not the resource id), this is much simpler and safer to manage than having to use the resource id especially when different clients are updating the server.
+ [conditional updates](http://hl7.org/fhir/http.html#cond-update). This has the advantage of off loading much of the work to the server and allows multiple resources to be created / updated in a single interaction. 
 
-This is the preferred approach in this guide.
+While it does require the client to maintain the unique identifiers (the resource element identifier - not the resource id), this is much simpler and safer to manage than having to use the resource id especially when different clients are updating the server. The supplier still needs to maintain unique identifier values, but this is made easier by using unique 'system' values for each supplier.
+
+This is the approach taken in this guide.
 
 ### Details of Conditional operations
 <!--
@@ -35,23 +37,23 @@ This is the preferred approach in this guide.
 
 This section describes how data is sent from client applications to the system, assuming that conditional updates can be used.
 
-The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-update) (somethmes known as an [upsert](https://en.wiktionary.org/wiki/upsert)) in a [FHIR transaction](http://hl7.org/fhir/http.html#transaction) to receive data from suppliers. The resource [identifier](http://hl7.org/fhir/datatypes.html#Identifier) is the element used to discriminate during the update or create operation. The bundle contains all resources referenced by any other resource within the bundle, and uses UUID's as resource ids.
+The current API uses [conditional updates](http://hl7.org/fhir/http.html#cond-update) (sometimes known as an [upsert](https://en.wiktionary.org/wiki/upsert)) in a [FHIR transaction](http://hl7.org/fhir/http.html#transaction) to receive data from suppliers. The resource [identifier](http://hl7.org/fhir/datatypes.html#Identifier) is the element used to discriminate during the update or create operation. The bundle contains all resources referenced by any other resource within the bundle, and uses UUID's as resource ids.
 
-In some cases, [conditonal create](http://hl7.org/fhir/http.html#ccreate) may also used where the resource must be present in the bundle to allow the server to resolve the resource ids for referencing, but the resource is not intended to be updated if already present. The Patient resource is an example where this might be appropriate.
+In some cases, [conditional create](http://hl7.org/fhir/http.html#ccreate) may also used where the resource must be present in the bundle to allow the server to resolve the resource ids for referencing, but the resource is not intended to be updated if already present. The Patient resource is an example where this might be appropriate.
 
-[Conditional delete](http://hl7.org/fhir/http.html#3.1.0.7.1) operations are not defined, as errors can be managed with appropriate resource status updates and a Conditional update.
+[Conditional delete](http://hl7.org/fhir/http.html#3.1.0.7.1) operations are not used, as errors can be managed with appropriate resource status updates and a Conditional update.
 
-#### Resource identifier as the discriminator
+#### Resource identifier as the identity key
 
-Given that the system potentially needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
+<!--Given that the system potentially needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
 
 One way that this can be done is to use the [resource id](http://hl7.org/fhir/element-definitions.html#Element.id) - an element that all resources possess. However, assigning the id can become complex when multiple systems need to interact with the same resource and the risk of inadvertently altering the wrong resources needs to be carefully considered. 
 
 An alternative approach is to use the identifier element - which most resources (including the ones needed by this Guide) support. In all cases where a resource type has an identifier element there can be multiple ones.
-
+-->
 An identifier is an alternate way of identifying a resource. Unlike the resource id, the value of the identifier does not change if the resource is moved between servers (it is considered a business identifier rather than a structural/logical one which is the id).
 
-Note that the identifier element has a datatype of [identifier](http://hl7.org/fhir/datatypes.html#Identifier) as well 
+Note that the identifier element has a datatype of [identifier](http://hl7.org/fhir/datatypes.html#Identifier) as well the name.
 
 The identifier datatype is a complex datatype and has number of child elements, of which 2 are the most useful - system and value.
 
@@ -61,10 +63,13 @@ Each potential supplier of information will be assigned a system value (which is
 
 The same system could be used for any resource type, providing that the value remains unique within that system. Alternatively a separate system per resource type could be used.
 
+The *identifier.value* element contains the actual value of the identifier - eg the NHI number.
+
 #### API
 
+<!--
 When creating or updating resources through the RESTful API, one approach is for the client to directly update the resources as required. However, this leads to quite a 'chatty' interaction requiring multiple REST calls to create. This guide uses an alternative approach, where the resources to be created or updated are placed in a [FHIR Bundle](http://hl7.org/fhir/bundle.html) and submitted as a unit to the server for processing. There are a number of ways that this could be performed, but the [transaction](http://hl7.org/fhir/http.html#transaction) is the one chosen here.
-
+-->
 The Bundle is a FHIR resource that contains resources within Entry elements. Each entry has the resource to be updated, and other metadata as required for the particular operation.
 
 To support the need to update based on the resource identifier, [conditional updates](http://hl7.org/fhir/http.html#cond-update) are required for all resources in the bundle. 
@@ -161,7 +166,7 @@ Here's an example of resources and resource references in a sample bundle. Note 
 
 
 ##### All resources should have an identifier
-As described earlier, the identifier is used to locate resources if needed.
+As described earlier, the identifier is the mechanism used to locate resources for update if needed.
 
 ##### All resources should have a profile declaration
 This is needed to support validation on the received data, as the data is being used for analytics and data quality is paramount.

@@ -12,6 +12,15 @@
 <td></td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-an-course-number.html'>an-course-number</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-course-number</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td>The course number (sequential number) for this regimen</td>
+<td></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-an-cycle-count.html'>an-cycle-count</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count</td>
 <td>

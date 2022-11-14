@@ -12,6 +12,8 @@ Description:    "ACT-NOW medication request. These are prescriptions given to th
 * ^url = $profMedicationRequest
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
+* identifier 1..*   //identifier required for updates
+
 /*
 //todo - this is a link to the cycle care plan. Will we accept meds that don't have this?
 //? create a slice on SI to define this

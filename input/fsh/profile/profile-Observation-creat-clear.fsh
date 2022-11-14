@@ -15,6 +15,7 @@ Description:    "An observation that represents a Creatinine Clearance measureme
 * value[x] 1..1 MS
 * status 1..1 MS
 * code 1..1 MS
+* identifier 1..*   //identifier required for updates
 
 //Slice on the code. This states that at least the snomed code must be present - others are allowed though
 

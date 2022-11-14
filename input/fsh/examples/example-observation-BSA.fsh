@@ -6,6 +6,8 @@ InstanceOf: ObservationBSA
 
 * subject = Reference(exPatient)
 * performer = Reference(exPractitioner) //avoid the warning from the validator
+* identifier.system = "http://canshare.co.nz/identifiers"
+* identifier.value = "bsa"
 
 * effectiveDateTime = "2020-01-01"
 * status = #final

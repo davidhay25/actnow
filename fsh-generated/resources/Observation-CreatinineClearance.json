@@ -28,6 +28,12 @@
   ],
   "effectiveDateTime": "2020-01-01",
   "status": "final",
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/identifiers",
+      "value": "cc"
+    }
+  ],
   "valueQuantity": {
     "value": 1.9,
     "code": "mL/s",

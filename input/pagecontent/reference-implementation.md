@@ -1,13 +1,13 @@
 
 To support the development of the CanShare system, a Reference Implementation (RI) has been created that can store resources in the defined format in a standard FHIR server, and then render them in an 'example' user Interface as well as allowing API access.
 
-The [query API](api-query.html) is also supported at the base url **http://actnow.canshare.co.nz:9092/baseR4/** .
+The  [input API](api-input.html) and  [query API](api-query.html) is also supported at the base url **http://actnow.canshare.co.nz:9092/baseR4/** . So it's feasible to add data to the RI by POSTing a [transaction bundle](api-input.html#bundle-layout) to the end point, then viewing it in the RI (using the regimen or NHI search options) and querying through the API. 
 
-Populated with real (but de-personalized) data, it shows the resources - and the references between those resources - in a graphical manner, to assist with understanding the details of the guide.
+Populated with real (but de-personalized) data, it shows the resources - and the references between those resources - in a graphical manner, to assist with understanding the details of the guide. 
 
-The RI will expose both a User Interface and API (Validation and Submission) - this is currently under development. 
+Currently, validation should be performed using the public HAPI server which has a copy of the conformance resources. The validation capabilities of the RI are under development.
 
-It is also possible to use the standard FHIR validation service to validate resources as they are being developed at the base url above. This is of enormous value during development.
+
 
 
 ### User Interface
@@ -16,7 +16,7 @@ The User Interface of the application can be viewed at [this link](https://actno
 
 As there is only a small number of patients in the application, they are displayed in a dropdown control. Selecting a patient retrieves all of their data (using the [$everything operation](http://hl7.org/fhir/patient-operation-everything.html)) and then renders the different views from these resources. This is likely a similar approach that a 'real' application could take, though there are many other possibilities.
 
-Patient selection by identifier will be added.
+It is also possible to retrieve a patient based on the regimen identifier.
 
 #### Resource graph
 The graph tab shows the resources from the selected patient displayed as a graph with boxes representing the resource instances and lines between them representing the references. Clicking on any of the resource instances will display the json view of the resource in the right hand pane. Note that in most cases these resources will be incomplete (though compliant). 
@@ -52,7 +52,7 @@ To assist with development, the RI exposes a validation endpoint that accepts a 
 Under development. For the meantime, use the [FHIR validation](#fhir-validation) endpoints described below.
 
 ### Submission endpoint
-An endpoint that receives a bundle and saves the data in the server (assuming that it passes validation). Once successfully saved, the patient can be retrieved in the User Interface, and the resources and references examined.
+An endpoint that receives a transaction bundle and saves the data in the server (assuming that it passes validation). Once successfully saved, the patient can be retrieved in the User Interface, and the resources and references examined.
 
 Under development.
 
@@ -60,11 +60,15 @@ Under development.
 
 There is a [validation operation](http://hl7.org/fhir/resource-operation-validate.html) defined in the FHIR spec that uses the conformance resources (profiles, extension defintions and terminology) to validate resources against the specification. This works against both single resources and bundles of resources (though the bundles shouldn't be too big).
 
+Currently, the StructureDefinitions describing profiles & extensions are posted to the [public HAPI server](http://hapi.fhir.org/baseR4/) - the intention is that these will be also hosted by the Reference Implementation once the server there has been updated. Note that the validation process is triggered by including the conformance claim (ie the profile) in the meta.profile element.
+
+<!-->
 The base url of the FHIR server exposed by the reference implementation is **https://r4.ontoserver.csiro.au/fhir/** (This is a temporary endpoint and the location may change)
+-->
 
 #### Individual resource validation
 
-To validate a single resource instance requires that the profile url be placed in the resource to be validated (technically oit can be specified separately, but the server in use currently requires it).
+To validate a single resource instance requires that the profile url be placed in the resource to be validated (technically it can be specified separately, but the server in use currently requires it).
 
 The canonical url for each profile is found on the [profiles](profiles.html) tab.
 

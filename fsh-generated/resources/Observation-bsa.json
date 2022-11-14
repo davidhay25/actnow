@@ -30,6 +30,12 @@
       "reference": "Practitioner/exPractitioner"
     }
   ],
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/identifiers",
+      "value": "bsa"
+    }
+  ],
   "effectiveDateTime": "2020-01-01",
   "status": "final",
   "valueQuantity": {

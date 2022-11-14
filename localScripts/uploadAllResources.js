@@ -9,9 +9,10 @@ const fs = require('fs');
 const axios = require ('axios')
 
 let fullFolderPath = "../fsh-generated/resources/";
-let conformanceServer = "http://actnow.canshare.co.nz:9092/baseR4/"
+//let conformanceServer = "http://actnow.canshare.co.nz:9092/baseR4/"
 //let conformanceServer = "https://r4.ontoserver.csiro.au/fhir/"
-
+//let conformanceServer = "http://hapi.fhir.org/baseR4/"
+let conformanceServer = "https://hof.smilecdr.com/fhir_request/"
 
 let bundle = {resourceType:"Bundle",type:'transaction',entry:[]}
 
@@ -24,11 +25,16 @@ arFiles.forEach(function(name){
         let contents = fs.readFileSync(fullFileName).toString();
         let resource = JSON.parse(contents)
 
-        let entry = {resource:resource}
-        entry.request = {method:'PUT',url:resource.resourceType + "/" + resource.id}
-        bundle.entry.push(entry)
-        //resource.fhirVersion = "4.0.0"
-        console.log(resource.resourceType + " " + resource.id)
+        if (resource.resourceType !== 'ImplementationGuide') {
+            let entry = {resource:resource}
+            entry.request = {method:'PUT',url:resource.resourceType + "/" + resource.id}
+            bundle.entry.push(entry)
+            //resource.fhirVersion = "4.0.0"
+            console.log(resource.resourceType + " " + resource.id)
+        }
+       
+
+
        // upploadResource(resource)
     
 })
@@ -37,7 +43,8 @@ console.log("Uploading generated resources, please wait...")
 let url = conformanceServer
 axios.post(url,bundle).then(function(response){
     console.log(response.status)
-    console.log(JSON.stringify(response.data))
+    //console.log(response.data)
+    console.log(JSON.stringify(response.data,null,2))
 }).catch(function(err){
     console.log(err.response.data)
 })

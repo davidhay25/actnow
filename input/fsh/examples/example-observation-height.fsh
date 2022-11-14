@@ -8,6 +8,8 @@ InstanceOf: ObservationHeight
 * performer = Reference(exPractitioner) //avoid the warning from the validator
 * effectiveDateTime = "2020-01-01"
 * status = #final
+* identifier.system = "http://canshare.co.nz/identifiers"
+* identifier.value = "height"
 
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
 * code.coding[+] = $snomed#4565433019 

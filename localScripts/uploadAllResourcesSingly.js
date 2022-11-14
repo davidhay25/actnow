@@ -12,8 +12,8 @@ const syncRequest = require("../../globalScripts/node_modules/sync-request")
 
 let fullFolderPath = "../fsh-generated/resources/";
 //let conformanceServer = "http://actnow.canshare.co.nz:9092/baseR4/"
-let conformanceServer = "https://r4.ontoserver.csiro.au/fhir/"
-
+//let conformanceServer = "https://r4.ontoserver.csiro.au/fhir/"
+let conformanceServer = "http://hapi.fhir.org/baseR4/"
 
 
 function uploadSingleType(type) {

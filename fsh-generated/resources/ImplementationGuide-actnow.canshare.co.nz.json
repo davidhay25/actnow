@@ -228,6 +228,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/an-course-number"
+        },
+        "name": "CourseNumber",
+        "description": "The course number (sequential number) for this regimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-cycle-count"
         },
         "name": "CycleCount",

@@ -36,5 +36,11 @@
     }
   ],
   "effectiveDateTime": "2020-01-01",
-  "status": "final"
+  "status": "final",
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/identifiers",
+      "value": "weight"
+    }
+  ]
 }

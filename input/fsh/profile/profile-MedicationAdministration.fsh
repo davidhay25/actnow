@@ -11,6 +11,8 @@ Description:    "ACT-NOW medication administration. These are medications that w
 //? create a slice on SI to define this
 * supportingInformation 1..*
 
+// need to add facility of administration - HPI - actually, this is the performer
+
 * extension contains
     $extCycleDay  named cycle-day  0..1 and        //planned and administered date
     $extPrescribedDose named prescribed-dose 0..1 and     //planned dose

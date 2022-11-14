@@ -25,6 +25,7 @@ Description:    "An observation that represents an ecog score"
 * value[x] 1..1 MS
 * status 1..1 MS
 * code 1..1 MS
+* identifier 1..*   //identifier required for updates
 
 //Slice on the code
 * code.coding ^slicing.discriminator.type = #pattern

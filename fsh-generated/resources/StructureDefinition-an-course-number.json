@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "an-cycle-number",
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number",
+  "id": "an-course-number",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-course-number",
   "version": "0.1.0",
-  "name": "CycleNumber",
+  "name": "CourseNumber",
   "status": "draft",
-  "description": "The cycle number of the regimen that this CP represents",
+  "description": "The course number (sequential number) for this regimen",
   "jurisdiction": [
     {
       "coding": [
@@ -40,7 +40,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The cycle number of the regimen that this CP represents"
+        "definition": "The course number (sequential number) for this regimen"
       },
       {
         "id": "Extension.extension",
@@ -50,7 +50,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-course-number"
       },
       {
         "id": "Extension.value[x]",

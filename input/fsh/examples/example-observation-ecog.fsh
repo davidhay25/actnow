@@ -8,6 +8,8 @@ InstanceOf: ObservationEcog
 * performer = Reference(exPractitioner) //avoid the warning from the validator
 * effectiveDateTime = "2020-01-01"
 * status = #final
+* identifier.system = "http://canshare.co.nz/identifiers"
+* identifier.value = "ecog"
 
 //add 2 codings - one is the required snomed code, the other is from mcode
 * code.coding[+] = $snomed#423740007

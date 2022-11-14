@@ -32,6 +32,12 @@
   ],
   "effectiveDateTime": "2020-01-01",
   "status": "final",
+  "identifier": [
+    {
+      "system": "http://canshare.co.nz/identifiers",
+      "value": "height"
+    }
+  ],
   "valueQuantity": {
     "value": 1.8,
     "code": "m",

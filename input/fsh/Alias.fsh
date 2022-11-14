@@ -2,6 +2,7 @@
 
 Alias: $regimen-type = http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type
 
+Alias: $performer-function = http://terminology.hl7.org/CodeSystem/med-admin-perform-function
 
 // systems
 Alias: $snomed = http://snomed.info/sct
@@ -26,6 +27,12 @@ Alias: $profCarePlan-cycle = http://canshare.co.nz/fhir/StructureDefinition/an-c
 Alias: $histology = http://canshare.co.nz/fhir/StructureDefinition/an-histology
 Alias: $ecog = http://canshare.co.nz/fhir/StructureDefinition/an-ecog
 Alias: $bsa = http://canshare.co.nz/fhir/StructureDefinition/an-bsa
+
+Alias: $er-status = http://canshare.co.nz/fhir/StructureDefinition/an-er-status
+Alias: $pr-status = http://canshare.co.nz/fhir/StructureDefinition/an-pr-status
+Alias: $her2-status = http://canshare.co.nz/fhir/StructureDefinition/an-her2-status
+
+
 Alias: $regimen-outcome = http://canshare.co.nz/fhir/StructureDefinition/an-regimen-outcome
 
 Alias: $creat-clear = http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear
@@ -53,7 +60,7 @@ Alias: $extCycleCount = http://canshare.co.nz/fhir/StructureDefinition/an-cycle-
 
 Alias: $extLastAdminDate = http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date
 
-
+Alias: $extCourseNumber = http://canshare.co.nz/fhir/StructureDefinition/an-course-number
 
 
 Alias: $extRegimenDiscontinued = http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued
