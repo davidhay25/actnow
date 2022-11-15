@@ -21,7 +21,7 @@ The general flow by which a patient receives cancer treatment, and the correspon
 
 The following diagram shows an example of a small set of data for a patient, with only a single cycle. Note that all the resources will have a reference to the Patient, and some to a Practitioner - these are not shown for clarity.
 
-<img style="width:800px; float:none" src="graph3.png"/>
+<img style="width:800px; float:none" src="graph-10.png"/>
 
 The image is shown with a central column of the [Diagnosis](StructureDefinition-an-condition.html) (with supporting [histology](StructureDefinition-an-histology.html) and assessment), then the [regimen](StructureDefinition-an-careplan-regimen.html) and [cycle](StructureDefinition-an-careplan-cycle.html) care plans. Usually there will be multiple cycle plans for any given regimen.
 

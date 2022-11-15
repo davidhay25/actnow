@@ -332,6 +332,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-ecog-status-vs"
+        },
+        "name": "ECOG status",
+        "description": "ECOG status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/an-regimen-discontinued-patient-factors-vs"
         },
         "name": "Patient factors when discontinuing a regimen",

@@ -84,7 +84,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-ecog.html'>ECOG score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-ecog<br/>
-<br/>OE: <strong>http://snomed.info/sct : 423740007 </strong>
+<br/>OE: <strong>http://snomed.info/sct : 2643255014 </strong>
 <br/>OE: <strong>http://loinc.org : 89247-1 </strong>
 </td>
 <td>An observation that represents an ecog score</td>

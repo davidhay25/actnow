@@ -15,4 +15,4 @@ InstanceOf: ObservationEcog
 * code.coding[+] = $snomed#423740007
 * code.coding[+] = $loinc#89247-1
 
-* valueInteger = 3
+* valueCodeableConcept = $snomed#2644680013

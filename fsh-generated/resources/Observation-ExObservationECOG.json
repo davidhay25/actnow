@@ -38,5 +38,12 @@
       "value": "ecog"
     }
   ],
-  "valueInteger": 3
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "2644680013",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  }
 }

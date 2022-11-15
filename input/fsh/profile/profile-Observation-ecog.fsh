@@ -36,19 +36,17 @@ Description:    "An observation that represents an ecog score"
     snomedCode 1..1 and 
     mCode 0..1
 
-* code.coding[snomedCode].code = #423740007
+* code.coding[snomedCode].code = #2643255014
+* code.coding[snomedCode].display = "ECOG performance status"
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[mCode].code = #89247-1 
 * code.coding[mCode].system = $loinc
 
 
-// * code = $snomed#423740007 "ECOG performance status"
-
 * effective[x] only dateTime
 
-* value[x] only integer         //range from 0 to 5
-* valueInteger ^minValueInteger = 0
-* valueInteger ^maxValueInteger = 5
+* value[x] only CodeableConcept         //range from 0 to 5
+* valueCodeableConcept from $ecog-status-vs (required)
 
 

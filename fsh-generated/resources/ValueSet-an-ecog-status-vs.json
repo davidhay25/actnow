@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EcogStatus",
+  "id": "an-ecog-status-vs",
+  "title": "ECOG status",
+  "description": "ECOG status",
+  "version": "0.1.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "2644680013",
+            "display": "ECOG performance status - grade 0"
+          },
+          {
+            "code": "2644681012",
+            "display": "ECOG performance status - grade 1"
+          },
+          {
+            "code": "2644682017",
+            "display": "ECOG performance status - grade 2"
+          },
+          {
+            "code": "2644683010",
+            "display": "ECOG performance status - grade 3"
+          },
+          {
+            "code": "2644684016",
+            "display": "ECOG performance status - grade 4"
+          },
+          {
+            "code": "2644685015",
+            "display": "ECOG performance status - grade 5"
+          }
+        ]
+      }
+    ]
+  }
+}
