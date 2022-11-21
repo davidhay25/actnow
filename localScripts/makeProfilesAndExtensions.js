@@ -113,7 +113,8 @@ if (fs.existsSync(fullFolderPath)) {
                             let arSlices = getSlices(profile)      //retrieve the slices on code
                         
                             arSlices.forEach(function(slice){
-                                ar.push(`<br/>OE: <strong>${slice.system} : ${slice.code} </strong>`)
+
+                                ar.push(`<br/><em>${slice.pathToCode}</em><br/> <strong>${slice.system} : ${slice.code} </strong>`)
                             })
                         }
 
@@ -302,27 +303,71 @@ function getSlices(resource) {
         let hash = {}
         resource.differential.element.forEach(function(element){
             hash[element.id] = element
+/*
+            if (element.id == "Observation.component:primary.code") {
+                console.log('===> primary found')
+            }
+            if (element.id == "Observation.component:primary.system") {
+                console.log('===> system found')
+            }
+            */
         })
 
+
+
+
+/*
+        if (resource.name == 'ObservationGleason') {
+            console.log(hash)
+        }
+*/
         resource.differential.element.forEach(function(element){
             if (element.sliceName && element.path.indexOf('xtension') == -1) {
-              //  console.log('sn: ' + element.sliceName)
+                
                 let pathToSystem = element.path + ":" + element.sliceName + '.system'
                 let pathToCode = element.path + ":" + element.sliceName + '.code'
+/*
+                if (resource.name == 'ObservationGleason') {
+                    console.log("----- gleason")
+                    console.log('sn: ' + element.sliceName)
+                    console.log(pathToSystem,pathToCode)
+
+                    console.log(hash[pathToSystem])
+                    console.log(hash[pathToCode])
+                }
+
+                */
+
+                //console.log()
                 let system = ""
                 let code = ""
                 if (hash[pathToSystem]) {
+                    //for a component code (ie gleason) there won't be a system
                     system = hash[pathToSystem].patternUri
                 }
                 
                 if (hash[pathToCode]) {
-                     code = hash[pathToCode].patternCode
+
+                    //for a component code (ie gleason) there will be a code but no system
+                    //and the value will be in a patternCodeableConcept
+                    if (hash[pathToCode].patternCodeableConcept) {
+                        let coding = hash[pathToCode].patternCodeableConcept.coding[0]
+                        code = coding.code
+                        system = coding.system
+
+                    } else {
+                        code = hash[pathToCode].patternCode
+                    }
+                   
+                    
                 }
-
-                
-
+/*
+                if (resource.name == 'ObservationGleason') {
+                    console.log("-->",code,system)
+                }
+                */
               //  console.log(system,code)
-                arSlices.push({system:system,code:code})
+                arSlices.push({system:system,code:code,pathToCode: pathToCode})
 
             }
         })

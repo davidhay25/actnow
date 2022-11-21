@@ -9,7 +9,7 @@ name: actnow
 title: ACT-NOW Implementation Guide
 description: FHIR support for the New Zealand ACT-NOW standard
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 4.0.1 
 copyrightYear: 2022+
 jurisdiction: urn:iso:std:iso:3166#NZ "New Zealand"

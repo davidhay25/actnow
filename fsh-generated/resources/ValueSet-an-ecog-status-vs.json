@@ -5,7 +5,7 @@
   "id": "an-ecog-status-vs",
   "title": "ECOG status",
   "description": "ECOG status",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs",
   "experimental": false,
   "compose": {

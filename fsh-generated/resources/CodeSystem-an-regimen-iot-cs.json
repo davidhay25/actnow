@@ -6,7 +6,7 @@
   "id": "an-regimen-iot-cs",
   "title": "Intent of treatment",
   "description": "What was the purpose of this treatment",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs",
   "concept": [
     {

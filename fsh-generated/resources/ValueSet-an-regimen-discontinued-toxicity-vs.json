@@ -5,7 +5,7 @@
   "id": "an-regimen-discontinued-toxicity-vs",
   "title": "Toxicity reasons why a regimen was discontinued",
   "description": "Toxicity reasons why a regimen was discontinued",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs",
   "experimental": false,
   "compose": {

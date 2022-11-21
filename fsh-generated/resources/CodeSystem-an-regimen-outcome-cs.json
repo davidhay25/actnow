@@ -6,7 +6,7 @@
   "id": "an-regimen-outcome-cs",
   "title": "Outcome of a regimen",
   "description": "How did applying the regimen affect the patient",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs",
   "concept": [
     {

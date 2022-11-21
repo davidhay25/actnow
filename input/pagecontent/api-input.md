@@ -45,6 +45,8 @@ In some cases, [conditional create](http://hl7.org/fhir/http.html#ccreate) may a
 
 #### Resource identifier as the identity key
 
+> add note that the NHI mst be used in the conditional operation
+
 <!--Given that the system potentially needs to perform updates of resources (rather than simply supplying resources for storage and subsequent retrieval), a key consideration is how a client can identify the resource that needs updating. The most obvious example of this is the CarePlan (regimen and cycle) resource, whose status changes as treatment progresses.
 
 One way that this can be done is to use the [resource id](http://hl7.org/fhir/element-definitions.html#Element.id) - an element that all resources possess. However, assigning the id can become complex when multiple systems need to interact with the same resource and the risk of inadvertently altering the wrong resources needs to be carefully considered. 
@@ -100,6 +102,11 @@ Here's an example of a CarePlan with an identifier with a system value of http:/
 
 ```
 
+> need to think further about 'planned' resources coming through and what to do when that changes.
+
+> notes on which med resource to use (mad admin vs med request). Issue is that 'planned' resources are being sent through
+
+> deleting data - eg if regimen changes. 
 
 #### Bundle layout
 

@@ -5,7 +5,7 @@
   "id": "an-dose-adjustment-reason-vs",
   "title": "Dose Adjustment reason",
   "description": "The reason why the dose was adjusted",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs",
   "experimental": false,
   "compose": {
