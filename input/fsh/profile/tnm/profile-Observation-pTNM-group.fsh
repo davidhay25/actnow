@@ -34,6 +34,6 @@ Description:    "An observation that represents the pathological TNM group score
 
 
 * effective[x] only dateTime
-* value[x] only string
+* value[x] only CodeableConcept
 
 * hasMember only Reference(ObservationPT or ObservationPN or ObservationPM)

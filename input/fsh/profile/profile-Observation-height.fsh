@@ -36,7 +36,7 @@ Description:    "An observation that represents a height measurement"
 * effective[x] only dateTime
 * value[x] only Quantity
 
-* valueQuantity.code = #m        //must be in metres
+* valueQuantity.code = #cm        //must be in centimetresmetres
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 /*
@@ -53,6 +53,6 @@ Description:    "An observation that represents a height measurement"
 
 
 Invariant: an-height-1
-Expression: "Observation.valueQuantity.value >= 1 and Observation.valueQuantity.value < 2.5"
+Expression: "Observation.valueQuantity.value >= 50 and Observation.valueQuantity.value < 220"
 Severity: #warning
-Description: "The weight must be between 1 and 2.5 metres"
+Description: "The weight must be between 50 and 220  centimetres"

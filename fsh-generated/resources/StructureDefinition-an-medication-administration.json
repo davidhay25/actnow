@@ -74,7 +74,8 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "MedicationAdministration.extension:cycle-day",
@@ -95,7 +96,7 @@
         "id": "MedicationAdministration.extension:prescribed-dose",
         "path": "MedicationAdministration.extension",
         "sliceName": "prescribed-dose",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -122,9 +123,33 @@
         ]
       },
       {
+        "id": "MedicationAdministration.extension:facility-administered",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "facility-administered",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://canshare.co.nz/fhir/StructureDefinition/an-facility-administered"
+            ]
+          }
+        ]
+      },
+      {
         "id": "MedicationAdministration.identifier",
         "path": "MedicationAdministration.identifier",
         "min": 1
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
         "id": "MedicationAdministration.supportingInformation",
@@ -155,6 +180,11 @@
         "path": "MedicationAdministration.effectivePeriod",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.effectivePeriod.start",
+        "path": "MedicationAdministration.effectivePeriod.start",
+        "min": 1
       }
     ]
   }

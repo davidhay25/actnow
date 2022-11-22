@@ -66,6 +66,15 @@
 <td></td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-an-facility-administered.html'>an-facility-administered</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-facility-administered</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td>The facility where the medication was given. The HPI code of the facility</td>
+<td></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-an-iot.html'>an-iot</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-iot</td>
 <td>

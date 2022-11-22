@@ -39,8 +39,8 @@
     }
   ],
   "valueQuantity": {
-    "value": 1.8,
-    "code": "m",
+    "value": 180,
+    "code": "cm",
     "system": "http://unitsofmeasure.org"
   }
 }

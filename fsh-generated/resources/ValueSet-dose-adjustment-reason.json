@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DoseAdjustmentReason",
+  "id": "dose-adjustment-reason",
+  "title": "Dose adjustment reason",
+  "description": "What was reason the dose was adjusted",
+  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "82967011",
+            "display": "Advanced age"
+          },
+          {
+            "code": "370645010",
+            "display": "Frailty"
+          },
+          {
+            "code": "489417010",
+            "display": "Weight change finding"
+          },
+          {
+            "code": "2159167013",
+            "display": "Patient on maximum tolerated dose"
+          },
+          {
+            "code": "NEWCODE",
+            "display": "Adjusted bodyweight calculation"
+          },
+          {
+            "code": "2643253019",
+            "display": "ECOG performance status finding"
+          },
+          {
+            "code": "257385013",
+            "display": "Neutropenia"
+          },
+          {
+            "code": "406638014",
+            "display": "Anemia"
+          },
+          {
+            "code": "25076018",
+            "display": "Constipation"
+          },
+          {
+            "code": "169714013",
+            "display": "Electrolyte imbalance"
+          },
+          {
+            "code": "3037815013",
+            "display": "Immune system disorder"
+          },
+          {
+            "code": "297911011",
+            "display": "Musculoskeletal finding"
+          },
+          {
+            "code": "299450010",
+            "display": "Endocrine finding"
+          }
+        ]
+      }
+    ]
+  }
+}

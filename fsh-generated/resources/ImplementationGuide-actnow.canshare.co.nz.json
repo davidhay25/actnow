@@ -276,6 +276,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/an-facility-administered"
+        },
+        "name": "FacilityAdministered",
+        "description": "The facility where the medication was given. The HPI code of the facility",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-iot"
         },
         "name": "IOT",
@@ -324,10 +332,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/an-dose-adjustment-reason-vs"
+          "reference": "ValueSet/dose-adjustment-reason"
         },
-        "name": "Dose Adjustment reason",
-        "description": "The reason why the dose was adjusted",
+        "name": "Dose adjustment reason",
+        "description": "What was reason the dose was adjusted",
         "exampleBoolean": false
       },
       {
@@ -380,14 +388,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/an-dose-adjustment-reason-cs"
-        },
-        "name": "Dose Adjustment reason",
-        "description": "The reason why the dose was adjusted",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/an-regimen-discontinued-patient-factors-cs"
         },
         "name": "Patient factors when discontinuing a regimen",
@@ -400,14 +400,6 @@
         },
         "name": "The reason why a regimen was discontinued",
         "description": "The reason why a regimen was discontinued",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/an-regimen-discontinued-toxicity-cs"
-        },
-        "name": "Toxicity reasons why a regimen was discontinued",
-        "description": "Toxicity reasons why a regimen was discontinued",
         "exampleBoolean": false
       },
       {
@@ -553,14 +545,14 @@
         "reference": {
           "reference": "Observation/excT1"
         },
-        "name": "Clincial T value",
+        "name": "Clinical T value",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cT"
       },
       {
         "reference": {
           "reference": "Observation/excTNM1"
         },
-        "name": "Clincial TNM group",
+        "name": "Clinical TNM group",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
       },
       {

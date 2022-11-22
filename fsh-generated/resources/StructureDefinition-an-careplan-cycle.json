@@ -67,7 +67,7 @@
         "constraint": [
           {
             "key": "an-cycleCP-1",
-            "severity": "error",
+            "severity": "warning",
             "human": "If the CarePlan was cancelled, then there must be the cancellation reason extension present",
             "expression": "CarePlan.status = 'completed' implies extension('http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date').exists()",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
@@ -207,11 +207,6 @@
       {
         "id": "CarePlan.title",
         "path": "CarePlan.title",
-        "min": 1
-      },
-      {
-        "id": "CarePlan.period.start",
-        "path": "CarePlan.period.start",
         "min": 1
       }
     ]

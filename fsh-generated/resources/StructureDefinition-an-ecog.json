@@ -96,7 +96,7 @@
               "path": "code"
             }
           ],
-          "rules": "closed"
+          "rules": "open"
         },
         "min": 1
       },

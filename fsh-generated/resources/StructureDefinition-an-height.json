@@ -78,8 +78,8 @@
           {
             "key": "an-height-1",
             "severity": "warning",
-            "human": "The weight must be between 1 and 2.5 metres",
-            "expression": "Observation.valueQuantity.value >= 1 and Observation.valueQuantity.value < 2.5",
+            "human": "The weight must be between 50 and 220  centimetres",
+            "expression": "Observation.valueQuantity.value >= 50 and Observation.valueQuantity.value < 220",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-height"
           }
         ]
@@ -199,7 +199,7 @@
       {
         "id": "Observation.valueQuantity.code",
         "path": "Observation.valueQuantity.code",
-        "patternCode": "m"
+        "patternCode": "cm"
       }
     ]
   }

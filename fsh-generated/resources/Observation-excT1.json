@@ -18,5 +18,7 @@
     "reference": "Patient/exPatient"
   },
   "status": "final",
-  "valueString": "T2"
+  "valueCodeableConcept": {
+    "text": "T2"
+  }
 }

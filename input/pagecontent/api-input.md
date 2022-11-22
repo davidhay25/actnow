@@ -1,7 +1,7 @@
 
 
 
-### Summary
+### Background
 
 
 There are at least a couple of options for the input API using the RESTful API.
@@ -22,7 +22,15 @@ In this scenario, all interactions are by using Transaction bundles, where updat
 
 While it does require the client to maintain the unique identifiers (the resource element identifier - not the resource id), this is much simpler and safer to manage than having to use the resource id especially when different clients are updating the server. The supplier still needs to maintain unique identifier values, but this is made easier by using unique 'system' values for each supplier.
 
-This is the approach taken in this guide.
+This is the approach taken in this guide, as seen in the following diagram
+
+
+<img style="width:800px; float:none" src="inputAPI.png"/>
+
+1. The sender creates a transaction bundle with data that needs to be updated. This can be either new resources or updates to existing ones. All resources referenced in the bundle are present, and any resource ids and references are replaced by UUIDs. All resources must have an identifier.
+1. The validator parses the bundle against the profiles in this IG. If there ae any validation failures, the bundle is rejected. The sender will need to correct and re-submit.
+1. The bundle is passed to the transaction endpoint of the FHIR server and processed acording to the FHIR rules. As the bundle has been validated, no validation errors should occur unless there has been a previous error and identifiers have been duplicated. This is why direct restful updates are blocked. In this scenario, an administrator should delete all resources with that identifier and re-process the Transaction bundle to add the correct resource. 
+
 
 ### Details of Conditional operations
 <!--

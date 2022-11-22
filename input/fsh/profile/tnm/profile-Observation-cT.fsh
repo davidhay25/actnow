@@ -33,5 +33,5 @@ Description:    "An observation that represents the clinical 'T' score which mea
 * code.coding[mCode].system = $loinc
 
 * effective[x] only dateTime
-* value[x] only string
+* value[x] only CodeableConcept
 

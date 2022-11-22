@@ -36,14 +36,14 @@ Usage: #example
 
 Instance: excT1
 InstanceOf: ObservationCT
-Title: "Clincial T value"
+Title: "Clinical T value"
 Usage: #example
 
 * subject = Reference(exPatient)
 * status = #final
                 
 * code = $snomed#1778907013
-* valueString = "T2"
+* valueCodeableConcept.text = "T2"
 
 //---------
 Instance: excN1
@@ -55,7 +55,7 @@ Usage: #example
 * status = #final
 
 * code = $snomed#1778921010
-* valueString = "N2"
+* valueCodeableConcept.text = "N2"
 
 // ---------
 Instance: excM1
@@ -67,19 +67,19 @@ Usage: #example
 * status = #final
 
 * code = $snomed#1778835013
-* valueString = "M0"
+* valueCodeableConcept.text = "M0"
 
 // ---------
 Instance: excTNM1
 InstanceOf: ObservationClinTNMGroup
-Title: "Clincial TNM group"
+Title: "Clinical TNM group"
 Usage: #example
 
 * subject = Reference(exPatient)
 * status = #final
 * code = $snomed#1786868015
 
-* valueString = "group value"
+* valueCodeableConcept.text = "group value"
 
 
 // ===========  Pathological staging information ===========
@@ -93,7 +93,7 @@ Usage: #example
 * status = #final
                 
 * code = $snomed#1786872016
-* valueString = "T2"
+* valueCodeableConcept.text = "T2"
 
 //---------
 Instance: expN1
@@ -105,7 +105,7 @@ Usage: #example
 * status = #final
 
 * code = $snomed#1478165014
-* valueString = "N2"
+* valueCodeableConcept.text = "N2"
 
 // ---------
 Instance: expM1
@@ -117,7 +117,7 @@ Usage: #example
 * status = #final
 
 * code = $snomed#1478167018
-* valueString = "M0"
+* valueCodeableConcept.text = "M0"
 
 // ---------
 Instance: expTNM1
@@ -129,4 +129,4 @@ Usage: #example
 * status = #final
 * code = $snomed#1786868015 
 
-* valueString = "group value"
+* valueCodeableConcept.text = "group value"

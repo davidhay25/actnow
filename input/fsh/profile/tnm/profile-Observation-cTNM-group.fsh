@@ -33,6 +33,6 @@ Description:    "An observation that represents the clinical TNM group score"
 * code.coding[mCode].system = $loinc
 
 * effective[x] only dateTime
-* value[x] only string
+* value[x] only CodeableConcept
 
 * hasMember only Reference(ObservationCT or ObservationCN or ObservationCM)

@@ -39,6 +39,10 @@ Alias: $creat-clear = http://canshare.co.nz/fhir/StructureDefinition/an-creat-cl
 Alias: $height = http://canshare.co.nz/fhir/StructureDefinition/an-height
 Alias: $weight = http://canshare.co.nz/fhir/StructureDefinition/an-weight
 
+
+Alias: $extFacilityAdministered = http://canshare.co.nz/fhir/StructureDefinition/an-facility-administered
+
+
 //Aliases for TNM
 Alias: $cT = http://canshare.co.nz/fhir/StructureDefinition/an-cT
 Alias: $cN = http://canshare.co.nz/fhir/StructureDefinition/an-cN

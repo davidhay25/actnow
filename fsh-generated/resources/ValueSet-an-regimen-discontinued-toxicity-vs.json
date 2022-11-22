@@ -11,7 +11,69 @@
   "compose": {
     "include": [
       {
-        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "139690015",
+            "display": "Fatigue"
+          },
+          {
+            "code": "103576018",
+            "display": "Diarrhea"
+          },
+          {
+            "code": "2643930014",
+            "display": "Nausea"
+          },
+          {
+            "code": "2643931013",
+            "display": "Vomiting"
+          },
+          {
+            "code": "1480220018",
+            "display": "Neuropathy"
+          },
+          {
+            "code": "101654014",
+            "display": "Stomatitis"
+          },
+          {
+            "code": "406765011",
+            "display": "Skin rash"
+          },
+          {
+            "code": "416098002",
+            "display": "Drug allergy"
+          },
+          {
+            "code": "67942010",
+            "display": "Infection"
+          },
+          {
+            "code": "3914549019",
+            "display": "Pulmonary toxicity"
+          },
+          {
+            "code": "3951501011",
+            "display": "Cardiotoxicity"
+          },
+          {
+            "code": "1231753018",
+            "display": "Vascular injury"
+          },
+          {
+            "code": "124874010",
+            "display": "Abnormal liver function"
+          },
+          {
+            "code": "66316010",
+            "display": "Abnormal renal function"
+          },
+          {
+            "code": "206906015",
+            "display": "Hearing disorder"
+          }
+        ]
       }
     ]
   }

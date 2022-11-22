@@ -30,7 +30,7 @@ Description:    "An observation that represents an ecog score"
 //Slice on the code
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "code"
-* code.coding ^slicing.rules = #closed
+* code.coding ^slicing.rules = #open
 
 * code.coding contains
     snomedCode 1..1 and 

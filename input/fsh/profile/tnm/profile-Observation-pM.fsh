@@ -34,5 +34,5 @@ Description:    "An observation that represents the pathological 'M' score which
 
 
 * effective[x] only dateTime
-* value[x] only string
+* value[x] only CodeableConcept
 

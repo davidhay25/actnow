@@ -15,7 +15,7 @@ InstanceOf: ObservationHeight
 * code.coding[+] = $snomed#4565433019 
 * code.coding[+] = $loinc#8302-2
 
-* valueQuantity.value = 1.8
-* valueQuantity.code = #m
+* valueQuantity.value = 180
+* valueQuantity.code = #cm
 * valueQuantity.system = "http://unitsofmeasure.org"
 

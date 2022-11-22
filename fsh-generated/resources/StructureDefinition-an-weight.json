@@ -78,8 +78,8 @@
           {
             "key": "an-weight-1",
             "severity": "warning",
-            "human": "The weight must be between 10 and 200",
-            "expression": "Observation.valueQuantity.value > 10 and Observation.valueQuantity.value < 200",
+            "human": "The weight must be between 20 and 400",
+            "expression": "Observation.valueQuantity.value > 20 and Observation.valueQuantity.value < 400",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
           }
         ]
