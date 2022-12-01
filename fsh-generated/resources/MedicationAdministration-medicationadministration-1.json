@@ -19,21 +19,6 @@
       "value": "ma-1"
     }
   ],
-  "performer": [
-    {
-      "function": {
-        "coding": [
-          {
-            "code": "performer",
-            "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function"
-          }
-        ]
-      },
-      "actor": {
-        "reference": "hpiOfFacility"
-      }
-    }
-  ],
   "supportingInformation": [
     {
       "reference": "CarePlan/careplan-cycle-1"

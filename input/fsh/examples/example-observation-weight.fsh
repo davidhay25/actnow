@@ -1,6 +1,8 @@
 Instance: ExObservationWeight
 InstanceOf: ObservationWeight
 
+* meta.profile = $weight
+
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Weight 80 kg</div>"
 * text.status = #generated
 

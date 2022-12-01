@@ -1,6 +1,8 @@
 Instance: ExObservationHeight
 InstanceOf: ObservationHeight
 
+* meta.profile = $height
+
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Height 180 cm</div>"
 * text.status = #generated
 

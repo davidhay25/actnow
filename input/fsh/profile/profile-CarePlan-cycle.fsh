@@ -27,7 +27,7 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 * category 1..*     //must have at least the cycle category (sliced below)
 * identifier 1..*   //identifier required for updates
 
-//* period.start 1..1     //must have the date the cycle starts
+
 
 //slicing on category coding
 * category.coding ^slicing.discriminator.type = #pattern

@@ -5,6 +5,8 @@ Instance: careplan-regimen-1
 InstanceOf: $profCarePlan-regimen
 Description: "Example of a regimen care plan"
 
+* meta.profile = $profCarePlan-regimen
+
 * identifier.system = $identifierSystem
 * identifier.value = "abc"
 
@@ -26,11 +28,16 @@ Description: "Example of a regimen care plan"
 //regimen is a folfox
 * extension[+].url = $regimen-type
 * extension[=].valueCodeableConcept.text = "FOLFOX"
+
+
+
 //-----------------------------------------------
 //a careplan that was cancelled (status = revoked). It needs the cancellation reasons.
 Instance: careplan-regimen-2
 InstanceOf: $profCarePlan-regimen
 Description: "A regimen care plan that was discontinued after it started"
+
+* meta.profile = $profCarePlan-regimen
 
 * identifier.system = $identifierSystem
 * identifier.value = "abc"
@@ -65,8 +72,36 @@ Description: "A regimen care plan that was discontinued after it started"
 * extension[=].extension[+].url = "toxicity"
 * extension[=].extension[=].valueCodeableConcept = $regimen-discontinued-toxicity-cs#nausea
 
+/*
+
+//should be an error
+Instance: careplan-regimen-error
+InstanceOf: $profCarePlan-regimen
+Description: "Example of a regimen care plan"
+
+* meta.profile = $profCarePlan-regimen
+
+* identifier.system = $identifierSystem
+* identifier.value = "abc"
+
+* subject = Reference(exPatient)
+
+* status = #completed
+* intent = #plan
+
+//* category = $unknownSystem#regimenCP
+
+//intent of treatment
+* extension[+].url = $iot
+* extension[=].valueCodeableConcept = $regimen-iot-cs#palliative
+
+//is on a clinical trial
+* extension[+].url = $clinicalTrial
+* extension[=].valueBoolean = true
+
+//regimen is a folfox
+* extension[+].url = $regimen-type
+* extension[=].valueCodeableConcept.text = "FOLFOX"
 
 
-
-
-
+*/

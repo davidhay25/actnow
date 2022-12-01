@@ -6,13 +6,16 @@ Description: "An example medication administration"
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Oxaliplatin260.00 mg IV</div>"
 * text.status = #generated
 
+* meta.profile = $profMedicationAdministration
+
 * subject = Reference(exPatient)
 
 * identifier.system = $identifierSystem
 * identifier.value = "ma-1"
 
-* performer.function = $performer-function#performer
-* performer.actor.reference = "hpiOfFacility" 
+//This is an invalid reference - and we don't have the performed anyway
+//* performer.function = $performer-function#performer
+//* performer.actor.reference = "hpiOfFacility" 
 
 //the reference to the cycle careplan
 * supportingInformation[+] = Reference(careplan-cycle-1)

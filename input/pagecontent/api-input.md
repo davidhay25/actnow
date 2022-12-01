@@ -229,6 +229,9 @@ In this scenario, the client is able to track which resources have (successfully
 
 The flow is pretty much the same as for the complete patient refresh except that only new or updated resources are included in the bundle. (plus any other resources which they reference - like Patient) 
 
+##### Deleting a careplan
+If a CarePlan was created incorrectly, then it should be re-submitted (with the same identifier) setting that status to 'entered-in-error'.
+
 ##### Things to remember
 * All resources have an identifier and UUID as the ID.
 * All references use the UUID

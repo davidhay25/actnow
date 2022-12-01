@@ -4,6 +4,8 @@ InstanceOf: ObservationBSA
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>BSA</div>"
 * text.status = #generated
 
+* meta.profile = $bsa
+
 * subject = Reference(exPatient)
 * performer = Reference(exPractitioner) //avoid the warning from the validator
 * identifier.system = "http://canshare.co.nz/identifiers"

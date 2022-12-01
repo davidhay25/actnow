@@ -1,6 +1,8 @@
 Instance: CreatinineClearance
 InstanceOf: ObservationCreatClear
 
+* meta.profile = $creat-clear
+
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Creatinine Clearance</div>"
 * text.status = #generated
 

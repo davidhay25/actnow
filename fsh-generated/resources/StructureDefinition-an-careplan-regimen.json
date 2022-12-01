@@ -90,9 +90,9 @@
         "min": 2
       },
       {
-        "id": "CarePlan.extension:iot",
+        "id": "CarePlan.extension:intent-of-treatment",
         "path": "CarePlan.extension",
-        "sliceName": "iot",
+        "sliceName": "intent-of-treatment",
         "min": 1,
         "max": "1",
         "type": [
@@ -105,9 +105,9 @@
         ]
       },
       {
-        "id": "CarePlan.extension:clinicalTrial",
+        "id": "CarePlan.extension:clinical-trial",
         "path": "CarePlan.extension",
-        "sliceName": "clinicalTrial",
+        "sliceName": "clinical-trial",
         "min": 0,
         "max": "1",
         "type": [
@@ -153,9 +153,9 @@
         "mustSupport": true
       },
       {
-        "id": "CarePlan.extension:otu",
+        "id": "CarePlan.extension:overall-treatment-utility",
         "path": "CarePlan.extension",
-        "sliceName": "otu",
+        "sliceName": "overall-treatment-utility",
         "min": 0,
         "max": "1",
         "type": [
@@ -203,6 +203,16 @@
       {
         "id": "CarePlan.identifier",
         "path": "CarePlan.identifier",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.intent",
+        "path": "CarePlan.intent",
+        "patternCode": "plan"
+      },
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
         "min": 1
       },
       {

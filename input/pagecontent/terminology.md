@@ -32,6 +32,5 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 <tr><th>CodeSystem</th><th>Purpose</th><th>Canonical Url</th></tr>
 <tr><td width='20%'><a href='CodeSystem-an-regimen-discontinued-patient-factors-cs.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs</td></tr>
 <tr><td width='20%'><a href='CodeSystem-an-regimen-discontinued-reason-cs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs</td></tr>
-<tr><td width='20%'><a href='CodeSystem-an-regimen-iot-cs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs</td></tr>
 <tr><td width='20%'><a href='CodeSystem-an-regimen-outcome-cs.html'>Outcome of a regimen</a></td><td><p>How did applying the regimen affect the patient</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs</td></tr>
 </table>

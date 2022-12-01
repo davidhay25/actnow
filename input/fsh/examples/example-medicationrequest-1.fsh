@@ -2,6 +2,7 @@ Instance: medicationrequest-1
 InstanceOf: AnMedicationRequest
 Description: "An example medication administration"
 
+* meta.profile = $profMedicationRequest
 
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Allopurinol</div>"
 * text.status = #generated

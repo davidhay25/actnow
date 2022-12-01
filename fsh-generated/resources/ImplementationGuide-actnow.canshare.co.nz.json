@@ -404,14 +404,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/an-regimen-iot-cs"
-        },
-        "name": "Intent of treatment",
-        "description": "What was the purpose of this treatment",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/an-regimen-outcome-cs"
         },
         "name": "Outcome of a regimen",

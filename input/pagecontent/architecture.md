@@ -10,6 +10,8 @@ The overall architecture of the proposed solution is as follows:
 
 <img style="width:800px; float:none" src="architecture.png"/>
 
+(todo: not sure about the csv input...)
+
 ### Main components 
 
 
@@ -25,12 +27,14 @@ Given that there are only a small number of clients supplying data, there could 
 The validator is used to ensure that the data in the bundle is for for purpose. This occurs at a number of levels. (Link to details here) 
 * Conformance to the profiling described in this Implementation Guide.
 * Additional validation not covered by the standard FHIR validation mechanisms. For example:
+    * All resources have a profile conformance claim to a known profile appropriate for that resource type
+    * all resource Ids are UUIDs
     * The system values in the resources match that assigned to the data source
-    * All updates are conditional updates
+    * All updates are conditional updates or creates
 
-If the bundle fails validation, then it will be rejected and will need to be correct and re-submitted by the sender. This is primarily to ensure that the analytics is being performed against valid data - it is such harder to correct once it has been imported into the FHIR server.
+If the bundle fails validation, then it will be rejected and will need to be correct and re-submitted by the sender. This is not only for clincial use but also to ensure that the analytics is being performed against valid data - it is much harder to correct once it has been imported into the FHIR server.
 
-This requirement does bring support requirements that are being developed. Specifically, the order that bundles are submitted is important, as some resources (particularly the Care Plans) are updated as part of the data acquisition.
+This requirement does bring support requirements that are being developed. Specifically, the order that bundles are submitted may be important, as some resources (particularly the Care Plans) are updated as part of the data acquisition. This means the most recent version of a resource needs to be submitted last.
 
 This step could also add a Provenance resource to the bundle (it could be supplied by the originating system, though there is value in it being applied by the system.)
 

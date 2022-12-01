@@ -39,7 +39,7 @@
           },
           {
             "code": "257385013",
-            "display": "Neutropenia"
+            "display": "Thrombocytopenia"
           },
           {
             "code": "406638014",
@@ -54,12 +54,20 @@
             "display": "Electrolyte imbalance"
           },
           {
+            "code": "NEWCODEOTHER",
+            "display": "Other toxicity"
+          },
+          {
             "code": "3037815013",
             "display": "Immune system disorder"
           },
           {
             "code": "297911011",
             "display": "Musculoskeletal finding"
+          },
+          {
+            "code": "NEWCODETOX",
+            "display": "CNS toxicity"
           },
           {
             "code": "299450010",

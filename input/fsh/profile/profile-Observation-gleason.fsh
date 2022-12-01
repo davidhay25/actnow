@@ -29,6 +29,7 @@ Description:    "An observation that represents the Gleason score"
 * code.coding[snomedCode].display = "Gleason score (observable entity)"
 * code.coding[snomedCode].system = $snomed
 
+* value[x] only integer
 
 // code 372278000 (Gleason score)
 //Slice on the component. Allow the primary, secondary and tertiary scores 

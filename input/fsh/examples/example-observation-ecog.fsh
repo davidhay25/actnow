@@ -1,6 +1,8 @@
 Instance: ExObservationECOG
 InstanceOf: ObservationEcog
 
+* meta.profile = $ecog
+
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>ECOG score 3 </div>"
 * text.status = #generated
 

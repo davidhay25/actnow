@@ -11,7 +11,29 @@
   "compose": {
     "include": [
       {
-        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373846009",
+            "display": "Curative Adjuvant"
+          },
+          {
+            "code": "373847000",
+            "display": "Neo-adjuvant"
+          },
+          {
+            "code": "373808002",
+            "display": "Curative"
+          },
+          {
+            "code": "363676003",
+            "display": "Palliative"
+          },
+          {
+            "code": "399707004",
+            "display": "Supportive"
+          }
+        ]
       }
     ]
   }

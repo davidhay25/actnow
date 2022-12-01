@@ -4,6 +4,8 @@ InstanceOf: an-condition
 Title: "Small cell lung cancer diagnosis"
 Usage: #example
 
+* meta.profile = $profCondition
+
 * subject = Reference(exPatient)
 * identifier.system = "http://vendor.org/condition"
 * identifier.value = "001"
@@ -18,6 +20,8 @@ Instance: exSmallCellCancerHistology
 InstanceOf: ObservationHistology
 Title: "Histology: Small cell lung cancer"
 Usage: #example
+
+* meta.profile = $histology
 
 * subject = Reference(exPatient)
 * status = #final
@@ -39,6 +43,8 @@ InstanceOf: ObservationCT
 Title: "Clinical T value"
 Usage: #example
 
+* meta.profile = $cT
+
 * subject = Reference(exPatient)
 * status = #final
                 
@@ -50,6 +56,9 @@ Instance: excN1
 InstanceOf: ObservationCN
 Title: "Clincial N value"
 Usage: #example
+
+* meta.profile = $cN
+
 
 * subject = Reference(exPatient)
 * status = #final
@@ -63,6 +72,8 @@ InstanceOf: ObservationCM
 Title: "Clincial M value"
 Usage: #example
 
+* meta.profile = $cM
+
 * subject = Reference(exPatient)
 * status = #final
 
@@ -74,6 +85,8 @@ Instance: excTNM1
 InstanceOf: ObservationClinTNMGroup
 Title: "Clinical TNM group"
 Usage: #example
+
+* meta.profile = $cGroup
 
 * subject = Reference(exPatient)
 * status = #final
@@ -89,6 +102,8 @@ InstanceOf: ObservationPT
 Title: "Pathological T value"
 Usage: #example
 
+* meta.profile = $pT
+
 * subject = Reference(exPatient)
 * status = #final
                 
@@ -100,6 +115,8 @@ Instance: expN1
 InstanceOf: ObservationPN
 Title: "Pathological N value"
 Usage: #example
+
+* meta.profile = $pN
 
 * subject = Reference(exPatient)
 * status = #final
@@ -113,6 +130,8 @@ InstanceOf: ObservationPM
 Title: "Pathological M value"
 Usage: #example
 
+* meta.profile = $pM
+
 * subject = Reference(exPatient)
 * status = #final
 
@@ -124,6 +143,8 @@ Instance: expTNM1
 InstanceOf: ObservationPathTNMGroup
 Title: "Pathological TNM group"
 Usage: #example
+
+* meta.profile = $pGroup
 
 * subject = Reference(exPatient)
 * status = #final

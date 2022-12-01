@@ -5,6 +5,9 @@ Instance: careplan-cycle-1
 InstanceOf: $profCarePlan-cycle
 Description: "Example of a cycle care plan"
 
+* meta.profile = $profCarePlan-cycle
+
+
 * identifier.system = $identifierSystem
 * identifier.value = "abc"
 

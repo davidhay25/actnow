@@ -77,7 +77,7 @@
         "min": 0,
         "max": "1",
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs"
         }
       }

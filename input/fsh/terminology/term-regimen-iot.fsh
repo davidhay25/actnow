@@ -8,6 +8,15 @@ Description:  "What was the purpose of this treatment"
 
 * ^url = $regimen-iot-vs
 * ^experimental = false
+
+* $snomed#373846009 "Curative Adjuvant"
+* $snomed#373847000 "Neo-adjuvant"
+* $snomed#373808002 "Curative"
+* $snomed#363676003 "Palliative"
+* $snomed#399707004 "Supportive"
+
+/*
+
 * codes from system $regimen-iot-cs
 
 
@@ -25,3 +34,4 @@ Description:  "What was the purpose of this treatment"
 * #palliative "Palliative" "The intent is to make the patient more comfortable"
 
 
+*/

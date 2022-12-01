@@ -6,6 +6,7 @@
       "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
     ]
   },
+  "intent": "plan",
   "category": [
     {
       "coding": [
@@ -26,7 +27,6 @@
     "reference": "Patient/exPatient"
   },
   "status": "revoked",
-  "intent": "plan",
   "extension": [
     {
       "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count",

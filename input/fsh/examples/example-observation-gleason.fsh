@@ -1,6 +1,8 @@
 Instance: ExObservationGleason
 InstanceOf: ObservationGleason
 
+* meta.profile = $gleason
+
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gleason score</div>"
 * text.status = #generated
 
