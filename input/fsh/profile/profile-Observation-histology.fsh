@@ -26,7 +26,7 @@ Description:    "An observation that represents a Histology finding"
 * code.coding contains
     snomedCode 1..1
 
-* code.coding[snomedCode].code = #82231000004111
+* code.coding[snomedCode].code = #512001000004108
 * code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime

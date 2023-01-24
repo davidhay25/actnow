@@ -30,7 +30,8 @@ Description: "Example of a cycle care plan"
 
 * category = $unknownSystem#cycleCP
 
-
+* period.start = "2012-01-01"
+* period.end = "2012-01-01"
 
 
 

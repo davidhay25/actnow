@@ -7,7 +7,7 @@
 <td><a href='StructureDefinition-an-bsa.html'>Body Surface Area</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-bsa<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 443403011 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 301898006 </strong>
 </td>
 <td>An observation that represents a Body Surface Area measurement</td>
 </tr>
@@ -15,7 +15,7 @@
 <td><a href='StructureDefinition-an-cGroup.html'>clinical TNM group score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cGroup<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1786868015 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 399537006 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21908-9 </strong>
 </td>
 <td>An observation that represents the clinical TNM group score</td>
@@ -24,7 +24,7 @@
 <td><a href='StructureDefinition-an-cM.html'>clinical M-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cM<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1778835013 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371497001 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21907-1 </strong>
 </td>
 <td>An observation that represents the clinical 'M' score</td>
@@ -33,7 +33,7 @@
 <td><a href='StructureDefinition-an-cN.html'>clinical N-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cN<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1778921010 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371494008 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21906-3 </strong>
 </td>
 <td>An observation that represents the clinical 'N' score which measures local lymph node involvement.</td>
@@ -42,7 +42,7 @@
 <td><a href='StructureDefinition-an-cT.html'>clinical T-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cT<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1778907013 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 384625004 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21905-5 </strong>
 </td>
 <td>An observation that represents the clinical 'T' score which measures the tumour size.</td>
@@ -76,7 +76,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-creat-clear.html'>Creatinine Clearance</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://unknown.org : cc </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 102811001 </strong>
 </td>
 <td>An observation that represents a Creatinine Clearance measurement</td>
 </tr>
@@ -84,10 +84,18 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-ecog.html'>ECOG score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-ecog<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 2643255014 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 423740007 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 89247-1 </strong>
 </td>
 <td>An observation that represents an ecog score</td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-er-status.html'>Estrogen Receptor status</a></td>
+<td>Observation</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 423740007 </strong>
+</td>
+<td>An observation that represents an ER status</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-gleason.html'>Gleason score</a></td>
@@ -104,16 +112,24 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-height.html'>Height</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-height<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 4565433019 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1153637007 </strong>
 <br/><em>Observation.code.coding:loincCode.code</em><br/> <strong>http://loinc.org : 8302-2 </strong>
 </td>
 <td>An observation that represents a height measurement</td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-an-her-status.html'>HER2 status</a></td>
+<td>Observation</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://unknown.org : xxx </strong>
+</td>
+<td>An observation that represents a HER2 status</td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-an-histology.html'>Histology</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-histology<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 82231000004111 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 512001000004108 </strong>
 </td>
 <td>An observation that represents a Histology finding</td>
 </tr>
@@ -135,7 +151,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-pGroup.html'>Pathological TNM group score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pGroup<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1786868015 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 399588009 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21902-2 </strong>
 </td>
 <td>An observation that represents the pathological TNM group score</td>
@@ -175,10 +191,18 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>ACT-NOW patient</td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-an-pr-status.html'>PR status</a></td>
+<td>Observation</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 423740007 </strong>
+</td>
+<td>An observation that represents a Progesterone Receptor status</td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-an-weight.html'>Weight</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-weight<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 45352010 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 27113001 </strong>
 <br/><em>Observation.code.coding:loincCode.code</em><br/> <strong>http://loinc.org : 29463-7 </strong>
 </td>
 <td>An observation that represents a weight measurement</td>

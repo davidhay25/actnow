@@ -11,7 +11,45 @@
   "compose": {
     "include": [
       {
-        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "182872003",
+            "display": "Drug discontinued - too expensive (situation)"
+          },
+          {
+            "code": "266934004",
+            "display": "Transport problems (finding)"
+          },
+          {
+            "code": "160932005",
+            "display": "Financial problem (finding)"
+          },
+          {
+            "code": "182868002",
+            "display": "Treatment stopped - alternative therapy undertaken (situation)"
+          },
+          {
+            "code": "19200009",
+            "display": "Psychosocial deprivation (finding)"
+          },
+          {
+            "code": "423797009",
+            "display": "Inadequate healthcare provision (finding)"
+          },
+          {
+            "code": "182900006",
+            "display": "Drug declined by patient - patient beliefs (situation)"
+          },
+          {
+            "code": "302767002",
+            "display": "Cares for a relative (finding)"
+          },
+          {
+            "code": "182903008",
+            "display": "Drug declined by patient - reason unknown (situation)"
+          }
+        ]
       }
     ]
   }

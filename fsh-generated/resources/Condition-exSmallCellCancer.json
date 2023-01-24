@@ -15,6 +15,20 @@
       "value": "001"
     }
   ],
+  "extension": [
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "372288004",
+            "system": "http://snomed.info/sct",
+            "display": "Local tumor invasion (finding)"
+          }
+        ]
+      }
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -34,6 +48,19 @@
       "detail": [
         {
           "reference": "Observation/exSmallCellCancerHistology"
+        }
+      ]
+    },
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "373795004",
+              "system": "http://snomed.info/sct",
+              "display": "Cancer diagnosis based on clinical evidence (finding)"
+            }
+          ]
         }
       ]
     }

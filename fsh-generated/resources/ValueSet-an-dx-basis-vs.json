@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DxBasis",
+  "id": "an-dx-basis-vs",
+  "title": "Basis of diagnosis",
+  "description": "Whether the diagnosis is based on clinical or pathological grounds",
+  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373795004",
+            "display": "Cancer diagnosis based on clinical evidence (finding)"
+          }
+        ]
+      },
+      {
+        "system": "http://unknown.org",
+        "concept": [
+          {
+            "code": "xxx",
+            "display": "Cancer diagnosis based on pathology evidence (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -26,7 +26,7 @@ Description:    "An observation that represents the clinical 'M' score"
     snomedCode 1..1 and 
     mCode 0..1                  //the code defined in mcode
 
-* code.coding[snomedCode].code = #1778835013 
+* code.coding[snomedCode].code = #371497001 
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[mCode].code = #21907-1

@@ -26,7 +26,7 @@ Description:    "An observation that represents the clinical TNM group score"
     snomedCode 1..1 and 
     mCode 0..1
 
-* code.coding[snomedCode].code = #1786868015 
+* code.coding[snomedCode].code = #399537006 
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[mCode].code = #21908-9 

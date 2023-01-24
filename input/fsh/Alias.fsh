@@ -79,7 +79,7 @@ Alias: $extPrescribedDose = http://canshare.co.nz/fhir/StructureDefinition/an-pr
 
 
 Alias: $extDoseAdjustmentReason = http://canshare.co.nz/fhir/StructureDefinition/an-dose-adjustment-reason
-
+Alias: $extRecurrenceType = http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type
 
 //ValueSet & Codesystem urls
 //note that all codesystems will become snomed eventually...
@@ -87,7 +87,7 @@ Alias: $regimen-discontinued-reason-vs = http://canshare.co.nz/fhir/ValueSet/an-
 Alias: $regimen-discontinued-reason-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs
 
 Alias: $regimen-discontinued-patient-factors-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs
-Alias: $regimen-discontinued-patient-factors-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs
+//Alias: $regimen-discontinued-patient-factors-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs
 
 Alias: $regimen-discontinued-toxicity-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs
 Alias: $regimen-discontinued-toxicity-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs
@@ -102,3 +102,8 @@ Alias: $dose-adjustment-reason-vs = http://canshare.co.nz/fhir/ValueSet/an-dose-
 Alias: $dose-adjustment-reason-cs = http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs
 
 Alias: $ecog-status-vs = http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs
+Alias: $dx-basis-vs = http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs
+Alias: $recurrence-type-vs = http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs
+Alias: $er-status-vs = http://canshare.co.nz/fhir/ValueSet/an-er-status-vs
+Alias: $pr-status-vs = http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs
+Alias: $her2-status-vs = http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs

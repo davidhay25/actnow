@@ -36,7 +36,7 @@ Description:    "An observation that represents an ecog score"
     snomedCode 1..1 and 
     mCode 0..1
 
-* code.coding[snomedCode].code = #2643255014
+* code.coding[snomedCode].code = #423740007
 * code.coding[snomedCode].display = "ECOG performance status"
 * code.coding[snomedCode].system = $snomed
 

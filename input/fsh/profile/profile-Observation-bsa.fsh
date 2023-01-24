@@ -26,7 +26,7 @@ Description:    "An observation that represents a Body Surface Area measurement"
 * code.coding contains
     snomedCode 1..1
 
-* code.coding[snomedCode].code = #443403011
+* code.coding[snomedCode].code = #301898006
 * code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime

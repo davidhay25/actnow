@@ -15,7 +15,7 @@ has multiple cycles also represented as CarePlans which have a 'partOf' referenc
 //* title 1..1
 * identifier 1..*
 * category 1..*
-
+* period 1..1
 * intent = #plan
 
 * extension contains

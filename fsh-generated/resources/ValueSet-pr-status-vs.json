@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PRStatus",
+  "id": "pr-status-vs",
+  "title": "ER status",
+  "description": "Estrogen Receptor status",
+  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "416561008",
+            "display": "Progesterone receptor positive tumor (disorder)"
+          },
+          {
+            "code": "441118006",
+            "display": "Progesterone receptor negative neoplasm (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -14,64 +14,56 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "139690015",
-            "display": "Fatigue"
+            "code": "422587007",
+            "display": "Nausea (finding)"
           },
           {
-            "code": "103576018",
-            "display": "Diarrhea"
+            "code": "422400008",
+            "display": "Vomiting (disorder)"
           },
           {
-            "code": "2643930014",
-            "display": "Nausea"
+            "code": "386033004",
+            "display": "Neuropathy (disorder)"
           },
           {
-            "code": "2643931013",
-            "display": "Vomiting"
+            "code": "61170000",
+            "display": "Stomatitis (disorder)"
           },
           {
-            "code": "1480220018",
-            "display": "Neuropathy"
-          },
-          {
-            "code": "101654014",
-            "display": "Stomatitis"
-          },
-          {
-            "code": "406765011",
-            "display": "Skin rash"
+            "code": "271807003",
+            "display": "Eruption of skin (disorder)"
           },
           {
             "code": "416098002",
-            "display": "Drug allergy"
+            "display": "Allergy to drug (finding)"
           },
           {
-            "code": "67942010",
-            "display": "Infection"
+            "code": "40733004",
+            "display": "Infectious disease (disorder)"
           },
           {
-            "code": "3914549019",
-            "display": "Pulmonary toxicity"
+            "code": "846605006",
+            "display": "Drug-induced pulmonary toxicity (disorder)"
           },
           {
-            "code": "3951501011",
-            "display": "Cardiotoxicity"
+            "code": "863954001",
+            "display": "Cardiotoxicity (disorder)"
           },
           {
-            "code": "1231753018",
-            "display": "Vascular injury"
+            "code": "57662003",
+            "display": "Injury of blood vessel (disorder)"
           },
           {
-            "code": "124874010",
-            "display": "Abnormal liver function"
+            "code": "75183008",
+            "display": "Abnormal liver function (finding)"
           },
           {
-            "code": "66316010",
-            "display": "Abnormal renal function"
+            "code": "39539005",
+            "display": "Abnormal renal function (finding)"
           },
           {
-            "code": "206906015",
-            "display": "Hearing disorder"
+            "code": "128540005",
+            "display": "Hearing disorder (disorder)"
           }
         ]
       }

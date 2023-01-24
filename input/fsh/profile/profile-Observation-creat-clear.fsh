@@ -26,8 +26,8 @@ Description:    "An observation that represents a Creatinine Clearance measureme
 * code.coding contains
     snomedCode 1..1
 
-* code.coding[snomedCode].code = #cc
-* code.coding[snomedCode].system = $unknownSystem
+* code.coding[snomedCode].code = #102811001
+* code.coding[snomedCode].system = $snomed
 
 * effective[x] only dateTime
 * value[x] only Quantity

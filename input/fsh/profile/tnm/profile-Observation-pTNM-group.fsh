@@ -26,7 +26,7 @@ Description:    "An observation that represents the pathological TNM group score
     snomedCode 1..1 and 
     mCode 0..1
 
-* code.coding[snomedCode].code = #1786868015 
+* code.coding[snomedCode].code = #399588009 
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[mCode].code = #21902-2 

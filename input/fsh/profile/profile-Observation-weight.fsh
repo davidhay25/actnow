@@ -26,7 +26,7 @@ Description:    "An observation that represents a weight measurement"
     snomedCode 1..1 and 
     loincCode 0..1              //this is the code from the Vitals IG
 
-* code.coding[snomedCode].code = #45352010
+* code.coding[snomedCode].code = #27113001
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[loincCode].code = #29463-7
@@ -46,16 +46,6 @@ Description:    "An observation that represents a weight measurement"
 
 * obeys an-weight-1
 
-/*
-* valueQuantity ^minValueQuantity.value = 10          //assume that no person will be less than 10- kg
-* valueQuantity ^minValueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity ^minValueQuantity.code = #kg        //the system is needed so the value min/max can work
-
-* valueQuantity ^maxValueQuantity.value = 200          //assume that no person will be greater  than 200- kg
-* valueQuantity ^maxValueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity ^maxValueQuantity.code = #kg            //the system is needed so the value min/max can work
-
-*/
 
 Invariant: an-weight-1
 Expression: "Observation.valueQuantity.value > 20 and Observation.valueQuantity.value < 400"

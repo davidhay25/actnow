@@ -26,7 +26,7 @@ Description:    "An observation that represents the clinical 'N' score which mea
     snomedCode 1..1 and 
     mCode 0..1
 
-* code.coding[snomedCode].code = #1778921010 
+* code.coding[snomedCode].code = #371494008 
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[mCode].code = #21906-3

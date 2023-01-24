@@ -29,15 +29,16 @@ Description:    "An observation that represents an ER status"
 //Slice on the code
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "code"
-* code.coding ^slicing.rules = #closed
+* code.coding ^slicing.rules = #open
 
 * code.coding contains
     snomedCode 1..1 
 
 * code.coding[snomedCode].code = #423740007
-* code.coding[snomedCode].system = $unknownSystem
+* code.coding[snomedCode].system = $snomed
 
-value[x] only boolean
+* value[x] only CodeableConcept
+* valueCodeableConcept from $er-status-vs (required)
 
 
 

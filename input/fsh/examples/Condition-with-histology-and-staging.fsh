@@ -10,10 +10,15 @@ Usage: #example
 * identifier.system = "http://vendor.org/condition"
 * identifier.value = "001"
 
+* extension[+].url = $extRecurrenceType
+* extension[=].valueCodeableConcept = $snomed#372288004 "Local tumor invasion (finding)"
+
+
 * code = $snomed#3254632001 "Small cell carcinoma of lung (disorder)"
 * bodySite[+].text = "Left lung"
 
 * evidence.detail = Reference(exSmallCellCancerHistology)
+* evidence[+].code = $snomed#373795004	"Cancer diagnosis based on clinical evidence (finding)"
 
 //--------------------------------
 Instance: exSmallCellCancerHistology

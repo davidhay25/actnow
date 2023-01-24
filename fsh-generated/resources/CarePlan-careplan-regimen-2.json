@@ -53,8 +53,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "cost",
-                "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-patient-factors-cs"
+                "code": "182872003",
+                "system": "http://snomed.info/sct",
+                "display": "Drug discontinued - too expensive (situation)"
               }
             ]
           }
@@ -83,5 +84,9 @@
         }
       ]
     }
-  ]
+  ],
+  "period": {
+    "start": "2012-01-01",
+    "end": "2012-01-01"
+  }
 }

@@ -119,5 +119,14 @@
 <td>Overall Treatment Utility measure for a regimen after it has completed.</td>
 <td></td>
 </tr>
+<tr>
+<td><a href='StructureDefinition-recurrence-RecurrenceType.html'>recurrence-RecurrenceType</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td>Recurrence type</td>
+<td></td>
+</tr>
 </table>
 </div>

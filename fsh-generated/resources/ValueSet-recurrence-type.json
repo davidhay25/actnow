@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RecurrenceType",
+  "id": "recurrence-type",
+  "title": "Type of recurrence",
+  "description": "Type of recurrence",
+  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "372288004",
+            "display": "Local tumor invasion (finding)"
+          },
+          {
+            "code": "399374009",
+            "display": "Regional lymph node metastasis present (finding)"
+          },
+          {
+            "code": "399409002",
+            "display": "Distant metastasis present (finding)"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          },
+          {
+            "code": "385432009",
+            "display": "Not applicable (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

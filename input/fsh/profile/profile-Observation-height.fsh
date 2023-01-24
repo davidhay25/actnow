@@ -29,7 +29,7 @@ Description:    "An observation that represents a height measurement"
     snomedCode 1..1 and
     loincCode 0..1
 
-* code.coding[snomedCode].code = #4565433019
+* code.coding[snomedCode].code = #1153637007
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[loincCode].code = #8302-2

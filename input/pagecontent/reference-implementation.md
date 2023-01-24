@@ -5,6 +5,14 @@ The  [input API](api-input.html) and  [query API](api-query.html) is also suppor
 
 Populated with real (but de-personalized) data, it shows the resources - and the references between those resources - in a graphical manner, to assist with understanding the details of the guide. 
 
+There also a validation end-point provided at https://actnow.canshare.co.nz/an/validateTransaction
+POSTing a bundle to this endpoint causes 2 levels of validation:
+* Code based validation that:
+  * Ensures each resource exists and has a conformance profile claim
+  * That the ids are UUID's and the fullUrl is present 
+  * That each entry is a conditional update
+* Performs a standard $validate against the ACT-NOW profiles on the public HAPi server.
+
 Currently, validation should be performed using the public HAPI server which has a copy of the conformance resources. The validation capabilities of the RI are under development.
 
 

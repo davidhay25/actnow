@@ -14,28 +14,28 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "2644680013",
-            "display": "ECOG performance status - grade 0"
+            "code": "425389002",
+            "display": "Eastern Cooperative Oncology Group performance status - grade 0 (finding)"
           },
           {
-            "code": "2644681012",
-            "display": "ECOG performance status - grade 1"
+            "code": "422512005",
+            "display": "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
           },
           {
-            "code": "2644682017",
-            "display": "ECOG performance status - grade 2"
+            "code": "422894000",
+            "display": "Eastern Cooperative Oncology Group performance status - grade 2 (finding)"
           },
           {
-            "code": "2644683010",
-            "display": "ECOG performance status - grade 3"
+            "code": "423053003",
+            "display": "Eastern Cooperative Oncology Group performance status - grade 3 (finding)"
           },
           {
-            "code": "2644684016",
-            "display": "ECOG performance status - grade 4"
+            "code": "423237006",
+            "display": "Eastern Cooperative Oncology Group performance status - grade 4 (finding)"
           },
           {
-            "code": "2644685015",
-            "display": "ECOG performance status - grade 5"
+            "code": "423409001",
+            "display": "Eastern Cooperative Oncology Group performance status - grade 5 (finding)"
           }
         ]
       }

@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HER2Status",
+  "id": "her2-status-vs",
+  "title": "HER2 status",
+  "description": "Human epidermal growth status",
+  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "427685000",
+            "display": "Human epidermal growth factor 2 positive carcinoma of breast (disorder)"
+          },
+          {
+            "code": "431396003",
+            "display": "Human epidermal growth factor 2 negative carcinoma of breast (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

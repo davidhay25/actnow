@@ -4,16 +4,20 @@
   "entry": [
     {
       "resource": {
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-patient"]
+        },
         "resourceType": "Patient",
-        "id": "G08462-F-17843",
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
         "name": [
           {
-            "text": "John Doe - G08462-F-17843"
+            "text": "John Doe - urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
           }
         ],
         "identifier": [
           {
-            "system": "http://mosaic.com/patients"
+            "system": "http://mosaic.com/patients",
+            "value" : "abc123"
           }
         ],
         "text": {
@@ -21,16 +25,17 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Identifier: undefined</div></div>"
         }
       },
-      "fullUrl": "http://canshare.co.nz/fhir/Patient/G08462-F-17843",
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
       "request": {
         "method": "PUT",
-        "url": "Patient/G08462-F-17843"
+        "url": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
       }
     },
     {
       "resource": {
+        
         "resourceType": "CarePlan",
-        "id": "G08462-F-17843",
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
         "status": "revoked",
         "intent": "order",
         "text": {
@@ -44,7 +49,7 @@
         },
         "title": "RCHOP",
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "category": [
           {
@@ -58,7 +63,7 @@
         ],
         "partOf": [
           {
-            "reference": "CarePlan/pat-G08462-F-17843"
+            "reference": "CarePlan/pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
           }
         ],
         "extension": [
@@ -79,20 +84,23 @@
         },
         "addresses": [
           {
-            "reference": "Condition/G08462-F-17843"
+            "reference": "Condition/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
           }
         ]
       },
-      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/G08462-F-17843",
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
       "request": {
         "method": "PUT",
-        "url": "CarePlan/G08462-F-17843"
+        "url": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
       }
     },
     {
       "resource": {
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-careplan-patient"]
+        },
         "resourceType": "CarePlan",
-        "id": "pat-G08462-F-17843",
+        "id": "pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
         "status": "active",
         "intent": "order",
         "text": {
@@ -100,7 +108,7 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Patient plan</div></div>"
         },
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "category": [
           {
@@ -113,23 +121,26 @@
           }
         ]
       },
-      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/pat-G08462-F-17843",
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
       "request": {
         "method": "PUT",
-        "url": "CarePlan/pat-G08462-F-17843"
+        "url": "CarePlan/pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "G08462-F-17843-histology",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-histology"]
+        },
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology",
         "status": "final",
         "text": {
           "status": "generated",
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Histology</div></div>"
         },
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "code": {
           "coding": [
@@ -148,18 +159,21 @@
           }
         ]
       },
-      "fullUrl": "http://canshare.co.nz/fhir/Observation/G08462-F-17843-histology",
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology",
       "request": {
         "method": "PUT",
-        "url": "Observation/G08462-F-17843-histology"
+        "url": "Observation/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology"
       }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "G08462-F-17843",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-condition"]
+        },
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "code": {
           "coding": [
@@ -178,22 +192,25 @@
           {
             "detail": [
               {
-                "reference": "Observation/G08462-F-17843-histology"
+                "reference": "Observation/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology"
               }
             ]
           }
         ]
       },
-      "fullUrl": "http://canshare.co.nz/fhir/Condition/G08462-F-17843",
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
       "request": {
         "method": "PUT",
-        "url": "Condition/G08462-F-17843"
+        "url": "Condition/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
       }
     },
     {
       "resource": {
         "resourceType": "CarePlan",
-        "id": "G08462-F-17843-17843",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"]
+        },
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843",
         "status": "active",
         "intent": "order",
         "extension": [
@@ -207,11 +224,11 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Cycle plan</div></div>"
         },
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "partOf": [
           {
-            "reference": "CarePlan/G08462-F-17843"
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
           }
         ],
         "period": {
@@ -229,14 +246,17 @@
           }
         ]
       },
-      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/G08462-F-17843-17843",
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843",
       "request": {
         "method": "PUT",
-        "url": "CarePlan/G08462-F-17843-17843"
+        "url": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
       }
     },
     {
       "resource": {
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"]
+        },
         "resourceType": "MedicationAdministration",
         "id": "f8025994893cc91dc044477e162582dd",
         "status": "completed",
@@ -247,7 +267,7 @@
         ],
         "supportingInformation": [
           {
-            "reference": "CarePlan/G08462-F-17843-17843"
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
           }
         ],
         "extension": [
@@ -266,7 +286,7 @@
           }
         ],
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "medicationCodeableConcept": {
           "text": "Rituximab"
@@ -295,10 +315,13 @@
     {
       "resource": {
         "resourceType": "Observation",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-bsa"]
+        },
         "id": "f8025994893cc91dc044477e162582dd-BSA",
         "status": "final",
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "partOf": [
           {
@@ -307,7 +330,7 @@
         ],
         "focus": [
           {
-            "reference": "CarePlan/G08462-F-17843-17843"
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
           }
         ],
         "code": {
@@ -339,6 +362,9 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"]
+        },
         "id": "13e8012cd95635d76170f6c81ab886df",
         "status": "active",
         "intent": "plan",
@@ -346,7 +372,7 @@
           "text": "Prednisone"
         },
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "authoredOn": "2013-07-12",
         "identifier": [
@@ -356,7 +382,7 @@
         ],
         "supportingInformation": [
           {
-            "reference": "CarePlan/G08462-F-17843-17843"
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
           }
         ],
         "text": {
@@ -373,6 +399,9 @@
     {
       "resource": {
         "resourceType": "MedicationRequest",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"]
+        },
         "id": "4cd3db3ad491f6a5c0a6eb1909d0b3c8",
         "status": "active",
         "intent": "plan",
@@ -380,7 +409,7 @@
           "text": "Allopurinol "
         },
         "subject": {
-          "reference": "Patient/G08462-F-17843"
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
         "authoredOn": "2013-07-05",
         "identifier": [
@@ -390,7 +419,7 @@
         ],
         "supportingInformation": [
           {
-            "reference": "CarePlan/G08462-F-17843-17843"
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
           }
         ],
         "text": {
@@ -405,5 +434,5 @@
       }
     }
   ],
-  "id": "G08462-F-17843"
+  "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
 }

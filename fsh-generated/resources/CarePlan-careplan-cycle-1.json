@@ -42,5 +42,9 @@
       "reference": "CarePlan/careplan-regimen-1"
     }
   ],
-  "status": "completed"
+  "status": "completed",
+  "period": {
+    "start": "2012-01-01",
+    "end": "2012-01-01"
+  }
 }

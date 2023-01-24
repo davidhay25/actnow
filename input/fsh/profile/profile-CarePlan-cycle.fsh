@@ -11,6 +11,7 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>A CarePlan that represents a single cycle of treatment.</div>"
 
 * title 1..1
+* period 1..1
 * intent = #plan
 
 //todo - actually, having the last admin date as an extension supposes that the CP is updated each time a medication

@@ -22,8 +22,10 @@ In this scenario, all interactions are by using Transaction bundles, where updat
 
 While it does require the client to maintain the unique identifiers (the resource element identifier - not the resource id), this is much simpler and safer to manage than having to use the resource id especially when different clients are updating the server. The supplier still needs to maintain unique identifier values, but this is made easier by using unique 'system' values for each supplier.
 
+
 This is the approach taken in this guide, as seen in the following diagram
 
+There is a further requirement in this guide that the resource id's are UUID's, even if the physical id of the resource on the CanShare server is known.
 
 <img style="width:800px; float:none" src="inputAPI.png"/>
 

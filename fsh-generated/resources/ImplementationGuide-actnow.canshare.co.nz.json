@@ -156,6 +156,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/an-er-status"
+        },
+        "name": "Estrogen Receptor status",
+        "description": "An observation that represents an ER status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-gleason"
         },
         "name": "Gleason score",
@@ -168,6 +176,14 @@
         },
         "name": "Height",
         "description": "An observation that represents a height measurement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-her-status"
+        },
+        "name": "HER2 status",
+        "description": "An observation that represents a HER2 status",
         "exampleBoolean": false
       },
       {
@@ -208,6 +224,14 @@
         },
         "name": "Pathological TNM group score",
         "description": "An observation that represents the pathological TNM group score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/an-pr-status"
+        },
+        "name": "PR status",
+        "description": "An observation that represents a Progesterone Receptor status",
         "exampleBoolean": false
       },
       {
@@ -308,6 +332,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/recurrence-RecurrenceType"
+        },
+        "name": "RecurrenceType",
+        "description": "Recurrence type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-regimen-discontinued"
         },
         "name": "RegimenDiscontinued",
@@ -340,10 +372,50 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-dx-basis-vs"
+        },
+        "name": "Basis of diagnosis",
+        "description": "Whether the diagnosis is based on clinical or pathological grounds",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/er-status-vs"
+        },
+        "name": "ER status",
+        "description": "Estrogen Receptor status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/an-ecog-status-vs"
         },
         "name": "ECOG status",
         "description": "ECOG status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/her2-status-vs"
+        },
+        "name": "HER2 status",
+        "description": "Human epidermal growth status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/pr-status-vs"
+        },
+        "name": "ER status",
+        "description": "Estrogen Receptor status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/recurrence-type"
+        },
+        "name": "Type of recurrence",
+        "description": "Type of recurrence",
         "exampleBoolean": false
       },
       {
@@ -384,14 +456,6 @@
         },
         "name": "Outcome of a regimen",
         "description": "How did applying the regimen affect the patient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/an-regimen-discontinued-patient-factors-cs"
-        },
-        "name": "Patient factors when discontinuing a regimen",
-        "description": "Patient factors when discontinuing a regimen",
         "exampleBoolean": false
       },
       {
@@ -601,9 +665,9 @@
       },
       {
         "reference": {
-          "reference": "Bundle/G08462-F-17843"
+          "reference": "Bundle/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
         },
-        "name": "G08462-F-17843",
+        "name": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
         "exampleBoolean": true
       }
     ],
