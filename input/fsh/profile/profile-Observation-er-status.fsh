@@ -34,7 +34,7 @@ Description:    "An observation that represents an ER status"
 * code.coding contains
     snomedCode 1..1 
 
-* code.coding[snomedCode].code = #423740007
+* code.coding[snomedCode].code = #253331000210104
 * code.coding[snomedCode].system = $snomed
 
 * value[x] only CodeableConcept

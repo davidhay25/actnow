@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-cycle-count",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "CycleCount",
   "status": "draft",
   "description": "The number of cycles that administered for a regimen",

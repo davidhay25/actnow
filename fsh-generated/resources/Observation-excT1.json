@@ -9,7 +9,10 @@
   "code": {
     "coding": [
       {
-        "code": "1778907013",
+        "code": "384625004"
+      },
+      {
+        "code": "399504009",
         "system": "http://snomed.info/sct"
       }
     ]
@@ -19,6 +22,6 @@
   },
   "status": "final",
   "valueCodeableConcept": {
-    "text": "T2"
+    "text": "1228929004"
   }
 }

@@ -11,15 +11,15 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Canonical url</th></tr>
+<tr><td width='20%'><a href='ValueSet-an-dose-adjustment-reason.html'>Dose adjustment reason</a></td><td><p>What was reason the dose was adjusted</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-dx-basis-vs.html'>Basis of diagnosis</a></td><td><p>Whether the diagnosis is based on clinical or pathological grounds</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-ecog-status-vs.html'>ECOG status</a></td><td><p>ECOG status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-er-status-vs.html'>ER status</a></td><td><p>Estrogen Receptor status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-er-status-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-patient-factors-vs.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-reason-vs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-reason-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-toxicity-vs.html'>Toxicity reasons why a regimen was discontinued</a></td><td><p>Toxicity reasons why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-iot-vs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-an-regimen-outcome-vs.html'>Outcome of a regimen</a></td><td><p>How did applying the regimen affect the patient</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-dose-adjustment-reason.html'>Dose adjustment reason</a></td><td><p>What was reason the dose was adjusted</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-er-status-vs.html'>ER status</a></td><td><p>Estrogen Receptor status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-er-status-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-her2-status-vs.html'>HER2 status</a></td><td><p>Human epidermal growth status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-pr-status-vs.html'>ER status</a></td><td><p>Estrogen Receptor status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs</td></tr>
 <tr><td width='20%'><a href='ValueSet-recurrence-type.html'>Type of recurrence</a></td><td><p>Type of recurrence</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs</td></tr>

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-course-number",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-course-number",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "CourseNumber",
   "status": "draft",
   "description": "The course number (sequential number) for this regimen",

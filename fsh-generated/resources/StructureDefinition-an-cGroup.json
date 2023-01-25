@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ObservationClinTNMGroup",
   "title": "clinical TNM group score",
   "status": "active",

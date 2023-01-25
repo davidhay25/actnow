@@ -11,7 +11,7 @@ InstanceOf: ObservationWeight
 * status = #final
 
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code.coding[+] = $snomed#45352010 
+* code.coding[+] = $snomed#27113001 
 * code.coding[+] = $loinc#29463-7
 * identifier.system = "http://canshare.co.nz/identifiers"
 * identifier.value = "weight-1"
@@ -36,7 +36,7 @@ InstanceOf: ObservationWeight
 * identifier.value = "weight"
 
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code.coding[+] = $snomed#45352010 
+* code.coding[+] = $snomed#27113001 
 * code.coding[+] = $loinc#29463-7
 
 * valueQuantity.value = 100

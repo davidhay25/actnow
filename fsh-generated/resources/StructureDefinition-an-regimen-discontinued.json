@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-regimen-discontinued",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "RegimenDiscontinued",
   "status": "draft",
   "description": "Reasons why a regimen may have been discontinued",

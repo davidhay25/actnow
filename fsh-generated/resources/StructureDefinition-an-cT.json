@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cT",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ObservationCT",
   "title": "clinical T-score",
   "status": "active",

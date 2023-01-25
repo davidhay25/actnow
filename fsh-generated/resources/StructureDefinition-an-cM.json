@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cM",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ObservationCM",
   "title": "clinical M-score",
   "status": "active",

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "an-her-status",
+  "id": "an-her2-status",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a HER2 status.</div>"
@@ -15,8 +15,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-er-status",
-  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-her2-status",
+  "version": "0.3.0",
   "name": "ObservationHer2Status",
   "title": "HER2 status",
   "status": "active",

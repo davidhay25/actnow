@@ -43,7 +43,7 @@ Description: "An example medication administration"
 * extension[=].valueDosage.text = "300 mg"
 
 * extension[+].url = $extDoseAdjustmentReason
-* extension[=].valueCodeableConcept = $dose-adjustment-reason-cs#intol
+* extension[=].valueCodeableConcept = $snomed#370645010 "Frailty"
 
 
 

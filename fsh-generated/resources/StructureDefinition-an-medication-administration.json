@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "AnMedicationAdministration",
   "title": "ACT-NOW medication administration",
   "status": "active",

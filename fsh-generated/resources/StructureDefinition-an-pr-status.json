@@ -15,8 +15,8 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-er-status",
-  "version": "0.2.0",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pr-status",
+  "version": "0.3.0",
   "name": "ObservationPrStatus",
   "title": "PR status",
   "status": "active",
@@ -1255,7 +1255,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "423740007",
+        "patternCode": "253341000210107",
         "constraint": [
           {
             "key": "ele-1",
@@ -3357,7 +3357,7 @@
         "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "423740007"
+        "patternCode": "253341000210107"
       },
       {
         "id": "Observation.subject",

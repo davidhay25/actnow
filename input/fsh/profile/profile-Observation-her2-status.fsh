@@ -2,11 +2,11 @@
 
 Profile:        ObservationHer2Status
 Parent:         Observation
-Id:             an-her-status
+Id:             an-her2-status
 Title:          "HER2 status"
 Description:    "An observation that represents a HER2 status"
 
-* ^url = $er-status
+* ^url = $her2-status
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional

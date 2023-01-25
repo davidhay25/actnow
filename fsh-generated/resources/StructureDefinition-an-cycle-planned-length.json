@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-cycle-planned-length",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "CyclePlannedLength",
   "status": "draft",
   "description": "The number of cycles that administered for a regimen",

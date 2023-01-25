@@ -2,10 +2,10 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "DoseAdjustmentReason",
-  "id": "dose-adjustment-reason",
+  "id": "an-dose-adjustment-reason",
   "title": "Dose adjustment reason",
   "description": "What was reason the dose was adjusted",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs",
   "experimental": false,
   "compose": {

@@ -35,7 +35,7 @@ Usage: #example
 * identifier.value = "001"
 
 //
-* code = $snomed#82231000004111 "Histologic type of primary malignant neoplasm (observable entity)"
+* code = $snomed#512001000004108 "Histologic type of primary malignant neoplasm (observable entity)"
 * valueString = "Here are the histology findings"
 
 //* code = $snomed#74364000 "Small cell carcinoma (morphologic abnormality)"
@@ -53,8 +53,8 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
                 
-* code = $snomed#1778907013
-* valueCodeableConcept.text = "T2"
+* code = $snomed#399504009
+* valueCodeableConcept.text = $snomed#1228929004 "American Joint Committee on Cancer cT2 (qualifier value)"
 
 //---------
 Instance: excN1
@@ -68,8 +68,8 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
 
-* code = $snomed#1778921010
-* valueCodeableConcept.text = "N2"
+* code = $snomed#399534004
+* valueCodeableConcept = $snomed#1229967007 "American Joint Committee on Cancer cN0 (qualifier value)"
 
 // ---------
 Instance: excM1
@@ -82,8 +82,8 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
 
-* code = $snomed#1778835013
-* valueCodeableConcept.text = "M0"
+* code = $snomed#399387003
+* valueCodeableConcept = $snomed#1229903009 "American Joint Committee on Cancer cM1 (qualifier value)"
 
 // ---------
 Instance: excTNM1
@@ -95,9 +95,9 @@ Usage: #example
 
 * subject = Reference(exPatient)
 * status = #final
-* code = $snomed#1786868015
+* code = $snomed#399537006
 
-* valueCodeableConcept.text = "group value"
+* valueCodeableConcept = $snomed#1222765007 "American Joint Committee on Cancer stage II (qualifier value)"
 
 
 // ===========  Pathological staging information ===========
@@ -112,8 +112,8 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
                 
-* code = $snomed#1786872016
-* valueCodeableConcept.text = "T2"
+* code = $snomed#399588009
+* valueCodeableConcept = $snomed#1228957006 "American Joint Committee on Cancer pT1 (qualifier value)"
 
 //---------
 Instance: expN1
@@ -126,8 +126,8 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
 
-* code = $snomed#1478165014
-* valueCodeableConcept.text = "N2"
+* code = $snomed#371494008
+* valueCodeableConcept = $snomed#1229951001 "American Joint Committee on Cancer pN1 (qualifier value)"
 
 // ---------
 Instance: expM1
@@ -140,8 +140,8 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
 
-* code = $snomed#1478167018
-* valueCodeableConcept.text = "M0"
+* code = $snomed#371497001
+* valueCodeableConcept = $snomed#1229916009 "American Joint Committee on Cancer pM1 (qualifier value)"
 
 // ---------
 Instance: expTNM1
@@ -153,6 +153,6 @@ Usage: #example
 
 * subject = Reference(exPatient)
 * status = #final
-* code = $snomed#1786868015 
+* code = $snomed#399588009 
 
-* valueCodeableConcept.text = "group value"
+* valueCodeableConcept = $snomed#1222837003 "American Joint Committee on Cancer stage IV (qualifier value)"

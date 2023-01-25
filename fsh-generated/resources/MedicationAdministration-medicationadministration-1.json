@@ -67,8 +67,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "intol",
-            "system": "http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs"
+            "code": "370645010",
+            "system": "http://snomed.info/sct",
+            "display": "Frailty"
           }
         ]
       }

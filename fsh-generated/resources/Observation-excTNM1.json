@@ -10,7 +10,7 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "1786868015"
+        "code": "399537006"
       }
     ]
   },
@@ -19,6 +19,12 @@
   },
   "status": "final",
   "valueCodeableConcept": {
-    "text": "group value"
+    "coding": [
+      {
+        "code": "1222765007",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Committee on Cancer stage II (qualifier value)"
+      }
+    ]
   }
 }

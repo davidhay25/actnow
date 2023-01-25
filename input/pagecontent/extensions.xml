@@ -120,10 +120,10 @@
 <td></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-recurrence-RecurrenceType.html'>recurrence-RecurrenceType</a></td>
+<td><a href='StructureDefinition-recurrence-type.html'>recurrence-type</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type</td>
 <td>
-<div>CarePlan</div>
+<div>Condition</div>
 </td>
 <td>Recurrence type</td>
 <td></td>

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-clinical-trial",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ClinicalTrial",
   "status": "draft",
   "description": "Is on a clinical trial",

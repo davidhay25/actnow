@@ -33,6 +33,29 @@
       "valueInteger": 10
     },
     {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-iot",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "373808002",
+            "system": "http://snomed.info/sct",
+            "display": "Curative"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "FOLFOX6",
+            "system": "https://standards.digital.health.nz/ns/sact-regimen-code"
+          }
+        ]
+      }
+    },
+    {
       "url": "http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu",
       "extension": [
         {

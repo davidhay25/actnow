@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-patient",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "AnPatient",
   "title": "ACT-NOW patient",
   "status": "active",

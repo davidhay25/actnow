@@ -1,0 +1,438 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-patient"]
+        },
+        "resourceType": "Patient",
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+        "name": [
+          {
+            "text": "John Doe - urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://mosaic.com/patients",
+            "value" : "abc123"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Identifier: undefined</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+      "request": {
+        "method": "PUT",
+        "url": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+      }
+    },
+    {
+      "resource": {
+        
+        "resourceType": "CarePlan",
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+        "status": "revoked",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Regimen plan</div></div>"
+        },
+        "meta": {
+          "profile": [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+          ]
+        },
+        "title": "RCHOP",
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:example.org",
+                "code": "regimenCP"
+              }
+            ]
+          }
+        ],
+        "partOf": [
+          {
+            "reference": "CarePlan/pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/tx-intent",
+            "valueCodeableConcept": {
+              "text": "Curative"
+            }
+          }
+        ],
+        "period": {
+          "start": "2013-07-12",
+          "end": "2013-12-26"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+      }
+    },
+    {
+      "resource": {
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-careplan-patient"]
+        },
+        "resourceType": "CarePlan",
+        "id": "pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+        "status": "active",
+        "intent": "order",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Patient plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:example.org",
+                "code": "patientCP"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/pat-urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-histology"]
+        },
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology",
+        "status": "final",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Histology</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org",
+              "code": "histology"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "text": "dxclass"
+            },
+            "valueString": "7"
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-condition"]
+        },
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-9-cm",
+              "code": "C833"
+            }
+          ],
+          "text": "Large cell"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Large cell</div></div>"
+        },
+        "evidence": [
+          {
+            "detail": [
+              {
+                "reference": "Observation/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-histology"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Condition/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
+      "request": {
+        "method": "PUT",
+        "url": "Condition/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"]
+        },
+        "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843",
+        "status": "active",
+        "intent": "order",
+        "extension": [
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number",
+            "valueInteger": 1
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Cycle plan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "partOf": [
+          {
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+          }
+        ],
+        "period": {
+          "start": "2013-07-12",
+          "end": "2013-08-02"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http:example.org",
+                "code": "cycleCP"
+              }
+            ]
+          }
+        ]
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843",
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
+      }
+    },
+    {
+      "resource": {
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"]
+        },
+        "resourceType": "MedicationAdministration",
+        "id": "f8025994893cc91dc044477e162582dd",
+        "status": "completed",
+        "identifier": [
+          {
+            "value": "f8025994893cc91dc044477e162582dd"
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
+            "extension": [
+              {
+                "url": "administered",
+                "valueInteger": 1
+              }
+            ]
+          },
+          {
+            "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
+            "valueInteger": 1
+          }
+        ],
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "medicationCodeableConcept": {
+          "text": "Rituximab"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Rituximab</div></div>"
+        },
+        "dosage": {
+          "text": "710.00 mg",
+          "route": {
+            "text": "IV"
+          }
+        },
+        "effectivePeriod": {
+          "start": "2013-07-12T10:10:00Z",
+          "end": "2013-07-12T10:20:00Z"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationAdministration/f8025994893cc91dc044477e162582dd",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationAdministration/f8025994893cc91dc044477e162582dd"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-bsa"]
+        },
+        "id": "f8025994893cc91dc044477e162582dd-BSA",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "partOf": [
+          {
+            "reference": "MedicationAdministration/f8025994893cc91dc044477e162582dd"
+          }
+        ],
+        "focus": [
+          {
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
+          }
+        ],
+        "code": {
+          "text": "BSA",
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8277-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "unit": "m2",
+          "value": 1.89,
+          "system": "http://unitsofmeasure.org"
+        },
+        "effectiveDateTime": "2013-07-12T10:10:00Z",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>BSA 1.89</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/Observation/f8025994893cc91dc044477e162582dd-BSA",
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f8025994893cc91dc044477e162582dd-BSA"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"]
+        },
+        "id": "13e8012cd95635d76170f6c81ab886df",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "text": "Prednisone"
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "authoredOn": "2013-07-12",
+        "identifier": [
+          {
+            "value": "13e8012cd95635d76170f6c81ab886df"
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Prednisone</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationRequest/13e8012cd95635d76170f6c81ab886df",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/13e8012cd95635d76170f6c81ab886df"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "meta" : {
+          "profile":["http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"]
+        },
+        "id": "4cd3db3ad491f6a5c0a6eb1909d0b3c8",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "text": "Allopurinol "
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+        },
+        "authoredOn": "2013-07-05",
+        "identifier": [
+          {
+            "value": "4cd3db3ad491f6a5c0a6eb1909d0b3c8"
+          }
+        ],
+        "supportingInformation": [
+          {
+            "reference": "CarePlan/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002-17843"
+          }
+        ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'><div>Allopurinol</div></div>"
+        }
+      },
+      "fullUrl": "http://canshare.co.nz/fhir/MedicationRequest/4cd3db3ad491f6a5c0a6eb1909d0b3c8",
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/4cd3db3ad491f6a5c0a6eb1909d0b3c8"
+      }
+    }
+  ],
+  "id": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
+}

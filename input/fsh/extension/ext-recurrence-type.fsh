@@ -1,12 +1,12 @@
 Extension: RecurrenceType
-Id: recurrence-RecurrenceType
+Id: recurrence-type
 Description: "Recurrence type"
 
 * ^url = $extRecurrenceType
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context[+].type = #element
-* ^context[=].expression = "CarePlan"
+* ^context[=].expression = "Condition"
 
 * ^status = #draft
 

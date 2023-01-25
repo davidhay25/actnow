@@ -5,7 +5,7 @@
   "id": "recurrence-type",
   "title": "Type of recurrence",
   "description": "Type of recurrence",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs",
   "experimental": false,
   "compose": {

@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ObservationPathTNMGroup",
   "title": "Pathological TNM group score",
   "status": "active",

@@ -7,7 +7,7 @@ Id:             an-pr-status
 Title:          "PR status"
 Description:    "An observation that represents a Progesterone Receptor status"
 
-* ^url = $er-status
+* ^url = $pr-status
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
@@ -27,7 +27,7 @@ Description:    "An observation that represents a Progesterone Receptor status"
 * code.coding contains
     snomedCode 1..1 
 
-* code.coding[snomedCode].code = #423740007
+* code.coding[snomedCode].code = #253341000210107
 * code.coding[snomedCode].system = $snomed
 
 * value[x] only CodeableConcept

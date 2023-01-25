@@ -21,6 +21,10 @@ Description: "Example of a cycle care plan"
 * extension[+].url = $extLastAdminDate
 * extension[=].valueDateTime = "2022-01-02"
 
+//the planned length
+* extension[+].url = $extCyclePlannedLength
+* extension[=].valueInteger = 30
+
 * subject = Reference(exPatient)
 * partOf = Reference(careplan-regimen-1)
 

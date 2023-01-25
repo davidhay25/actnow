@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-cycle-number",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "CycleNumber",
   "status": "draft",
   "description": "The cycle number of the regimen that this CP represents",

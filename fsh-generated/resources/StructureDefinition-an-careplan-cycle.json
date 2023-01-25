@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "CareplanCycle",
   "title": "Cycle Careplan",
   "status": "active",

@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "AnMedicationRequest",
   "title": "ACT-NOW medication request",
   "status": "active",

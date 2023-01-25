@@ -32,6 +32,10 @@
     {
       "url": "http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date",
       "valueDateTime": "2022-01-02"
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length",
+      "valueInteger": 30
     }
   ],
   "subject": {

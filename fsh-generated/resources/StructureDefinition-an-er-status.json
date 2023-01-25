@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-er-status",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ObservationErStatus",
   "title": "Estrogen Receptor status",
   "status": "active",
@@ -1255,7 +1255,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "423740007",
+        "patternCode": "253331000210104",
         "constraint": [
           {
             "key": "ele-1",
@@ -3357,7 +3357,7 @@
         "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "423740007"
+        "patternCode": "253331000210104"
       },
       {
         "id": "Observation.subject",

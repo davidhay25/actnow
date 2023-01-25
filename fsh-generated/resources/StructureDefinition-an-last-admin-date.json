@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-last-admin-date",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "LastAdminDate",
   "status": "draft",
   "description": "The last date that a medication administration was made for this cycle",

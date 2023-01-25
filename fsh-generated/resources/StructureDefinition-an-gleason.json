@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-gleason",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "ObservationGleason",
   "title": "Gleason score",
   "status": "active",

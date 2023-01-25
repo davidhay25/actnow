@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-facility-administered",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-facility-administered",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "FacilityAdministered",
   "status": "draft",
   "description": "The facility where the medication was given. The HPI code of the facility",

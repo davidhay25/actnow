@@ -14,7 +14,7 @@ InstanceOf: ObservationCreatClear
 * identifier.value = "cc"
 
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code = $unknownSystem#cc 
+* code = $snomed#102811001
 
 * valueQuantity.value = 1.9
 * valueQuantity.code = #mL/s

@@ -9,7 +9,10 @@
   "code": {
     "coding": [
       {
-        "code": "1786872016",
+        "code": "1786872016"
+      },
+      {
+        "code": "399588009",
         "system": "http://snomed.info/sct"
       }
     ]
@@ -19,6 +22,12 @@
   },
   "status": "final",
   "valueCodeableConcept": {
-    "text": "T2"
+    "coding": [
+      {
+        "code": "1228957006",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Committee on Cancer pT1 (qualifier value)"
+      }
+    ]
   }
 }

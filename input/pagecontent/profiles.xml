@@ -93,7 +93,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-er-status.html'>Estrogen Receptor status</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 423740007 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 253331000210104 </strong>
 </td>
 <td>An observation that represents an ER status</td>
 </tr>
@@ -118,9 +118,9 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>An observation that represents a height measurement</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-her-status.html'>HER2 status</a></td>
+<td><a href='StructureDefinition-an-her2-status.html'>HER2 status</a></td>
 <td>Observation</td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-her2-status<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://unknown.org : xxx </strong>
 </td>
 <td>An observation that represents a HER2 status</td>
@@ -193,8 +193,8 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <tr>
 <td><a href='StructureDefinition-an-pr-status.html'>PR status</a></td>
 <td>Observation</td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 423740007 </strong>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-pr-status<br/>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 253341000210107 </strong>
 </td>
 <td>An observation that represents a Progesterone Receptor status</td>
 </tr>

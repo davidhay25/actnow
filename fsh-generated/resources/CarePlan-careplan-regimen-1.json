@@ -33,8 +33,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "palliative",
-            "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs"
+            "code": "373846009",
+            "system": "http://snomed.info/sct",
+            "display": "Curative Adjuvant"
           }
         ]
       }
@@ -46,8 +47,17 @@
     {
       "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",
       "valueCodeableConcept": {
-        "text": "FOLFOX"
+        "coding": [
+          {
+            "code": "FOLFOX6",
+            "system": "https://standards.digital.health.nz/ns/sact-regimen-code"
+          }
+        ]
       }
+    },
+    {
+      "url": "http://canshare.co.nz/fhir/StructureDefinition/an-course-number",
+      "valueInteger": 3
     }
   ],
   "period": {

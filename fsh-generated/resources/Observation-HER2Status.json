@@ -1,21 +1,22 @@
 {
   "resourceType": "Observation",
-  "id": "ExObservationECOG",
+  "id": "HER2Status",
   "meta": {
     "profile": [
-      "http://canshare.co.nz/fhir/StructureDefinition/an-ecog"
+      "http://canshare.co.nz/fhir/StructureDefinition/an-her2-status",
+      "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
     ]
   },
   "code": {
     "coding": [
       {
-        "code": "89247-1",
-        "system": "http://loinc.org"
+        "code": "423740007",
+        "system": "http://snomed.info/sct"
       }
     ]
   },
   "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ECOG score 3</div>",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">BSA</div>",
     "status": "generated"
   },
   "subject": {
@@ -26,20 +27,20 @@
       "reference": "Practitioner/exPractitioner"
     }
   ],
-  "effectiveDateTime": "2020-01-01",
-  "status": "final",
   "identifier": [
     {
       "system": "http://canshare.co.nz/identifiers",
-      "value": "ecog"
+      "value": "bsa"
     }
   ],
+  "effectiveDateTime": "2020-01-01",
+  "status": "final",
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "425389002",
+        "code": "416053008",
         "system": "http://snomed.info/sct",
-        "display": "Eastern Cooperative Oncology Group performance status - grade 0 (finding)"
+        "display": "Estrogen receptor positive tumor (disorder)"
       }
     ]
   }

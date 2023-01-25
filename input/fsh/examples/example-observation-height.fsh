@@ -14,7 +14,7 @@ InstanceOf: ObservationHeight
 * identifier.value = "height"
 
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code.coding[+] = $snomed#4565433019 
+* code.coding[+] = $snomed#1153637007 
 * code.coding[+] = $loinc#8302-2
 
 * valueQuantity.value = 180

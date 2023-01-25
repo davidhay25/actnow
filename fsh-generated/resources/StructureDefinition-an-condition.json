@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-condition",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "AnCondition",
   "title": "ACT-NOW diagnosis",
   "status": "active",

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "actnow.canshare.co.nz",
   "url": "http://canshare.co.nz/fhir/ImplementationGuide/actnow.canshare.co.nz",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "actnow",
   "title": "ACT-NOW Implementation Guide",
   "status": "draft",
@@ -180,7 +180,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/an-her-status"
+          "reference": "StructureDefinition/an-her2-status"
         },
         "name": "HER2 status",
         "description": "An observation that represents a HER2 status",
@@ -332,7 +332,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/recurrence-RecurrenceType"
+          "reference": "StructureDefinition/recurrence-type"
         },
         "name": "RecurrenceType",
         "description": "Recurrence type",
@@ -364,7 +364,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/dose-adjustment-reason"
+          "reference": "ValueSet/an-dose-adjustment-reason"
         },
         "name": "Dose adjustment reason",
         "description": "What was reason the dose was adjusted",
@@ -380,7 +380,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/er-status-vs"
+          "reference": "ValueSet/an-er-status-vs"
         },
         "name": "ER status",
         "description": "Estrogen Receptor status",
@@ -491,6 +491,13 @@
       },
       {
         "reference": {
+          "reference": "Observation/ERStatus"
+        },
+        "name": "ERStatus",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-er-status"
+      },
+      {
+        "reference": {
           "reference": "Observation/ExObservationECOG"
         },
         "name": "ExObservationECOG",
@@ -523,6 +530,20 @@
         },
         "name": "ExObservationWeight",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/HER2Status"
+        },
+        "name": "HER2Status",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-her2-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/PRStatus"
+        },
+        "name": "PRStatus",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pr-status"
       },
       {
         "reference": {
@@ -661,13 +682,6 @@
         },
         "name": "supporting-info",
         "description": "Searches for supportingInfo references",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002"
-        },
-        "name": "urn:uuid:9a385136-9c29-11ed-a8fc-0242ac120002",
         "exampleBoolean": true
       }
     ],

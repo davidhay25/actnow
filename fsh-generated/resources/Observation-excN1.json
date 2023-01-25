@@ -9,7 +9,10 @@
   "code": {
     "coding": [
       {
-        "code": "1778921010",
+        "code": "371494008"
+      },
+      {
+        "code": "399534004",
         "system": "http://snomed.info/sct"
       }
     ]
@@ -19,6 +22,12 @@
   },
   "status": "final",
   "valueCodeableConcept": {
-    "text": "N2"
+    "coding": [
+      {
+        "code": "1229967007",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Committee on Cancer cN0 (qualifier value)"
+      }
+    ]
   }
 }

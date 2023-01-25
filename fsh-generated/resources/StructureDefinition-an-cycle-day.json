@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "an-cycle-day",
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "CycleDay",
   "status": "draft",
   "description": "The day of the cycle that this medication was given on. Includes planned day and administered day. Not the same as intended cycle length.",
