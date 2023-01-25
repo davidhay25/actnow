@@ -1,7 +1,7 @@
 Profile:        ObservationPM
 Parent:         Observation
 Id:             an-pM
-Title:          "clinical M-score"
+Title:          "Pathological M-score"
 Description:    "An observation that represents the pathological 'M' score which measures distant metastases."
 
 * ^url = $pM

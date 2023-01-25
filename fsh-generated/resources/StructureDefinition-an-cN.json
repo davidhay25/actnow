@@ -18,7 +18,7 @@
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cN",
   "version": "0.3.0",
   "name": "ObservationCN",
-  "title": "clinical N-score",
+  "title": "Clinical N-score",
   "status": "active",
   "description": "An observation that represents the clinical 'N' score which measures local lymph node involvement.",
   "jurisdiction": [

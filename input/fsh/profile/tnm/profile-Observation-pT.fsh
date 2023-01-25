@@ -1,7 +1,7 @@
 Profile:        ObservationPT
 Parent:         Observation
 Id:             an-pT
-Title:          "clinical T-score"
+Title:          "Pathological T-score"
 Description:    "An observation that represents the pathological 'T' score which measures tumour size."
 
 * ^url = $pT

@@ -18,7 +18,7 @@
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cT",
   "version": "0.3.0",
   "name": "ObservationCT",
-  "title": "clinical T-score",
+  "title": "Clinical T-score",
   "status": "active",
   "description": "An observation that represents the clinical 'T' score which measures the tumour size.",
   "jurisdiction": [

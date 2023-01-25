@@ -110,7 +110,7 @@
         "reference": {
           "reference": "StructureDefinition/an-cM"
         },
-        "name": "clinical M-score",
+        "name": "Clinical M-score",
         "description": "An observation that represents the clinical 'M' score",
         "exampleBoolean": false
       },
@@ -118,7 +118,7 @@
         "reference": {
           "reference": "StructureDefinition/an-cN"
         },
-        "name": "clinical N-score",
+        "name": "Clinical N-score",
         "description": "An observation that represents the clinical 'N' score which measures local lymph node involvement.",
         "exampleBoolean": false
       },
@@ -126,7 +126,7 @@
         "reference": {
           "reference": "StructureDefinition/an-cT"
         },
-        "name": "clinical T-score",
+        "name": "Clinical T-score",
         "description": "An observation that represents the clinical 'T' score which measures the tumour size.",
         "exampleBoolean": false
       },
@@ -198,7 +198,7 @@
         "reference": {
           "reference": "StructureDefinition/an-pM"
         },
-        "name": "clinical M-score",
+        "name": "Pathological M-score",
         "description": "An observation that represents the pathological 'M' score which measures distant metastases.",
         "exampleBoolean": false
       },
@@ -206,7 +206,7 @@
         "reference": {
           "reference": "StructureDefinition/an-pN"
         },
-        "name": "clinical N-score",
+        "name": "Pathological N-score",
         "description": "An observation that represents the pathological 'N' score which measures local lymph node involvement.",
         "exampleBoolean": false
       },
@@ -214,7 +214,7 @@
         "reference": {
           "reference": "StructureDefinition/an-pT"
         },
-        "name": "clinical T-score",
+        "name": "Pathological T-score",
         "description": "An observation that represents the pathological 'T' score which measures tumour size.",
         "exampleBoolean": false
       },

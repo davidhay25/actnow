@@ -18,7 +18,7 @@
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pM",
   "version": "0.3.0",
   "name": "ObservationPM",
-  "title": "clinical M-score",
+  "title": "Pathological M-score",
   "status": "active",
   "description": "An observation that represents the pathological 'M' score which measures distant metastases.",
   "jurisdiction": [

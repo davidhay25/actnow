@@ -11,10 +11,6 @@
       {
         "code": "301898006",
         "system": "http://snomed.info/sct"
-      },
-      {
-        "code": "1223",
-        "system": "http://example.org"
       }
     ]
   },

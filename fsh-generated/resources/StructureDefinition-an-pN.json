@@ -18,7 +18,7 @@
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pN",
   "version": "0.3.0",
   "name": "ObservationPN",
-  "title": "clinical N-score",
+  "title": "Pathological N-score",
   "status": "active",
   "description": "An observation that represents the pathological 'N' score which measures local lymph node involvement.",
   "jurisdiction": [

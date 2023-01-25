@@ -1,7 +1,7 @@
 Profile:        ObservationCT
 Parent:         Observation
 Id:             an-cT
-Title:          "clinical T-score"
+Title:          "Clinical T-score"
 Description:    "An observation that represents the clinical 'T' score which measures the tumour size."
 
 * ^url = $cT

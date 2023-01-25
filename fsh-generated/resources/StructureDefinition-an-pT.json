@@ -18,7 +18,7 @@
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pT",
   "version": "0.3.0",
   "name": "ObservationPT",
-  "title": "clinical T-score",
+  "title": "Pathological T-score",
   "status": "active",
   "description": "An observation that represents the pathological 'T' score which measures tumour size.",
   "jurisdiction": [

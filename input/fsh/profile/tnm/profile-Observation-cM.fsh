@@ -1,7 +1,7 @@
 Profile:        ObservationCM
 Parent:         Observation
 Id:             an-cM
-Title:          "clinical M-score"
+Title:          "Clinical M-score"
 Description:    "An observation that represents the clinical 'M' score"
 
 * ^url = $cM

@@ -21,7 +21,7 @@
 <td>An observation that represents the clinical TNM group score</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-cM.html'>clinical M-score</a></td>
+<td><a href='StructureDefinition-an-cM.html'>Clinical M-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cM<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371497001 </strong>
@@ -30,7 +30,7 @@
 <td>An observation that represents the clinical 'M' score</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-cN.html'>clinical N-score</a></td>
+<td><a href='StructureDefinition-an-cN.html'>Clinical N-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cN<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371494008 </strong>
@@ -39,7 +39,7 @@
 <td>An observation that represents the clinical 'N' score which measures local lymph node involvement.</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-cT.html'>clinical T-score</a></td>
+<td><a href='StructureDefinition-an-cT.html'>Clinical T-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cT<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 384625004 </strong>
@@ -157,7 +157,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>An observation that represents the pathological TNM group score</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-pM.html'>clinical M-score</a></td>
+<td><a href='StructureDefinition-an-pM.html'>Pathological M-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pM<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1478167018 </strong>
@@ -166,7 +166,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>An observation that represents the pathological 'M' score which measures distant metastases.</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-pN.html'>clinical N-score</a></td>
+<td><a href='StructureDefinition-an-pN.html'>Pathological N-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pN<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1478165014 </strong>
@@ -175,7 +175,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td>An observation that represents the pathological 'N' score which measures local lymph node involvement.</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-an-pT.html'>clinical T-score</a></td>
+<td><a href='StructureDefinition-an-pT.html'>Pathological T-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pT<br/>
 <br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1786872016 </strong>

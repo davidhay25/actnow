@@ -1,7 +1,7 @@
 Profile:        ObservationCN
 Parent:         Observation
 Id:             an-cN
-Title:          "clinical N-score"
+Title:          "Clinical N-score"
 Description:    "An observation that represents the clinical 'N' score which measures local lymph node involvement."
 
 * ^url = $cN
