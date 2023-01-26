@@ -121,7 +121,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-her2-status.html'>HER2 status</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-her2-status<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://unknown.org : xxx </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://unknown.org : 3550001000004108 </strong>
 </td>
 <td>An observation that represents a HER2 status</td>
 </tr>

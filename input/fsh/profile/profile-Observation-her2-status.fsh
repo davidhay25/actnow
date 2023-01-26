@@ -26,7 +26,7 @@ Description:    "An observation that represents a HER2 status"
 * code.coding contains
     snomedCode 1..1 
 
-* code.coding[snomedCode].code = #xxx
+* code.coding[snomedCode].code = #3550001000004108
 * code.coding[snomedCode].system = $unknownSystem
 
 * value[x] only CodeableConcept
