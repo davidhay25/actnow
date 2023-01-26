@@ -24,7 +24,7 @@
 <td><a href='StructureDefinition-an-cM.html'>Clinical M-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cM<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371497001 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 399387003 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21907-1 </strong>
 </td>
 <td>An observation that represents the clinical 'M' score</td>
@@ -33,7 +33,7 @@
 <td><a href='StructureDefinition-an-cN.html'>Clinical N-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cN<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371494008 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 399534004 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21906-3 </strong>
 </td>
 <td>An observation that represents the clinical 'N' score which measures local lymph node involvement.</td>
@@ -42,7 +42,7 @@
 <td><a href='StructureDefinition-an-cT.html'>Clinical T-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cT<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 384625004 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 399504009 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21905-5 </strong>
 </td>
 <td>An observation that represents the clinical 'T' score which measures the tumour size.</td>
@@ -160,7 +160,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-pM.html'>Pathological M-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pM<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1478167018 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371497001 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21901-4 </strong>
 </td>
 <td>An observation that represents the pathological 'M' score which measures distant metastases.</td>
@@ -169,7 +169,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-pN.html'>Pathological N-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pN<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1478165014 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 371494008 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21900-6 </strong>
 </td>
 <td>An observation that represents the pathological 'N' score which measures local lymph node involvement.</td>
@@ -178,7 +178,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-pT.html'>Pathological T-score</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pT<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 1786872016 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 384625004 </strong>
 <br/><em>Observation.code.coding:mCode.code</em><br/> <strong>http://loinc.org : 21899-0 </strong>
 </td>
 <td>An observation that represents the pathological 'T' score which measures tumour size.</td>
@@ -194,7 +194,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-pr-status.html'>PR status</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pr-status<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 253341000210107 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 445029000 </strong>
 </td>
 <td>An observation that represents a Progesterone Receptor status</td>
 </tr>

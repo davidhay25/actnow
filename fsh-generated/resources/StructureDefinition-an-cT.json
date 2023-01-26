@@ -1255,7 +1255,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "384625004",
+        "patternCode": "399504009",
         "constraint": [
           {
             "key": "ele-1",
@@ -3656,7 +3656,7 @@
         "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "384625004"
+        "patternCode": "399504009"
       },
       {
         "id": "Observation.code.coding:mCode",

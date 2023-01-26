@@ -27,7 +27,7 @@ Description:    "An observation that represents a Progesterone Receptor status"
 * code.coding contains
     snomedCode 1..1 
 
-* code.coding[snomedCode].code = #253341000210107
+* code.coding[snomedCode].code = #445029000
 * code.coding[snomedCode].system = $snomed
 
 * value[x] only CodeableConcept

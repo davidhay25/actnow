@@ -26,7 +26,7 @@ Description:    "An observation that represents the pathological 'N' score which
     snomedCode 1..1 and 
     mCode 0..1
 
-* code.coding[snomedCode].code = #1478165014 
+* code.coding[snomedCode].code = #371494008 
 * code.coding[snomedCode].system = $snomed
 
 * code.coding[mCode].code = #21900-6
