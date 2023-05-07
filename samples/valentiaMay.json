@@ -1,0 +1,810 @@
+{
+  "resourceType" : "Bundle",
+  "type" : "transaction",
+  "entry" : [
+    {
+      "fullUrl" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "4c8d1201-7aa7-4d64-86f9-3f09e1312d13",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-patient"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bond , James</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://standards.digital.health.nz/ns/nhi-id",
+            "value" : "DFR1894"
+          }
+        ],
+        "name" : [
+          {
+            "text" : "Bond , James",
+            "family" : "Bond",
+            "given" : [
+              "James"
+            ]
+          }
+        ],
+        "gender" : "male",
+        "birthDate" : "2000-01-26"
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "Patient?identifier=https://standards.digital.health.nz/ns/nhi-id|DFR1894"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:e42de226-a701-4170-8a44-5a076510520e",
+      "resource" : {
+        "resourceType" : "CarePlan",
+        "id" : "e42de226-a701-4170-8a44-5a076510520e",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Regimen Careplan 7843</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-iot",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "373846009"
+                }
+              ],
+              "text" : "Curative Adjuvant"
+            }
+          },
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count",
+            "valueInteger" : 3
+          },
+          {
+            "url" : "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://standards.digital.health.nz/ns/sact-regimen-code",
+                  "code" : "BEAM"
+                }
+              ],
+              "text" : "BEAM"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "regimen-careplan-7843"
+          }
+        ],
+        "intent" : "plan",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://unknown.org",
+                "code" : "regimenCP"
+              }
+            ]
+          }
+        ],
+        "title" : "Regimen Careplan 7843",
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "CarePlan?identifier=https://fhir.indici.nz|regimen-careplan-7843"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:56f8e63b-d292-4bf5-8984-474c1c587d50",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "56f8e63b-d292-4bf5-8984-474c1c587d50",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-condition"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Condition 712</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "http://snomed.info/sct",
+                  "code" : "13853016"
+                }
+              ],
+              "text" : "Left"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "condition-712"
+          }
+        ],
+        "bodySite" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "2"
+              }
+            ],
+            "text" : "Central nervous system"
+          }
+        ],
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "Condition?identifier=https://fhir.indici.nz|condition-712"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7",
+      "resource" : {
+        "resourceType" : "CarePlan",
+        "id" : "51a43a7a-6eb8-4398-9528-eab2584e34c7",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cycle Careplan 1360</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number",
+            "valueInteger" : 289
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "cycle-careplan-1360"
+          }
+        ],
+        "partOf" : [
+          {
+            "reference" : "urn:uuid:e42de226-a701-4170-8a44-5a076510520e"
+          }
+        ],
+        "status" : "unknown",
+        "intent" : "plan",
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://unknown.org",
+                "code" : "cycleCP"
+              }
+            ]
+          }
+        ],
+        "title" : "Cycle Careplan Cycle-1",
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "period" : {
+          "start" : "2023-03-27"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "CarePlan?identifier=https://fhir.indici.nz|cycle-careplan-1360"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:7d90ce9e-ed77-46a4-a8f0-73149f5a8e1b",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "7d90ce9e-ed77-46a4-a8f0-73149f5a8e1b",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-histology"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Histology 1639</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "histology-observation-1639"
+          }
+        ],
+        "status" : "unknown",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "0"
+            }
+          ],
+          "text" : "Acquired hemophilia"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "focus" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "valueString" : "Here are the histology findings"
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "Observation?identifier=https://fhir.indici.nz|histology-observation-1639"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:57f9d800-c49c-4da9-8d48-b0f6a923b0a9",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "57f9d800-c49c-4da9-8d48-b0f6a923b0a9",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-histology"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Histology 584</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "histology-observation-584"
+          }
+        ],
+        "status" : "unknown",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "3315019010"
+            }
+          ],
+          "text" : "Small cell neuroendocrine carcinoma"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "focus" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "valueString" : "Here are the histology findings"
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "Observation?identifier=https://fhir.indici.nz|histology-observation-584"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:235adbbd-4083-4a58-b359-d53c074e8f60",
+      "resource" : {
+        "resourceType" : "MedicationRequest",
+        "id" : "235adbbd-4083-4a58-b359-d53c074e8f60",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 291521</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-request-291521"
+          }
+        ],
+        "status" : "draft",
+        "intent" : "plan",
+        "medicationCodeableConcept" : {
+          "text" : "famotidine (15 mg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "MedicationRequest?identifier=https://fhir.indici.nz|medication-request-291521"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:1746d7c5-9bfa-4e81-a10a-384dec138720",
+      "resource" : {
+        "resourceType" : "MedicationRequest",
+        "id" : "1746d7c5-9bfa-4e81-a10a-384dec138720",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 260017</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-request-260017"
+          }
+        ],
+        "status" : "draft",
+        "intent" : "plan",
+        "medicationCodeableConcept" : {
+          "text" : "domperidone (45 mg/kg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "MedicationRequest?identifier=https://fhir.indici.nz|medication-request-260017"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:e31293b0-6a0b-45e3-b92e-b60849691fa3",
+      "resource" : {
+        "resourceType" : "MedicationRequest",
+        "id" : "e31293b0-6a0b-45e3-b92e-b60849691fa3",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 179544</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-request-179544"
+          }
+        ],
+        "status" : "unknown",
+        "intent" : "plan",
+        "medicationCodeableConcept" : {
+          "text" : "sodium chloride 0.45% + glucose 2.5% (200 mL/hr)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "MedicationRequest?identifier=https://fhir.indici.nz|medication-request-179544"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:7f7d8290-b963-4381-82da-5574fd19cd8a",
+      "resource" : {
+        "resourceType" : "MedicationRequest",
+        "id" : "7f7d8290-b963-4381-82da-5574fd19cd8a",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 179548</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-request-179548"
+          }
+        ],
+        "status" : "unknown",
+        "intent" : "plan",
+        "medicationCodeableConcept" : {
+          "text" : "cARBOplatin (5 mg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "MedicationRequest?identifier=https://fhir.indici.nz|medication-request-179548"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:cf4316bd-23ac-465f-8a76-45af62be5ed1",
+      "resource" : {
+        "resourceType" : "MedicationRequest",
+        "id" : "cf4316bd-23ac-465f-8a76-45af62be5ed1",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 388907</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-request-388907"
+          }
+        ],
+        "status" : "unknown",
+        "intent" : "plan",
+        "medicationCodeableConcept" : {
+          "text" : "cycliZINE (25-50 mg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ]
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "MedicationRequest?identifier=https://fhir.indici.nz|medication-request-388907"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:cd56332b-7de5-445d-aa3d-892de797dc56",
+      "resource" : {
+        "resourceType" : "MedicationAdministration",
+        "id" : "cd56332b-7de5-445d-aa3d-892de797dc56",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 402046</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
+            "valueDosage" : {
+              "text" : "15.0 mg"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-administration-402046"
+          }
+        ],
+        "status" : "unknown",
+        "medicationCodeableConcept" : {
+          "text" : "famotidine (15 mg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "effectivePeriod" : {
+          "start" : "2023-04-10",
+          "end" : "1900-01-01"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "medicationAdministration?identifier=https://fhir.indici.nz|medication-administration-402046"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:3283071d-3678-4e3f-8eda-8e5176829514",
+      "resource" : {
+        "resourceType" : "MedicationAdministration",
+        "id" : "3283071d-3678-4e3f-8eda-8e5176829514",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 231636</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
+            "valueDosage" : {
+              "text" : "250.0 mL/hr"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-administration-231636"
+          }
+        ],
+        "status" : "unknown",
+        "medicationCodeableConcept" : {
+          "text" : "sodium chloride + glucose (250 mL/hr)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "effectivePeriod" : {
+          "start" : "2023-02-11",
+          "end" : "2023-02-11"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "medicationAdministration?identifier=https://fhir.indici.nz|medication-administration-231636"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:aba8ab0e-7210-42e3-a862-6cda253f092b",
+      "resource" : {
+        "resourceType" : "MedicationAdministration",
+        "id" : "aba8ab0e-7210-42e3-a862-6cda253f092b",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 388918</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
+            "valueDosage" : {
+              "text" : "50.0 mg"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-administration-388918"
+          }
+        ],
+        "status" : "unknown",
+        "medicationCodeableConcept" : {
+          "text" : "metHOTREXATe (50 mg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "effectivePeriod" : {
+          "start" : "2023-04-03",
+          "end" : "1900-01-01"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "medicationAdministration?identifier=https://fhir.indici.nz|medication-administration-388918"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:532f5732-4760-4d20-b767-0327df89d107",
+      "resource" : {
+        "resourceType" : "MedicationAdministration",
+        "id" : "532f5732-4760-4d20-b767-0327df89d107",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 359297</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
+            "valueDosage" : {
+              "text" : "1.0 mg"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-administration-359297"
+          }
+        ],
+        "status" : "unknown",
+        "medicationCodeableConcept" : {
+          "text" : "vinCRISTine (1 mg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "effectivePeriod" : {
+          "start" : "2023-03-29",
+          "end" : "1900-01-01"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "medicationAdministration?identifier=https://fhir.indici.nz|medication-administration-359297"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:3035e911-c0c6-4e1e-83f5-226e2c9eae0d",
+      "resource" : {
+        "resourceType" : "MedicationAdministration",
+        "id" : "3035e911-c0c6-4e1e-83f5-226e2c9eae0d",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-medication-administration"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medication Request 260017</div>"
+        },
+        "extension" : [
+          {
+            "url" : "http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose",
+            "valueDosage" : {
+              "text" : "30.0 mg"
+            }
+          }
+        ],
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "medication-administration-260017"
+          }
+        ],
+        "status" : "unknown",
+        "medicationCodeableConcept" : {
+          "text" : "domperidone (45 mg/kg)"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "supportingInformation" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "effectivePeriod" : {
+          "start" : "2023-02-23",
+          "end" : "1900-01-01"
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "medicationAdministration?identifier=https://fhir.indici.nz|medication-administration-260017"
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:e64788ed-5e40-4824-8249-d3c00eccf224",
+      "resource" : {
+        "resourceType" : "Observation",
+        "id" : "e64788ed-5e40-4824-8249-d3c00eccf224",
+        "meta" : {
+          "profile" : [
+            "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
+          ]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">BSA 709</div>"
+        },
+        "identifier" : [
+          {
+            "system" : "https://fhir.indici.nz",
+            "value" : "bsa-709"
+          }
+        ],
+        "status" : "unknown",
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "301898006"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "urn:uuid:4c8d1201-7aa7-4d64-86f9-3f09e1312d13"
+        },
+        "focus" : [
+          {
+            "reference" : "urn:uuid:51a43a7a-6eb8-4398-9528-eab2584e34c7"
+          }
+        ],
+        "effectiveDateTime" : "2023-01-25",
+        "valueQuantity" : {
+          "value" : 4.23
+        }
+      },
+      "request" : {
+        "method" : "PUT",
+        "url" : "Observation?identifier=https://fhir.indici.nz|bsa-709"
+      }
+    }
+  ]
+}
