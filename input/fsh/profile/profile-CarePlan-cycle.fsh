@@ -41,8 +41,8 @@ Description:    "A CarePlan that represents a single cycle of treatment. It will
 
 * category.coding[cyclecode] ^short = "Cycle level carePlan"
 * category.coding[cyclecode] ^definition = "Code identifying this carePlan as being at the cycle level"
-* category.coding[cyclecode].code = #cycleCP
-* category.coding[cyclecode].system = $unknownSystem
+* category.coding[cyclecode].code = #261761000210103
+* category.coding[cyclecode].system = $snomed
 
 //Invariants
 

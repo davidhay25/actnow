@@ -578,6 +578,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/cp-supporting-info"
+        },
+        "name": "cp-supporting-info",
+        "description": "Searches for supportingInfo references",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/exPatient"
         },
         "name": "Lorrie Lung",
@@ -675,14 +683,6 @@
         "name": "medicationrequest-1",
         "description": "An example medication administration",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-medication-request"
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/supporting-info"
-        },
-        "name": "supporting-info",
-        "description": "Searches for supportingInfo references",
-        "exampleBoolean": true
       }
     ],
     "page": {

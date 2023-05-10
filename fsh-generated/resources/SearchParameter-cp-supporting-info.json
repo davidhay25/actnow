@@ -1,8 +1,8 @@
 {
   "resourceType": "SearchParameter",
-  "id": "supporting-info",
+  "id": "cp-supporting-info",
   "url": "http://canshare.com/supportinginfo",
-  "name": "SupportingInfo",
+  "name": "cp-supporting-info",
   "status": "active",
   "description": "Supporting Info",
   "code": "supporting-info",
@@ -12,6 +12,7 @@
   "type": "reference",
   "expression": "CarePlan.supportingInfo",
   "target": [
-    "Observation"
+    "Observation",
+    "Condition"
   ]
 }

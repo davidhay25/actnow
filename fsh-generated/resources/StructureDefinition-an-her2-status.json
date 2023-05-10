@@ -1164,7 +1164,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://unknown.org",
+        "patternUri": "http://snomed.info/sct",
         "constraint": [
           {
             "key": "ele-1",
@@ -1255,7 +1255,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "3550001000004108",
+        "patternCode": "261811000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3351,13 +3351,13 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "http://unknown.org"
+        "patternUri": "http://snomed.info/sct"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",
         "path": "Observation.code.coding.code",
         "min": 1,
-        "patternCode": "3550001000004108"
+        "patternCode": "261811000210109"
       },
       {
         "id": "Observation.subject",

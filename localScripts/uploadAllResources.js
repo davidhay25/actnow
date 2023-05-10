@@ -2,7 +2,6 @@
 
 /**
  * Upload all the resources created by the IG to the act-now server so they can be used in validation and development
- * TODO - ValueSets aren't uploaded as it causes an error - not quite sure why ...
  * 
  * //need to manually upload the sact_regimen type & associated valueset
  * 
@@ -14,8 +13,11 @@ const axios = require ('axios')
 let fullFolderPath = "../fsh-generated/resources/";
 //let conformanceServer = "http://actnow.canshare.co.nz:9092/baseR4/"
 //let conformanceServer = "https://r4.ontoserver.csiro.au/fhir/"
-let conformanceServer = "http://hapi.fhir.org/baseR4/"
+//let conformanceServer = "http://hapi.fhir.org/baseR4/"
 //let conformanceServer = "https://hof.smilecdr.com/fhir_request/"
+
+//let conformanceServer = "http://localhost:8080/fhir/" //the server in docker
+let conformanceServer = "http://poc.canshare.co.nz:8080/fhir/" //the server in poc
 
 let bundle = {resourceType:"Bundle",type:'transaction',entry:[]}
 
@@ -28,7 +30,7 @@ arFiles.forEach(function(name){
         let contents = fs.readFileSync(fullFileName).toString();
         let resource = JSON.parse(contents)
 
-        if (resource.resourceType !== 'ImplementationGuide' && resource.resourceType !== 'ValueSet') {
+        if (resource.resourceType !== 'ImplementationGuide' && resource.resourceType !== 'ValueSetDEP') {
             let entry = {resource:resource}
             entry.request = {method:'PUT',url:resource.resourceType + "/" + resource.id}
             bundle.entry.push(entry)

@@ -1384,7 +1384,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://unknown.org",
+        "patternUri": "http://snomed.info/sct",
         "constraint": [
           {
             "key": "ele-1",
@@ -1475,7 +1475,7 @@
             "code": "code"
           }
         ],
-        "patternCode": "cycleCP",
+        "patternCode": "261761000210103",
         "constraint": [
           {
             "key": "ele-1",
@@ -3737,13 +3737,13 @@
       {
         "id": "CarePlan.category.coding:cyclecode.system",
         "path": "CarePlan.category.coding.system",
-        "patternUri": "http://unknown.org"
+        "patternUri": "http://snomed.info/sct"
       },
       {
         "id": "CarePlan.category.coding:cyclecode.code",
         "path": "CarePlan.category.coding.code",
         "min": 1,
-        "patternCode": "cycleCP"
+        "patternCode": "261761000210103"
       },
       {
         "id": "CarePlan.title",

@@ -1,9 +1,9 @@
-Instance: supporting-info
+Instance: cp-supporting-info
 InstanceOf: SearchParameter 
 Description: "Searches for supportingInfo references"
 
 * url = "http://canshare.com/supportinginfo"
-* name = "SupportingInfo"
+* name = "cp-supporting-info"
 * status = #active
 * description = "Supporting Info"
 * code = #supporting-info
@@ -11,3 +11,4 @@ Description: "Searches for supportingInfo references"
 * type = #reference
 * expression = "CarePlan.supportingInfo"
 * target = #Observation
+* target[+] = #Condition

@@ -51,7 +51,7 @@
 <td><a href='StructureDefinition-an-careplan-cycle.html'>Cycle Careplan</a></td>
 <td>CarePlan</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle<br/>
-<br/><em>CarePlan.category.coding:cyclecode.code</em><br/> <strong>http://unknown.org : cycleCP </strong>
+<br/><em>CarePlan.category.coding:cyclecode.code</em><br/> <strong>http://snomed.info/sct : 261761000210103 </strong>
 </td>
 <td>A CarePlan that represents a single cycle of treatment. It will have a 'partOf' reference to the regiment carePlan.</td>
 </tr>
@@ -59,7 +59,7 @@
 <td><a href='StructureDefinition-an-careplan-regimen.html'>Regimen Careplan</a></td>
 <td>CarePlan</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen<br/>
-<br/><em>CarePlan.category.coding:regimencode.code</em><br/> <strong>http://unknown.org : regimenCP </strong>
+<br/><em>CarePlan.category.coding:regimencode.code</em><br/> <strong>http://snomed.info/sct : 261751000210101 </strong>
 </td>
 <td>A CarePlan that represents a PlanDefinition being applied to a Patient. Referred to as a regimen. The regimen
 has multiple cycles also represented as CarePlans which have a 'partOf' reference back to the regimen plan.</td>
@@ -93,7 +93,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-er-status.html'>Estrogen Receptor status</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-er-status<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 253331000210104 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 445028008 </strong>
 </td>
 <td>An observation that represents an ER status</td>
 </tr>
@@ -121,7 +121,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <td><a href='StructureDefinition-an-her2-status.html'>HER2 status</a></td>
 <td>Observation</td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-her2-status<br/>
-<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://unknown.org : 3550001000004108 </strong>
+<br/><em>Observation.code.coding:snomedCode.code</em><br/> <strong>http://snomed.info/sct : 261811000210109 </strong>
 </td>
 <td>An observation that represents a HER2 status</td>
 </tr>
