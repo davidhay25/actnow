@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "RegimenDiscontinuedReason",
   "id": "an-regimen-discontinued-reason-vs",
   "title": "The reason why a regimen was discontinued",
   "description": "The reason why a regimen was discontinued",
-  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-reason-vs",
   "experimental": false,
   "compose": {

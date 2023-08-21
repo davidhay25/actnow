@@ -6,6 +6,11 @@
       "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
     ]
   },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "kg",
+    "value": 100
+  },
   "code": {
     "coding": [
       {
@@ -17,11 +22,6 @@
         "system": "http://loinc.org"
       }
     ]
-  },
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "code": "kg",
-    "value": 100
   },
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Weight 80 kg</div>",

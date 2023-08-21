@@ -3,8 +3,7 @@
   "id": "HER2Status",
   "meta": {
     "profile": [
-      "http://canshare.co.nz/fhir/StructureDefinition/an-her2-status",
-      "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
+      "http://canshare.co.nz/fhir/StructureDefinition/an-her2-status"
     ]
   },
   "code": {

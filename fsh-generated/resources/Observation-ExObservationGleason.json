@@ -6,15 +6,6 @@
       "http://canshare.co.nz/fhir/StructureDefinition/an-gleason"
     ]
   },
-  "code": {
-    "coding": [
-      {
-        "code": "372278000",
-        "system": "http://snomed.info/sct",
-        "display": "Gleason score (observable entity)"
-      }
-    ]
-  },
   "component": [
     {
       "code": {
@@ -28,6 +19,15 @@
       "valueInteger": 1
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "code": "372278000",
+        "system": "http://snomed.info/sct",
+        "display": "Gleason score (observable entity)"
+      }
+    ]
+  },
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gleason score</div>",
     "status": "generated"

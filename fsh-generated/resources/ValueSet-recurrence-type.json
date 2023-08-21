@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "RecurrenceType",
   "id": "recurrence-type",
   "title": "Type of recurrence",
   "description": "Type of recurrence",
-  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs",
   "experimental": false,
   "compose": {

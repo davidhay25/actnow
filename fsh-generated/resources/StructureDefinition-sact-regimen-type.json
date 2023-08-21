@@ -1,10 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "an-cycle-planned-length",
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length",
-  "name": "CyclePlannedLength",
+  "id": "sact-regimen-type",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",
+  "name": "RegimenType",
+  "title": "Regimen type",
   "status": "draft",
-  "description": "The number of cycles that administered for a regimen",
+  "description": "The overall type of the regimen - eg FOLFOX",
   "jurisdiction": [
     {
       "coding": [
@@ -28,6 +29,10 @@
   "context": [
     {
       "type": "element",
+      "expression": "PlanDefinition"
+    },
+    {
+      "type": "element",
       "expression": "CarePlan"
     }
   ],
@@ -39,7 +44,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The number of cycles that administered for a regimen"
+        "short": "Regimen type",
+        "definition": "The overall type of the regimen - eg FOLFOX"
       },
       {
         "id": "Extension.extension",
@@ -49,16 +55,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "integer"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code"
+        }
       }
     ]
   }

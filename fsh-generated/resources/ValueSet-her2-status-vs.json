@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "HER2Status",
   "id": "her2-status-vs",
   "title": "HER2 status",
   "description": "Human epidermal growth status",
-  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs",
   "experimental": false,
   "compose": {

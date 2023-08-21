@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "PRStatus",
   "id": "pr-status-vs",
   "title": "ER status",
   "description": "Estrogen Receptor status",
-  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs",
   "experimental": false,
   "compose": {

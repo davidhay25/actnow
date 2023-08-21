@@ -19,7 +19,7 @@ has multiple cycles also represented as CarePlans which have a 'partOf' referenc
 * intent = #plan
 
 * extension contains
-    $iot  named intent-of-treatment 1..1 and                //intent of treatment
+    $iot  named intent-of-treatment 0..1 and                //intent of treatment
     $clinicalTrial named clinical-trial 0..1  MS and //is part of a clinical trial
     $extCycleCount named cycle-count 0..1 MS and  //the number of cycles administered thus far
     $extRegimenDiscontinued named regimen-discontinued 0..1 MS and 

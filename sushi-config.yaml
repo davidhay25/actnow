@@ -9,7 +9,7 @@ name: actnow
 title: ACT-NOW Implementation Guide
 description: FHIR support for the New Zealand ACT-NOW standard
 status: draft # draft | active | retired | unknown
-version: 0.3.0
+version: 0.4.0
 fhirVersion: 4.0.1 
 copyrightYear: 2022+
 jurisdiction: urn:iso:std:iso:3166#NZ "New Zealand"
@@ -22,8 +22,9 @@ publisher:
   email: mailto:david.hay25@gmail.com
 
 # use some mcode extensions (laterality)
+# use cca extension regimen type
 dependencies:
-  hl7.org.nz.fhir.ig.cca: current
+  # hl7.org.nz.fhir.ig.cca: dev
 
   hl7.fhir.us.mcode:
     id: mcode

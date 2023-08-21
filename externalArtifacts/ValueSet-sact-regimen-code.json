@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sact-regimen-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-sact-regimen-code.html\"><code>https://standards.digital.health.nz/ns/sact-regimen-code</code></a></li></ul></div>"
+  },
+  "url" : "https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code",
+  "version" : "0.1.0",
+  "name" : "RegimenCode",
+  "title" : "Regimen type code",
+  "status" : "active",
+  "date" : "2023-04-13T20:52:14+00:00",
+  "publisher" : "Te Aho o Te Kahu, Cancer Control Agency",
+  "description" : "The type of regimen - eg FOLFOX",
+  "compose" : {
+    "include" : [{
+      "system" : "https://standards.digital.health.nz/ns/sact-regimen-code"
+    }]
+  }
+}

@@ -3,14 +3,13 @@
   "id": "ERStatus",
   "meta": {
     "profile": [
-      "http://canshare.co.nz/fhir/StructureDefinition/an-er-status",
-      "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
+      "http://canshare.co.nz/fhir/StructureDefinition/an-er-status"
     ]
   },
   "code": {
     "coding": [
       {
-        "code": "423740007",
+        "code": "445028008",
         "system": "http://snomed.info/sct"
       }
     ]

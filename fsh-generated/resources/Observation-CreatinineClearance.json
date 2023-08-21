@@ -6,6 +6,11 @@
       "http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear"
     ]
   },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "mL/s",
+    "value": 1.9
+  },
   "code": {
     "coding": [
       {
@@ -33,10 +38,5 @@
       "system": "http://canshare.co.nz/identifiers",
       "value": "cc"
     }
-  ],
-  "valueQuantity": {
-    "value": 1.9,
-    "code": "mL/s",
-    "system": "http://unitsofmeasure.org"
-  }
+  ]
 }

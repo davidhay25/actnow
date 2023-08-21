@@ -6,6 +6,11 @@
       "http://canshare.co.nz/fhir/StructureDefinition/an-height"
     ]
   },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "cm",
+    "value": 180
+  },
   "code": {
     "coding": [
       {
@@ -37,10 +42,5 @@
       "system": "http://canshare.co.nz/identifiers",
       "value": "height"
     }
-  ],
-  "valueQuantity": {
-    "value": 180,
-    "code": "cm",
-    "system": "http://unitsofmeasure.org"
-  }
+  ]
 }

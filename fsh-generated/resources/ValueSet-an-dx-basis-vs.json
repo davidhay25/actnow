@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "DxBasis",
   "id": "an-dx-basis-vs",
   "title": "Basis of diagnosis",
   "description": "Whether the diagnosis is based on clinical or pathological grounds",
-  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs",
   "experimental": false,
   "compose": {

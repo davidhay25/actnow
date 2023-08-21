@@ -1,0 +1,478 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "sact-regimen-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://standards.digital.health.nz/ns/sact-regimen-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ABVD<a name=\"sact-regimen-code-ABVD\"> </a></td><td>ABVD</td></tr><tr><td style=\"white-space:nowrap\">APML4<a name=\"sact-regimen-code-APML4\"> </a></td><td>APML4</td></tr><tr><td style=\"white-space:nowrap\">BEACOPP<a name=\"sact-regimen-code-BEACOPP\"> </a></td><td>BEACOPP</td></tr><tr><td style=\"white-space:nowrap\">BEACOPP14<a name=\"sact-regimen-code-BEACOPP14\"> </a></td><td>BEACOPP14</td></tr><tr><td style=\"white-space:nowrap\">BEAM<a name=\"sact-regimen-code-BEAM\"> </a></td><td>BEAM</td></tr><tr><td style=\"white-space:nowrap\">BEP<a name=\"sact-regimen-code-BEP\"> </a></td><td>BEP</td></tr><tr><td style=\"white-space:nowrap\">BFM<a name=\"sact-regimen-code-BFM\"> </a></td><td>BFM</td></tr><tr><td style=\"white-space:nowrap\">CALGB<a name=\"sact-regimen-code-CALGB\"> </a></td><td>CALGB</td></tr><tr><td style=\"white-space:nowrap\">CAP<a name=\"sact-regimen-code-CAP\"> </a></td><td>CAP</td></tr><tr><td style=\"white-space:nowrap\">CAPIRI<a name=\"sact-regimen-code-CAPIRI\"> </a></td><td>CAPIRI </td></tr><tr><td style=\"white-space:nowrap\">CAPOX<a name=\"sact-regimen-code-CAPOX\"> </a></td><td>CAPOX </td></tr><tr><td style=\"white-space:nowrap\">CAV<a name=\"sact-regimen-code-CAV\"> </a></td><td>CAV</td></tr><tr><td style=\"white-space:nowrap\">CBV<a name=\"sact-regimen-code-CBV\"> </a></td><td>CBV</td></tr><tr><td style=\"white-space:nowrap\">CDOX–M<a name=\"sact-regimen-code-CDOX.8211M\"> </a></td><td>CDOX–M</td></tr><tr><td style=\"white-space:nowrap\">ChIVPP<a name=\"sact-regimen-code-ChIVPP\"> </a></td><td>ChIVPP</td></tr><tr><td style=\"white-space:nowrap\">CHOEP14<a name=\"sact-regimen-code-CHOEP14\"> </a></td><td>CHOEP14</td></tr><tr><td style=\"white-space:nowrap\">CHOEP21<a name=\"sact-regimen-code-CHOEP21\"> </a></td><td>CHOEP21</td></tr><tr><td style=\"white-space:nowrap\">CTD<a name=\"sact-regimen-code-CTD\"> </a></td><td>CTD</td></tr><tr><td style=\"white-space:nowrap\">CVAD<a name=\"sact-regimen-code-CVAD\"> </a></td><td>CVAD</td></tr><tr><td style=\"white-space:nowrap\">C-VAMP<a name=\"sact-regimen-code-C-VAMP\"> </a></td><td>C-VAMP</td></tr><tr><td style=\"white-space:nowrap\">CVP<a name=\"sact-regimen-code-CVP\"> </a></td><td>CVP</td></tr><tr><td style=\"white-space:nowrap\">CyBorD<a name=\"sact-regimen-code-CyBorD\"> </a></td><td>CyBorD</td></tr><tr><td style=\"white-space:nowrap\">DA-R-EPOCH<a name=\"sact-regimen-code-DA-R-EPOCH\"> </a></td><td>DA-R-EPOCH</td></tr><tr><td style=\"white-space:nowrap\">DDGP<a name=\"sact-regimen-code-DDGP\"> </a></td><td>DDGP</td></tr><tr><td style=\"white-space:nowrap\">ddMVAC<a name=\"sact-regimen-code-ddMVAC\"> </a></td><td>ddMVAC</td></tr><tr><td style=\"white-space:nowrap\">de-Gramont<a name=\"sact-regimen-code-de-Gramont\"> </a></td><td>de Gramont</td></tr><tr><td style=\"white-space:nowrap\">DHAC<a name=\"sact-regimen-code-DHAC\"> </a></td><td>DHAC</td></tr><tr><td style=\"white-space:nowrap\">DHAP<a name=\"sact-regimen-code-DHAP\"> </a></td><td>DHAP</td></tr><tr><td style=\"white-space:nowrap\">dmCODOX<a name=\"sact-regimen-code-dmCODOX\"> </a></td><td>dmCODOX</td></tr><tr><td style=\"white-space:nowrap\">DRC<a name=\"sact-regimen-code-DRC\"> </a></td><td>DRC</td></tr><tr><td style=\"white-space:nowrap\">DRd<a name=\"sact-regimen-code-DRd\"> </a></td><td>DRd</td></tr><tr><td style=\"white-space:nowrap\">DT-PACE<a name=\"sact-regimen-code-DT-PACE\"> </a></td><td>DT-PACE</td></tr><tr><td style=\"white-space:nowrap\">DVd<a name=\"sact-regimen-code-DVd\"> </a></td><td>DVd</td></tr><tr><td style=\"white-space:nowrap\">D-VMP<a name=\"sact-regimen-code-D-VMP\"> </a></td><td>D-VMP</td></tr><tr><td style=\"white-space:nowrap\">ECF<a name=\"sact-regimen-code-ECF\"> </a></td><td>ECF</td></tr><tr><td style=\"white-space:nowrap\">ECX<a name=\"sact-regimen-code-ECX\"> </a></td><td>ECX</td></tr><tr><td style=\"white-space:nowrap\">EMA-CO<a name=\"sact-regimen-code-EMA-CO\"> </a></td><td>EMA-CO</td></tr><tr><td style=\"white-space:nowrap\">EOX<a name=\"sact-regimen-code-EOX\"> </a></td><td>EOX </td></tr><tr><td style=\"white-space:nowrap\">EP<a name=\"sact-regimen-code-EP\"> </a></td><td>EP</td></tr><tr><td style=\"white-space:nowrap\">EP-EMA<a name=\"sact-regimen-code-EP-EMA\"> </a></td><td>EP-EMA</td></tr><tr><td style=\"white-space:nowrap\">ESHAP<a name=\"sact-regimen-code-ESHAP\"> </a></td><td>ESHAP</td></tr><tr><td style=\"white-space:nowrap\">FCM<a name=\"sact-regimen-code-FCM\"> </a></td><td>FCM</td></tr><tr><td style=\"white-space:nowrap\">FCR<a name=\"sact-regimen-code-FCR\"> </a></td><td>FCR</td></tr><tr><td style=\"white-space:nowrap\">FLAG<a name=\"sact-regimen-code-FLAG\"> </a></td><td>FLAG</td></tr><tr><td style=\"white-space:nowrap\">FLAG-Ida<a name=\"sact-regimen-code-FLAG-Ida\"> </a></td><td>FLAG-Ida</td></tr><tr><td style=\"white-space:nowrap\">FLOT<a name=\"sact-regimen-code-FLOT\"> </a></td><td>FLOT</td></tr><tr><td style=\"white-space:nowrap\">FLOX<a name=\"sact-regimen-code-FLOX\"> </a></td><td>FLOX</td></tr><tr><td style=\"white-space:nowrap\">FOLFIRI<a name=\"sact-regimen-code-FOLFIRI\"> </a></td><td>FOLFIRI</td></tr><tr><td style=\"white-space:nowrap\">FOLFIRINOX<a name=\"sact-regimen-code-FOLFIRINOX\"> </a></td><td>FOLFIRINOX</td></tr><tr><td style=\"white-space:nowrap\">FOLFOX4<a name=\"sact-regimen-code-FOLFOX4\"> </a></td><td>FOLFOX4 </td></tr><tr><td style=\"white-space:nowrap\">FOLFOX6<a name=\"sact-regimen-code-FOLFOX6\"> </a></td><td>FOLFOX6</td></tr><tr><td style=\"white-space:nowrap\">FOLFOXIRI<a name=\"sact-regimen-code-FOLFOXIRI\"> </a></td><td>FOLFOXIRI</td></tr><tr><td style=\"white-space:nowrap\">GDP<a name=\"sact-regimen-code-GDP\"> </a></td><td>GDP</td></tr><tr><td style=\"white-space:nowrap\">GIST<a name=\"sact-regimen-code-GIST\"> </a></td><td>GIST</td></tr><tr><td style=\"white-space:nowrap\">GIVE<a name=\"sact-regimen-code-GIVE\"> </a></td><td>GIVE</td></tr><tr><td style=\"white-space:nowrap\">GMALL-2002<a name=\"sact-regimen-code-GMALL-2002\"> </a></td><td>GMALL 2002</td></tr><tr><td style=\"white-space:nowrap\">GRAAPH-2005<a name=\"sact-regimen-code-GRAAPH-2005\"> </a></td><td>GRAAPH-2005</td></tr><tr><td style=\"white-space:nowrap\">HAM<a name=\"sact-regimen-code-HAM\"> </a></td><td>HAM</td></tr><tr><td style=\"white-space:nowrap\">HiDAC<a name=\"sact-regimen-code-HiDAC\"> </a></td><td>HiDAC</td></tr><tr><td style=\"white-space:nowrap\">ICE<a name=\"sact-regimen-code-ICE\"> </a></td><td>ICE</td></tr><tr><td style=\"white-space:nowrap\">IDAC<a name=\"sact-regimen-code-IDAC\"> </a></td><td>IDAC</td></tr><tr><td style=\"white-space:nowrap\">IVAC<a name=\"sact-regimen-code-IVAC\"> </a></td><td>IVAC</td></tr><tr><td style=\"white-space:nowrap\">LACE<a name=\"sact-regimen-code-LACE\"> </a></td><td>LACE</td></tr><tr><td style=\"white-space:nowrap\">LAD<a name=\"sact-regimen-code-LAD\"> </a></td><td>LAD</td></tr><tr><td style=\"white-space:nowrap\">LCD<a name=\"sact-regimen-code-LCD\"> </a></td><td>LCD</td></tr><tr><td style=\"white-space:nowrap\">M/IVAC<a name=\"sact-regimen-code-M.47IVAC\"> </a></td><td>M/IVAC</td></tr><tr><td style=\"white-space:nowrap\">MAP<a name=\"sact-regimen-code-MAP\"> </a></td><td>MAP</td></tr><tr><td style=\"white-space:nowrap\">MAYO<a name=\"sact-regimen-code-MAYO\"> </a></td><td>MAYO</td></tr><tr><td style=\"white-space:nowrap\">MBVP<a name=\"sact-regimen-code-MBVP\"> </a></td><td>MBVP</td></tr><tr><td style=\"white-space:nowrap\">MPB<a name=\"sact-regimen-code-MPB\"> </a></td><td>MPB</td></tr><tr><td style=\"white-space:nowrap\">MPT<a name=\"sact-regimen-code-MPT\"> </a></td><td>MPT</td></tr><tr><td style=\"white-space:nowrap\">MRD<a name=\"sact-regimen-code-MRD\"> </a></td><td>MRD</td></tr><tr><td style=\"white-space:nowrap\">MVAC<a name=\"sact-regimen-code-MVAC\"> </a></td><td>MVAC</td></tr><tr><td style=\"white-space:nowrap\">O-CHOP21<a name=\"sact-regimen-code-O-CHOP21\"> </a></td><td>O-CHOP21</td></tr><tr><td style=\"white-space:nowrap\">O-CVP<a name=\"sact-regimen-code-O-CVP\"> </a></td><td>O-CVP</td></tr><tr><td style=\"white-space:nowrap\">OFF<a name=\"sact-regimen-code-OFF\"> </a></td><td>OFF</td></tr><tr><td style=\"white-space:nowrap\">PAD<a name=\"sact-regimen-code-PAD\"> </a></td><td>PAD</td></tr><tr><td style=\"white-space:nowrap\">PCAB<a name=\"sact-regimen-code-PCAB\"> </a></td><td>PCAB</td></tr><tr><td style=\"white-space:nowrap\">PCV<a name=\"sact-regimen-code-PCV\"> </a></td><td>PCV</td></tr><tr><td style=\"white-space:nowrap\">PEN<a name=\"sact-regimen-code-PEN\"> </a></td><td>PEN</td></tr><tr><td style=\"white-space:nowrap\">PNET<a name=\"sact-regimen-code-PNET\"> </a></td><td>PNET</td></tr><tr><td style=\"white-space:nowrap\">POMP<a name=\"sact-regimen-code-POMP\"> </a></td><td>POMP</td></tr><tr><td style=\"white-space:nowrap\">PVAG<a name=\"sact-regimen-code-PVAG\"> </a></td><td>PVAG</td></tr><tr><td style=\"white-space:nowrap\">PVd<a name=\"sact-regimen-code-PVd\"> </a></td><td>PVd</td></tr><tr><td style=\"white-space:nowrap\">QUASAR<a name=\"sact-regimen-code-QUASAR\"> </a></td><td>QUASAR</td></tr><tr><td style=\"white-space:nowrap\">R-BAC<a name=\"sact-regimen-code-R-BAC\"> </a></td><td>R-BAC</td></tr><tr><td style=\"white-space:nowrap\">R-CHOEP14<a name=\"sact-regimen-code-R-CHOEP14\"> </a></td><td>R-CHOEP14</td></tr><tr><td style=\"white-space:nowrap\">R-CHOP<a name=\"sact-regimen-code-R-CHOP\"> </a></td><td>R-CHOP</td></tr><tr><td style=\"white-space:nowrap\">R-CHOP14<a name=\"sact-regimen-code-R-CHOP14\"> </a></td><td>R-CHOP14</td></tr><tr><td style=\"white-space:nowrap\">R-CHOP21<a name=\"sact-regimen-code-R-CHOP21\"> </a></td><td>R-CHOP21</td></tr><tr><td style=\"white-space:nowrap\">R-CVP<a name=\"sact-regimen-code-R-CVP\"> </a></td><td>R-CVP</td></tr><tr><td style=\"white-space:nowrap\">R-DHAO<a name=\"sact-regimen-code-R-DHAO\"> </a></td><td>R-DHAOx</td></tr><tr><td style=\"white-space:nowrap\">R-DHAP<a name=\"sact-regimen-code-R-DHAP\"> </a></td><td>R-DHAP</td></tr><tr><td style=\"white-space:nowrap\">R-DH<a name=\"sact-regimen-code-R-DH\"> </a></td><td>R-DHP</td></tr><tr><td style=\"white-space:nowrap\">R-GDP<a name=\"sact-regimen-code-R-GDP\"> </a></td><td>R-GDP</td></tr><tr><td style=\"white-space:nowrap\">R-GemOX<a name=\"sact-regimen-code-R-GemOX\"> </a></td><td>R-GemOX</td></tr><tr><td style=\"white-space:nowrap\">R-HiDAC<a name=\"sact-regimen-code-R-HiDAC\"> </a></td><td>R-HiDAC</td></tr><tr><td style=\"white-space:nowrap\">RICE<a name=\"sact-regimen-code-RICE\"> </a></td><td>RICE</td></tr><tr><td style=\"white-space:nowrap\">R-maxi-CHOP<a name=\"sact-regimen-code-R-maxi-CHOP\"> </a></td><td>R-maxi-CHOP</td></tr><tr><td style=\"white-space:nowrap\">R-MiniCHOP<a name=\"sact-regimen-code-R-MiniCHOP\"> </a></td><td>R-MiniCHOP</td></tr><tr><td style=\"white-space:nowrap\">R-MPV<a name=\"sact-regimen-code-R-MPV\"> </a></td><td>R-MPV</td></tr><tr><td style=\"white-space:nowrap\">Roswell-Park<a name=\"sact-regimen-code-Roswell-Park\"> </a></td><td>Roswell Park</td></tr><tr><td style=\"white-space:nowrap\">SMARTE-R-CHOP14<a name=\"sact-regimen-code-SMARTE-R-CHOP14\"> </a></td><td>SMARTE-R-CHOP14</td></tr><tr><td style=\"white-space:nowrap\">SMILE<a name=\"sact-regimen-code-SMILE\"> </a></td><td>SMILE</td></tr><tr><td style=\"white-space:nowrap\">TICE<a name=\"sact-regimen-code-TICE\"> </a></td><td>TICE</td></tr><tr><td style=\"white-space:nowrap\">TIP<a name=\"sact-regimen-code-TIP\"> </a></td><td>TIP</td></tr><tr><td style=\"white-space:nowrap\">TPF<a name=\"sact-regimen-code-TPF\"> </a></td><td>TPF</td></tr><tr><td style=\"white-space:nowrap\">TURBT<a name=\"sact-regimen-code-TURBT\"> </a></td><td>TURBT</td></tr><tr><td style=\"white-space:nowrap\">VAC<a name=\"sact-regimen-code-VAC\"> </a></td><td>VAC</td></tr><tr><td style=\"white-space:nowrap\">VAD<a name=\"sact-regimen-code-VAD\"> </a></td><td>VAD</td></tr><tr><td style=\"white-space:nowrap\">VAI<a name=\"sact-regimen-code-VAI\"> </a></td><td>VAI</td></tr><tr><td style=\"white-space:nowrap\">VDC/IE<a name=\"sact-regimen-code-VDC.47IE\"> </a></td><td>VDC/IE</td></tr><tr><td style=\"white-space:nowrap\">VeIP<a name=\"sact-regimen-code-VeIP\"> </a></td><td>VeIP</td></tr><tr><td style=\"white-space:nowrap\">VIDE<a name=\"sact-regimen-code-VIDE\"> </a></td><td>VIDE</td></tr><tr><td style=\"white-space:nowrap\">VIP<a name=\"sact-regimen-code-VIP\"> </a></td><td>VIP</td></tr></table></div>"
+  },
+  "url" : "https://standards.digital.health.nz/ns/sact-regimen-code",
+  "version" : "0.1.0",
+  "name" : "RegimenCode",
+  "title" : "Regimen type code",
+  "status" : "active",
+  "date" : "2023-04-13T20:52:14+00:00",
+  "publisher" : "Te Aho o Te Kahu, Cancer Control Agency",
+  "description" : "Codes used for the regimen type",
+  "content" : "complete",
+  "count" : 115,
+  "concept" : [{
+    "code" : "ABVD",
+    "display" : "ABVD"
+  },
+  {
+    "code" : "APML4",
+    "display" : "APML4"
+  },
+  {
+    "code" : "BEACOPP",
+    "display" : "BEACOPP"
+  },
+  {
+    "code" : "BEACOPP14",
+    "display" : "BEACOPP14"
+  },
+  {
+    "code" : "BEAM",
+    "display" : "BEAM"
+  },
+  {
+    "code" : "BEP",
+    "display" : "BEP"
+  },
+  {
+    "code" : "BFM",
+    "display" : "BFM"
+  },
+  {
+    "code" : "CALGB",
+    "display" : "CALGB"
+  },
+  {
+    "code" : "CAP",
+    "display" : "CAP"
+  },
+  {
+    "code" : "CAPIRI",
+    "display" : "CAPIRI "
+  },
+  {
+    "code" : "CAPOX",
+    "display" : "CAPOX "
+  },
+  {
+    "code" : "CAV",
+    "display" : "CAV"
+  },
+  {
+    "code" : "CBV",
+    "display" : "CBV"
+  },
+  {
+    "code" : "CDOX–M",
+    "display" : "CDOX–M"
+  },
+  {
+    "code" : "ChIVPP",
+    "display" : "ChIVPP"
+  },
+  {
+    "code" : "CHOEP14",
+    "display" : "CHOEP14"
+  },
+  {
+    "code" : "CHOEP21",
+    "display" : "CHOEP21"
+  },
+  {
+    "code" : "CTD",
+    "display" : "CTD"
+  },
+  {
+    "code" : "CVAD",
+    "display" : "CVAD"
+  },
+  {
+    "code" : "C-VAMP",
+    "display" : "C-VAMP"
+  },
+  {
+    "code" : "CVP",
+    "display" : "CVP"
+  },
+  {
+    "code" : "CyBorD",
+    "display" : "CyBorD"
+  },
+  {
+    "code" : "DA-R-EPOCH",
+    "display" : "DA-R-EPOCH"
+  },
+  {
+    "code" : "DDGP",
+    "display" : "DDGP"
+  },
+  {
+    "code" : "ddMVAC",
+    "display" : "ddMVAC"
+  },
+  {
+    "code" : "de-Gramont",
+    "display" : "de Gramont"
+  },
+  {
+    "code" : "DHAC",
+    "display" : "DHAC"
+  },
+  {
+    "code" : "DHAP",
+    "display" : "DHAP"
+  },
+  {
+    "code" : "dmCODOX",
+    "display" : "dmCODOX"
+  },
+  {
+    "code" : "DRC",
+    "display" : "DRC"
+  },
+  {
+    "code" : "DRd",
+    "display" : "DRd"
+  },
+  {
+    "code" : "DT-PACE",
+    "display" : "DT-PACE"
+  },
+  {
+    "code" : "DVd",
+    "display" : "DVd"
+  },
+  {
+    "code" : "D-VMP",
+    "display" : "D-VMP"
+  },
+  {
+    "code" : "ECF",
+    "display" : "ECF"
+  },
+  {
+    "code" : "ECX",
+    "display" : "ECX"
+  },
+  {
+    "code" : "EMA-CO",
+    "display" : "EMA-CO"
+  },
+  {
+    "code" : "EOX",
+    "display" : "EOX "
+  },
+  {
+    "code" : "EP",
+    "display" : "EP"
+  },
+  {
+    "code" : "EP-EMA",
+    "display" : "EP-EMA"
+  },
+  {
+    "code" : "ESHAP",
+    "display" : "ESHAP"
+  },
+  {
+    "code" : "FCM",
+    "display" : "FCM"
+  },
+  {
+    "code" : "FCR",
+    "display" : "FCR"
+  },
+  {
+    "code" : "FLAG",
+    "display" : "FLAG"
+  },
+  {
+    "code" : "FLAG-Ida",
+    "display" : "FLAG-Ida"
+  },
+  {
+    "code" : "FLOT",
+    "display" : "FLOT"
+  },
+  {
+    "code" : "FLOX",
+    "display" : "FLOX"
+  },
+  {
+    "code" : "FOLFIRI",
+    "display" : "FOLFIRI"
+  },
+  {
+    "code" : "FOLFIRINOX",
+    "display" : "FOLFIRINOX"
+  },
+  {
+    "code" : "FOLFOX4",
+    "display" : "FOLFOX4 "
+  },
+  {
+    "code" : "FOLFOX6",
+    "display" : "FOLFOX6"
+  },
+  {
+    "code" : "FOLFOXIRI",
+    "display" : "FOLFOXIRI"
+  },
+  {
+    "code" : "GDP",
+    "display" : "GDP"
+  },
+  {
+    "code" : "GIST",
+    "display" : "GIST"
+  },
+  {
+    "code" : "GIVE",
+    "display" : "GIVE"
+  },
+  {
+    "code" : "GMALL-2002",
+    "display" : "GMALL 2002"
+  },
+  {
+    "code" : "GRAAPH-2005",
+    "display" : "GRAAPH-2005"
+  },
+  {
+    "code" : "HAM",
+    "display" : "HAM"
+  },
+  {
+    "code" : "HiDAC",
+    "display" : "HiDAC"
+  },
+  {
+    "code" : "ICE",
+    "display" : "ICE"
+  },
+  {
+    "code" : "IDAC",
+    "display" : "IDAC"
+  },
+  {
+    "code" : "IVAC",
+    "display" : "IVAC"
+  },
+  {
+    "code" : "LACE",
+    "display" : "LACE"
+  },
+  {
+    "code" : "LAD",
+    "display" : "LAD"
+  },
+  {
+    "code" : "LCD",
+    "display" : "LCD"
+  },
+  {
+    "code" : "M/IVAC",
+    "display" : "M/IVAC"
+  },
+  {
+    "code" : "MAP",
+    "display" : "MAP"
+  },
+  {
+    "code" : "MAYO",
+    "display" : "MAYO"
+  },
+  {
+    "code" : "MBVP",
+    "display" : "MBVP"
+  },
+  {
+    "code" : "MPB",
+    "display" : "MPB"
+  },
+  {
+    "code" : "MPT",
+    "display" : "MPT"
+  },
+  {
+    "code" : "MRD",
+    "display" : "MRD"
+  },
+  {
+    "code" : "MVAC",
+    "display" : "MVAC"
+  },
+  {
+    "code" : "O-CHOP21",
+    "display" : "O-CHOP21"
+  },
+  {
+    "code" : "O-CVP",
+    "display" : "O-CVP"
+  },
+  {
+    "code" : "OFF",
+    "display" : "OFF"
+  },
+  {
+    "code" : "PAD",
+    "display" : "PAD"
+  },
+  {
+    "code" : "PCAB",
+    "display" : "PCAB"
+  },
+  {
+    "code" : "PCV",
+    "display" : "PCV"
+  },
+  {
+    "code" : "PEN",
+    "display" : "PEN"
+  },
+  {
+    "code" : "PNET",
+    "display" : "PNET"
+  },
+  {
+    "code" : "POMP",
+    "display" : "POMP"
+  },
+  {
+    "code" : "PVAG",
+    "display" : "PVAG"
+  },
+  {
+    "code" : "PVd",
+    "display" : "PVd"
+  },
+  {
+    "code" : "QUASAR",
+    "display" : "QUASAR"
+  },
+  {
+    "code" : "R-BAC",
+    "display" : "R-BAC"
+  },
+  {
+    "code" : "R-CHOEP14",
+    "display" : "R-CHOEP14"
+  },
+  {
+    "code" : "R-CHOP",
+    "display" : "R-CHOP"
+  },
+  {
+    "code" : "R-CHOP14",
+    "display" : "R-CHOP14"
+  },
+  {
+    "code" : "R-CHOP21",
+    "display" : "R-CHOP21"
+  },
+  {
+    "code" : "R-CVP",
+    "display" : "R-CVP"
+  },
+  {
+    "code" : "R-DHAO",
+    "display" : "R-DHAOx"
+  },
+  {
+    "code" : "R-DHAP",
+    "display" : "R-DHAP"
+  },
+  {
+    "code" : "R-DH",
+    "display" : "R-DHP"
+  },
+  {
+    "code" : "R-GDP",
+    "display" : "R-GDP"
+  },
+  {
+    "code" : "R-GemOX",
+    "display" : "R-GemOX"
+  },
+  {
+    "code" : "R-HiDAC",
+    "display" : "R-HiDAC"
+  },
+  {
+    "code" : "RICE",
+    "display" : "RICE"
+  },
+  {
+    "code" : "R-maxi-CHOP",
+    "display" : "R-maxi-CHOP"
+  },
+  {
+    "code" : "R-MiniCHOP",
+    "display" : "R-MiniCHOP"
+  },
+  {
+    "code" : "R-MPV",
+    "display" : "R-MPV"
+  },
+  {
+    "code" : "Roswell-Park",
+    "display" : "Roswell Park"
+  },
+  {
+    "code" : "SMARTE-R-CHOP14",
+    "display" : "SMARTE-R-CHOP14"
+  },
+  {
+    "code" : "SMILE",
+    "display" : "SMILE"
+  },
+  {
+    "code" : "TICE",
+    "display" : "TICE"
+  },
+  {
+    "code" : "TIP",
+    "display" : "TIP"
+  },
+  {
+    "code" : "TPF",
+    "display" : "TPF"
+  },
+  {
+    "code" : "TURBT",
+    "display" : "TURBT"
+  },
+  {
+    "code" : "VAC",
+    "display" : "VAC"
+  },
+  {
+    "code" : "VAD",
+    "display" : "VAD"
+  },
+  {
+    "code" : "VAI",
+    "display" : "VAI"
+  },
+  {
+    "code" : "VDC/IE",
+    "display" : "VDC/IE"
+  },
+  {
+    "code" : "VeIP",
+    "display" : "VeIP"
+  },
+  {
+    "code" : "VIDE",
+    "display" : "VIDE"
+  },
+  {
+    "code" : "VIP",
+    "display" : "VIP"
+  }]
+}

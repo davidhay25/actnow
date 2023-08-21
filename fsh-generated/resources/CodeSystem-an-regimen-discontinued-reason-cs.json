@@ -1,12 +1,11 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "RegimenDiscontinuedReason",
   "id": "an-regimen-discontinued-reason-cs",
   "title": "The reason why a regimen was discontinued",
   "description": "The reason why a regimen was discontinued",
-  "version": "0.3.0",
   "url": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs",
   "concept": [
     {
