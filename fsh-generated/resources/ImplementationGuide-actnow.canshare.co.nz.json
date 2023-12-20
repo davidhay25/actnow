@@ -78,14 +78,6 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/AnCapabilityStatement"
-        },
-        "name": "AnCapabilityStatement",
-        "description": "Server capability statement",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/an-dx-basis-vs"
         },
         "name": "Basis of diagnosis",
@@ -109,11 +101,11 @@
       },
       {
         "reference": {
-          "reference": "CarePlan/careplan-cycle-1"
+          "reference": "CapabilityStatement/AnCapabilityStatement"
         },
-        "name": "careplan-cycle-1",
-        "description": "Example of a cycle care plan",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
+        "name": "CapabilityStatement representing the server requirements for a FHIR server",
+        "description": "Server capability statement",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -229,6 +221,14 @@
         },
         "name": "CreatinineClearance",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/careplan-cycle-1"
+        },
+        "name": "Cycle 1",
+        "description": "Example of a cycle care plan",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-cycle"
       },
       {
         "reference": {

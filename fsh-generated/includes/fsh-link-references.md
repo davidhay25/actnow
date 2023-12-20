@@ -2,11 +2,10 @@
 [AnMedicationAdministration]: StructureDefinition-an-medication-administration.html
 [AnMedicationRequest]: StructureDefinition-an-medication-request.html
 [AnPatient]: StructureDefinition-an-patient.html
-[AnCapabilityStatement]: CapabilityStatement-AnCapabilityStatement.html
 [DxBasis]: ValueSet-an-dx-basis-vs.html
 [ObservationBSA]: StructureDefinition-an-bsa.html
 [bsa]: Observation-bsa.html
-[careplan-cycle-1]: CarePlan-careplan-cycle-1.html
+[AnCapabilityStatement]: CapabilityStatement-AnCapabilityStatement.html
 [careplan-regimen-1]: CarePlan-careplan-regimen-1.html
 [careplan-regimen-2]: CarePlan-careplan-regimen-2.html
 [excM1]: Observation-excM1.html
@@ -22,6 +21,7 @@
 [cp-supporting-info]: SearchParameter-cp-supporting-info.html
 [ObservationCreatClear]: StructureDefinition-an-creat-clear.html
 [CreatinineClearance]: Observation-CreatinineClearance.html
+[careplan-cycle-1]: CarePlan-careplan-cycle-1.html
 [CareplanCycle]: StructureDefinition-an-careplan-cycle.html
 [CycleCount]: StructureDefinition-an-cycle-count.html
 [CycleDay]: StructureDefinition-an-cycle-day.html
