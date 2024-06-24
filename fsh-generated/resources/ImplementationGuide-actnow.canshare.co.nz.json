@@ -272,6 +272,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/canshare-depends-on"
+        },
+        "name": "DependsOn",
+        "description": "Indicates the type of comparison performed when ecaluating the target 'depends-on' value if it is not simple equality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/an-dose-adjustment-reason"
         },
         "name": "Dose adjustment reason",

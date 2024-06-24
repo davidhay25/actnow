@@ -67,6 +67,7 @@ StructureDefinition-an-prescribed-dose.json               PrescribedDose        
 StructureDefinition-an-regimen-discontinued.json          RegimenDiscontinued                Extension   extension/ext-regimen-discontinued.fsh                6 - 43
 StructureDefinition-an-regimen-otu.json                   RegimenOTU                         Extension   extension/ext-regimen-otu.fsh                         3 - 32
 StructureDefinition-an-weight.json                        ObservationWeight                  Profile     profile/profile-Observation-weight.fsh                1 - 47
+StructureDefinition-canshare-depends-on.json              DependsOn                          Extension   extension/ext-conceptmap-dependson.fsh                1 - 14
 StructureDefinition-recurrence-type.json                  RecurrenceType                     Extension   extension/ext-recurrence-type.fsh                     1 - 14
 StructureDefinition-sact-regimen-type.json                RegimenType                        Extension   extension/ext-cca-regimen-type.fsh                    3 - 19
 ValueSet-an-dose-adjustment-reason.json                   DoseAdjustmentReason               ValueSet    terminology/term-dose-adjust-reason.fsh               3 - 28

@@ -544,6 +544,14 @@
     "endLine": 47
   },
   {
+    "outputFile": "StructureDefinition-canshare-depends-on.json",
+    "fshName": "DependsOn",
+    "fshType": "Extension",
+    "fshFile": "extension/ext-conceptmap-dependson.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
     "outputFile": "StructureDefinition-recurrence-type.json",
     "fshName": "RecurrenceType",
     "fshType": "Extension",

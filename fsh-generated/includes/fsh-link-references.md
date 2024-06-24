@@ -27,6 +27,7 @@
 [CycleDay]: StructureDefinition-an-cycle-day.html
 [CycleNumber]: StructureDefinition-an-cycle-number.html
 [CyclePlannedLength]: StructureDefinition-an-cycle-planned-length.html
+[DependsOn]: StructureDefinition-canshare-depends-on.html
 [DoseAdjustmentReason]: ValueSet-an-dose-adjustment-reason.html
 [DoseAdjustmentReason]: StructureDefinition-an-dose-adjustment-reason.html
 [ObservationEcog]: StructureDefinition-an-ecog.html

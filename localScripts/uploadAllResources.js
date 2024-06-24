@@ -17,7 +17,11 @@ let fullFolderPath = "../fsh-generated/resources/";
 //let conformanceServer = "https://hof.smilecdr.com/fhir_request/"
 
 //let conformanceServer = "http://localhost:8080/fhir/" //the server in docker
-let conformanceServer = "http://poc.canshare.co.nz:8080/fhir/" //the server in poc
+//let conformanceServer = "http://poc.canshare.co.nz:8080/fhir/" //the server in poc
+//let conformanceServer = "http://localhost:8087/fhir/" //the server in poc
+
+let conformanceServer = "http://test.canshare.co.nz:8080/fhir/"
+
 
 let bundle = {resourceType:"Bundle",type:'transaction',entry:[]}
 
@@ -51,6 +55,7 @@ axios.post(url,bundle).then(function(response){
     //console.log(response.data)
     console.log(JSON.stringify(response.data,null,2))
 }).catch(function(err){
+    console.log(err)
     console.log(err.response.data)
 })
 
