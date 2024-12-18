@@ -5,9 +5,9 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the clinical TNM group score.</div>"
   },
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group",
   "name": "ObservationClinTNMGroup",
-  "title": "clinical TNM group score",
+  "title": "Clinical TNM group score",
   "status": "draft",
   "description": "An observation that represents the clinical TNM group score",
   "jurisdiction": [

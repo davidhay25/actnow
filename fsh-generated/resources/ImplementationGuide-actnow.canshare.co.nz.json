@@ -173,13 +173,13 @@
           "reference": "Observation/excTNM1"
         },
         "name": "Clinical TNM group",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
+        "exampleCanonical": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
       },
       {
         "reference": {
           "reference": "StructureDefinition/an-cGroup"
         },
-        "name": "clinical TNM group score",
+        "name": "Clinical TNM group score",
         "description": "An observation that represents the clinical TNM group score",
         "exampleBoolean": false
       },

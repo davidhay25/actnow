@@ -102,7 +102,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup",
-              "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
+              "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
             ]
           }
         ]

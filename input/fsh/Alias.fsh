@@ -47,7 +47,7 @@ Alias: $extFacilityAdministered = http://canshare.co.nz/fhir/StructureDefinition
 Alias: $cT = http://canshare.co.nz/fhir/StructureDefinition/an-cT
 Alias: $cN = http://canshare.co.nz/fhir/StructureDefinition/an-cN
 Alias: $cM = http://canshare.co.nz/fhir/StructureDefinition/an-cM
-Alias: $cGroup = http://canshare.co.nz/fhir/StructureDefinition/an-cGroup
+Alias: $cGroup = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group
 
 Alias: $pT = http://canshare.co.nz/fhir/StructureDefinition/an-pT
 Alias: $pN = http://canshare.co.nz/fhir/StructureDefinition/an-pN

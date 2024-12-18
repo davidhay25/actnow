@@ -1,7 +1,7 @@
 Profile:        ObservationClinTNMGroup
 Parent:         Observation
 Id:             an-cGroup
-Title:          "clinical TNM group score"
+Title:          "Clinical TNM group score"
 Description:    "An observation that represents the clinical TNM group score"
 
 * ^url = $cGroup

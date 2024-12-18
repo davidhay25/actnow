@@ -3,7 +3,7 @@
   "id": "excTNM1",
   "meta": {
     "profile": [
-      "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
+      "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
     ]
   },
   "code": {
