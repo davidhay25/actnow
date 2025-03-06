@@ -2,13 +2,13 @@ Profile:        ObservationPathTNMGroup
 Parent:         Observation
 Id:             an-pGroup
 Title:          "Pathological TNM group score"
-Description:    "An observation that represents the pathological TNM group score"
+Description:    "An observation that represents the pathological TNM (pTNM) group score"
 
 * ^url = $pGroup
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological TNM group score.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological TNM (pTNM) group score.</div>"
 
 //required and must support elements
 * subject 1..1 MS

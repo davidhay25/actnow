@@ -2,13 +2,13 @@ Profile:        ObservationPT
 Parent:         Observation
 Id:             an-pT
 Title:          "Pathological T-score"
-Description:    "An observation that represents the pathological 'T' score which measures tumour size."
+Description:    "An observation that represents the pathological 'T' score (pT) which measures tumour size"
 
 * ^url = $pT
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological 'T' score.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological 'T' score (pT) which measures tumour size.</div>"
 
 //required and must support elements
 * subject 1..1 MS

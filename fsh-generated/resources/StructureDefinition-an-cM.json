@@ -3,13 +3,13 @@
   "id": "an-cM",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the clinical 'M' score which measures distant metastases.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the clinical 'M' score which measures metastases and spread.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cM",
   "name": "ObservationCM",
   "title": "Clinical M-score",
   "status": "draft",
-  "description": "An observation that represents the clinical 'M' score",
+  "description": "An observation that represents the clinical 'M' score which measures metastases and spread.",
   "jurisdiction": [
     {
       "coding": [

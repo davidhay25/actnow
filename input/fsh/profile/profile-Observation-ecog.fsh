@@ -12,13 +12,13 @@ Profile:        ObservationEcog
 Parent:         Observation
 Id:             an-ecog
 Title:          "ECOG score"
-Description:    "An observation that represents an ecog score"
+Description:    "An observation that represents an Eastern Cooperative Oncology Group (ECOG) score."
 
 * ^url = $ecog
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents an ecog score.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents an Eastern Cooperative Oncology Group (ECOG) score.</div>"
 
 //required and must support elements
 * subject 1..1 MS

@@ -1,7 +1,7 @@
 ValueSet : PRStatus
 Id: pr-status-vs
-Title: "ER status"
-Description:  "Estrogen Receptor status"
+Title: "PR status"
+Description:  "Progesterone Receptor status"
 
 * ^url = $pr-status-vs
 * ^experimental = false

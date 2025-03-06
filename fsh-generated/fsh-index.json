@@ -40,14 +40,6 @@
     "endLine": 22
   },
   {
-    "outputFile": "CodeSystem-an-regimen-outcome-cs.json",
-    "fshName": "RegimenOutcome",
-    "fshType": "CodeSystem",
-    "fshFile": "terminology/regimen-outcome.fsh",
-    "startLine": 11,
-    "endLine": 22
-  },
-  {
     "outputFile": "Condition-exSmallCellCancer.json",
     "fshName": "exSmallCellCancer",
     "fshType": "Instance",
@@ -637,7 +629,7 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/regimen-outcome.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-her2-status-vs.json",

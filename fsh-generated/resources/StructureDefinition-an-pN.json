@@ -3,13 +3,13 @@
   "id": "an-pN",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the pathological 'N' score.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the pathological 'N' score (pN) which measures local lymph node involvement.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pN",
   "name": "ObservationPN",
   "title": "Pathological N-score",
   "status": "draft",
-  "description": "An observation that represents the pathological 'N' score which measures local lymph node involvement.",
+  "description": "An observation that represents the pathological 'N' score (pN) which measures local lymph node involvement.",
   "jurisdiction": [
     {
       "coding": [

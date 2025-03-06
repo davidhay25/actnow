@@ -3,13 +3,13 @@
   "id": "an-pM",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the pathological 'M' score.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the pathological 'M' score (pM) which measures distant metastases.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pM",
   "name": "ObservationPM",
   "title": "Pathological M-score",
   "status": "draft",
-  "description": "An observation that represents the pathological 'M' score which measures distant metastases.",
+  "description": "An observation that represents the pathological 'M' score (pM) which measures distant metastases",
   "jurisdiction": [
     {
       "coding": [

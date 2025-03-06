@@ -10,7 +10,21 @@
   "compose": {
     "include": [
       {
-        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "268910001",
+            "display": "Patient improved"
+          },
+          {
+            "code": "359748005",
+            "display": "Patient unchanged"
+          },
+          {
+            "code": "271299001",
+            "display": "Patient worse"
+          }
+        ]
       }
     ]
   }

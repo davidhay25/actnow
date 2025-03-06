@@ -6,7 +6,7 @@ Description:  "Whether the diagnosis is based on clinical or pathological ground
 * ^url = $dx-basis-vs
 * ^experimental = false
 
-* $snomed#373795004	"Cancer diagnosis based on clinical evidence (finding)"
-* $unknownSystem#xxx "Cancer diagnosis based on pathology evidence (finding)"
+* $snomed#373795004	"Clinical evidence"
+* $snomed#261771000210109 "Pathological evidence"
 
 

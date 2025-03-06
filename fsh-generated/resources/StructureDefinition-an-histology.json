@@ -3,13 +3,13 @@
   "id": "an-histology",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a Histology finding.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a histology finding.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-histology",
   "name": "ObservationHistology",
   "title": "Histology",
   "status": "draft",
-  "description": "An observation that represents a Histology finding",
+  "description": "An observation that represents a histology finding",
   "jurisdiction": [
     {
       "coding": [

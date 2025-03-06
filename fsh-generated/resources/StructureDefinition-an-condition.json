@@ -112,7 +112,7 @@
         "path": "Condition.evidence.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs"
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis"
         }
       },
       {

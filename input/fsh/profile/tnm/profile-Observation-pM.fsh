@@ -2,13 +2,13 @@ Profile:        ObservationPM
 Parent:         Observation
 Id:             an-pM
 Title:          "Pathological M-score"
-Description:    "An observation that represents the pathological 'M' score which measures distant metastases."
+Description:    "An observation that represents the pathological 'M' score (pM) which measures distant metastases"
 
 * ^url = $pM
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological 'M' score.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the pathological 'M' score (pM) which measures distant metastases.</div>"
 
 //required and must support elements
 * subject 1..1 MS

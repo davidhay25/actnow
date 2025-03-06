@@ -2,13 +2,13 @@ Profile:        ObservationCM
 Parent:         Observation
 Id:             an-cM
 Title:          "Clinical M-score"
-Description:    "An observation that represents the clinical 'M' score"
+Description:    "An observation that represents the clinical 'M' score which measures metastases and spread."
 
 * ^url = $cM
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the clinical 'M' score which measures distant metastases.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents the clinical 'M' score which measures metastases and spread.</div>"
 
 //required and must support elements
 * subject 1..1 MS

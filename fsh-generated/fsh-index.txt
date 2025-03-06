@@ -4,7 +4,6 @@ CarePlan-careplan-cycle-1.json                            careplan-cycle-1      
 CarePlan-careplan-regimen-1.json                          careplan-regimen-1                 Instance    examples/example-careplan-regimen-1.fsh               4 - 38
 CarePlan-careplan-regimen-2.json                          careplan-regimen-2                 Instance    examples/example-careplan-regimen-1.fsh               42 - 95
 CodeSystem-an-regimen-discontinued-reason-cs.json         RegimenDiscontinuedReason          CodeSystem  terminology/term-regimen-discontinued-reason.fsh      11 - 22
-CodeSystem-an-regimen-outcome-cs.json                     RegimenOutcome                     CodeSystem  terminology/regimen-outcome.fsh                       11 - 22
 Condition-exSmallCellCancer.json                          exSmallCellCancer                  Instance    examples/Condition-with-histology-and-staging.fsh     1 - 21
 MedicationAdministration-medicationadministration-1.json  medicationadministration-1         Instance    examples/example-medicationadministration-1.fsh       1 - 46
 MedicationRequest-medicationrequest-1.json                medicationrequest-1                Instance    examples/example-medicationrequest-1.fsh              1 - 23
@@ -78,7 +77,7 @@ ValueSet-an-regimen-discontinued-patient-factors-vs.json  RegimenDiscontinuedPat
 ValueSet-an-regimen-discontinued-reason-vs.json           RegimenDiscontinuedReason          ValueSet    terminology/term-regimen-discontinued-reason.fsh      1 - 8
 ValueSet-an-regimen-discontinued-toxicity-vs.json         RegimenDiscontinuedToxicity        ValueSet    terminology/regimen-discontinued-toxicity.fsh         1 - 22
 ValueSet-an-regimen-iot-vs.json                           RegimenIOT                         ValueSet    terminology/term-regimen-iot.fsh                      3 - 16
-ValueSet-an-regimen-outcome-vs.json                       RegimenOutcome                     ValueSet    terminology/regimen-outcome.fsh                       1 - 8
+ValueSet-an-regimen-outcome-vs.json                       RegimenOutcome                     ValueSet    terminology/regimen-outcome.fsh                       1 - 12
 ValueSet-her2-status-vs.json                              HER2Status                         ValueSet    terminology/term-her2-status.fsh                      1 - 11
 ValueSet-pr-status-vs.json                                PRStatus                           ValueSet    terminology/term-pr-status.fsh                        1 - 11
 ValueSet-recurrence-type.json                             RecurrenceType                     ValueSet    terminology/recurrance-type.fsh                       1 - 15

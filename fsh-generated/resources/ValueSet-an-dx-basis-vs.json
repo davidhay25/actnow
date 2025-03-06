@@ -5,7 +5,7 @@
   "id": "an-dx-basis-vs",
   "title": "Basis of diagnosis",
   "description": "Whether the diagnosis is based on clinical or pathological grounds",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis",
   "experimental": false,
   "compose": {
     "include": [
@@ -14,16 +14,11 @@
         "concept": [
           {
             "code": "373795004",
-            "display": "Cancer diagnosis based on clinical evidence (finding)"
-          }
-        ]
-      },
-      {
-        "system": "http://unknown.org",
-        "concept": [
+            "display": "Clinical evidence"
+          },
           {
-            "code": "xxx",
-            "display": "Cancer diagnosis based on pathology evidence (finding)"
+            "code": "261771000210109",
+            "display": "Pathological evidence"
           }
         ]
       }

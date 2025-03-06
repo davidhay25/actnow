@@ -142,7 +142,7 @@
           "reference": "StructureDefinition/an-cM"
         },
         "name": "Clinical M-score",
-        "description": "An observation that represents the clinical 'M' score",
+        "description": "An observation that represents the clinical 'M' score which measures metastases and spread.",
         "exampleBoolean": false
       },
       {
@@ -299,7 +299,7 @@
           "reference": "StructureDefinition/an-ecog"
         },
         "name": "ECOG score",
-        "description": "An observation that represents an ecog score",
+        "description": "An observation that represents an Eastern Cooperative Oncology Group (ECOG) score.",
         "exampleBoolean": false
       },
       {
@@ -313,14 +313,6 @@
       {
         "reference": {
           "reference": "ValueSet/an-er-status-vs"
-        },
-        "name": "ER status",
-        "description": "Estrogen Receptor status",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/pr-status-vs"
         },
         "name": "ER status",
         "description": "Estrogen Receptor status",
@@ -412,7 +404,7 @@
           "reference": "StructureDefinition/an-her2-status"
         },
         "name": "HER2 status",
-        "description": "An observation that represents a HER2 status",
+        "description": "An observation that represents a human epidermal growth factor receptor 2 (HER2) status",
         "exampleBoolean": false
       },
       {
@@ -435,7 +427,7 @@
           "reference": "StructureDefinition/an-histology"
         },
         "name": "Histology",
-        "description": "An observation that represents a Histology finding",
+        "description": "An observation that represents a histology finding",
         "exampleBoolean": false
       },
       {
@@ -502,14 +494,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/an-regimen-outcome-cs"
-        },
-        "name": "Outcome of a regimen",
-        "description": "How did applying the regimen affect the patient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Observation/expM1"
         },
         "name": "Pathological M value",
@@ -520,7 +504,7 @@
           "reference": "StructureDefinition/an-pM"
         },
         "name": "Pathological M-score",
-        "description": "An observation that represents the pathological 'M' score which measures distant metastases.",
+        "description": "An observation that represents the pathological 'M' score (pM) which measures distant metastases",
         "exampleBoolean": false
       },
       {
@@ -535,7 +519,7 @@
           "reference": "StructureDefinition/an-pN"
         },
         "name": "Pathological N-score",
-        "description": "An observation that represents the pathological 'N' score which measures local lymph node involvement.",
+        "description": "An observation that represents the pathological 'N' score (pN) which measures local lymph node involvement.",
         "exampleBoolean": false
       },
       {
@@ -550,7 +534,7 @@
           "reference": "StructureDefinition/an-pT"
         },
         "name": "Pathological T-score",
-        "description": "An observation that represents the pathological 'T' score which measures tumour size.",
+        "description": "An observation that represents the pathological 'T' score (pT) which measures tumour size",
         "exampleBoolean": false
       },
       {
@@ -565,7 +549,7 @@
           "reference": "StructureDefinition/an-pGroup"
         },
         "name": "Pathological TNM group score",
-        "description": "An observation that represents the pathological TNM group score",
+        "description": "An observation that represents the pathological TNM (pTNM) group score",
         "exampleBoolean": false
       },
       {
@@ -581,7 +565,15 @@
           "reference": "StructureDefinition/an-pr-status"
         },
         "name": "PR status",
-        "description": "An observation that represents a Progesterone Receptor status",
+        "description": "An observation that represents a progesterone receptor (PR) status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/pr-status-vs"
+        },
+        "name": "PR status",
+        "description": "Progesterone Receptor status",
         "exampleBoolean": false
       },
       {

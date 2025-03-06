@@ -3,13 +3,13 @@
   "id": "an-pGroup",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the pathological TNM group score.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the pathological TNM (pTNM) group score.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup",
   "name": "ObservationPathTNMGroup",
   "title": "Pathological TNM group score",
   "status": "draft",
-  "description": "An observation that represents the pathological TNM group score",
+  "description": "An observation that represents the pathological TNM (pTNM) group score",
   "jurisdiction": [
     {
       "coding": [

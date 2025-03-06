@@ -2,13 +2,13 @@ Profile:        ObservationHistology
 Parent:         Observation
 Id:             an-histology
 Title:          "Histology"
-Description:    "An observation that represents a Histology finding"
+Description:    "An observation that represents a histology finding"
 
 * ^url = $histology
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.status = #additional
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents a Histology finding.</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>An observation that represents a histology finding.</div>"
 
 //required and must support elements
 * subject 1..1 MS

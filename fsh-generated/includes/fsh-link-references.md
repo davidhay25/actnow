@@ -33,7 +33,6 @@
 [ObservationEcog]: StructureDefinition-an-ecog.html
 [EcogStatus]: ValueSet-an-ecog-status-vs.html
 [ERStatus]: ValueSet-an-er-status-vs.html
-[PRStatus]: ValueSet-pr-status-vs.html
 [ERStatus]: Observation-ERStatus.html
 [ObservationErStatus]: StructureDefinition-an-er-status.html
 [exPractitioner]: Practitioner-exPractitioner.html
@@ -57,7 +56,6 @@
 [medicationadministration-1]: MedicationAdministration-medicationadministration-1.html
 [medicationrequest-1]: MedicationRequest-medicationrequest-1.html
 [RegimenOutcome]: ValueSet-an-regimen-outcome-vs.html
-[RegimenOutcome]: CodeSystem-an-regimen-outcome-cs.html
 [expM1]: Observation-expM1.html
 [ObservationPM]: StructureDefinition-an-pM.html
 [expN1]: Observation-expN1.html
@@ -68,6 +66,7 @@
 [ObservationPathTNMGroup]: StructureDefinition-an-pGroup.html
 [RegimenDiscontinuedPatientFactors]: ValueSet-an-regimen-discontinued-patient-factors-vs.html
 [ObservationPrStatus]: StructureDefinition-an-pr-status.html
+[PRStatus]: ValueSet-pr-status-vs.html
 [PrescribedDose]: StructureDefinition-an-prescribed-dose.html
 [PRStatus]: Observation-PRStatus.html
 [RecurrenceType]: StructureDefinition-recurrence-type.html

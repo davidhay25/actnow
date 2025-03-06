@@ -3,8 +3,8 @@
   "status": "draft",
   "name": "PRStatus",
   "id": "pr-status-vs",
-  "title": "ER status",
-  "description": "Estrogen Receptor status",
+  "title": "PR status",
+  "description": "Progesterone Receptor status",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs",
   "experimental": false,
   "compose": {

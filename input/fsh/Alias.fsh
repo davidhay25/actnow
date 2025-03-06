@@ -93,7 +93,6 @@ Alias: $regimen-discontinued-toxicity-vs = http://canshare.co.nz/fhir/ValueSet/a
 Alias: $regimen-discontinued-toxicity-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs
 
 Alias: $regimen-outcome-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs
-Alias: $regimen-outcome-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs
 
 Alias: $regimen-iot-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs
 Alias: $regimen-iot-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-iot-cs
@@ -102,8 +101,9 @@ Alias: $dose-adjustment-reason-vs = http://canshare.co.nz/fhir/ValueSet/an-dose-
 //Alias: $dose-adjustment-reason-cs = http://canshare.co.nz/fhir/CodeSystem/an-dose-adjustment-reason-cs
 
 Alias: $ecog-status-vs = http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs
-Alias: $dx-basis-vs = http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs
+Alias: $dx-basis-vs = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis
 Alias: $recurrence-type-vs = http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs
 Alias: $er-status-vs = http://canshare.co.nz/fhir/ValueSet/an-er-status-vs
 Alias: $pr-status-vs = http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs
 Alias: $her2-status-vs = http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs
+

@@ -3,13 +3,13 @@
   "id": "an-ecog",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents an ecog score.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents an Eastern Cooperative Oncology Group (ECOG) score.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-ecog",
   "name": "ObservationEcog",
   "title": "ECOG score",
   "status": "draft",
-  "description": "An observation that represents an ecog score",
+  "description": "An observation that represents an Eastern Cooperative Oncology Group (ECOG) score.",
   "jurisdiction": [
     {
       "coding": [

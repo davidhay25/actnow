@@ -3,13 +3,13 @@
   "id": "an-pr-status",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents an PR status.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents a progesterone receptor (PR) status.</div>"
   },
   "url": "http://canshare.co.nz/fhir/StructureDefinition/an-pr-status",
   "name": "ObservationPrStatus",
   "title": "PR status",
   "status": "draft",
-  "description": "An observation that represents a Progesterone Receptor status",
+  "description": "An observation that represents a progesterone receptor (PR) status",
   "jurisdiction": [
     {
       "coding": [
