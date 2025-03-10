@@ -5,7 +5,7 @@
   "id": "an-regimen-outcome-vs",
   "title": "Outcome of a regimen",
   "description": "The outcome of the prescribed regimen for the patient",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-regimen-outcome",
   "experimental": false,
   "compose": {
     "include": [

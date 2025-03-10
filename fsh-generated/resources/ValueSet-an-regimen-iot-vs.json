@@ -5,7 +5,7 @@
   "id": "an-regimen-iot-vs",
   "title": "Intent of treatment",
   "description": "Treatment intents or reasons for using a therapeutic procedure to treat cancer.",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-treatment-intent",
   "experimental": false,
   "compose": {
     "include": [

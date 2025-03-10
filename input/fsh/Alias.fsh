@@ -33,7 +33,7 @@ Alias: $pr-status = http://canshare.co.nz/fhir/StructureDefinition/an-pr-status
 Alias: $her2-status = http://canshare.co.nz/fhir/StructureDefinition/an-her2-status
 
 
-Alias: $regimen-outcome = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-regimen-outcome
+//Alias: $regimen-outcome = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-regimen-outcome
 
 Alias: $creat-clear = http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear
 Alias: $height = http://canshare.co.nz/fhir/StructureDefinition/an-height
@@ -92,9 +92,9 @@ Alias: $regimen-discontinued-patient-factors-vs = https://nzhts.digital.health.n
 Alias: $regimen-discontinued-toxicity-vs = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-toxicity-discontinue-reason
 //Alias: $regimen-discontinued-toxicity-cs = http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs
 
-Alias: $regimen-outcome-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs
+Alias: $regimen-outcome-vs = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-regimen-outcome
 
-Alias: $regimen-iot-vs = http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs
+Alias: $regimen-iot-vs = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-treatment-intent
 //Alias: $regimen-iot-cs = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-treatment-intent
 
 Alias: $dose-adjustment-reason-vs = https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-dose-adjustment-reason

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "actnow.canshare.co.nz",
   "url": "http://canshare.co.nz/fhir/ImplementationGuide/actnow.canshare.co.nz",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "name": "actnow",
   "title": "ACT-NOW Implementation Guide",
   "status": "draft",
