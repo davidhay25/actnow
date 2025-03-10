@@ -10,13 +10,13 @@
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-cGroup.html'>an-cGroup</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-cGroup</td>
+<td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group</td>
 <td><p>An observation that represents the clinical TNM group score</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-cM.html'>an-cM</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-cM</td>
-<td><p>An observation that represents the clinical &#39;M&#39; score</p></td>
+<td><p>An observation that represents the clinical &#39;M&#39; score which measures metastases and spread.</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-cN.html'>an-cN</a></td>
@@ -53,7 +53,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <tr>
 <td><a href='StructureDefinition-an-ecog.html'>an-ecog</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-ecog</td>
-<td><p>An observation that represents an ecog score</p></td>
+<td><p>An observation that represents an Eastern Cooperative Oncology Group (ECOG) score.</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-er-status.html'>an-er-status</a></td>
@@ -73,12 +73,12 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <tr>
 <td><a href='StructureDefinition-an-her2-status.html'>an-her2-status</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-her2-status</td>
-<td><p>An observation that represents a HER2 status</p></td>
+<td><p>An observation that represents a human epidermal growth factor receptor 2 (HER2) status</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-histology.html'>an-histology</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-histology</td>
-<td><p>An observation that represents a Histology finding</p></td>
+<td><p>An observation that represents a histology finding</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-medication-administration.html'>an-medication-administration</a></td>
@@ -93,22 +93,22 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <tr>
 <td><a href='StructureDefinition-an-pGroup.html'>an-pGroup</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pGroup</td>
-<td><p>An observation that represents the pathological TNM group score</p></td>
+<td><p>An observation that represents the pathological TNM (pTNM) group score</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-pM.html'>an-pM</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pM</td>
-<td><p>An observation that represents the pathological &#39;M&#39; score which measures distant metastases.</p></td>
+<td><p>An observation that represents the pathological &#39;M&#39; score (pM) which measures distant metastases</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-pN.html'>an-pN</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pN</td>
-<td><p>An observation that represents the pathological &#39;N&#39; score which measures local lymph node involvement.</p></td>
+<td><p>An observation that represents the pathological &#39;N&#39; score (pN) which measures local lymph node involvement.</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-pT.html'>an-pT</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pT</td>
-<td><p>An observation that represents the pathological &#39;T&#39; score which measures tumour size.</p></td>
+<td><p>An observation that represents the pathological &#39;T&#39; score (pT) which measures tumour size</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-patient.html'>an-patient</a></td>
@@ -118,7 +118,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 <tr>
 <td><a href='StructureDefinition-an-pr-status.html'>an-pr-status</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-pr-status</td>
-<td><p>An observation that represents a Progesterone Receptor status</p></td>
+<td><p>An observation that represents a progesterone receptor (PR) status</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-weight.html'>an-weight</a></td>

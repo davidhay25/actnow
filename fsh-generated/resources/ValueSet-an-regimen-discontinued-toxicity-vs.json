@@ -4,8 +4,8 @@
   "name": "RegimenDiscontinuedToxicity",
   "id": "an-regimen-discontinued-toxicity-vs",
   "title": "Toxicity reasons why a regimen was discontinued",
-  "description": "Toxicity reasons why a regimen was discontinued",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs",
+  "description": "Toxicity factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment.",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-toxicity-discontinue-reason",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,56 +13,68 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "422587007",
-            "display": "Nausea (finding)"
-          },
-          {
-            "code": "422400008",
-            "display": "Vomiting (disorder)"
-          },
-          {
-            "code": "386033004",
-            "display": "Neuropathy (disorder)"
-          },
-          {
-            "code": "61170000",
-            "display": "Stomatitis (disorder)"
-          },
-          {
-            "code": "271807003",
-            "display": "Eruption of skin (disorder)"
-          },
-          {
-            "code": "416098002",
-            "display": "Allergy to drug (finding)"
-          },
-          {
-            "code": "40733004",
-            "display": "Infectious disease (disorder)"
-          },
-          {
-            "code": "846605006",
-            "display": "Drug-induced pulmonary toxicity (disorder)"
-          },
-          {
-            "code": "863954001",
-            "display": "Cardiotoxicity (disorder)"
-          },
-          {
-            "code": "57662003",
-            "display": "Injury of blood vessel (disorder)"
-          },
-          {
             "code": "75183008",
-            "display": "Abnormal liver function (finding)"
+            "display": "Abnormal liver function"
           },
           {
             "code": "39539005",
-            "display": "Abnormal renal function (finding)"
+            "display": "Abnormal renal function"
+          },
+          {
+            "code": "863954001",
+            "display": "Cardiotoxicity"
+          },
+          {
+            "code": "62315008",
+            "display": "Diarrhoea"
+          },
+          {
+            "code": "416098002",
+            "display": "Drug allergy"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue"
           },
           {
             "code": "128540005",
-            "display": "Hearing disorder (disorder)"
+            "display": "Hearing disorder"
+          },
+          {
+            "code": "40733004",
+            "display": "Infection"
+          },
+          {
+            "code": "57662003",
+            "display": "Vascular injury"
+          },
+          {
+            "code": "370569000",
+            "display": "Myelosuppression"
+          },
+          {
+            "code": "422587007",
+            "display": "Nausea"
+          },
+          {
+            "code": "386033004",
+            "display": "Neuropathy"
+          },
+          {
+            "code": "846605006",
+            "display": "Pulmonary toxicity"
+          },
+          {
+            "code": "271807003",
+            "display": "Skin rash"
+          },
+          {
+            "code": "61170000",
+            "display": "Stomatitis"
+          },
+          {
+            "code": "422400008",
+            "display": "Vomiting"
           }
         ]
       }

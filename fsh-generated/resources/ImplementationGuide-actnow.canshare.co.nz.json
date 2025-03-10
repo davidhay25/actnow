@@ -81,7 +81,7 @@
           "reference": "ValueSet/an-dx-basis-vs"
         },
         "name": "Basis of diagnosis",
-        "description": "Whether the diagnosis is based on clinical or pathological grounds",
+        "description": "Types of evidence that may be used to reach a cancer diagnosis, which is treated with systemic anti cancer therapy (SACT).",
         "exampleBoolean": false
       },
       {
@@ -139,6 +139,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-tnm-cm"
+        },
+        "name": "Clinical M score",
+        "description": "The TNM group score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-cM"
         },
         "name": "Clinical M-score",
@@ -147,10 +155,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-tnm-cn"
+        },
+        "name": "Clinical N score",
+        "description": "The clincial N score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/an-cN"
         },
         "name": "Clinical N-score",
         "description": "An observation that represents the clinical 'N' score which measures local lymph node involvement.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-tnm-ct"
+        },
+        "name": "Clinical T score",
+        "description": "The clinical T score",
         "exampleBoolean": false
       },
       {
@@ -166,6 +190,14 @@
         },
         "name": "Clinical T-score",
         "description": "An observation that represents the clinical 'T' score which measures the tumour size.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-clin-tnmgroup"
+        },
+        "name": "Clinical TNM group",
+        "description": "The TNM group score",
         "exampleBoolean": false
       },
       {
@@ -283,7 +315,7 @@
           "reference": "ValueSet/an-dose-adjustment-reason"
         },
         "name": "Dose adjustment reason",
-        "description": "What was reason the dose was adjusted",
+        "description": "Reasons for adjusting the dose of a systemic anti-cancer therapy (SACT) treatment cycle plus other value.",
         "exampleBoolean": false
       },
       {
@@ -307,7 +339,7 @@
           "reference": "ValueSet/an-ecog-status-vs"
         },
         "name": "ECOG status",
-        "description": "ECOG status",
+        "description": "The performance status of a patient as defined by the Eastern Cooperative Oncology Group (ECOG) minus ECOG 5 (A performance status used when a patient is 'Dead').",
         "exampleBoolean": false
       },
       {
@@ -315,7 +347,7 @@
           "reference": "ValueSet/an-er-status-vs"
         },
         "name": "ER status",
-        "description": "Estrogen Receptor status",
+        "description": "A diagnosis of whether or not a tumour is estrogen receptive (ER) minus inconclusive value.",
         "exampleBoolean": false
       },
       {
@@ -412,7 +444,7 @@
           "reference": "ValueSet/her2-status-vs"
         },
         "name": "HER2 status",
-        "description": "Human epidermal growth status",
+        "description": "A diagnosis of the human epidermal growth factor receptor 2 (HER2) status of a tumour minus inconculsive value .",
         "exampleBoolean": false
       },
       {
@@ -432,6 +464,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-histology"
+        },
+        "name": "Histology",
+        "description": "Histology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/exSmallCellCancerHistology"
         },
         "name": "Histology: Small cell lung cancer",
@@ -442,7 +482,7 @@
           "reference": "ValueSet/an-regimen-iot-vs"
         },
         "name": "Intent of treatment",
-        "description": "What was the purpose of this treatment",
+        "description": "Treatment intents or reasons for using a therapeutic procedure to treat cancer.",
         "exampleBoolean": false
       },
       {
@@ -451,6 +491,14 @@
         },
         "name": "IOT",
         "description": "Intent of treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-clininal-trial"
+        },
+        "name": "Is on a clinical trial",
+        "description": "Is on a clinical triale",
         "exampleBoolean": false
       },
       {
@@ -489,7 +537,15 @@
           "reference": "ValueSet/an-regimen-outcome-vs"
         },
         "name": "Outcome of a regimen",
-        "description": "How did applying the regimen affect the patient",
+        "description": "The outcome of the prescribed regimen for the patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-path-m"
+        },
+        "name": "Pathological M score",
+        "description": "Pathological M score",
         "exampleBoolean": false
       },
       {
@@ -509,6 +565,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-path-n"
+        },
+        "name": "Pathological N score",
+        "description": "Pathological N score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/expN1"
         },
         "name": "Pathological N value",
@@ -524,6 +588,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/an-path-t"
+        },
+        "name": "Pathological T score",
+        "description": "Pathological T score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Observation/expT1"
         },
         "name": "Pathological T value",
@@ -535,6 +607,14 @@
         },
         "name": "Pathological T-score",
         "description": "An observation that represents the pathological 'T' score (pT) which measures tumour size",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/an-path-tnmgroup"
+        },
+        "name": "Pathological TNM group",
+        "description": "The TNM group score",
         "exampleBoolean": false
       },
       {
@@ -557,7 +637,7 @@
           "reference": "ValueSet/an-regimen-discontinued-patient-factors-vs"
         },
         "name": "Patient factors when discontinuing a regimen",
-        "description": "Patient factors when discontinuing a regimen",
+        "description": "Patient factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment plus not asked value.",
         "exampleBoolean": false
       },
       {
@@ -573,7 +653,7 @@
           "reference": "ValueSet/pr-status-vs"
         },
         "name": "PR status",
-        "description": "Progesterone Receptor status",
+        "description": "A diagnosis of whether or not a tumour is progesterone receptive (PR) minus inconculsive value.",
         "exampleBoolean": false
       },
       {
@@ -648,18 +728,10 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/an-regimen-discontinued-reason-cs"
-        },
-        "name": "The reason why a regimen was discontinued",
-        "description": "The reason why a regimen was discontinued",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/an-regimen-discontinued-toxicity-vs"
         },
         "name": "Toxicity reasons why a regimen was discontinued",
-        "description": "Toxicity reasons why a regimen was discontinued",
+        "description": "Toxicity factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment.",
         "exampleBoolean": false
       },
       {
@@ -667,7 +739,7 @@
           "reference": "ValueSet/recurrence-type"
         },
         "name": "Type of recurrence",
-        "description": "Type of recurrence",
+        "description": "The type of cancer recurrence, e.g. local, regional plus unknown and not applicable values.",
         "exampleBoolean": false
       },
       {

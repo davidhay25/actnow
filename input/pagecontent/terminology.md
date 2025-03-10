@@ -11,18 +11,28 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Canonical url</th></tr>
-<tr><td width='20%'><a href='ValueSet-an-dx-basis-vs.html'>Basis of diagnosis</a></td><td><p>Whether the diagnosis is based on clinical or pathological grounds</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-dx-basis-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-dose-adjustment-reason.html'>Dose adjustment reason</a></td><td><p>What was reason the dose was adjusted</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-ecog-status-vs.html'>ECOG status</a></td><td><p>ECOG status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-pr-status-vs.html'>ER status</a></td><td><p>Estrogen Receptor status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-er-status-vs.html'>ER status</a></td><td><p>Estrogen Receptor status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-er-status-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-her2-status-vs.html'>HER2 status</a></td><td><p>Human epidermal growth status</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-regimen-iot-vs.html'>Intent of treatment</a></td><td><p>What was the purpose of this treatment</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-regimen-outcome-vs.html'>Outcome of a regimen</a></td><td><p>How did applying the regimen affect the patient</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-patient-factors-vs.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors when discontinuing a regimen</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-reason-vs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-reason-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-toxicity-vs.html'>Toxicity reasons why a regimen was discontinued</a></td><td><p>Toxicity reasons why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-toxicity-vs</td></tr>
-<tr><td width='20%'><a href='ValueSet-recurrence-type.html'>Type of recurrence</a></td><td><p>Type of recurrence</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-dx-basis-vs.html'>Basis of diagnosis</a></td><td><p>Types of evidence that may be used to reach a cancer diagnosis, which is treated with systemic anti cancer therapy (SACT).</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-tnm-cm.html'>Clinical M score</a></td><td><p>The TNM group score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cm</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-tnm-cn.html'>Clinical N score</a></td><td><p>The clincial N score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cn</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-tnm-ct.html'>Clinical T score</a></td><td><p>The clinical T score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-ct</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-clin-tnmgroup.html'>Clinical TNM group</a></td><td><p>The TNM group score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-dose-adjustment-reason.html'>Dose adjustment reason</a></td><td><p>Reasons for adjusting the dose of a systemic anti-cancer therapy (SACT) treatment cycle plus other value.</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-dose-adjustment-reason</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-ecog-status-vs.html'>ECOG status</a></td><td><p>The performance status of a patient as defined by the Eastern Cooperative Oncology Group (ECOG) minus ECOG 5 (A performance status used when a patient is &#39;Dead&#39;).</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-ecog-status</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-er-status-vs.html'>ER status</a></td><td><p>A diagnosis of whether or not a tumour is estrogen receptive (ER) minus inconclusive value.</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-er-expression</td></tr>
+<tr><td width='20%'><a href='ValueSet-her2-status-vs.html'>HER2 status</a></td><td><p>A diagnosis of the human epidermal growth factor receptor 2 (HER2) status of a tumour minus inconculsive value .</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-her2-expression</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-histology.html'>Histology</a></td><td><p>Histology</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-sact-primary-histology</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-iot-vs.html'>Intent of treatment</a></td><td><p>Treatment intents or reasons for using a therapeutic procedure to treat cancer.</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-iot-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-clininal-trial.html'>Is on a clinical trial</a></td><td><p>Is on a clinical triale</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-drug-trial</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-outcome-vs.html'>Outcome of a regimen</a></td><td><p>The outcome of the prescribed regimen for the patient</p></td><td>http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs</td></tr>
+<tr><td width='20%'><a href='ValueSet-pr-status-vs.html'>PR status</a></td><td><p>A diagnosis of whether or not a tumour is progesterone receptive (PR) minus inconculsive value.</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-pr-expression</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-path-m.html'>Pathological M score</a></td><td><p>Pathological M score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pm</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-path-n.html'>Pathological N score</a></td><td><p>Pathological N score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pn</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-path-t.html'>Pathological T score</a></td><td><p>Pathological T score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pt</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-path-tnmgroup.html'>Pathological TNM group</a></td><td><p>The TNM group score</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pathological-stage-group</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-patient-factors-vs.html'>Patient factors when discontinuing a regimen</a></td><td><p>Patient factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment plus not asked value.</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-patient-factor-discontinue-reason</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-reason-vs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-overall-discontinue-reason</td></tr>
+<tr><td width='20%'><a href='ValueSet-an-regimen-discontinued-toxicity-vs.html'>Toxicity reasons why a regimen was discontinued</a></td><td><p>Toxicity factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment.</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-toxicity-discontinue-reason</td></tr>
+<tr><td width='20%'><a href='ValueSet-recurrence-type.html'>Type of recurrence</a></td><td><p>The type of cancer recurrence, e.g. local, regional plus unknown and not applicable values.</p></td><td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-recurrence-type</td></tr>
 </table>
 <br/><br/>
 ### CodeSystems
@@ -35,6 +45,4 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>CodeSystem</th><th>Purpose</th><th>Canonical Url</th></tr>
-<tr><td width='20%'><a href='CodeSystem-an-regimen-outcome-cs.html'>Outcome of a regimen</a></td><td><p>How did applying the regimen affect the patient</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-outcome-cs</td></tr>
-<tr><td width='20%'><a href='CodeSystem-an-regimen-discontinued-reason-cs.html'>The reason why a regimen was discontinued</a></td><td><p>The reason why a regimen was discontinued</p></td><td>http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs</td></tr>
 </table>

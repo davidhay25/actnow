@@ -1,0 +1,163 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ClinTNMGroup",
+  "id": "an-clin-tnmgroup",
+  "title": "Clinical TNM group",
+  "description": "The TNM group score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1222605001",
+            "display": "0"
+          },
+          {
+            "code": "1222721004",
+            "display": "0a"
+          },
+          {
+            "code": "1222722006",
+            "display": "0is"
+          },
+          {
+            "code": "1222723001",
+            "display": "I"
+          },
+          {
+            "code": "1222724007",
+            "display": "IA"
+          },
+          {
+            "code": "1222725008",
+            "display": "IA1"
+          },
+          {
+            "code": "1222726009",
+            "display": "IA2"
+          },
+          {
+            "code": "1222727000",
+            "display": "IA3"
+          },
+          {
+            "code": "1222728005",
+            "display": "IB"
+          },
+          {
+            "code": "1222729002",
+            "display": "IB1"
+          },
+          {
+            "code": "1222730007",
+            "display": "IB2"
+          },
+          {
+            "code": "1222731006",
+            "display": "IC"
+          },
+          {
+            "code": "1222732004",
+            "display": "IE"
+          },
+          {
+            "code": "1222765007",
+            "display": "II"
+          },
+          {
+            "code": "1222772008",
+            "display": "II bulky"
+          },
+          {
+            "code": "1222766008",
+            "display": "IIA"
+          },
+          {
+            "code": "1222767004",
+            "display": "IIA1"
+          },
+          {
+            "code": "1222768009",
+            "display": "IIA2"
+          },
+          {
+            "code": "1222769001",
+            "display": "IIB"
+          },
+          {
+            "code": "1222770000",
+            "display": "IIC"
+          },
+          {
+            "code": "1222771001",
+            "display": "IIE"
+          },
+          {
+            "code": "1222801008",
+            "display": "III"
+          },
+          {
+            "code": "1222802001",
+            "display": "IIIA"
+          },
+          {
+            "code": "1222803006",
+            "display": "IIIA1"
+          },
+          {
+            "code": "1222804000",
+            "display": "IIIA2"
+          },
+          {
+            "code": "1222805004",
+            "display": "IIIB"
+          },
+          {
+            "code": "1222806003",
+            "display": "IIIC"
+          },
+          {
+            "code": "1222807007",
+            "display": "IIIC1"
+          },
+          {
+            "code": "1222809005",
+            "display": "IIIC2"
+          },
+          {
+            "code": "1222733009",
+            "display": "IS"
+          },
+          {
+            "code": "1222837003",
+            "display": "IV"
+          },
+          {
+            "code": "1222838008",
+            "display": "IVA"
+          },
+          {
+            "code": "1222839000",
+            "display": "IVA1"
+          },
+          {
+            "code": "1222840003",
+            "display": "IVA2"
+          },
+          {
+            "code": "1222841004",
+            "display": "IVB"
+          },
+          {
+            "code": "1222842006",
+            "display": "IVC"
+          }
+        ]
+      }
+    ]
+  }
+}

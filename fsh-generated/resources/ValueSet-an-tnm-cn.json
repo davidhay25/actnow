@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "AnCN",
+  "id": "an-tnm-cn",
+  "title": "Clinical N score",
+  "description": "The clincial N score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cn",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1229967007",
+            "display": "cN0"
+          },
+          {
+            "code": "1229971005",
+            "display": "cN0(i+)"
+          },
+          {
+            "code": "1229968002",
+            "display": "cN0a"
+          },
+          {
+            "code": "1229969005",
+            "display": "cN0b"
+          },
+          {
+            "code": "1229973008",
+            "display": "cN1"
+          },
+          {
+            "code": "1229975001",
+            "display": "cN1a"
+          },
+          {
+            "code": "1229976000",
+            "display": "cN1b"
+          },
+          {
+            "code": "1229977009",
+            "display": "cN1c"
+          },
+          {
+            "code": "1229974002",
+            "display": "cN1mi"
+          },
+          {
+            "code": "1229978004",
+            "display": "cN2"
+          },
+          {
+            "code": "1229981009",
+            "display": "cN2a"
+          },
+          {
+            "code": "1229982002",
+            "display": "cN2b"
+          },
+          {
+            "code": "1229983007",
+            "display": "cN2c"
+          },
+          {
+            "code": "1229980005",
+            "display": "cN2mi"
+          },
+          {
+            "code": "1229984001",
+            "display": "cN3"
+          },
+          {
+            "code": "1229985000",
+            "display": "cN3a"
+          },
+          {
+            "code": "1229986004",
+            "display": "cN3b"
+          },
+          {
+            "code": "1229987008",
+            "display": "cN3c"
+          },
+          {
+            "code": "1229966003",
+            "display": "cNX"
+          }
+        ]
+      }
+    ]
+  }
+}

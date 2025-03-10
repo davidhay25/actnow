@@ -4,7 +4,7 @@
   "name": "RegimenOutcome",
   "id": "an-regimen-outcome-vs",
   "title": "Outcome of a regimen",
-  "description": "How did applying the regimen affect the patient",
+  "description": "The outcome of the prescribed regimen for the patient",
   "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-outcome-vs",
   "experimental": false,
   "compose": {

@@ -36,3 +36,35 @@ Description:    "An observation that represents the clinical 'N' score which mea
 * effective[x] only dateTime
 * value[x] only CodeableConcept
 
+* valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cn
+
+
+
+ValueSet : AnCN
+Id: an-tnm-cn
+Title: "Clinical N score"
+Description:  "The clincial N score"
+
+* ^url = "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cn"
+* ^experimental = false
+
+
+* $snomed#1229967007 "cN0"
+* $snomed#1229971005 "cN0(i+)"
+* $snomed#1229968002 "cN0a"
+* $snomed#1229969005 "cN0b"
+* $snomed#1229973008 "cN1"
+* $snomed#1229975001 "cN1a"
+* $snomed#1229976000 "cN1b"
+* $snomed#1229977009 "cN1c"
+* $snomed#1229974002 "cN1mi"
+* $snomed#1229978004 "cN2"
+* $snomed#1229981009 "cN2a"
+* $snomed#1229982002 "cN2b"
+* $snomed#1229983007 "cN2c"
+* $snomed#1229980005 "cN2mi"
+* $snomed#1229984001 "cN3"
+* $snomed#1229985000 "cN3a"
+* $snomed#1229986004 "cN3b"
+* $snomed#1229987008 "cN3c"
+* $snomed#1229966003 "cNX"

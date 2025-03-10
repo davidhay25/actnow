@@ -4,8 +4,8 @@
   "name": "RecurrenceType",
   "id": "recurrence-type",
   "title": "Type of recurrence",
-  "description": "Type of recurrence",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-recurrence-type-vs",
+  "description": "The type of cancer recurrence, e.g. local, regional plus unknown and not applicable values.",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-recurrence-type",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,24 +13,28 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "372288004",
-            "display": "Local tumor invasion (finding)"
+            "code": "261721000210105",
+            "display": "Not applicable"
           },
           {
-            "code": "399374009",
-            "display": "Regional lymph node metastasis present (finding)"
+            "code": "340751000210108",
+            "display": "Distant recurrence"
           },
           {
-            "code": "399409002",
-            "display": "Distant metastasis present (finding)"
+            "code": "340731000210102",
+            "display": "Local recurrence"
+          },
+          {
+            "code": "340741000210105",
+            "display": "Regional recurrence"
+          },
+          {
+            "code": "340761000210106",
+            "display": "Systemic recurrence"
           },
           {
             "code": "261665006",
-            "display": "Unknown (qualifier value)"
-          },
-          {
-            "code": "385432009",
-            "display": "Not applicable (qualifier value)"
+            "display": "Unknown"
           }
         ]
       }

@@ -82,12 +82,15 @@ Description: "A regimen care plan that was discontinued after it started"
 * extension[=].extension[+].url = "patientfactors"
 * extension[=].extension[=].valueCodeableConcept = $snomed#182872003 "Drug discontinued - too expensive (situation)"
 
+/* todo - get other examples
+
 * extension[=].extension[+].url = "reason"
 * extension[=].extension[=].valueCodeableConcept = $regimen-discontinued-reason-cs#pf
 
 * extension[=].extension[+].url = "toxicity"
 * extension[=].extension[=].valueCodeableConcept = $regimen-discontinued-toxicity-cs#nausea
 
+*/
 
 
 

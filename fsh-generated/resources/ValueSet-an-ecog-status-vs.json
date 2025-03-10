@@ -4,8 +4,8 @@
   "name": "EcogStatus",
   "id": "an-ecog-status-vs",
   "title": "ECOG status",
-  "description": "ECOG status",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-ecog-status-vs",
+  "description": "The performance status of a patient as defined by the Eastern Cooperative Oncology Group (ECOG) minus ECOG 5 (A performance status used when a patient is 'Dead').",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-ecog-status",
   "experimental": false,
   "compose": {
     "include": [
@@ -14,27 +14,23 @@
         "concept": [
           {
             "code": "425389002",
-            "display": "Eastern Cooperative Oncology Group performance status - grade 0 (finding)"
+            "display": "ECOG grade 0"
           },
           {
             "code": "422512005",
-            "display": "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
+            "display": "ECOG grade 1"
           },
           {
             "code": "422894000",
-            "display": "Eastern Cooperative Oncology Group performance status - grade 2 (finding)"
+            "display": "ECOG grade 2"
           },
           {
             "code": "423053003",
-            "display": "Eastern Cooperative Oncology Group performance status - grade 3 (finding)"
+            "display": "ECOG grade 3"
           },
           {
             "code": "423237006",
-            "display": "Eastern Cooperative Oncology Group performance status - grade 4 (finding)"
-          },
-          {
-            "code": "423409001",
-            "display": "Eastern Cooperative Oncology Group performance status - grade 5 (finding)"
+            "display": "ECOG grade 4"
           }
         ]
       }

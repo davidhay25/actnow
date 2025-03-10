@@ -25,5 +25,13 @@
       "value": "001"
     }
   ],
-  "valueString": "Here are the histology findings"
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "447881000210103",
+        "system": "http://snomed.info/sct",
+        "display": "Acral melanoma"
+      }
+    ]
+  }
 }

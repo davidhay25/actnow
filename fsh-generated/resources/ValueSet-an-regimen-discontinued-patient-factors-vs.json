@@ -4,8 +4,8 @@
   "name": "RegimenDiscontinuedPatientFactors",
   "id": "an-regimen-discontinued-patient-factors-vs",
   "title": "Patient factors when discontinuing a regimen",
-  "description": "Patient factors when discontinuing a regimen",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-patient-factors-vs",
+  "description": "Patient factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment plus not asked value.",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-patient-factor-discontinue-reason",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,40 +13,40 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "182872003",
-            "display": "Drug discontinued - too expensive (situation)"
+            "code": "302767002",
+            "display": "Caring for family"
           },
           {
-            "code": "266934004",
-            "display": "Transport problems (finding)"
+            "code": "182872003",
+            "display": "Cost of drug"
           },
           {
             "code": "160932005",
-            "display": "Financial problem (finding)"
-          },
-          {
-            "code": "182868002",
-            "display": "Treatment stopped - alternative therapy undertaken (situation)"
-          },
-          {
-            "code": "19200009",
-            "display": "Psychosocial deprivation (finding)"
+            "display": "Financial reason"
           },
           {
             "code": "423797009",
-            "display": "Inadequate healthcare provision (finding)"
+            "display": "Lack of clinical support"
           },
           {
-            "code": "182900006",
-            "display": "Drug declined by patient - patient beliefs (situation)"
+            "code": "262081000210100",
+            "display": "Lack of psychosocial support"
           },
           {
-            "code": "302767002",
-            "display": "Cares for a relative (finding)"
+            "code": "261711000210100",
+            "display": "Not asked"
           },
           {
-            "code": "182903008",
-            "display": "Drug declined by patient - reason unknown (situation)"
+            "code": "266934004",
+            "display": "Transport barriers"
+          },
+          {
+            "code": "182868002",
+            "display": "Patient pursuing other treatment"
+          },
+          {
+            "code": "262091000210103",
+            "display": "Insufficient perceived benefit of treatment by patient"
           }
         ]
       }

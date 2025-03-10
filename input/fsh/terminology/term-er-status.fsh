@@ -1,14 +1,14 @@
 ValueSet : ERStatus
 Id: an-er-status-vs
 Title: "ER status"
-Description:  "Estrogen Receptor status"
+Description:  "A diagnosis of whether or not a tumour is estrogen receptive (ER) minus inconclusive value."
 
 * ^url = $er-status-vs
 * ^experimental = false
 
 
-* $snomed#416053008 "Estrogen receptor positive tumor (disorder)"
-* $snomed#441117001 "Estrogen receptor negative neoplasm (disorder)"
+* $snomed#303171000210101 "ER negative"
+* $snomed#303161000210107 "ER positive"
 
 
 

@@ -4,8 +4,8 @@
   "name": "PRStatus",
   "id": "pr-status-vs",
   "title": "PR status",
-  "description": "Progesterone Receptor status",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-pr-status-vs",
+  "description": "A diagnosis of whether or not a tumour is progesterone receptive (PR) minus inconculsive value.",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-pr-expression",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,12 +13,12 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "416561008",
-            "display": "Progesterone receptor positive tumor (disorder)"
+            "code": "303151000210109",
+            "display": "PR negative"
           },
           {
-            "code": "441118006",
-            "display": "Progesterone receptor negative neoplasm (disorder)"
+            "code": "303141000210106",
+            "display": "PR positive"
           }
         ]
       }

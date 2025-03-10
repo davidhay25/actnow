@@ -34,4 +34,31 @@ Description:    "An observation that represents the clinical 'M' score which mea
 
 * effective[x] only dateTime
 * value[x] only CodeableConcept
+* valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cm
+
+
+
+ValueSet : AnCM
+Id: an-tnm-cm
+Title: "Clinical M score"
+Description:  "The TNM group score"
+
+* ^url = "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cm"
+* ^experimental = false
+
+* $snomed#1229901006 "cM0"
+* $snomed#1229902004 "cM0(i+)"
+* $snomed#1229903009 "cM1"
+* $snomed#1229904003 "cM1a"
+* $snomed#1229905002 "cM1a(0)"
+* $snomed#1229906001 "cM1a(1)"
+* $snomed#1229907005 "cM1b"
+* $snomed#1229908000 "cM1b(0)"
+* $snomed#1229909008 "cM1b(1)"
+* $snomed#1229910003 "cM1c"
+* $snomed#1229911004 "cM1c(0)"
+* $snomed#1229912006 "cM1c(1)"
+* $snomed#1229913001 "cM1d"
+* $snomed#1229914007 "cM1d(0)"
+* $snomed#1229915008 "cM1d(1)"
 

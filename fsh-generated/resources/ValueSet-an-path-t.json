@@ -1,0 +1,175 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PathT",
+  "id": "an-path-t",
+  "title": "Pathological T score",
+  "description": "Pathological T score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pt",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1228951007",
+            "display": "pT0"
+          },
+          {
+            "code": "1228957006",
+            "display": "pT1"
+          },
+          {
+            "code": "1228959009",
+            "display": "pT1a"
+          },
+          {
+            "code": "1228960004",
+            "display": "pT1a1"
+          },
+          {
+            "code": "1228961000",
+            "display": "pT1a2"
+          },
+          {
+            "code": "1228962007",
+            "display": "pT1b"
+          },
+          {
+            "code": "1229844006",
+            "display": "pT1b1"
+          },
+          {
+            "code": "1229845007",
+            "display": "pT1b2"
+          },
+          {
+            "code": "1285095005",
+            "display": "pT1b3"
+          },
+          {
+            "code": "1229846008",
+            "display": "pT1c"
+          },
+          {
+            "code": "1229848009",
+            "display": "pT1c1"
+          },
+          {
+            "code": "1229849001",
+            "display": "pT1c2"
+          },
+          {
+            "code": "1229850001",
+            "display": "pT1c3"
+          },
+          {
+            "code": "1229851002",
+            "display": "pT1d"
+          },
+          {
+            "code": "1228958001",
+            "display": "pT1mi"
+          },
+          {
+            "code": "1229852009",
+            "display": "pT2"
+          },
+          {
+            "code": "1229853004",
+            "display": "pT2a"
+          },
+          {
+            "code": "1229854005",
+            "display": "pT2a1"
+          },
+          {
+            "code": "1229855006",
+            "display": "pT2a2"
+          },
+          {
+            "code": "1229856007",
+            "display": "pT2b"
+          },
+          {
+            "code": "1229857003",
+            "display": "pT2c"
+          },
+          {
+            "code": "1229858008",
+            "display": "pT2d"
+          },
+          {
+            "code": "1229859000",
+            "display": "pT3"
+          },
+          {
+            "code": "1229860005",
+            "display": "pT3a"
+          },
+          {
+            "code": "1229861009",
+            "display": "pT3b"
+          },
+          {
+            "code": "1229862002",
+            "display": "pT3c"
+          },
+          {
+            "code": "1229863007",
+            "display": "pT3d"
+          },
+          {
+            "code": "1229864001",
+            "display": "pT4"
+          },
+          {
+            "code": "1229865000",
+            "display": "pT4a"
+          },
+          {
+            "code": "1229866004",
+            "display": "pT4b"
+          },
+          {
+            "code": "1229867008",
+            "display": "pT4c"
+          },
+          {
+            "code": "1229868003",
+            "display": "pT4d"
+          },
+          {
+            "code": "1229869006",
+            "display": "pT4e"
+          },
+          {
+            "code": "1228952000",
+            "display": "pTa"
+          },
+          {
+            "code": "1228953005",
+            "display": "pTis"
+          },
+          {
+            "code": "1228954004",
+            "display": "pTis(DCIS)"
+          },
+          {
+            "code": "1228955003",
+            "display": "pTis(LAMN)"
+          },
+          {
+            "code": "1228956002",
+            "display": "pTis(Paget)"
+          },
+          {
+            "code": "1228950008",
+            "display": "pTX"
+          }
+        ]
+      }
+    ]
+  }
+}

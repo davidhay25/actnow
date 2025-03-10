@@ -4,7 +4,7 @@
   "name": "DxBasis",
   "id": "an-dx-basis-vs",
   "title": "Basis of diagnosis",
-  "description": "Whether the diagnosis is based on clinical or pathological grounds",
+  "description": "Types of evidence that may be used to reach a cancer diagnosis, which is treated with systemic anti cancer therapy (SACT).",
   "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis",
   "experimental": false,
   "compose": {

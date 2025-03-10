@@ -36,7 +36,10 @@ Usage: #example
 
 //
 * code = $snomed#512001000004108 "Histologic type of primary malignant neoplasm (observable entity)"
-* valueString = "Here are the histology findings"
+
+
+* valueCodeableConcept = $snomed#447881000210103 "Acral melanoma"
+
 
 //* code = $snomed#74364000 "Small cell carcinoma (morphologic abnormality)"
 

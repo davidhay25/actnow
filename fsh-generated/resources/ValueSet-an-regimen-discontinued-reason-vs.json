@@ -5,12 +5,58 @@
   "id": "an-regimen-discontinued-reason-vs",
   "title": "The reason why a regimen was discontinued",
   "description": "The reason why a regimen was discontinued",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-regimen-discontinued-reason-vs",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-overall-discontinue-reason",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "840539006",
+            "display": "COVID-19"
+          },
+          {
+            "code": "419099009",
+            "display": "Patient dead"
+          },
+          {
+            "code": "262061000210108",
+            "display": "Comorbidity (includes infection)"
+          },
+          {
+            "code": "262041000210107",
+            "display": "Disease progression"
+          },
+          {
+            "code": "74964007",
+            "display": "Other"
+          },
+          {
+            "code": "262051000210105",
+            "display": "Change of provider"
+          },
+          {
+            "code": "262071000210102",
+            "display": "Patient unable to be contacted"
+          },
+          {
+            "code": "7895008",
+            "display": "Drug toxicity"
+          },
+          {
+            "code": "365448001",
+            "display": "Social and personal factors"
+          },
+          {
+            "code": "445528004",
+            "display": "Treatment changed"
+          },
+          {
+            "code": "182992009",
+            "display": "Treatment completed"
+          }
+        ]
       }
     ]
   }

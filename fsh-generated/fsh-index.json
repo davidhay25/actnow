@@ -29,15 +29,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-careplan-regimen-1.fsh",
     "startLine": 42,
-    "endLine": 95
-  },
-  {
-    "outputFile": "CodeSystem-an-regimen-discontinued-reason-cs.json",
-    "fshName": "RegimenDiscontinuedReason",
-    "fshType": "CodeSystem",
-    "fshFile": "terminology/term-regimen-discontinued-reason.fsh",
-    "startLine": 11,
-    "endLine": 22
+    "endLine": 98
   },
   {
     "outputFile": "Condition-exSmallCellCancer.json",
@@ -149,71 +141,71 @@
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
     "startLine": 24,
-    "endLine": 39
+    "endLine": 41
   },
   {
     "outputFile": "Observation-excM1.json",
     "fshName": "excM1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 75,
-    "endLine": 86
+    "startLine": 78,
+    "endLine": 89
   },
   {
     "outputFile": "Observation-excN1.json",
     "fshName": "excN1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 60,
-    "endLine": 72
+    "startLine": 63,
+    "endLine": 75
   },
   {
     "outputFile": "Observation-excT1.json",
     "fshName": "excT1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 46,
-    "endLine": 57
+    "startLine": 49,
+    "endLine": 60
   },
   {
     "outputFile": "Observation-excTNM1.json",
     "fshName": "excTNM1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 89,
-    "endLine": 100
+    "startLine": 92,
+    "endLine": 103
   },
   {
     "outputFile": "Observation-expM1.json",
     "fshName": "expM1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 133,
-    "endLine": 144
+    "startLine": 136,
+    "endLine": 147
   },
   {
     "outputFile": "Observation-expN1.json",
     "fshName": "expN1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 119,
-    "endLine": 130
+    "startLine": 122,
+    "endLine": 133
   },
   {
     "outputFile": "Observation-expT1.json",
     "fshName": "expT1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 105,
-    "endLine": 116
+    "startLine": 108,
+    "endLine": 119
   },
   {
     "outputFile": "Observation-expTNM1.json",
     "fshName": "expTNM1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 147,
-    "endLine": 158
+    "startLine": 150,
+    "endLine": 161
   },
   {
     "outputFile": "Patient-exPatient.json",
@@ -253,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-cTNM-group.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-an-cM.json",
@@ -261,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-cM.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-an-cN.json",
@@ -269,7 +261,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-cN.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-an-cT.json",
@@ -277,7 +269,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-cT.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-an-careplan-cycle.json",
@@ -301,7 +293,7 @@
     "fshType": "Extension",
     "fshFile": "extension/ext-clinicalTrial.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-an-condition.json",
@@ -421,7 +413,7 @@
     "fshType": "Profile",
     "fshFile": "profile/profile-Observation-histology.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-an-iot.json",
@@ -461,7 +453,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-pTNM-group.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-an-pM.json",
@@ -469,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-pM.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-an-pN.json",
@@ -477,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-pN.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-an-pT.json",
@@ -485,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "profile/tnm/profile-Observation-pT.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-an-patient.json",
@@ -560,12 +552,28 @@
     "endLine": 19
   },
   {
+    "outputFile": "ValueSet-an-clin-tnmgroup.json",
+    "fshName": "ClinTNMGroup",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-cTNM-group.fsh",
+    "startLine": 44,
+    "endLine": 87
+  },
+  {
+    "outputFile": "ValueSet-an-clininal-trial.json",
+    "fshName": "ClinicalTrial",
+    "fshType": "ValueSet",
+    "fshFile": "extension/ext-clinicalTrial.fsh",
+    "startLine": 16,
+    "endLine": 24
+  },
+  {
     "outputFile": "ValueSet-an-dose-adjustment-reason.json",
     "fshName": "DoseAdjustmentReason",
     "fshType": "ValueSet",
     "fshFile": "terminology/term-dose-adjust-reason.fsh",
     "startLine": 3,
-    "endLine": 28
+    "endLine": 30
   },
   {
     "outputFile": "ValueSet-an-dx-basis-vs.json",
@@ -581,7 +589,7 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/ecog-status.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 13
   },
   {
     "outputFile": "ValueSet-an-er-status-vs.json",
@@ -590,6 +598,46 @@
     "fshFile": "terminology/term-er-status.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-an-histology.json",
+    "fshName": "AnHistology",
+    "fshType": "ValueSet",
+    "fshFile": "profile/profile-Observation-histology.fsh",
+    "startLine": 39,
+    "endLine": 1477
+  },
+  {
+    "outputFile": "ValueSet-an-path-m.json",
+    "fshName": "PathM",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-pM.fsh",
+    "startLine": 42,
+    "endLine": 62
+  },
+  {
+    "outputFile": "ValueSet-an-path-n.json",
+    "fshName": "PathN",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-pN.fsh",
+    "startLine": 42,
+    "endLine": 69
+  },
+  {
+    "outputFile": "ValueSet-an-path-t.json",
+    "fshName": "PathT",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-pT.fsh",
+    "startLine": 41,
+    "endLine": 87
+  },
+  {
+    "outputFile": "ValueSet-an-path-tnmgroup.json",
+    "fshName": "PathTNMGroup",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-pTNM-group.fsh",
+    "startLine": 44,
+    "endLine": 86
   },
   {
     "outputFile": "ValueSet-an-regimen-discontinued-patient-factors-vs.json",
@@ -605,7 +653,7 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/term-regimen-discontinued-reason.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-an-regimen-discontinued-toxicity-vs.json",
@@ -613,7 +661,7 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/regimen-discontinued-toxicity.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 25
   },
   {
     "outputFile": "ValueSet-an-regimen-iot-vs.json",
@@ -621,7 +669,7 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/term-regimen-iot.fsh",
     "startLine": 3,
-    "endLine": 16
+    "endLine": 21
   },
   {
     "outputFile": "ValueSet-an-regimen-outcome-vs.json",
@@ -632,12 +680,36 @@
     "endLine": 12
   },
   {
+    "outputFile": "ValueSet-an-tnm-cm.json",
+    "fshName": "AnCM",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-cM.fsh",
+    "startLine": 41,
+    "endLine": 63
+  },
+  {
+    "outputFile": "ValueSet-an-tnm-cn.json",
+    "fshName": "AnCN",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-cN.fsh",
+    "startLine": 43,
+    "endLine": 70
+  },
+  {
+    "outputFile": "ValueSet-an-tnm-ct.json",
+    "fshName": "AnCT",
+    "fshType": "ValueSet",
+    "fshFile": "profile/tnm/profile-Observation-cT.fsh",
+    "startLine": 41,
+    "endLine": 87
+  },
+  {
     "outputFile": "ValueSet-her2-status-vs.json",
     "fshName": "HER2Status",
     "fshType": "ValueSet",
     "fshFile": "terminology/term-her2-status.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-pr-status-vs.json",
@@ -653,6 +725,6 @@
     "fshType": "ValueSet",
     "fshFile": "terminology/recurrance-type.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 16
   }
 ]

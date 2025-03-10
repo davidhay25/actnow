@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PathM",
+  "id": "an-path-m",
+  "title": "Pathological M score",
+  "description": "Pathological M score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pm",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1229916009",
+            "display": "pM1"
+          },
+          {
+            "code": "1229917000",
+            "display": "pM1a"
+          },
+          {
+            "code": "1229918005",
+            "display": "pM1a(0)"
+          },
+          {
+            "code": "1229919002",
+            "display": "pM1a(1)"
+          },
+          {
+            "code": "1229920008",
+            "display": "pM1b"
+          },
+          {
+            "code": "1229921007",
+            "display": "pM1b(0)"
+          },
+          {
+            "code": "1229922000",
+            "display": "pM1b(1)"
+          },
+          {
+            "code": "1229923005",
+            "display": "pM1c"
+          },
+          {
+            "code": "1229924004",
+            "display": "pM1c(0)"
+          },
+          {
+            "code": "1229925003",
+            "display": "pM1c(1)"
+          },
+          {
+            "code": "1229926002",
+            "display": "pM1d"
+          },
+          {
+            "code": "1229927006",
+            "display": "pM1d(0)"
+          },
+          {
+            "code": "1229928001",
+            "display": "pM1d(1)"
+          }
+        ]
+      }
+    ]
+  }
+}

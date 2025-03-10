@@ -1,0 +1,175 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "AnCT",
+  "id": "an-tnm-ct",
+  "title": "Clinical T score",
+  "description": "The clinical T score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-ct",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1228882005",
+            "display": "cT0"
+          },
+          {
+            "code": "1228889001",
+            "display": "cT1"
+          },
+          {
+            "code": "1228892002",
+            "display": "cT1a"
+          },
+          {
+            "code": "1228893007",
+            "display": "cT1a1"
+          },
+          {
+            "code": "1228894001",
+            "display": "cT1a2"
+          },
+          {
+            "code": "1228895000",
+            "display": "cT1b"
+          },
+          {
+            "code": "1228896004",
+            "display": "cT1b1"
+          },
+          {
+            "code": "1228898003",
+            "display": "cT1b2"
+          },
+          {
+            "code": "1228899006",
+            "display": "cT1c"
+          },
+          {
+            "code": "1228900001",
+            "display": "cT1c1"
+          },
+          {
+            "code": "1228901002",
+            "display": "cT1c2"
+          },
+          {
+            "code": "1228902009",
+            "display": "cT1c3"
+          },
+          {
+            "code": "1228928007",
+            "display": "cT1d"
+          },
+          {
+            "code": "1228891009",
+            "display": "cT1mi"
+          },
+          {
+            "code": "1228929004",
+            "display": "cT2"
+          },
+          {
+            "code": "1228931008",
+            "display": "cT2a"
+          },
+          {
+            "code": "1228932001",
+            "display": "cT2a1"
+          },
+          {
+            "code": "1228933006",
+            "display": "cT2a2"
+          },
+          {
+            "code": "1228934000",
+            "display": "cT2b"
+          },
+          {
+            "code": "1228936003",
+            "display": "cT2c"
+          },
+          {
+            "code": "1228937007",
+            "display": "cT2d"
+          },
+          {
+            "code": "1228938002",
+            "display": "cT3"
+          },
+          {
+            "code": "1228939005",
+            "display": "cT3a"
+          },
+          {
+            "code": "1228940007",
+            "display": "cT3b"
+          },
+          {
+            "code": "1228941006",
+            "display": "cT3c"
+          },
+          {
+            "code": "1228942004",
+            "display": "cT3d"
+          },
+          {
+            "code": "1228943009",
+            "display": "cT3e"
+          },
+          {
+            "code": "1228944003",
+            "display": "cT4"
+          },
+          {
+            "code": "1228945002",
+            "display": "cT4a"
+          },
+          {
+            "code": "1228946001",
+            "display": "cT4b"
+          },
+          {
+            "code": "1228947005",
+            "display": "cT4c"
+          },
+          {
+            "code": "1228948000",
+            "display": "cT4d"
+          },
+          {
+            "code": "1228949008",
+            "display": "cT4e"
+          },
+          {
+            "code": "1228883000",
+            "display": "cTa"
+          },
+          {
+            "code": "1228884006",
+            "display": "cTis"
+          },
+          {
+            "code": "1228885007",
+            "display": "cTis(DCIS)"
+          },
+          {
+            "code": "1228887004",
+            "display": "cTis(LAMN)"
+          },
+          {
+            "code": "1228888009",
+            "display": "cTis(Paget)"
+          },
+          {
+            "code": "1222604002",
+            "display": "cTX"
+          }
+        ]
+      }
+    ]
+  }
+}

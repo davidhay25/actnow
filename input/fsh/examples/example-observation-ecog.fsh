@@ -15,6 +15,6 @@ InstanceOf: ObservationEcog
 
 //add 2 codings - one is the required snomed code, the other is from mcode
 * code.coding[snomedCode] = $snomed#423740007
-* code.coding[+] = $loinc#89247-1
+* code.coding[mCode] = $loinc#89247-1
 
 * valueCodeableConcept = $snomed#425389002  "Eastern Cooperative Oncology Group performance status - grade 0 (finding)"

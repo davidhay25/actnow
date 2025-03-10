@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "AnCM",
+  "id": "an-tnm-cm",
+  "title": "Clinical M score",
+  "description": "The TNM group score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cm",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1229901006",
+            "display": "cM0"
+          },
+          {
+            "code": "1229902004",
+            "display": "cM0(i+)"
+          },
+          {
+            "code": "1229903009",
+            "display": "cM1"
+          },
+          {
+            "code": "1229904003",
+            "display": "cM1a"
+          },
+          {
+            "code": "1229905002",
+            "display": "cM1a(0)"
+          },
+          {
+            "code": "1229906001",
+            "display": "cM1a(1)"
+          },
+          {
+            "code": "1229907005",
+            "display": "cM1b"
+          },
+          {
+            "code": "1229908000",
+            "display": "cM1b(0)"
+          },
+          {
+            "code": "1229909008",
+            "display": "cM1b(1)"
+          },
+          {
+            "code": "1229910003",
+            "display": "cM1c"
+          },
+          {
+            "code": "1229911004",
+            "display": "cM1c(0)"
+          },
+          {
+            "code": "1229912006",
+            "display": "cM1c(1)"
+          },
+          {
+            "code": "1229913001",
+            "display": "cM1d"
+          },
+          {
+            "code": "1229914007",
+            "display": "cM1d(0)"
+          },
+          {
+            "code": "1229915008",
+            "display": "cM1d(1)"
+          }
+        ]
+      }
+    ]
+  }
+}

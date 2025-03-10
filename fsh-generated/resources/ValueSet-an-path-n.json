@@ -1,0 +1,99 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PathN",
+  "id": "an-path-n",
+  "title": "Pathological N score",
+  "description": "Pathological N score",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pn",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1229947003",
+            "display": "pN0"
+          },
+          {
+            "code": "1229949000",
+            "display": "pN0(i+)"
+          },
+          {
+            "code": "1229950000",
+            "display": "pN0(mol+)"
+          },
+          {
+            "code": "1229948008",
+            "display": "pN0a"
+          },
+          {
+            "code": "1229951001",
+            "display": "pN1"
+          },
+          {
+            "code": "1229954009",
+            "display": "pN1a"
+          },
+          {
+            "code": "1229953003",
+            "display": "pN1a(sn)"
+          },
+          {
+            "code": "1229955005",
+            "display": "pN1b"
+          },
+          {
+            "code": "1229956006",
+            "display": "pN1c"
+          },
+          {
+            "code": "1229952008",
+            "display": "pN1mi"
+          },
+          {
+            "code": "1229957002",
+            "display": "pN2"
+          },
+          {
+            "code": "1229959004",
+            "display": "pN2a"
+          },
+          {
+            "code": "1229960009",
+            "display": "pN2b"
+          },
+          {
+            "code": "1229961008",
+            "display": "pN2c"
+          },
+          {
+            "code": "1229958007",
+            "display": "pN2mi"
+          },
+          {
+            "code": "1229962001",
+            "display": "pN3"
+          },
+          {
+            "code": "1229963006",
+            "display": "pN3a"
+          },
+          {
+            "code": "1229964000",
+            "display": "pN3b"
+          },
+          {
+            "code": "1229965004",
+            "display": "pN3c"
+          },
+          {
+            "code": "1229945006",
+            "display": "pNX"
+          }
+        ]
+      }
+    ]
+  }
+}

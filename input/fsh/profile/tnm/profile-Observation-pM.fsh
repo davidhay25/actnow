@@ -36,3 +36,27 @@ Description:    "An observation that represents the pathological 'M' score (pM) 
 * effective[x] only dateTime
 * value[x] only CodeableConcept
 
+* valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pm
+
+
+ValueSet : PathM
+Id: an-path-m
+Title: "Pathological M score"
+Description:  "Pathological M score"
+
+* ^url = "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pm"
+* ^experimental = false
+
+* $snomed#1229916009 "pM1"
+* $snomed#1229917000 "pM1a"
+* $snomed#1229918005 "pM1a(0)"
+* $snomed#1229919002 "pM1a(1)"
+* $snomed#1229920008 "pM1b"
+* $snomed#1229921007 "pM1b(0)"
+* $snomed#1229922000 "pM1b(1)"
+* $snomed#1229923005 "pM1c"
+* $snomed#1229924004 "pM1c(0)"
+* $snomed#1229925003 "pM1c(1)"
+* $snomed#1229926002 "pM1d"
+* $snomed#1229927006 "pM1d(0)"
+* $snomed#1229928001 "pM1d(1)"

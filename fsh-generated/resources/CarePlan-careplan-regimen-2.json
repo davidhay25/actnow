@@ -82,28 +82,6 @@
               }
             ]
           }
-        },
-        {
-          "url": "reason",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "pf",
-                "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-reason-cs"
-              }
-            ]
-          }
-        },
-        {
-          "url": "toxicity",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "nausea",
-                "system": "http://canshare.co.nz/fhir/CodeSystem/an-regimen-discontinued-toxicity-cs"
-              }
-            ]
-          }
         }
       ]
     }

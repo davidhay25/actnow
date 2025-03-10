@@ -4,8 +4,8 @@
   "name": "ERStatus",
   "id": "an-er-status-vs",
   "title": "ER status",
-  "description": "Estrogen Receptor status",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-er-status-vs",
+  "description": "A diagnosis of whether or not a tumour is estrogen receptive (ER) minus inconclusive value.",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-er-expression",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,12 +13,12 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "416053008",
-            "display": "Estrogen receptor positive tumor (disorder)"
+            "code": "303171000210101",
+            "display": "ER negative"
           },
           {
-            "code": "441117001",
-            "display": "Estrogen receptor negative neoplasm (disorder)"
+            "code": "303161000210107",
+            "display": "ER positive"
           }
         ]
       }

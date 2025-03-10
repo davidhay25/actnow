@@ -36,3 +36,34 @@ Description:    "An observation that represents the pathological 'N' score (pN) 
 * effective[x] only dateTime
 * value[x] only CodeableConcept
 
+* valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pn
+
+
+ValueSet : PathN
+Id: an-path-n
+Title: "Pathological N score"
+Description:  "Pathological N score"
+
+* ^url = "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pn"
+* ^experimental = false
+
+* $snomed#1229947003 "pN0"
+* $snomed#1229949000 "pN0(i+)"
+* $snomed#1229950000 "pN0(mol+)"
+* $snomed#1229948008 "pN0a"
+* $snomed#1229951001 "pN1"
+* $snomed#1229954009 "pN1a"
+* $snomed#1229953003 "pN1a(sn)"
+* $snomed#1229955005 "pN1b"
+* $snomed#1229956006 "pN1c"
+* $snomed#1229952008 "pN1mi"
+* $snomed#1229957002 "pN2"
+* $snomed#1229959004 "pN2a"
+* $snomed#1229960009 "pN2b"
+* $snomed#1229961008 "pN2c"
+* $snomed#1229958007 "pN2mi"
+* $snomed#1229962001 "pN3"
+* $snomed#1229963006 "pN3a"
+* $snomed#1229964000 "pN3b"
+* $snomed#1229965004 "pN3c"
+* $snomed#1229945006 "pNX"

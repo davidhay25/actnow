@@ -4,8 +4,8 @@
   "name": "HER2Status",
   "id": "her2-status-vs",
   "title": "HER2 status",
-  "description": "Human epidermal growth status",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-her2-status-vs",
+  "description": "A diagnosis of the human epidermal growth factor receptor 2 (HER2) status of a tumour minus inconculsive value .",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-her2-expression",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,12 +13,16 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "427685000",
-            "display": "Human epidermal growth factor 2 positive carcinoma of breast (disorder)"
+            "code": "395571000210108",
+            "display": "HER2 equivocal"
           },
           {
-            "code": "431396003",
-            "display": "Human epidermal growth factor 2 negative carcinoma of breast (disorder)"
+            "code": "395561000210102",
+            "display": "HER2 negative"
+          },
+          {
+            "code": "395551000210100",
+            "display": "HER2 positive"
           }
         ]
       }

@@ -4,8 +4,8 @@
   "name": "DoseAdjustmentReason",
   "id": "an-dose-adjustment-reason",
   "title": "Dose adjustment reason",
-  "description": "What was reason the dose was adjusted",
-  "url": "http://canshare.co.nz/fhir/ValueSet/an-dose-adjustment-reason-vs",
+  "description": "Reasons for adjusting the dose of a systemic anti-cancer therapy (SACT) treatment cycle plus other value.",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-dose-adjustment-reason",
   "experimental": false,
   "compose": {
     "include": [
@@ -13,64 +13,76 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "82967011",
-            "display": "Advanced age"
+            "code": "271737000",
+            "display": "Anaemia"
           },
           {
-            "code": "370645010",
-            "display": "Frailty"
-          },
-          {
-            "code": "489417010",
-            "display": "Weight change finding"
-          },
-          {
-            "code": "2159167013",
-            "display": "Patient on maximum tolerated dose"
-          },
-          {
-            "code": "NEWCODE",
-            "display": "Adjusted bodyweight calculation"
-          },
-          {
-            "code": "2643253019",
-            "display": "ECOG performance status finding"
-          },
-          {
-            "code": "257385013",
-            "display": "Thrombocytopenia"
-          },
-          {
-            "code": "406638014",
-            "display": "Anemia"
-          },
-          {
-            "code": "25076018",
-            "display": "Constipation"
-          },
-          {
-            "code": "169714013",
-            "display": "Electrolyte imbalance"
-          },
-          {
-            "code": "NEWCODEOTHER",
-            "display": "Other toxicity"
-          },
-          {
-            "code": "3037815013",
-            "display": "Immune system disorder"
-          },
-          {
-            "code": "297911011",
-            "display": "Musculoskeletal finding"
-          },
-          {
-            "code": "NEWCODETOX",
+            "code": "262121000210102",
             "display": "CNS toxicity"
           },
           {
-            "code": "299450010",
+            "code": "14760008",
+            "display": "Constipation"
+          },
+          {
+            "code": "414029004",
+            "display": "Immune system disorder"
+          },
+          {
+            "code": "262111000210107",
+            "display": "Adjusted body weight calculation"
+          },
+          {
+            "code": "262101000210105",
+            "display": "Dose rounding"
+          },
+          {
+            "code": "424122007",
+            "display": "ECOG performance status finding"
+          },
+          {
+            "code": "105593004",
+            "display": "Electrolyte imbalance"
+          },
+          {
+            "code": "106176003",
             "display": "Endocrine finding"
+          },
+          {
+            "code": "248279007",
+            "display": "Frailty"
+          },
+          {
+            "code": "106028002",
+            "display": "Musculoskeletal finding"
+          },
+          {
+            "code": "165517008",
+            "display": "Neutropenia"
+          },
+          {
+            "code": "49808004",
+            "display": "Advanced age"
+          },
+          {
+            "code": "74964007",
+            "display": "Other"
+          },
+          {
+            "code": "407566003",
+            "display": "Patient on maximum tolerated dose"
+          },
+          {
+            "code": "302226006",
+            "display": "Peripheral neuropathy"
+          },
+          {
+            "code": "302215000",
+            "display": "Thrombocytopenia"
+          },
+          {
+            "code": "365921005",
+            "display": "Weight change finding"
           }
         ]
       }

@@ -26,7 +26,7 @@ Description:    "An observation that represents a human epidermal growth factor 
 * code.coding contains
     snomedCode 1..1 
 
-* code.coding[snomedCode].code = #261811000210109
+* code.coding[snomedCode].code = #476171000210109
 * code.coding[snomedCode].system = $snomed
 
 * value[x] only CodeableConcept
