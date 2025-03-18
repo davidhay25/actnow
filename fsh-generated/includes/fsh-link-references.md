@@ -2,6 +2,7 @@
 [AnMedicationAdministration]: StructureDefinition-an-medication-administration.html
 [AnMedicationRequest]: StructureDefinition-an-medication-request.html
 [AnPatient]: StructureDefinition-an-patient.html
+[an-supporting-info]: SearchParameter-an-supporting-info.html
 [DxBasis]: ValueSet-an-dx-basis-vs.html
 [ObservationBSA]: StructureDefinition-an-bsa.html
 [bsa]: Observation-bsa.html
@@ -22,7 +23,6 @@
 [ObservationClinTNMGroup]: StructureDefinition-an-cGroup.html
 [ClinicalTrial]: StructureDefinition-an-clinical-trial.html
 [CourseNumber]: StructureDefinition-an-course-number.html
-[cp-supporting-info]: SearchParameter-cp-supporting-info.html
 [ObservationCreatClear]: StructureDefinition-an-creat-clear.html
 [CreatinineClearance]: Observation-CreatinineClearance.html
 [careplan-cycle-1]: CarePlan-careplan-cycle-1.html

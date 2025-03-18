@@ -224,12 +224,12 @@
     "endLine": 14
   },
   {
-    "outputFile": "SearchParameter-cp-supporting-info.json",
-    "fshName": "cp-supporting-info",
+    "outputFile": "SearchParameter-an-supporting-info.json",
+    "fshName": "an-supporting-info",
     "fshType": "Instance",
     "fshFile": "definitional/spSupportingInfo.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-an-bsa.json",

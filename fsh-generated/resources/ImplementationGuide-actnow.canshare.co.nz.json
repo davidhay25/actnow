@@ -78,6 +78,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/an-supporting-info"
+        },
+        "name": "an-supporting-info",
+        "description": "Searches for supportingInfo references",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/an-dx-basis-vs"
         },
         "name": "Basis of diagnosis",
@@ -229,14 +237,6 @@
         },
         "name": "CourseNumber",
         "description": "The course number (sequential number) for this regimen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/cp-supporting-info"
-        },
-        "name": "cp-supporting-info",
-        "description": "Searches for supportingInfo references",
         "exampleBoolean": false
       },
       {

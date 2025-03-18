@@ -27,7 +27,7 @@ Observation-expT1.json                                    expT1                 
 Observation-expTNM1.json                                  expTNM1                            Instance   examples/Condition-with-histology-and-staging.fsh     150 - 161
 Patient-exPatient.json                                    exPatient                          Instance   examples/example-patient.fsh                          1 - 15
 Practitioner-exPractitioner.json                          exPractitioner                     Instance   examples/example-practitioner.fsh                     1 - 14
-SearchParameter-cp-supporting-info.json                   cp-supporting-info                 Instance   definitional/spSupportingInfo.fsh                     1 - 14
+SearchParameter-an-supporting-info.json                   an-supporting-info                 Instance   definitional/spSupportingInfo.fsh                     1 - 15
 StructureDefinition-an-bsa.json                           ObservationBSA                     Profile    profile/profile-Observation-bsa.fsh                   1 - 33
 StructureDefinition-an-cGroup.json                        ObservationClinTNMGroup            Profile    profile/tnm/profile-Observation-cTNM-group.fsh        1 - 41
 StructureDefinition-an-cM.json                            ObservationCM                      Profile    profile/tnm/profile-Observation-cM.fsh                1 - 37

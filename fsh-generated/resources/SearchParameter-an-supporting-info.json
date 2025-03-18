@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "cp-supporting-info",
-  "url": "http://canshare.com/supportinginfo",
+  "id": "an-supporting-info",
+  "url": "http://canshare.co.nz/fhir/SearchParameter/an-supporting-info",
   "description": "Supporting Info",
   "name": "cp-supporting-info",
   "status": "active",
