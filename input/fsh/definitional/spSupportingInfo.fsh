@@ -1,6 +1,7 @@
 Instance: cp-supporting-info
 InstanceOf: SearchParameter 
 Description: "Searches for supportingInfo references"
+Usage: #definition
 
 * url = "http://canshare.com/supportinginfo"
 * name = "cp-supporting-info"

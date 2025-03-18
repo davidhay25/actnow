@@ -147,8 +147,8 @@
           {
             "key": "an-height-1",
             "severity": "warning",
-            "human": "The weight must be between 50 and 220  centimetres",
-            "expression": "Observation.valueQuantity.value >= 50 and Observation.valueQuantity.value < 220",
+            "human": "The height must be between 50 and 220  centimetres",
+            "expression": "Observation.value >= 50 and Observation.value < 220",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-height"
           }
         ],
@@ -1160,7 +1160,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct/21000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3944,8 +3944,8 @@
           {
             "key": "an-height-1",
             "severity": "warning",
-            "human": "The weight must be between 50 and 220  centimetres",
-            "expression": "Observation.valueQuantity.value >= 50 and Observation.valueQuantity.value < 220",
+            "human": "The height must be between 50 and 220  centimetres",
+            "expression": "Observation.value >= 50 and Observation.value < 220",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-height"
           }
         ]
@@ -3989,7 +3989,7 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct/21000210109"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",

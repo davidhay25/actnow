@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><a href='StructureDefinition-an-cGroup.html'>an-cGroup</a></td>
-<td>https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group</td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cGroup</td>
 <td><p>An observation that represents the clinical TNM group score</p></td>
 </tr>
 <tr>

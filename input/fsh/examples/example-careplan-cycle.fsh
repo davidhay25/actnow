@@ -32,7 +32,7 @@ Description: "Example of a cycle care plan"
 * intent = #plan
 
 
-* category = $unknownSystem#cycleCP
+* category = $snomed#261761000210103
 
 * period.start = "2012-01-01"
 * period.end = "2012-01-01"

@@ -102,6 +102,15 @@
 <td></td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-an-recurrence-type.html'>an-recurrence-type</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type</td>
+<td>
+<div>Condition</div>
+</td>
+<td><p>Recurrence type</p></td>
+<td></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-an-regimen-discontinued.html'>an-regimen-discontinued</a></td>
 <td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued</td>
 <td>
@@ -117,24 +126,6 @@
 <div>CarePlan</div>
 </td>
 <td><p>Overall Treatment Utility measure for a regimen after it has completed.</p></td>
-<td></td>
-</tr>
-<tr>
-<td><a href='StructureDefinition-canshare-depends-on.html'>canshare-depends-on</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/do-operator</td>
-<td>
-<div>ConceptMap.group.element.target.dependsOn</div>
-</td>
-<td><p>Indicates the type of comparison performed when ecaluating the target &#39;depends-on&#39; value if it is not simple equality</p></td>
-<td></td>
-</tr>
-<tr>
-<td><a href='StructureDefinition-recurrence-type.html'>recurrence-type</a></td>
-<td>http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type</td>
-<td>
-<div>Condition</div>
-</td>
-<td><p>Recurrence type</p></td>
 <td></td>
 </tr>
 <tr>

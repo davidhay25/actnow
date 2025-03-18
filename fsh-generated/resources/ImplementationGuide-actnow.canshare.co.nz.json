@@ -205,7 +205,7 @@
           "reference": "Observation/excTNM1"
         },
         "name": "Clinical TNM group",
-        "exampleCanonical": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
       },
       {
         "reference": {
@@ -237,7 +237,7 @@
         },
         "name": "cp-supporting-info",
         "description": "Searches for supportingInfo references",
-        "exampleBoolean": true
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -300,14 +300,6 @@
         },
         "name": "CyclePlannedLength",
         "description": "The number of cycles that administered for a regimen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/canshare-depends-on"
-        },
-        "name": "DependsOn",
-        "description": "Indicates the type of comparison performed when ecaluating the target 'depends-on' value if it is not simple equality",
         "exampleBoolean": false
       },
       {
@@ -498,7 +490,7 @@
           "reference": "ValueSet/an-clininal-trial"
         },
         "name": "Is on a clinical trial",
-        "description": "Is on a clinical triale",
+        "description": "Is on a clinical trial",
         "exampleBoolean": false
       },
       {
@@ -673,7 +665,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/recurrence-type"
+          "reference": "StructureDefinition/an-recurrence-type"
         },
         "name": "RecurrenceType",
         "description": "Recurrence type",
@@ -728,7 +720,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/an-regimen-discontinued-toxicity-vs"
+          "reference": "ValueSet/canshare-sact-toxicity-discontinue-reason"
         },
         "name": "Toxicity reasons why a regimen was discontinued",
         "description": "Toxicity factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment.",
@@ -816,6 +808,98 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "special-url",
+        "value": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-toxicity-discontinue-reason"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-sact-primary-histology"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pm"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pn"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pt"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pathological-stage-group"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-patient-factor-discontinue-reason"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-overall-discontinue-reason"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-treatment-intent"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-regimen-outcome"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cm"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cn"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-ct"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-her2-expression"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-pr-expression"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-recurrence-type"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-drug-trial"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-dose-adjustment-reason"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-ecog-status"
+      },
+      {
+        "code": "special-url",
+        "value": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-er-expression"
       }
     ]
   }

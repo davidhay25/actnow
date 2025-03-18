@@ -13,11 +13,14 @@ InstanceOf: ObservationHeight
 * identifier.system = "http://canshare.co.nz/identifiers"
 * identifier.value = "height"
 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code.coding[+] = $snomed#1153637007 
-* code.coding[+] = $loinc#8302-2
+* code.coding[snomedCode] = $snomed#1153637007 
+* code.coding[loincCode] = $loinc#8302-2
 
 * valueQuantity.value = 180
 * valueQuantity.code = #cm
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.unit = "cm"
 

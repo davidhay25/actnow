@@ -17,6 +17,20 @@ Description:    "An observation that represents a height measurement"
 * code 1..1 MS
 * identifier 1..*   //identifier required for updates
 
+/*
+//slice on category. Needed as height is a Vital sign
+
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "category"
+* category.coding ^slicing.rules = #open
+
+* category.coding contains  
+    catCode 1..1
+
+* category.coding[catCode].code = #vital-signs
+* category.coding[catCode].system = "http://terminology.hl7.org/CodeSystem/observation-category"
+
+*/
 
 
 //Slice on the code. This states that at least the snomed code must be present - others are allowed though
@@ -35,26 +49,21 @@ Description:    "An observation that represents a height measurement"
 * code.coding[loincCode].code = #8302-2
 * code.coding[loincCode].system = $loinc
 
+
+
 * effective[x] only dateTime
 * value[x] only Quantity
 
 * valueQuantity.code = #cm        //must be in centimetresmetres
 * valueQuantity.system = "http://unitsofmeasure.org"
 
-/*
-* valueQuantity ^minValueQuantity.value = 1          //assume that no person will be less than 1 metre
-* valueQuantity ^minValueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity ^minValueQuantity.code = #m  
 
-* valueQuantity ^maxValueQuantity.value = 2.5          //assume that no person will be greater  2.5 m
-* valueQuantity ^maxValueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity ^maxValueQuantity.code = #m
-*/
 * obeys an-height-1
 
 
 
 Invariant: an-height-1
-Expression: "Observation.valueQuantity.value >= 50 and Observation.valueQuantity.value < 220"
+Expression: "Observation.value >= 50 and Observation.value < 220"
 Severity: #warning
-Description: "The weight must be between 50 and 220  centimetres"
+Description: "The height must be between 50 and 220  centimetres"
+

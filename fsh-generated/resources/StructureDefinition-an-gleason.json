@@ -1151,7 +1151,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct/21000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3445,7 +3445,7 @@
           "coding": [
             {
               "code": "384994009",
-              "system": "http://snomed.info/sct"
+              "system": "http://snomed.info/sct/21000210109"
             }
           ]
         },
@@ -3901,7 +3901,7 @@
           "coding": [
             {
               "code": "384995005",
-              "system": "http://snomed.info/sct"
+              "system": "http://snomed.info/sct/21000210109"
             }
           ]
         },
@@ -4357,7 +4357,7 @@
           "coding": [
             {
               "code": "385002007",
-              "system": "http://snomed.info/sct"
+              "system": "http://snomed.info/sct/21000210109"
             }
           ]
         },
@@ -4639,7 +4639,7 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct/21000210109"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",
@@ -4698,7 +4698,7 @@
           "coding": [
             {
               "code": "384994009",
-              "system": "http://snomed.info/sct"
+              "system": "http://snomed.info/sct/21000210109"
             }
           ]
         }
@@ -4726,7 +4726,7 @@
           "coding": [
             {
               "code": "384995005",
-              "system": "http://snomed.info/sct"
+              "system": "http://snomed.info/sct/21000210109"
             }
           ]
         }
@@ -4754,7 +4754,7 @@
           "coding": [
             {
               "code": "385002007",
-              "system": "http://snomed.info/sct"
+              "system": "http://snomed.info/sct/21000210109"
             }
           ]
         }

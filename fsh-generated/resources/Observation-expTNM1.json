@@ -9,7 +9,7 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "code": "399588009"
       }
     ]
@@ -22,7 +22,7 @@
     "coding": [
       {
         "code": "1222837003",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "display": "American Joint Committee on Cancer stage IV (qualifier value)"
       }
     ]

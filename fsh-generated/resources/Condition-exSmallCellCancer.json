@@ -22,7 +22,7 @@
         "coding": [
           {
             "code": "372288004",
-            "system": "http://snomed.info/sct",
+            "system": "http://snomed.info/sct/21000210109",
             "display": "Local tumor invasion (finding)"
           }
         ]
@@ -33,7 +33,7 @@
     "coding": [
       {
         "code": "3254632001",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "display": "Small cell carcinoma of lung (disorder)"
       }
     ]
@@ -57,7 +57,7 @@
           "coding": [
             {
               "code": "373795004",
-              "system": "http://snomed.info/sct",
+              "system": "http://snomed.info/sct/21000210109",
               "display": "Cancer diagnosis based on clinical evidence (finding)"
             }
           ]

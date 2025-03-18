@@ -102,7 +102,7 @@
             "http://canshare.co.nz/fhir/StructureDefinition/an-cT",
             "http://canshare.co.nz/fhir/StructureDefinition/an-cN",
             "http://canshare.co.nz/fhir/StructureDefinition/an-cM",
-            "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group",
+            "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup",
             "http://canshare.co.nz/fhir/StructureDefinition/an-pT",
             "http://canshare.co.nz/fhir/StructureDefinition/an-pN",
             "http://canshare.co.nz/fhir/StructureDefinition/an-pM",

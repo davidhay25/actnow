@@ -1,6 +1,6 @@
 Extension: DependsOn
 Id: canshare-depends-on
-Description: "Indicates the type of comparison performed when ecaluating the target 'depends-on' value if it is not simple equality"
+Description: "Indicates the type of comparison performed when evaluating the target 'depends-on' value if it is not simple equality"
 
 * ^url = "http://canshare.co.nz/fhir/StructureDefinition/do-operator"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

@@ -14,6 +14,8 @@ InstanceOf: ObservationHer2Status
 * effectiveDateTime = "2020-01-01"
 * status = #final
 
-* code.coding[+] = $snomed#423740007 
+* code.coding[snomedCode] = $snomed#476171000210109 
+
+//#476171000210109
 
 * valueCodeableConcept = $snomed#416053008 "Estrogen receptor positive tumor (disorder)"

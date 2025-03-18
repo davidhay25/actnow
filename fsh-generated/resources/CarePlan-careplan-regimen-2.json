@@ -11,8 +11,8 @@
     {
       "coding": [
         {
-          "code": "regimenCP",
-          "system": "http://unknown.org"
+          "code": "261751000210101",
+          "system": "http://snomed.info/sct/21000210109"
         }
       ]
     }
@@ -38,7 +38,7 @@
         "coding": [
           {
             "code": "373808002",
-            "system": "http://snomed.info/sct",
+            "system": "http://snomed.info/sct/21000210109",
             "display": "Curative"
           }
         ]
@@ -77,7 +77,7 @@
             "coding": [
               {
                 "code": "182872003",
-                "system": "http://snomed.info/sct",
+                "system": "http://snomed.info/sct/21000210109",
                 "display": "Drug discontinued - too expensive (situation)"
               }
             ]

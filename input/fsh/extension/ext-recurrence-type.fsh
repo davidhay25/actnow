@@ -1,5 +1,5 @@
 Extension: RecurrenceType
-Id: recurrence-type
+Id: an-recurrence-type
 Description: "Recurrence type"
 
 * ^url = $extRecurrenceType

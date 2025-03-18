@@ -3,3 +3,30 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+
+# This code has been confirmed to be correct - it is in the NZ edition
+Unknown code '262031000210104' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' 
+Unknown code '261761000210103' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+Unknown code '261751000210101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+Unknown code '26175100021010' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' 
+Unknown code '3254632001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+Unknown code '303171000210101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+Unknown code '447881000210103' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' 
+
+# Not needed for this example, but best practice noted
+Best Practice Recommendation: In general, all observations should have a performer
+
+# deprecation noted
+The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+
+# noted in example. 
+Best Practice Recommendation: In general, all observations should have an effective[x] ()
+
+# not clear where this ValueSet is being referenced. Not significant in this implementation
+There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
+
+# This is the NZ edition of snomed which is not avaiable on the terminology server
+A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be found, so the code cannot be validated
+Unknown System 'http://snomed.info/sct/21000210109' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be found, so the code cannot be validated)
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://snomed.info/sct/21000210109

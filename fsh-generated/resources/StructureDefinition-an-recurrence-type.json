@@ -1,11 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "canshare-depends-on",
-  "url": "http://canshare.co.nz/fhir/StructureDefinition/do-operator",
-  "version": "1",
-  "name": "DependsOn",
+  "id": "an-recurrence-type",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type",
+  "name": "RecurrenceType",
   "status": "draft",
-  "description": "Indicates the type of comparison performed when ecaluating the target 'depends-on' value if it is not simple equality",
+  "description": "Recurrence type",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +28,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ConceptMap.group.element.target.dependsOn"
+      "expression": "Condition"
     }
   ],
   "type": "Extension",
@@ -41,7 +40,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Optional Extensions Element",
-        "definition": "Indicates the type of comparison performed when ecaluating the target 'depends-on' value if it is not simple equality",
+        "definition": "Recurrence type",
         "min": 0,
         "max": "*",
         "base": {
@@ -202,7 +201,7 @@
             ]
           }
         ],
-        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/do-operator",
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -226,7 +225,7 @@
         },
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
         ],
         "constraint": [
@@ -241,6 +240,10 @@
         ],
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-recurrence-type"
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -255,7 +258,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "Indicates the type of comparison performed when ecaluating the target 'depends-on' value if it is not simple equality"
+        "definition": "Recurrence type"
       },
       {
         "id": "Extension.extension",
@@ -265,16 +268,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/do-operator"
+        "fixedUri": "http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-recurrence-type"
+        }
       }
     ]
   }

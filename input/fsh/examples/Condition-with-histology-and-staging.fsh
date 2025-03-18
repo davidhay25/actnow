@@ -57,7 +57,7 @@ Usage: #example
 * status = #final
                 
 * code = $snomed#399504009
-* valueCodeableConcept.text = $snomed#1228929004 "American Joint Committee on Cancer cT2 (qualifier value)"
+* valueCodeableConcept = $snomed#1228929004 "American Joint Committee on Cancer cT2 (qualifier value)"
 
 //---------
 Instance: excN1

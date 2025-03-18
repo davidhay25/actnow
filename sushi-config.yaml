@@ -18,7 +18,6 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Te aho o te kahu - Cancer Control Agency
-  # url: http://example.org/example-publisher
   email: mailto:david.hay25@gmail.com
 
 # use some mcode extensions (laterality)
@@ -29,6 +28,40 @@ dependencies:
   hl7.fhir.us.mcode:
     id: mcode
     version: 2.0.0
+
+parameters:
+  special-url:
+    - http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-toxicity-discontinue-reason
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-who-sact-primary-histology
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pm
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pn
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pt
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-pathological-stage-group
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-patient-factor-discontinue-reason
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-overall-discontinue-reason
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-treatment-intent
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-regimen-outcome
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cm
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-cn
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-ct
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-her2-expression
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-pr-expression
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-recurrence-type
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-drug-trial
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-dose-adjustment-reason
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-basis-of-cancer-diagnosis
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-ecog-status
+    - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-er-expression
+    
+
+
+
+
+
+
+
 
 
 

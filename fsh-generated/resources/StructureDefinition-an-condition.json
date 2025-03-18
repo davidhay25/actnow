@@ -524,7 +524,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
+              "http://hl7.org/fhir/StructureDefinition/condition-assertedDate|4.0.1"
             ]
           }
         ],
@@ -1722,7 +1722,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup",
-              "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
+              "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
             ]
           }
         ],
@@ -2163,7 +2163,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
+              "http://hl7.org/fhir/StructureDefinition/condition-assertedDate|4.0.1"
             ]
           }
         ]
@@ -2202,7 +2202,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup",
-              "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
+              "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
             ]
           }
         ]

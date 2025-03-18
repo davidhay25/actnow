@@ -16,4 +16,4 @@ InstanceOf: ObservationErStatus
 
 * code.coding[snomedCode] = $snomed#445028008 
 
-* valueCodeableConcept = $snomed#416053008 "Estrogen receptor positive tumor (disorder)"
+* valueCodeableConcept = $snomed#303171000210101 "ER negative"

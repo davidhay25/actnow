@@ -16,7 +16,7 @@ Description: "Is on a clinical trial"
 ValueSet : ClinicalTrial
 Id: an-clininal-trial
 Title: "Is on a clinical trial"
-Description:  "Is on a clinical triale"
+Description:  "Is on a clinical trial"
 
 * ^url = "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-drug-trial"
 * ^experimental = false

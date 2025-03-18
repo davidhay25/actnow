@@ -10,7 +10,7 @@
     "coding": [
       {
         "code": "445028008",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct/21000210109"
       }
     ]
   },
@@ -37,9 +37,9 @@
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "416053008",
-        "system": "http://snomed.info/sct",
-        "display": "Estrogen receptor positive tumor (disorder)"
+        "code": "303171000210101",
+        "system": "http://snomed.info/sct/21000210109",
+        "display": "ER negative"
       }
     ]
   }

@@ -31,7 +31,6 @@
 [CycleDay]: StructureDefinition-an-cycle-day.html
 [CycleNumber]: StructureDefinition-an-cycle-number.html
 [CyclePlannedLength]: StructureDefinition-an-cycle-planned-length.html
-[DependsOn]: StructureDefinition-canshare-depends-on.html
 [DoseAdjustmentReason]: ValueSet-an-dose-adjustment-reason.html
 [DoseAdjustmentReason]: StructureDefinition-an-dose-adjustment-reason.html
 [ObservationEcog]: StructureDefinition-an-ecog.html
@@ -79,13 +78,13 @@
 [PRStatus]: ValueSet-pr-status-vs.html
 [PrescribedDose]: StructureDefinition-an-prescribed-dose.html
 [PRStatus]: Observation-PRStatus.html
-[RecurrenceType]: StructureDefinition-recurrence-type.html
+[RecurrenceType]: StructureDefinition-an-recurrence-type.html
 [CareplanRegimen]: StructureDefinition-an-careplan-regimen.html
 [RegimenType]: StructureDefinition-sact-regimen-type.html
 [RegimenDiscontinued]: StructureDefinition-an-regimen-discontinued.html
 [RegimenOTU]: StructureDefinition-an-regimen-otu.html
 [exSmallCellCancer]: Condition-exSmallCellCancer.html
 [RegimenDiscontinuedReason]: ValueSet-an-regimen-discontinued-reason-vs.html
-[RegimenDiscontinuedToxicity]: ValueSet-an-regimen-discontinued-toxicity-vs.html
+[RegimenDiscontinuedToxicity]: ValueSet-canshare-sact-toxicity-discontinue-reason.html
 [RecurrenceType]: ValueSet-recurrence-type.html
 [ObservationWeight]: StructureDefinition-an-weight.html

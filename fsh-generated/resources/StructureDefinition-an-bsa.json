@@ -1153,7 +1153,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct/21000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3268,7 +3268,7 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct/21000210109"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",

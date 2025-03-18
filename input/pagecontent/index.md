@@ -1,7 +1,7 @@
 
 ### Description
 
-The [ACT-NOW specification](https://consult.health.govt.nz/hiso/act-now-data-standard/supporting_documents/HISO10095ACTNOWDataStandarddraftforpubliccomment.pdf) describes the data collection for oncology treatment in New Zealand, particularly medication administration. This can be represented as a FHIR [logical model](StructureDefinition-an-logical-model.html).
+The [ACT-NOW specification](https://consult.health.govt.nz/hiso/act-now-data-standard/supporting_documents/HISO10095ACTNOWDataStandarddraftforpubliccomment.pdf) describes the data collection for oncology treatment in New Zealand, particularly medication administration. 
 
 This Guide describes how this data could be represented as FHIR resources, and collected from care delivery systems into a FHIR server for subsequent use such as Analytics and Care delivery.
 

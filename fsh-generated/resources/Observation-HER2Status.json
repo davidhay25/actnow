@@ -9,8 +9,8 @@
   "code": {
     "coding": [
       {
-        "code": "423740007",
-        "system": "http://snomed.info/sct"
+        "code": "476171000210109",
+        "system": "http://snomed.info/sct/21000210109"
       }
     ]
   },
@@ -38,7 +38,7 @@
     "coding": [
       {
         "code": "416053008",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "display": "Estrogen receptor positive tumor (disorder)"
       }
     ]

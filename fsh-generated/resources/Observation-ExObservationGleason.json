@@ -12,18 +12,17 @@
         "coding": [
           {
             "code": "384994009",
-            "system": "http://snomed.info/sct"
+            "system": "http://snomed.info/sct/21000210109"
           }
         ]
-      },
-      "valueInteger": 1
+      }
     }
   ],
   "code": {
     "coding": [
       {
         "code": "372278000",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "display": "Gleason score (observable entity)"
       }
     ]

@@ -10,15 +10,18 @@ InstanceOf: ObservationWeight
 * effectiveDateTime = "2020-01-01"
 * status = #final
 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code.coding[+] = $snomed#27113001 
-* code.coding[+] = $loinc#29463-7
+* code.coding[snomedCode] = $snomed#27113001 
+* code.coding[loincCode] = $loinc#29463-7
 * identifier.system = "http://canshare.co.nz/identifiers"
 * identifier.value = "weight-1"
 
 * valueQuantity.value = 80
 * valueQuantity.code = #kg
 * valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.unit = "kg"
 
 //--------------------------
 
@@ -35,12 +38,15 @@ InstanceOf: ObservationWeight
 * identifier.system = "http://canshare.co.nz/identifiers"
 * identifier.value = "weight"
 
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
+
 //add 2 codings - one is the required snomed code, the other is an example extra one to demonstrate that others are allowed
-* code.coding[+] = $snomed#27113001 
-* code.coding[+] = $loinc#29463-7
+* code.coding[snomedCode] = $snomed#27113001 
+* code.coding[loincCode] = $loinc#29463-7
 
 * valueQuantity.value = 100
 * valueQuantity.code = #kg
+* valueQuantity.unit = "kg"
 
 /*
 

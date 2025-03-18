@@ -1591,7 +1591,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct/21000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3997,7 +3997,7 @@
       {
         "id": "CarePlan.category.coding:regimencode.system",
         "path": "CarePlan.category.coding.system",
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct/21000210109"
       },
       {
         "id": "CarePlan.category.coding:regimencode.code",

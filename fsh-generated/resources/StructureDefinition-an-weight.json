@@ -148,7 +148,7 @@
             "key": "an-weight-1",
             "severity": "warning",
             "human": "The weight must be between 20 and 400",
-            "expression": "Observation.valueQuantity.value > 20 and Observation.valueQuantity.value < 400",
+            "expression": "Observation.value > 20 and Observation.value < 400",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
           }
         ],
@@ -1160,7 +1160,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct/21000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3945,7 +3945,7 @@
             "key": "an-weight-1",
             "severity": "warning",
             "human": "The weight must be between 20 and 400",
-            "expression": "Observation.valueQuantity.value > 20 and Observation.valueQuantity.value < 400",
+            "expression": "Observation.value > 20 and Observation.value < 400",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
           }
         ]
@@ -3989,7 +3989,7 @@
       {
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct/21000210109"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",

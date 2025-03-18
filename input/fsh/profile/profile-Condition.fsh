@@ -11,7 +11,7 @@ that has the histology and a stage.assessment reference to the TNM Observation s
 
 * extension contains
     http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier named laterality 0..1 and
-    http://hl7.org/fhir/StructureDefinition/condition-assertedDate named assertedDate 0..1 and
+    http://hl7.org/fhir/StructureDefinition/condition-assertedDate|4.0.1 named assertedDate 0..1 and
     $extRecurrenceType named recurrence-type 0..1
 
 * identifier 1..*

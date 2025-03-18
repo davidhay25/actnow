@@ -11,8 +11,8 @@
     {
       "coding": [
         {
-          "code": "regimenCP",
-          "system": "http://unknown.org"
+          "code": "261751000210101",
+          "system": "http://snomed.info/sct/21000210109"
         }
       ]
     }
@@ -33,16 +33,24 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "373846009",
-            "system": "http://snomed.info/sct",
-            "display": "Curative Adjuvant"
+            "code": "262031000210104",
+            "system": "http://snomed.info/sct/21000210109",
+            "display": "Active treatment"
           }
         ]
       }
     },
     {
       "url": "http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial",
-      "valueBoolean": true
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "185922005",
+            "system": "http://snomed.info/sct/21000210109",
+            "display": "Clinical drug trial"
+          }
+        ]
+      }
     },
     {
       "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",

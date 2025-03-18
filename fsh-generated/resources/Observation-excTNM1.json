@@ -3,13 +3,13 @@
   "id": "excTNM1",
   "meta": {
     "profile": [
-      "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group"
+      "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
     ]
   },
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "code": "399537006"
       }
     ]
@@ -22,7 +22,7 @@
     "coding": [
       {
         "code": "1222765007",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "display": "American Joint Committee on Cancer stage II (qualifier value)"
       }
     ]

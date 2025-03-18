@@ -2,9 +2,9 @@
   "resourceType": "SearchParameter",
   "id": "cp-supporting-info",
   "url": "http://canshare.com/supportinginfo",
+  "description": "Supporting Info",
   "name": "cp-supporting-info",
   "status": "active",
-  "description": "Supporting Info",
   "code": "supporting-info",
   "base": [
     "CarePlan"

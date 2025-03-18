@@ -10,7 +10,7 @@
     "coding": [
       {
         "code": "399504009",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct/21000210109"
       }
     ]
   },
@@ -19,6 +19,12 @@
   },
   "status": "final",
   "valueCodeableConcept": {
-    "text": "1228929004"
+    "coding": [
+      {
+        "code": "1228929004",
+        "system": "http://snomed.info/sct/21000210109",
+        "display": "American Joint Committee on Cancer cT2 (qualifier value)"
+      }
+    ]
   }
 }

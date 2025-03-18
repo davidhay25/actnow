@@ -14,6 +14,6 @@ InstanceOf: ObservationPrStatus
 * effectiveDateTime = "2020-01-01"
 * status = #final
 
-* code.coding[+] = $snomed#423740007 
+* code.coding[snomedCode] = $snomed#445029000 
 
 * valueCodeableConcept = $snomed#416561008 "Progesterone receptor positive tumor (disorder)"

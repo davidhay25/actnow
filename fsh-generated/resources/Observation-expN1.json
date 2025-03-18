@@ -10,7 +10,7 @@
     "coding": [
       {
         "code": "371494008",
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct/21000210109"
       }
     ]
   },
@@ -22,7 +22,7 @@
     "coding": [
       {
         "code": "1229951001",
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "display": "American Joint Committee on Cancer pN1 (qualifier value)"
       }
     ]

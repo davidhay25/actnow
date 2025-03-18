@@ -48,6 +48,6 @@ Description:    "An observation that represents a weight measurement"
 
 
 Invariant: an-weight-1
-Expression: "Observation.valueQuantity.value > 20 and Observation.valueQuantity.value < 400"
+Expression: "Observation.value > 20 and Observation.value < 400"
 Severity: #warning
 Description: "The weight must be between 20 and 400"

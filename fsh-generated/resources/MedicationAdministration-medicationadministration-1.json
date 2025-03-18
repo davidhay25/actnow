@@ -67,9 +67,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "370645010",
-            "system": "http://snomed.info/sct",
-            "display": "Frailty"
+            "code": "49808004",
+            "system": "http://snomed.info/sct/21000210109",
+            "display": "Advanced age"
           }
         ]
       }

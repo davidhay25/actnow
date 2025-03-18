@@ -4,13 +4,13 @@
   "name": "ClinicalTrial",
   "id": "an-clininal-trial",
   "title": "Is on a clinical trial",
-  "description": "Is on a clinical triale",
+  "description": "Is on a clinical trial",
   "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-drug-trial",
   "experimental": false,
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "concept": [
           {
             "code": "185922005",

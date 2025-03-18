@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "RegimenDiscontinuedToxicity",
-  "id": "an-regimen-discontinued-toxicity-vs",
+  "id": "canshare-sact-toxicity-discontinue-reason",
   "title": "Toxicity reasons why a regimen was discontinued",
   "description": "Toxicity factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment.",
   "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-toxicity-discontinue-reason",
@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://snomed.info/sct/21000210109",
         "concept": [
           {
             "code": "75183008",

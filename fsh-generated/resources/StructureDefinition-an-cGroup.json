@@ -5,7 +5,7 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">An observation that represents the clinical TNM group score.</div>"
   },
-  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/canshare-tnm-clinical-stage-group",
+  "url": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup",
   "name": "ObservationClinTNMGroup",
   "title": "Clinical TNM group score",
   "status": "draft",
@@ -1153,7 +1153,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct/21000210109",
         "constraint": [
           {
             "key": "ele-1",
@@ -3644,7 +3644,7 @@
         "id": "Observation.code.coding:snomedCode.system",
         "path": "Observation.code.coding.system",
         "min": 1,
-        "patternUri": "http://snomed.info/sct"
+        "patternUri": "http://snomed.info/sct/21000210109"
       },
       {
         "id": "Observation.code.coding:snomedCode.code",

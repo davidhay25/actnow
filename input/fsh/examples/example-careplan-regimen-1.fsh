@@ -15,15 +15,15 @@ Description: "Example of a regimen care plan"
 * status = #completed
 * intent = #plan
 
-* category = $unknownSystem#regimenCP
+* category =  $snomed#261751000210101
 
 //intent of treatment
 * extension[+].url = $iot
-* extension[=].valueCodeableConcept =  $snomed#373846009 "Curative Adjuvant"
+* extension[=].valueCodeableConcept =  $snomed#262031000210104 "Active treatment"
 
 //is on a clinical trial
 * extension[+].url = $clinicalTrial
-* extension[=].valueBoolean = true
+* extension[=].valueCodeableConcept = $snomed#185922005 "Clinical drug trial"
 
 //regimen is a folfox
 * extension[+].url = $regimen-type
@@ -53,7 +53,7 @@ Description: "A regimen care plan that was discontinued after it started"
 * status = #revoked
 * intent = #plan
 
-* category = $unknownSystem#regimenCP
+* category =  $snomed#261751000210101
 
 //the number of cycles completed for this regimen CP
 * extension[+].url = $extCycleCount

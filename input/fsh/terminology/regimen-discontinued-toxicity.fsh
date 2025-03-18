@@ -1,5 +1,5 @@
 ValueSet : RegimenDiscontinuedToxicity
-Id: an-regimen-discontinued-toxicity-vs
+Id: canshare-sact-toxicity-discontinue-reason
 Title: "Toxicity reasons why a regimen was discontinued"
 Description:  "Toxicity factors that may result in the discontinuation of a systemic anti-cancer therapy (SACT) treatment."
 
