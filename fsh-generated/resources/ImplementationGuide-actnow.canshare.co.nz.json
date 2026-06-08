@@ -38,7 +38,7 @@
     {
       "id": "mcode",
       "packageId": "hl7.fhir.us.mcode",
-      "version": "2.0.0",
+      "version": "4.0.0",
       "uri": "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"
     }
   ],
@@ -133,25 +133,19 @@
       },
       {
         "reference": {
-          "reference": "Observation/excM1"
-        },
-        "name": "Clincial M value",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cM"
-      },
-      {
-        "reference": {
-          "reference": "Observation/excN1"
-        },
-        "name": "Clincial N value",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cN"
-      },
-      {
-        "reference": {
           "reference": "ValueSet/an-tnm-cm"
         },
         "name": "Clinical M score",
         "description": "The TNM group score",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/excM1"
+        },
+        "name": "Clinical M value",
+        "description": "Example of Clinical M value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cM"
       },
       {
         "reference": {
@@ -168,6 +162,14 @@
         "name": "Clinical N score",
         "description": "The clincial N score",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/excN1"
+        },
+        "name": "Clinical N value",
+        "description": "Example of Clinical N value",
+        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cN"
       },
       {
         "reference": {
@@ -190,6 +192,7 @@
           "reference": "Observation/excT1"
         },
         "name": "Clinical T value",
+        "description": "Example of Clinical T value",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cT"
       },
       {
@@ -213,6 +216,7 @@
           "reference": "Observation/excTNM1"
         },
         "name": "Clinical TNM group",
+        "description": "Example of Clinical TNM group",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-cGroup"
       },
       {
@@ -467,6 +471,7 @@
           "reference": "Observation/exSmallCellCancerHistology"
         },
         "name": "Histology: Small cell lung cancer",
+        "description": "Histology: Small cell lung cancer",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-histology"
       },
       {
@@ -545,6 +550,7 @@
           "reference": "Observation/expM1"
         },
         "name": "Pathological M value",
+        "description": "Example of Pathological M value",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pM"
       },
       {
@@ -568,6 +574,7 @@
           "reference": "Observation/expN1"
         },
         "name": "Pathological N value",
+        "description": "Example of Pathological N value",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pN"
       },
       {
@@ -591,6 +598,7 @@
           "reference": "Observation/expT1"
         },
         "name": "Pathological T value",
+        "description": "Example of Pathological T value",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pT"
       },
       {
@@ -614,6 +622,7 @@
           "reference": "Observation/expTNM1"
         },
         "name": "Pathological TNM group",
+        "description": "Example of Pathological TNM group",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pGroup"
       },
       {
@@ -708,6 +717,7 @@
           "reference": "Condition/exSmallCellCancer"
         },
         "name": "Small cell lung cancer diagnosis",
+        "description": "Small cell lung cancer diagnosis",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-condition"
       },
       {
@@ -776,11 +786,21 @@
         {
           "nameUrl": "extensions.html",
           "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensionsDEP.html",
+          "title": "Extensions DEP",
           "generation": "html"
         },
         {
           "nameUrl": "profiles.html",
           "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profilesDEP.html",
+          "title": "Profiles DEP",
           "generation": "html"
         },
         {
@@ -796,6 +816,11 @@
         {
           "nameUrl": "terminology.html",
           "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminologyDEP.html",
+          "title": "Terminology DEP",
           "generation": "markdown"
         }
       ]

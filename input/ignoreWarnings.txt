@@ -18,7 +18,10 @@ Best Practice Recommendation: In general, all observations should have an effect
 # not clear where this ValueSet is being referenced. Not significant in this implementation
 There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
 
-# This is the NZ edition of snomed which is not avaiable on the terminology server
+# This is the NZ edition of snomed which is not avaliable on the terminology server so generates a number of issues
+The concepts in the value set include have not been validated because the code system 'http://snomed.info/sct/21000210109' is not known, and no terminology service supports it
+Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be found, so the value set cannot be expanded 
+No definition could be found for URL value 'http://snomed.info/sct/21000210109'
 A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be found, so the code cannot be validated
 Unknown System 'http://snomed.info/sct/21000210109' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be found, so the code cannot be validated)
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://snomed.info/sct/21000210109
@@ -32,3 +35,16 @@ Constraint failed: spd-0: 'Name should be usable as an identifier for the module
 
 # This IG is not concerned with this value
 There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
+
+# These are valid identifiers from NZBase
+No definition could be found for URL value 'https://standards.digital.health.nz/ns/nhi-id'
+No definition could be found for URL value 'https://standards.digital.health.nz/ns/hpi-person-id'	
+
+# These are from examples and not intended to be correct identifiers
+No definition could be found for URL value 'http://canshare.co.nz/identifiers'
+No definition could be found for URL value 'http://canshare.co.nz/fhir/NamingSystem/1'
+No definition could be found for URL value 'http://vendor.org/condition'
+No definition could be found for URL value 'http://vendor.org/observation'	
+
+# This is an external ValueSet not maintained by this IG
+A definition could not be found for Canonical URL 'https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code'

@@ -36,7 +36,7 @@
             "key": "an-height-1",
             "severity": "warning",
             "human": "The height must be between 50 and 220  centimetres",
-            "expression": "Observation.value >= 50 and Observation.value < 220",
+            "expression": "(value as Quantity).value >= 50 and (value as Quantity).value < 220",
             "source": "http://canshare.co.nz/fhir/StructureDefinition/an-height"
           }
         ]

@@ -234,7 +234,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code"
+        "valueSet" : "c"
       },
       "mapping" : [{
         "identity" : "rim",

@@ -33,6 +33,8 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "gender"
 * rest.resource[=].searchParam[=].type = #token
 
+
+/* No longer profiling Practitioner
 * rest.resource[+].type = #Practitioner
 * rest.resource[=].supportedProfile = "http://canshare.co.nz/fhir/StructureDefinition/an-practitioner"
 * rest.resource[=].interaction[+].code = #read
@@ -44,11 +46,13 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "identifier"
 * rest.resource[=].searchParam[=].type = #token
 
+
+
 * rest.resource[=].searchParam[+].name = "name"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[+].name = "gender"
 * rest.resource[=].searchParam[=].type = #token
-
+*/
 
 * rest.resource[+].type = #CarePlan
 * rest.resource[=].supportedProfile[+] = "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen"

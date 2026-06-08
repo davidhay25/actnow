@@ -17,11 +17,11 @@
             "display": "HER2 equivocal"
           },
           {
-            "code": "395561000210102",
+            "code": "705105000",
             "display": "HER2 negative"
           },
           {
-            "code": "395551000210100",
+            "code": "1162602001",
             "display": "HER2 positive"
           }
         ]

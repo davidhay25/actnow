@@ -1,0 +1,142 @@
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
+<tr><th>Id</th><th>Canonical url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-clinical-trial.html'>an-clinical-trial</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-clinical-trial</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>Is on a clinical trial</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-course-number.html'>an-course-number</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-course-number</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>The course number (sequential number) for this regimen</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-cycle-count.html'>an-cycle-count</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-count</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>The number of cycles that administered for a regimen</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-cycle-day.html'>an-cycle-day</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-day</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td><p>The day of the cycle that this medication was given on. Includes planned day and administered day. Not the same as intended cycle length.</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-cycle-number.html'>an-cycle-number</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-number</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>The cycle number of the regimen that this CP represents</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-cycle-planned-length.html'>an-cycle-planned-length</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-cycle-planned-length</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>The number of cycles that administered for a regimen</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-dose-adjustment-reason.html'>an-dose-adjustment-reason</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-dose-adjustment-reason</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td><p>The reason why the dose given was not the same as that in the regimen</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-facility-administered.html'>an-facility-administered</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-facility-administered</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td><p>The facility where the medication was given. The HPI code of the facility</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-iot.html'>an-iot</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-iot</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>Intent of treatment</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-last-admin-date.html'>an-last-admin-date</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-last-admin-date</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>The last date that a medication administration was made for this cycle</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-prescribed-dose.html'>an-prescribed-dose</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-prescribed-dose</td>
+<td>
+<div>MedicationAdministration</div>
+</td>
+<td><p>The dose of this medication in the regimen (may not be the same as that given</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-recurrence-type.html'>an-recurrence-type</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-recurrence-type</td>
+<td>
+<div>Condition</div>
+</td>
+<td><p>Recurrence type</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-regimen-discontinued.html'>an-regimen-discontinued</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-discontinued</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>Reasons why a regimen may have been discontinued</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-an-regimen-otu.html'>an-regimen-otu</a></td>
+<td>http://canshare.co.nz/fhir/StructureDefinition/an-regimen-otu</td>
+<td>
+<div>CarePlan</div>
+</td>
+<td><p>Overall Treatment Utility measure for a regimen after it has completed.</p></td>
+<td></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-sact-regimen-type.html'>sact-regimen-type</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type</td>
+<td>
+<div>PlanDefinition</div>
+<div>CarePlan</div>
+</td>
+<td><p>The overall type of the regimen - eg FOLFOX</p></td>
+<td></td>
+</tr>
+</table>
+</div>

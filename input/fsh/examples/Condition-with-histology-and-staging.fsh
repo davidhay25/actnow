@@ -1,7 +1,7 @@
 Instance: exSmallCellCancer
-//InstanceOf: AnCondition
 InstanceOf: an-condition
 Title: "Small cell lung cancer diagnosis"
+Description: "Small cell lung cancer diagnosis"
 Usage: #example
 
 * meta.profile = $profCondition
@@ -24,6 +24,7 @@ Usage: #example
 Instance: exSmallCellCancerHistology
 InstanceOf: ObservationHistology
 Title: "Histology: Small cell lung cancer"
+Description: "Histology: Small cell lung cancer"
 Usage: #example
 
 * meta.profile = $histology
@@ -49,6 +50,7 @@ Usage: #example
 Instance: excT1
 InstanceOf: ObservationCT
 Title: "Clinical T value"
+Description: "Example of Clinical T value"
 Usage: #example
 
 * meta.profile = $cT
@@ -62,7 +64,8 @@ Usage: #example
 //---------
 Instance: excN1
 InstanceOf: ObservationCN
-Title: "Clincial N value"
+Title: "Clinical N value"
+Description: "Example of Clinical N value"
 Usage: #example
 
 * meta.profile = $cN
@@ -77,7 +80,8 @@ Usage: #example
 // ---------
 Instance: excM1
 InstanceOf: ObservationCM
-Title: "Clincial M value"
+Title: "Clinical M value"
+Description: "Example of Clinical M value"
 Usage: #example
 
 * meta.profile = $cM
@@ -92,6 +96,8 @@ Usage: #example
 Instance: excTNM1
 InstanceOf: ObservationClinTNMGroup
 Title: "Clinical TNM group"
+Description: "Example of Clinical TNM group"
+
 Usage: #example
 
 * meta.profile = $cGroup
@@ -108,6 +114,7 @@ Usage: #example
 Instance: expT1
 InstanceOf: ObservationPT
 Title: "Pathological T value"
+Description: "Example of Pathological T value"
 Usage: #example
 
 * meta.profile = $pT
@@ -122,6 +129,7 @@ Usage: #example
 Instance: expN1
 InstanceOf: ObservationPN
 Title: "Pathological N value"
+Description: "Example of Pathological N value"
 Usage: #example
 
 * meta.profile = $pN
@@ -136,6 +144,7 @@ Usage: #example
 Instance: expM1
 InstanceOf: ObservationPM
 Title: "Pathological M value"
+Description: "Example of Pathological M value"
 Usage: #example
 
 * meta.profile = $pM
@@ -150,6 +159,7 @@ Usage: #example
 Instance: expTNM1
 InstanceOf: ObservationPathTNMGroup
 Title: "Pathological TNM group"
+Description: "Example of Pathological TNM group"
 Usage: #example
 
 * meta.profile = $pGroup

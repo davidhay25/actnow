@@ -27,6 +27,21 @@ There are a number of sections to the Guide, represented as tabs at the top of t
 * The [Reference Implementation](reference-implementation.html) describes applications that have been created to assist with development and demonstrate the kinds of interface that could be built with the ACT-NOW data
 * And finally the Support tab allows downloading of this guide and all the artifacts defined as computable resources in a number of formats, as well as a link to the main [FHIR specification](http://hl7.org/fhir/index.html).
 
+### Version
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### IP Statement
+
+{% include ip-statements.xhtml %}
+
+### Globals
+
+{% include globals-table.xhtml %}
 
 <!--
 

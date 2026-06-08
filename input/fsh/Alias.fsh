@@ -5,8 +5,14 @@ Alias: $regimen-type = http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-t
 Alias: $performer-function = http://terminology.hl7.org/CodeSystem/med-admin-perform-function
 
 // systems
+//This alias is the NZ SNOMED edition
 Alias: $snomed = http://snomed.info/sct/21000210109 
 //Alias: $snomed = http://snomed.info/sct
+
+
+
+
+
 Alias: $loinc = http://loinc.org
 Alias: $unknownSystem = http://unknown.org
 

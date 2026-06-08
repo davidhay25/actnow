@@ -9,11 +9,11 @@
 [AnCapabilityStatement]: CapabilityStatement-AnCapabilityStatement.html
 [careplan-regimen-1]: CarePlan-careplan-regimen-1.html
 [careplan-regimen-2]: CarePlan-careplan-regimen-2.html
-[excM1]: Observation-excM1.html
-[excN1]: Observation-excN1.html
 [AnCM]: ValueSet-an-tnm-cm.html
+[excM1]: Observation-excM1.html
 [ObservationCM]: StructureDefinition-an-cM.html
 [AnCN]: ValueSet-an-tnm-cn.html
+[excN1]: Observation-excN1.html
 [ObservationCN]: StructureDefinition-an-cN.html
 [AnCT]: ValueSet-an-tnm-ct.html
 [excT1]: Observation-excT1.html

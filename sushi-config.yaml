@@ -27,7 +27,8 @@ dependencies:
 
   hl7.fhir.us.mcode:
     id: mcode
-    version: 2.0.0
+    #version: 2.0.0
+    version: 4.0.0
 
 parameters:
   special-url:
@@ -55,14 +56,6 @@ parameters:
     - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-ecog-status
     - https://nzhts.digital.health.nz/fhir/ValueSet/canshare-sact-er-expression
     
-
-
-
-
-
-
-
-
 
 
 menu:

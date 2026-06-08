@@ -63,7 +63,7 @@ Description:    "An observation that represents a height measurement"
 
 
 Invariant: an-height-1
-Expression: "Observation.value >= 50 and Observation.value < 220"
+Expression: "(value as Quantity).value >= 50 and (value as Quantity).value < 220"
 Severity: #warning
 Description: "The height must be between 50 and 220  centimetres"
 

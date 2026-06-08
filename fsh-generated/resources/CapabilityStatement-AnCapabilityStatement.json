@@ -50,33 +50,6 @@
           ]
         },
         {
-          "type": "Practitioner",
-          "supportedProfile": [
-            "http://canshare.co.nz/fhir/StructureDefinition/an-practitioner"
-          ],
-          "interaction": [
-            {
-              "code": "search-type"
-            }
-          ],
-          "conditionalUpdate": true,
-          "conditionalCreate": true,
-          "searchParam": [
-            {
-              "name": "identifier",
-              "type": "token"
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "gender",
-              "type": "token"
-            }
-          ]
-        },
-        {
           "type": "CarePlan",
           "supportedProfile": [
             "http://canshare.co.nz/fhir/StructureDefinition/an-careplan-regimen",
