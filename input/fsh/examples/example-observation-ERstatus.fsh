@@ -1,5 +1,6 @@
 Instance: ERStatus
 InstanceOf: ObservationErStatus
+Description: "Example of an ER status observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in an ER status observation."
 
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>ER status</div>"
 * text.status = #generated

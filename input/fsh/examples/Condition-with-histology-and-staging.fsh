@@ -122,7 +122,11 @@ Usage: #example
 * subject = Reference(exPatient)
 * status = #final
                 
-* code = $snomed#399588009
+// code = $snomed#399588009
+* code = $snomed#384625004
+
+
+
 * valueCodeableConcept = $snomed#1228957006 "American Joint Committee on Cancer pT1 (qualifier value)"
 
 //---------

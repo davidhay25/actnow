@@ -14,4 +14,4 @@ Description: "The facility where the medication was given. The HPI code of the f
 
 * ^status = #draft
 
-* value[x] only CodeableConcept     //todo add HPI facility VS
+* value[x] only CodeableConcept     //todo This should be an identifier. Have reached out to implementer...

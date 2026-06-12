@@ -61,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-cc.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 22
   },
   {
     "outputFile": "Observation-ERStatus.json",
@@ -69,7 +69,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-ERstatus.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "Observation-ExObservationECOG.json",
@@ -77,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-ecog.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 21
   },
   {
     "outputFile": "Observation-ExObservationGleason.json",
@@ -85,7 +85,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-gleason.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   },
   {
     "outputFile": "Observation-ExObservationHeight.json",
@@ -93,15 +93,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-height.fsh",
     "startLine": 1,
-    "endLine": 25
-  },
-  {
-    "outputFile": "Observation-ExObservationNoValueSystemWeight.json",
-    "fshName": "ExObservationNoValueSystemWeight",
-    "fshType": "Instance",
-    "fshFile": "examples/example-observation-weight.fsh",
-    "startLine": 28,
-    "endLine": 49
+    "endLine": 26
   },
   {
     "outputFile": "Observation-ExObservationWeight.json",
@@ -109,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-weight.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 25
   },
   {
     "outputFile": "Observation-HER2Status.json",
@@ -117,7 +109,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-HER2status.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 22
   },
   {
     "outputFile": "Observation-PRStatus.json",
@@ -125,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-PRstatus.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 21
   },
   {
     "outputFile": "Observation-bsa.json",
@@ -133,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-observation-BSA.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 28
   },
   {
     "outputFile": "Observation-exSmallCellCancerHistology.json",
@@ -180,16 +172,16 @@
     "fshName": "expM1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 144,
-    "endLine": 156
+    "startLine": 148,
+    "endLine": 160
   },
   {
     "outputFile": "Observation-expN1.json",
     "fshName": "expN1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 129,
-    "endLine": 141
+    "startLine": 133,
+    "endLine": 145
   },
   {
     "outputFile": "Observation-expT1.json",
@@ -197,15 +189,15 @@
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
     "startLine": 114,
-    "endLine": 126
+    "endLine": 130
   },
   {
     "outputFile": "Observation-expTNM1.json",
     "fshName": "expTNM1",
     "fshType": "Instance",
     "fshFile": "examples/Condition-with-histology-and-staging.fsh",
-    "startLine": 159,
-    "endLine": 171
+    "startLine": 163,
+    "endLine": 175
   },
   {
     "outputFile": "Patient-exPatient.json",
@@ -213,7 +205,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-patient.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 17
   },
   {
     "outputFile": "Practitioner-exPractitioner.json",
@@ -221,7 +213,7 @@
     "fshType": "Instance",
     "fshFile": "examples/example-practitioner.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 15
   },
   {
     "outputFile": "SearchParameter-an-supporting-info.json",

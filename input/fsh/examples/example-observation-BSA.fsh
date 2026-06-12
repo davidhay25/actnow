@@ -1,5 +1,6 @@
 Instance: bsa
 InstanceOf: ObservationBSA
+Description: "Example of a BSA observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a BSA observation."
 
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>BSA</div>"
 * text.status = #generated

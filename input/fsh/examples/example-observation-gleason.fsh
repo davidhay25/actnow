@@ -1,5 +1,6 @@
 Instance: ExObservationGleason
 InstanceOf: ObservationGleason
+Description: "Example of a Gleason score observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a Gleason score observation."
 
 * meta.profile = $gleason
 

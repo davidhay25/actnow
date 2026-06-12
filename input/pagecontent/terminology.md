@@ -1,4 +1,4 @@
-### ValueSets (New)
+### ValueSets 
 
 These are ValueSets that have been defined in this guide for coded elements...
 

@@ -9,14 +9,16 @@
 # Not needed for this example, but best practice noted
 Best Practice Recommendation: In general, all observations should have a performer
 
-# deprecation noted
+# Deprecation noted
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 
-# noted in example. 
+# Noted in example. 
 Best Practice Recommendation: In general, all observations should have an effective[x] ()
 
-# not clear where this ValueSet is being referenced. Not significant in this implementation
+# Not clear where this ValueSet is being referenced. Not significant in this implementation
 There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '3.0.0', found versions: 2014-03-26, 3.0.0
+There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2014-03-26', found versions: 2.0.0 (from hl7.terminology.r4#5.0.0), 3.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode' to 'http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode|2014-03-26'
+
 
 # This is the NZ edition of snomed which is not avaliable on the terminology server so generates a number of issues
 The concepts in the value set include have not been validated because the code system 'http://snomed.info/sct/21000210109' is not known, and no terminology service supports it
@@ -26,11 +28,11 @@ A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be fo
 Unknown System 'http://snomed.info/sct/21000210109' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://snomed.info/sct/21000210109' could not be found, so the code cannot be validated)
 Error from http://tx.fhir.org/r4: Unable to provide support for code system http://snomed.info/sct/21000210109
 
-# this valueset is external, and not included in this ig
+# This valueset is external, and not included in this ig
 ValueSet 'https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code' not found
 A definition for CodeSystem 'https://standards.digital.health.nz/ns/sact-regimen-code' could not be found, so the code cannot be validated
 
-# issue noted
+# Issue noted
 Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 
 # This IG is not concerned with this value
@@ -48,3 +50,13 @@ No definition could be found for URL value 'http://vendor.org/observation'
 
 # This is an external ValueSet not maintained by this IG
 A definition could not be found for Canonical URL 'https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code'
+
+# I can't figure out where this is coming from, but it's an example resource anyway
+Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+
+# Acknowledged. But can't see why it makes a difference anyway...
+Constraint failed: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+
+# Noted
+The value set include has too many concepts to validate (1,431), so each individual code has not been checked
+

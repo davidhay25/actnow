@@ -42,7 +42,6 @@
 [ExObservationECOG]: Observation-ExObservationECOG.html
 [ExObservationGleason]: Observation-ExObservationGleason.html
 [ExObservationHeight]: Observation-ExObservationHeight.html
-[ExObservationNoValueSystemWeight]: Observation-ExObservationNoValueSystemWeight.html
 [ExObservationWeight]: Observation-ExObservationWeight.html
 [FacilityAdministered]: StructureDefinition-an-facility-administered.html
 [ObservationGleason]: StructureDefinition-an-gleason.html

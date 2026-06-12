@@ -3,7 +3,7 @@
   "id": "actnow.canshare.co.nz",
   "url": "http://canshare.co.nz/fhir/ImplementationGuide/actnow.canshare.co.nz",
   "version": "0.5.0",
-  "name": "actnow",
+  "name": "Actnow",
   "title": "ACT-NOW Implementation Guide",
   "status": "draft",
   "publisher": "Te aho o te kahu - Cancer Control Agency",
@@ -105,6 +105,7 @@
           "reference": "Observation/bsa"
         },
         "name": "bsa",
+        "description": "Example of a BSA observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a BSA observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-bsa"
       },
       {
@@ -256,6 +257,7 @@
           "reference": "Observation/CreatinineClearance"
         },
         "name": "CreatinineClearance",
+        "description": "Example of a creatinine clearance observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a creatinine clearance observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-creat-clear"
       },
       {
@@ -351,6 +353,7 @@
           "reference": "Observation/ERStatus"
         },
         "name": "ERStatus",
+        "description": "Example of an ER status observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in an ER status observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-er-status"
       },
       {
@@ -366,6 +369,7 @@
           "reference": "Practitioner/exPractitioner"
         },
         "name": "Example practitioner",
+        "description": "Example of a practitioner. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a practitioner resource.",
         "exampleBoolean": true
       },
       {
@@ -373,6 +377,7 @@
           "reference": "Observation/ExObservationECOG"
         },
         "name": "ExObservationECOG",
+        "description": "Example of an ECOG score observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in an ECOG score observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-ecog"
       },
       {
@@ -380,6 +385,7 @@
           "reference": "Observation/ExObservationGleason"
         },
         "name": "ExObservationGleason",
+        "description": "Example of a Gleason score observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a Gleason score observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-gleason"
       },
       {
@@ -387,20 +393,15 @@
           "reference": "Observation/ExObservationHeight"
         },
         "name": "ExObservationHeight",
+        "description": "Example of a height observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a height observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-height"
-      },
-      {
-        "reference": {
-          "reference": "Observation/ExObservationNoValueSystemWeight"
-        },
-        "name": "ExObservationNoValueSystemWeight",
-        "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
       },
       {
         "reference": {
           "reference": "Observation/ExObservationWeight"
         },
         "name": "ExObservationWeight",
+        "description": "Example of a weight observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a weight observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-weight"
       },
       {
@@ -448,6 +449,7 @@
           "reference": "Observation/HER2Status"
         },
         "name": "HER2Status",
+        "description": "Example of a HER2 status observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a HER2 status observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-her2-status"
       },
       {
@@ -511,6 +513,7 @@
           "reference": "Patient/exPatient"
         },
         "name": "Lorrie Lung",
+        "description": "Example of a patient. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a patient resource.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-patient"
       },
       {
@@ -670,6 +673,7 @@
           "reference": "Observation/PRStatus"
         },
         "name": "PRStatus",
+        "description": "Example of a PR status observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a PR status observation.",
         "exampleCanonical": "http://canshare.co.nz/fhir/StructureDefinition/an-pr-status"
       },
       {
@@ -789,19 +793,9 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "extensionsDEP.html",
-          "title": "Extensions DEP",
-          "generation": "html"
-        },
-        {
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "markdown"
-        },
-        {
-          "nameUrl": "profilesDEP.html",
-          "title": "Profiles DEP",
-          "generation": "html"
         },
         {
           "nameUrl": "reference-implementation.html",
@@ -816,11 +810,6 @@
         {
           "nameUrl": "terminology.html",
           "title": "Terminology",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "terminologyDEP.html",
-          "title": "Terminology DEP",
           "generation": "markdown"
         }
       ]

@@ -1,5 +1,6 @@
 Instance: ExObservationWeight
 InstanceOf: ObservationWeight
+Description: "Example of a weight observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a weight observation."
 
 * meta.profile = $weight
 
@@ -24,10 +25,10 @@ InstanceOf: ObservationWeight
 * valueQuantity.unit = "kg"
 
 //--------------------------
-
+/*
 Instance: ExObservationNoValueSystemWeight
 InstanceOf: ObservationWeight
-
+Description: "Example of a weight observation with no valueQuantity.system. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a weight observation."
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Weight 80 kg</div>"
 * text.status = #generated
 
@@ -48,7 +49,7 @@ InstanceOf: ObservationWeight
 * valueQuantity.code = #kg
 * valueQuantity.unit = "kg"
 
-/*
+
 
 //an example that fails maxValue constraints - checked & works
 Instance: ExObservationInvalidWeight

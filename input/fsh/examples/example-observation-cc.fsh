@@ -1,5 +1,6 @@
 Instance: CreatinineClearance
 InstanceOf: ObservationCreatClear
+Description: "Example of a creatinine clearance observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a creatinine clearance observation."
 
 * meta.profile = $creat-clear
 

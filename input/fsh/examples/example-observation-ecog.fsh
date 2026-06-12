@@ -1,5 +1,6 @@
 Instance: ExObservationECOG
 InstanceOf: ObservationEcog
+Description: "Example of an ECOG score observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in an ECOG score observation."
 
 * meta.profile = $ecog
 

@@ -1,5 +1,6 @@
 Instance: ExObservationHeight
 InstanceOf: ObservationHeight
+Description: "Example of a height observation. This is a simple example that only includes the required elements and a few optional ones. It is not meant to be a comprehensive example of all the possible elements that could be included in a height observation."
 
 * meta.profile = $height
 
